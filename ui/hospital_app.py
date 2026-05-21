@@ -84,9 +84,6 @@ class HospitalApp(WindowBase):
         self.res_cards.pack(fill="x")
 
         self.deadlock_frame = tk.Frame(self.content, bg="#fef2f2", highlightthickness=1, highlightbackground="#fca5a5")
-        self.deadlock_frame.pack(fill="x", padx=16, pady=(0, 10))
-        self.deadlock_frame.pack_forget()
-
         self.deadlock_title = tk.Label(
             self.deadlock_frame,
             text="",
@@ -242,25 +239,25 @@ class HospitalApp(WindowBase):
             f"Triage: {mode_label}    │    Pacientes: {ram_used}/{ram_limit}    │    Tick: {tick}"
         )
 
-        if deadlock_on:
-            cycle = self.state.detect_deadlock()
+        cycle = self.state.detect_deadlock()
+        if deadlock_on and cycle:
             names = []
-            if cycle:
-                with self.state.lock:
-                    for pid in cycle:
-                        hero = self.state.heroes.get(pid)
-                        if hero:
-                            names.append(hero.name)
+            with self.state.lock:
+                for pid in cycle:
+                    hero = self.state.heroes.get(pid)
+                    if hero:
+                        names.append(hero.name)
 
             self.deadlock_frame.pack(fill="x", padx=16, pady=(0, 10))
             self.deadlock_title.config(text="Deadlock detectado")
-            if names:
+            if len(names) >= 2:
                 self.deadlock_text.config(
-                    text="Qué pasó: " + " → ".join(names) + " quedaron esperando recursos entre sí, así que ninguno puede avanzar."
+                    text=f"Qué pasó: {names[0]} y {names[1]} quedaron esperando recursos entre sí. "
+                         f"Uno tiene un recurso y necesita el del otro, así que ninguno puede avanzar."
                 )
             else:
                 self.deadlock_text.config(
-                    text="Qué pasó: dos pacientes quedaron bloqueados mutuamente por recursos compartidos y el sistema espera resolverlo."
+                    text="Qué pasó: dos pacientes quedaron bloqueados mutuamente por recursos compartidos."
                 )
         else:
             self.deadlock_frame.pack_forget()
