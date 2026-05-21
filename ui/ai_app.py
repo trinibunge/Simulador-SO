@@ -2,95 +2,130 @@ import tkinter as tk
 import threading
 from ui.window_base import WindowBase
 from ui.theme import *
-from core.ai_brain import CatacumbaAI
+from core.ai_brain import HospitalAI
 from ui.toast import Toast
 
 
 class AIApp(WindowBase):
+    """
+    🩺 Asistente Médico — chat con IA temática.
+    """
+
     def __init__(self, master, state, x=480, y=120):
-        super().__init__(master, "Oracle", TEAL, 640, 500, x, y)
+        super().__init__(master, "🩺 Asistente Médico", TEAL, 660, 540, x, y)
         self.state = state
-        self.ai = CatacumbaAI(state)
+        self.ai = HospitalAI(state)
+        self.thinking = False
+        self.content.configure(bg=PANEL)
 
         top = tk.Frame(self.content, bg=PANEL)
-        top.pack(fill="x", padx=12, pady=(12, 8))
+        top.pack(fill="x", padx=14, pady=(14, 8))
 
-        tk.Label(
-            top,
-            text="Oracle — IA conversacional",
-            bg=PANEL,
-            fg=FG,
-            font=FONT_BOLD
-        ).pack(anchor="w")
+        tk.Label(top, text="Asistente Médico",
+                 bg=PANEL, fg=FG, font=FONT_BIG).pack(anchor="w")
+        tk.Label(top,
+                 text="consultá sobre el simulador, conceptos de SO o cualquier otra cosa",
+                 bg=PANEL, fg=MUTED, font=FONT_ITALIC
+                 ).pack(anchor="w")
 
-        self.status_label = tk.Label(
-            top,
-            text="Listo",
-            bg=PANEL,
-            fg=MUTED,
-            font=FONT_SM
-        )
-        self.status_label.pack(anchor="w", pady=(2, 0))
+        row = tk.Frame(top, bg=PANEL)
+        row.pack(fill="x", pady=(6, 0))
+        self.status_label = tk.Label(row, text="● Disponible",
+                                     bg=PANEL, fg=GREEN, font=FONT_BOLD)
+        self.status_label.pack(side="left")
+        tk.Button(row, text="Limpiar", bg=PANEL_2, fg=FG, relief="flat",
+                  command=self.clear_chat, font=FONT, padx=10, pady=4,
+                  cursor="hand2").pack(side="right")
 
         self.chat = tk.Text(
-            self.content,
-            bg="#f8fafc",
-            fg="#111827",
-            font=FONT_MD,
-            relief="flat",
-            highlightthickness=1,
-            highlightbackground=BORDER,
-            wrap="word"
+            self.content, bg="#f7fafc", fg=FG, font=FONT_MD,
+            relief="flat", highlightthickness=1, highlightbackground=BORDER,
+            wrap="word", padx=10, pady=10
         )
-        self.chat.pack(fill="both", expand=True, padx=12, pady=(0, 10))
+        self.chat.pack(fill="both", expand=True, padx=14, pady=(8, 10))
+        self.chat.config(state="disabled")
 
         bottom = tk.Frame(self.content, bg=PANEL)
-        bottom.pack(fill="x", padx=12, pady=(0, 12))
+        bottom.pack(fill="x", padx=14, pady=(0, 14))
 
         self.entry = tk.Entry(
-            bottom,
-            bg="#ffffff",
-            fg="#111827",
-            insertbackground="#111827",
-            font=FONT_MD,
-            relief="flat"
+            bottom, bg="#ffffff", fg=FG, insertbackground=FG,
+            font=FONT_MD, relief="flat",
+            highlightthickness=1, highlightbackground=BORDER
         )
-        self.entry.pack(side="left", fill="x", expand=True)
+        self.entry.pack(side="left", fill="x", expand=True, ipady=8, padx=(0, 8))
         self.entry.bind("<Return>", self.ask)
 
-        self.btn = tk.Button(bottom, text="Ask", bg=TEAL, fg="white", relief="flat", command=self.ask)
-        self.btn.pack(side="left", padx=(8, 0))
+        self.btn = tk.Button(bottom, text="Consultar", bg=TEAL, fg="white",
+                             relief="flat", command=self.ask,
+                             font=FONT_BOLD, padx=14, cursor="hand2")
+        self.btn.pack(side="left")
 
-        self.write_bot("Hola. Soy Oracle. Preguntame lo que quieras.")
-        self.entry.focus_set()
-        self.lift()
+        self.write_bot("Hola. Soy el Asistente Médico. "
+                       "Preguntame sobre el simulador, conceptos de SO o lo que necesites.")
+        self.master.after(50, self.entry.focus_set)
+
+    def _append(self, text):
+        self.chat.config(state="normal")
+        self.chat.insert(tk.END, text)
+        self.chat.see(tk.END)
+        self.chat.config(state="disabled")
 
     def write_bot(self, text):
-        self.chat.insert(tk.END, f"Oracle: {text}\n\n")
-        self.chat.see(tk.END)
+        self._append(f"🩺  Asistente: {text}\n\n")
 
     def write_user(self, text):
-        self.chat.insert(tk.END, f"Tú: {text}\n")
-        self.chat.see(tk.END)
+        self._append(f"👤  Vos: {text}\n")
+
+    def clear_chat(self):
+        self.chat.config(state="normal")
+        self.chat.delete("1.0", tk.END)
+        self.chat.config(state="disabled")
+        self.ai.memory.clear()
+        self.write_bot("Conversación reiniciada.")
+
+    def set_thinking(self, on):
+        self.thinking = on
+        if not self.alive:
+            return
+        if on:
+            self.status_label.config(text="● Consultando...", fg=ORANGE)
+        else:
+            self.status_label.config(text="● Disponible", fg=GREEN)
+        self.btn.config(state="disabled" if on else "normal")
+        self.entry.config(state="disabled" if on else "normal")
+        if not on:
+            self.entry.focus_set()
 
     def ask(self, event=None):
+        if self.thinking:
+            return
         q = self.entry.get().strip()
         self.entry.delete(0, tk.END)
-
         if not q:
             return
 
         self.write_user(q)
-        self.status_label.config(text="Pensando...")
+        self.set_thinking(True)
 
         def worker():
-            answer = self.ai.think(q)
-            self.master.after(0, lambda: self.finish_answer(q, answer))
+            try:
+                answer = self.ai.think(q)
+            except Exception as e:
+                answer = f"(Error: {e})"
+            if self.alive:
+                self.master.after(0, lambda: self.finish_answer(q, answer))
 
         threading.Thread(target=worker, daemon=True).start()
 
     def finish_answer(self, q, answer):
-        self.write_bot(answer)
-        self.status_label.config(text="Listo")
-        self.state.log("AI", f"Pregunta: {q}")
-        Toast(self.master, "Respuesta recibida", TEAL)
+        if not self.alive:
+            return
+        self.write_bot(answer or "(sin respuesta)")
+        self.set_thinking(False)
+        if self.state:
+            self.state.log("ASIST", f"Consulta: {q}")
+        try:
+            Toast(self.master, "Respuesta recibida", TEAL)
+        except Exception:
+            pass

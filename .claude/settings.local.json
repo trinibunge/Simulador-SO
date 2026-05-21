@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(pip install anthropic 2>&1)"
+    ]
+  }
+}

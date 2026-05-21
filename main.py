@@ -1,5 +1,5 @@
 import tkinter as tk
-from core.state import CatacumbaState
+from core.state import HospitalState
 from core.scheduler import Scheduler
 from core.deadlock import DeadlockDetector
 from ui.boot_screen import BootScreen
@@ -10,7 +10,7 @@ def main():
     root = tk.Tk()
     root.withdraw()
 
-    state = CatacumbaState()
+    state = HospitalState()
 
     Scheduler(state).start()
     DeadlockDetector(state).start()

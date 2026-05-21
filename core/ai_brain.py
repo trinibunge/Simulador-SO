@@ -1,77 +1,90 @@
 import os
 
 try:
-    from openai import OpenAI
+    import anthropic
 except Exception:
-    OpenAI = None
+    anthropic = None
 
 
-class CatacumbaAI:
+SYSTEM_PROMPT = """
+Sos el "Asistente Médico" del Hospital MS, una interfaz conversacional
+del simulador de Sistemas Operativos.
+
+ROL:
+- Respondés cualquier consulta del usuario de forma clara y útil.
+- Conocés el simulador: pacientes = procesos, doctores = CPUs (semáforos),
+  quirófano y cirujano = recursos compartidos (locks), triage por gravedad
+  o por orden de llegada = scheduling. Si te preguntan sobre el sistema o
+  algún concepto de SO, explicalo usando la metáfora del hospital cuando
+  ayude a la comprensión.
+- También respondés cualquier otra cosa que te pregunten (programación,
+  cultura general, ayuda con el trabajo, etc.) de forma natural.
+
+TONO:
+- En español, cálido pero profesional.
+- Directo, sin disclaimers innecesarios.
+- Si no sabés algo, decilo y proponé cómo seguir.
+"""
+
+
+class HospitalAI:
     def __init__(self, state):
         self.state = state
         self.memory = []
-
-        api_key = os.getenv("OPENAI_API_KEY")
-        self.client = OpenAI(api_key=api_key) if (OpenAI and api_key) else None
+        api_key = os.getenv("ANTHROPIC_API_KEY")
+        self.client = anthropic.Anthropic(api_key=api_key) if (anthropic and api_key) else None
 
     def think(self, question: str):
         q = question.strip()
         if not q:
             return "Decime algo y te respondo."
 
-        # siempre guardar conversación
         self.memory.append({"role": "user", "content": q})
 
-        # si hay API externa, usarla sí o sí como primera opción
         if self.client is not None:
-            answer = self.ask_openai()
+            answer = self.ask_claude()
             if answer:
                 self.memory.append({"role": "assistant", "content": answer})
                 return answer
 
-        # fallback solo si la API no está disponible
         answer = self.local_fallback(q)
         self.memory.append({"role": "assistant", "content": answer})
         return answer
 
-    def ask_openai(self):
-        system_prompt = """
-Sos Oracle, una IA conversacional general y útil.
-
-OBJETIVO:
-- Responder cualquier pregunta del usuario de forma natural, clara y útil.
-- No limitarte al juego.
-- No responder con frases genéricas de fallback si podés contestar mejor.
-- Si la pregunta es ambigua, interpretala de la forma más probable y respondé algo útil.
-- Si no sabés algo, decilo con honestidad y sugerí cómo seguir.
-
-TONO:
-- en español
-- amigable
-- directo
-- conversacional
-- sin listas innecesarias salvo que aporten claridad
-
-Si el usuario pregunta sobre La Catacumba, el juego o la interfaz, respondé también con contexto del proyecto.
-"""
-
-        messages = [{"role": "system", "content": system_prompt}]
-        messages.extend(self.memory[-12:])
-
+    def ask_claude(self):
+        messages = list(self.memory[-12:])
         try:
-            response = self.client.chat.completions.create(
-                model="gpt-4o-mini",
+            response = self.client.messages.create(
+                model="claude-haiku-4-5-20251001",
+                max_tokens=1024,
+                system=SYSTEM_PROMPT,
                 messages=messages,
-                temperature=0.7,
             )
-            return response.choices[0].message.content.strip()
+            return response.content[0].text.strip()
         except Exception as e:
-            print(f"[AI] Error OpenAI: {e}")
+            print(f"[AI] Error Anthropic: {e}")
             return None
 
     def local_fallback(self, q: str):
-        # fallback general, no tan rígido
-        return (
-            "No pude conectar con la IA externa en este momento. "
-            "Probá de nuevo en un rato o revisá la API key."
-        )
+        q_low = q.lower()
+        if any(w in q_low for w in ("proceso", "paciente", "scheduling", "triage", "planificaci")):
+            return ("En este simulador, los pacientes son procesos del sistema operativo. "
+                    "El triage decide el orden de atención: LLEGADA = Round Robin, "
+                    "GRAVEDAD = Priority Scheduling. Los doctores son las CPUs disponibles.")
+        if any(w in q_low for w in ("deadlock", "bloqueo", "recurso", "quirofano", "cirujano")):
+            return ("Un deadlock ocurre cuando dos pacientes se esperan mutuamente: "
+                    "A tiene el Quirófano y espera al Cirujano, mientras B tiene al Cirujano "
+                    "y espera el Quirófano. Ninguno puede avanzar. "
+                    "La solución: derivar al paciente menos crítico.")
+        if any(w in q_low for w in ("farmacia", "buffer", "productor", "consumidor")):
+            return ("La farmacia implementa el patrón Productor-Consumidor con un buffer acotado "
+                    "de 8 medicamentos. Los farmacéuticos producen y los enfermeros consumen. "
+                    "Si el buffer está lleno, los productores se bloquean; si está vacío, los consumidores esperan.")
+        if any(w in q_low for w in ("semaforo", "semáforo", "mutex", "lock", "sincronizaci")):
+            return ("Los semáforos controlan el acceso a recursos compartidos. "
+                    "Un mutex (como el Quirófano) solo permite un proceso a la vez. "
+                    "Un semáforo de conteo (como cpu_sem) permite N procesos simultáneos, "
+                    "donde N es la cantidad de doctores/CPUs.")
+        return ("Para usar el Asistente con IA real, configurá la variable de entorno "
+                "ANTHROPIC_API_KEY. Por ahora puedo responder consultas básicas sobre "
+                "scheduling, deadlock, sincronización y el simulador.")

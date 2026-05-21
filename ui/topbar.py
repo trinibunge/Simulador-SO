@@ -11,7 +11,7 @@ class TopBar:
         self.bar = tk.Frame(master, bg=PANEL, height=34, highlightthickness=1, highlightbackground=BORDER)
         self.bar.pack(side="top", fill="x")
 
-        self.left = tk.Label(self.bar, text="La Catacumba", bg=PANEL, fg=FG, font=FONT_BOLD)
+        self.left = tk.Label(self.bar, text="Hospital MS", bg=PANEL, fg=FG, font=FONT_BOLD)
         self.left.pack(side="left", padx=14)
 
         self.mid = tk.Label(self.bar, text="Estado del sistema listo", bg=PANEL, fg=MUTED, font=FONT_SM)

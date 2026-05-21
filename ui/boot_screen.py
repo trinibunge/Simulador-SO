@@ -22,8 +22,8 @@ class BootScreen:
     def draw(self):
         self.canvas.delete("all")
         self.draw_bg()
-        self.canvas.create_text(640, 170, text="La Catacumba", fill=FG, font=("Aptos", 32, "bold"))
-        self.canvas.create_text(640, 214, text="Sistema operativo ficticio", fill=MUTED, font=("Aptos", 14))
+        self.canvas.create_text(640, 170, text="Hospital MS", fill=FG, font=("Aptos", 32, "bold"))
+        self.canvas.create_text(640, 214, text="Merecemos Sobresaliente", fill=MUTED, font=("Aptos", 14))
 
         self.canvas.create_rectangle(340, 330, 940, 360, fill=PANEL_2, outline=BORDER, width=1)
         self.canvas.create_rectangle(340, 330, 340 + 6 * self.progress, 360, fill=BLUE, outline=BLUE)

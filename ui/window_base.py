@@ -3,14 +3,22 @@ from ui.theme import *
 
 
 class WindowBase:
+    """
+    Ventana flotante. La novedad: tiene self.alive (bool) y on_close (callback).
+    Las apps que tienen loops with .after() deben:
+      - chequear self.alive antes de re-agendar
+      - opcionalmente sobreescribir on_close() para liberar recursos
+    """
+
     def __init__(self, master, title, accent=BLUE, width=520, height=360, x=120, y=80):
         self.master = master
         self.accent = accent
         self.minimized = False
         self.normal_height = height
+        self.alive = True
 
         self.shadow = tk.Frame(master, bg=SHADOW)
-        self.shadow.place(x=x+6, y=y+6, width=width, height=height)
+        self.shadow.place(x=x + 6, y=y + 6, width=width, height=height)
 
         self.frame = tk.Frame(master, bg=PANEL, highlightthickness=1, highlightbackground=BORDER)
         self.frame.place(x=x, y=y, width=width, height=height)
@@ -30,7 +38,8 @@ class WindowBase:
 
         self.btn_close = tk.Button(
             self.controls, text="×", bg=TITLE_BG, fg=RED, relief="flat", bd=0,
-            font=("Aptos", 12, "bold"), command=self.close, width=2
+            font=("Aptos", 12, "bold"), command=self.close, width=2,
+            cursor="hand2", activebackground="#4b1c1c", activeforeground="white"
         )
         self.btn_close.pack(side="right", padx=2)
 
@@ -48,13 +57,34 @@ class WindowBase:
             w.bind("<ButtonPress-1>", self.start_move)
             w.bind("<B1-Motion>", self.do_move)
 
+        # Levantar ventana cuando cualquier widget interno recibe foco
+        self.frame.bind("<FocusIn>", lambda _e: self.lift(), add=True)
+
+    def on_close(self):
+        """Hook para subclases: liberar recursos antes de destruir."""
+        pass
+
     def close(self):
-        self.frame.destroy()
-        self.shadow.destroy()
+        self.alive = False
+        try:
+            self.on_close()
+        except Exception:
+            pass
+        try:
+            self.frame.destroy()
+        except Exception:
+            pass
+        try:
+            self.shadow.destroy()
+        except Exception:
+            pass
 
     def lift(self):
-        self.shadow.lift()
-        self.frame.lift()
+        try:
+            self.shadow.lift()
+            self.frame.lift()
+        except Exception:
+            pass
 
     def toggle_minimize(self):
         if self.minimized:
@@ -76,4 +106,4 @@ class WindowBase:
         x = self.frame.winfo_x() + event.x - self._drag["x"]
         y = self.frame.winfo_y() + event.y - self._drag["y"]
         self.frame.place(x=x, y=y)
-        self.shadow.place(x=x+6, y=y+6)
+        self.shadow.place(x=x + 6, y=y + 6)

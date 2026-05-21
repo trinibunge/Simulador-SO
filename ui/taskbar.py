@@ -22,7 +22,7 @@ class Taskbar:
         self.quick = tk.Frame(self.bar, bg=PANEL)
         self.quick.pack(side="left", padx=8)
 
-        self.status = tk.Label(self.bar, text="La Catacumba lista", bg=PANEL, fg=MUTED, font=FONT)
+        self.status = tk.Label(self.bar, text="Hospital MS listo", bg=PANEL, fg=MUTED, font=FONT)
         self.status.pack(side="left", padx=12)
 
         self.clock = tk.Label(self.bar, text="00:00", bg=PANEL, fg=CYAN, font=FONT_BOLD)
@@ -40,7 +40,7 @@ class Taskbar:
         self.refresh()
 
     def fake_power(self):
-        Toast(self.master, "Apagado simulado. La Catacumba sigue corriendo en tu imaginación.", RED)
+        Toast(self.master, "Apagado simulado. Hospital MS sigue corriendo en tu imaginación.", RED)
 
     def toggle_menu(self):
         if self.menu_open:
@@ -55,7 +55,7 @@ class Taskbar:
         self.menu = tk.Frame(self.master, bg=PANEL, highlightthickness=1, highlightbackground=BORDER)
         self.menu.place(x=10, y=self.master.winfo_height()-320, width=280, height=280)
 
-        tk.Label(self.menu, text="LA CATACUMBA", bg=PANEL, fg=PURPLE, font=FONT_BOLD).pack(pady=(10, 6))
+        tk.Label(self.menu, text="HOSPITAL MS", bg=PANEL, fg=PURPLE, font=FONT_BOLD).pack(pady=(10, 6))
 
         items = [
             ("🗺️ Dungeon View", self.desktop.open_dungeon),
