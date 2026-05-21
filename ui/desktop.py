@@ -19,7 +19,6 @@ class Desktop:
 
         self.root.title("Hospital MS — Merecemos Sobresaliente")
         self.root.configure(bg=BG_BOTTOM)
-
         self.root.protocol("WM_DELETE_WINDOW", self.shutdown)
 
         self.bg = tk.Canvas(root, bg=BG_BOTTOM, highlightthickness=0)
@@ -41,7 +40,6 @@ class Desktop:
             pass
 
         self.apps = {}
-
         Toast(self.root, "Bienvenido a Hospital MS", BLUE)
 
         self.open_hospital()
@@ -73,15 +71,16 @@ class Desktop:
             t = y / h
             c = self.mix(BG_TOP, BG_BOTTOM, t)
             self.bg.create_line(0, y, w, y, fill=c)
-        for x in range(0, w, 90):
+        for x in range(0, w, 96):
             self.bg.create_line(x, 0, x, h, fill=DESKTOP_GRID)
-        for y in range(0, h, 90):
+        for y in range(0, h, 96):
             self.bg.create_line(0, y, w, y, fill=DESKTOP_GRID)
         self.bg.create_text(58, 52, anchor="nw", fill=FG,
-                            font=("Aptos", 28, "bold"),
+                            font=("Segoe UI", 26, "bold"),
                             text="Hospital MS")
-        self.bg.create_text(60, 92, anchor="nw", fill=MUTED, font=("Aptos", 12),
-                            text="Merecemos Sobresaliente — Simulador de SO")
+        self.bg.create_text(60, 92, anchor="nw", fill=MUTED,
+                            font=("Segoe UI", 11),
+                            text="Simulador de Sistemas Operativos")
 
     def mix(self, c1, c2, t):
         def hx(c): return tuple(int(c[i:i+2], 16) for i in (1, 3, 5))
@@ -90,27 +89,20 @@ class Desktop:
         return "#%02x%02x%02x" % c
 
     def build_dock(self):
-        self.dock.add_icon("Hospital",  "assets/icons/hospital.png",
-                           self.open_hospital,
-                           "Panel principal: pacientes (procesos), doctores (CPUs) y recursos compartidos")
-        self.dock.add_icon("Historia",  "assets/icons/process.png",
-                           self.open_process,
-                           "Tabla de procesos: PID, estado, prioridad y uso de CPU en tiempo real")
-        self.dock.add_icon("Recepción", "assets/icons/terminal.png",
-                           self.open_terminal,
-                           "Terminal de comandos: ADMITIR, TRIAGE, OPERAR, DEADLOCK y más")
-        self.dock.add_icon("Bitácora",  "assets/icons/log.png",
-                           self.open_log,
-                           "Log del sistema: eventos de scheduling, recursos y deadlock")
-        self.dock.add_icon("Farmacia",  "assets/icons/pharmacy.png",
-                           self.open_pharmacy,
-                           "Productor-Consumidor: farmacéuticos producen y enfermeros consumen medicamentos")
-        self.dock.add_icon("Asistente", "assets/icons/ai.png",
-                           self.open_ai,
-                           "Asistente con IA: consultá sobre el simulador y conceptos de SO")
-        self.dock.add_icon("Snake",     "assets/icons/snake.png",
-                           self.open_snake,
-                           "Mini-juego Snake clásico")
+        self.dock.add_icon("Hospital",  "assets/icons/hospital.png", self.open_hospital,
+                           "Panel principal: procesos, CPUs y recursos compartidos")
+        self.dock.add_icon("Historia",  "assets/icons/process.png", self.open_process,
+                           "Tabla de procesos en tiempo real")
+        self.dock.add_icon("Recepción", "assets/icons/terminal.png", self.open_terminal,
+                           "Terminal de comandos del sistema")
+        self.dock.add_icon("Bitácora",  "assets/icons/log.png", self.open_log,
+                           "Eventos y logs del sistema")
+        self.dock.add_icon("Farmacia",  "assets/icons/pharmacy.png", self.open_pharmacy,
+                           "Productor-Consumidor")
+        self.dock.add_icon("Asistente", "assets/icons/ai.png", self.open_ai,
+                           "Asistente médico")
+        self.dock.add_icon("Snake",     "assets/icons/snake.png", self.open_snake,
+                           "Mini juego")
 
     def open_hospital(self): self._open("hospital", lambda: HospitalApp(self.root, self.state, 10, 40))
     def open_process(self):  self._open("process",  lambda: ProcessApp(self.root, self.state, 740, 110))

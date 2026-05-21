@@ -7,12 +7,8 @@ from ui.toast import Toast
 
 
 class AIApp(WindowBase):
-    """
-    🩺 Asistente Médico — chat con IA temática.
-    """
-
     def __init__(self, master, state, x=480, y=120):
-        super().__init__(master, "🩺 Asistente Médico", TEAL, 660, 540, x, y)
+        super().__init__(master, "Asistente Médico", TEAL, 650, 520, x, y)
         self.state = state
         self.ai = HospitalAI(state)
         self.thinking = False
@@ -21,24 +17,19 @@ class AIApp(WindowBase):
         top = tk.Frame(self.content, bg=PANEL)
         top.pack(fill="x", padx=14, pady=(14, 8))
 
-        tk.Label(top, text="Asistente Médico",
-                 bg=PANEL, fg=FG, font=FONT_BIG).pack(anchor="w")
-        tk.Label(top,
-                 text="consultá sobre el simulador, conceptos de SO o cualquier otra cosa",
-                 bg=PANEL, fg=MUTED, font=FONT_ITALIC
-                 ).pack(anchor="w")
+        tk.Label(top, text="Asistente Médico", bg=PANEL, fg=FG, font=FONT_BIG).pack(anchor="w")
+        tk.Label(top, text="Consultá sobre el simulador o sobre Sistemas Operativos", bg=PANEL, fg=MUTED, font=FONT_ITALIC).pack(anchor="w")
 
         row = tk.Frame(top, bg=PANEL)
         row.pack(fill="x", pady=(6, 0))
-        self.status_label = tk.Label(row, text="● Disponible",
-                                     bg=PANEL, fg=GREEN, font=FONT_BOLD)
+        self.status_label = tk.Label(row, text="● Disponible", bg=PANEL, fg=GREEN, font=FONT_BOLD)
         self.status_label.pack(side="left")
+
         tk.Button(row, text="Limpiar", bg=PANEL_2, fg=FG, relief="flat",
-                  command=self.clear_chat, font=FONT, padx=10, pady=4,
-                  cursor="hand2").pack(side="right")
+                  command=self.clear_chat, font=FONT, padx=10, pady=4, cursor="hand2").pack(side="right")
 
         self.chat = tk.Text(
-            self.content, bg="#f7fafc", fg=FG, font=FONT_MD,
+            self.content, bg="#f8fafc", fg=FG, font=FONT_MD,
             relief="flat", highlightthickness=1, highlightbackground=BORDER,
             wrap="word", padx=10, pady=10
         )
@@ -61,8 +52,7 @@ class AIApp(WindowBase):
                              font=FONT_BOLD, padx=14, cursor="hand2")
         self.btn.pack(side="left")
 
-        self.write_bot("Hola. Soy el Asistente Médico. "
-                       "Preguntame sobre el simulador, conceptos de SO o lo que necesites.")
+        self.write_bot("Hola. Preguntame sobre el simulador o sobre Sistemas Operativos.")
         self.master.after(50, self.entry.focus_set)
 
     def _append(self, text):
@@ -72,10 +62,10 @@ class AIApp(WindowBase):
         self.chat.config(state="disabled")
 
     def write_bot(self, text):
-        self._append(f"🩺  Asistente: {text}\n\n")
+        self._append(f"Asistente: {text}\n\n")
 
     def write_user(self, text):
-        self._append(f"👤  Vos: {text}\n")
+        self._append(f"Vos: {text}\n")
 
     def clear_chat(self):
         self.chat.config(state="normal")

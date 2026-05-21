@@ -1,54 +1,37 @@
-# ─── Paleta refinada estilo hospital moderno ─────────────────────────
-# Inspirada en interfaces clínicas reales: blancos cálidos, azul médico,
-# verde quirófano, rojo emergencia. Nada de gradientes neón.
 
-# Fondo del escritorio
-BG_TOP        = "#eef2f7"   # cielo de hospital
-BG_BOTTOM     = "#dde6f1"
-DESKTOP_GRID  = "#c5d3e3"
+BG_TOP        = "#edf2f7"
+BG_BOTTOM     = "#dbe4ee"
+DESKTOP_GRID  = "#cfd9e6"
 
-# Paneles (cards, ventanas)
-PANEL         = "#ffffff"   # blanco quirófano
-PANEL_2       = "#f4f7fb"
-PANEL_3       = "#e8eef5"
-BORDER        = "#cfd8e3"
-BORDER_SOFT   = "#e1e8f0"
+PANEL         = "#ffffff"
+PANEL_2       = "#f7fafc"
+PANEL_3       = "#eef3f8"
+BORDER        = "#d5dee8"
+BORDER_SOFT   = "#e7edf4"
 
-# Texto
-FG            = "#0f1e35"   # azul tinta
-MUTED         = "#5c6b7f"
+FG            = "#102033"
+MUTED         = "#5d6b7c"
 SOFT          = "#8b97a8"
 
-# Colores funcionales (semánticos, no decorativos)
-BLUE          = "#2563eb"   # azul médico
-TEAL          = "#0d9488"   # cirugía
-GREEN         = "#16a34a"   # libre / alta
-PURPLE        = "#7c3aed"   # prioridad / triage
-RED           = "#dc2626"   # emergencia / deadlock
-ORANGE        = "#ea580c"   # advertencia
-GOLD          = "#d97706"   # ocupado
-YELLOW        = "#eab308"
-CYAN          = "#0891b2"
+BLUE          = "#2563eb"
+TEAL          = "#0f766e"
+GREEN         = "#15803d"
+PURPLE        = "#6d28d9"
+RED           = "#b91c1c"
+ORANGE        = "#c2410c"
+GOLD          = "#b45309"
+YELLOW        = "#a16207"
+CYAN          = "#0e7490"
 
-# Cromas extra (cards, headers, fondos suaves)
-BLUE_SOFT     = "#dbeafe"
-GREEN_SOFT    = "#dcfce7"
-RED_SOFT      = "#fee2e2"
-AMBER_SOFT    = "#fef3c7"
-PURPLE_SOFT   = "#ede9fe"
-
-# Title bar
 TITLE_BG      = "#f8fafc"
-TITLE_FG      = "#0f1e35"
+TITLE_FG      = "#102033"
 SHADOW        = "#b8c4d4"
 
-# Tipografía: misma familia pero mejor jerarquía
-FONT          = ("Aptos", 10)
-FONT_SM       = ("Aptos", 9)
-FONT_MD       = ("Aptos", 11)
-FONT_BOLD     = ("Aptos", 10, "bold")
-FONT_TITLE    = ("Aptos", 11, "bold")
-FONT_BIG      = ("Aptos", 14, "bold")
-FONT_HUGE     = ("Aptos", 22, "bold")
-FONT_DISPLAY  = ("Aptos", 18, "bold")
-FONT_ITALIC   = ("Aptos", 10, "italic")
+FONT          = ("Segoe UI", 10)
+FONT_SM       = ("Segoe UI", 9)
+FONT_MD       = ("Segoe UI", 11)
+FONT_BOLD     = ("Segoe UI", 10, "bold")
+FONT_TITLE    = ("Segoe UI", 11, "bold")
+FONT_BIG      = ("Segoe UI", 13, "bold")
+FONT_DISPLAY  = ("Segoe UI", 18, "bold")
+FONT_ITALIC   = ("Segoe UI", 10, "italic")

@@ -1,3 +1,4 @@
+
 import tkinter as tk
 from core.state import HospitalState
 from core.scheduler import Scheduler

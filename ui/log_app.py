@@ -4,24 +4,15 @@ from ui.theme import *
 
 
 class LogApp(WindowBase):
-    """
-    📜 Bitácora de Guardia.
-    Stream de eventos del sistema (productor-consumidor con queue.Queue).
-    """
-
     def __init__(self, master, state, x=820, y=40):
-        super().__init__(master, "📜 Bitácora de Guardia", GOLD, 448, 625, x, y)
+        super().__init__(master, "Bitácora de Guardia", GOLD, 440, 625, x, y)
         self.state = state
         self.content.configure(bg=PANEL)
 
         head = tk.Frame(self.content, bg=PANEL)
         head.pack(fill="x", padx=12, pady=(12, 6))
-        tk.Label(head, text="Eventos del hospital",
-                 bg=PANEL, fg=FG, font=FONT_BIG).pack(anchor="w")
-        tk.Label(head,
-                 text="todo lo que pasa: ingresos, atenciones, recursos, deadlocks",
-                 bg=PANEL, fg=MUTED, font=FONT_ITALIC
-                 ).pack(anchor="w")
+        tk.Label(head, text="Eventos del sistema", bg=PANEL, fg=FG, font=FONT_BIG).pack(anchor="w")
+        tk.Label(head, text="Ingresos, scheduling, recursos y deadlocks", bg=PANEL, fg=MUTED, font=FONT_ITALIC).pack(anchor="w")
 
         self.text = tk.Text(
             self.content, bg="#0b1220", fg="#dbeafe",

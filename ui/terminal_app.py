@@ -7,44 +7,32 @@ from ui.toast import Toast
 
 
 class TerminalApp(WindowBase):
-    """
-    💻 Recepción del Hospital.
-    Línea de comandos para admitir pacientes, asignar recursos, etc.
-    """
-
     def __init__(self, master, state, x=90, y=520):
-        super().__init__(master, "💻 Recepción", GREEN, 720, 360, x, y)
+        super().__init__(master, "Recepción", GREEN, 720, 360, x, y)
         self.state = state
         self.interpreter = DungScriptInterpreter(state)
         self.content.configure(bg=PANEL)
 
         head = tk.Frame(self.content, bg=PANEL)
         head.pack(fill="x", padx=12, pady=(12, 4))
-        tk.Label(head, text="Terminal de la recepción",
-                 bg=PANEL, fg=FG, font=FONT_BIG).pack(anchor="w")
-        tk.Label(head,
-                 text="escribí AYUDA para ver todos los comandos",
-                 bg=PANEL, fg=MUTED, font=FONT_ITALIC
-                 ).pack(anchor="w")
+        tk.Label(head, text="Terminal de la recepción", bg=PANEL, fg=FG, font=FONT_BIG).pack(anchor="w")
+        tk.Label(head, text="Escribí AYUDA para ver los comandos", bg=PANEL, fg=MUTED, font=FONT_ITALIC).pack(anchor="w")
 
         self.output = tk.Text(
-            self.content, bg="#0b1220", fg="#dbeafe",
-            insertbackground="#dbeafe", font=("Consolas", 11),
-            relief="flat", highlightthickness=0, state="disabled"
+            self.content, bg="#0b1220", fg="#dbeafe", insertbackground="#dbeafe",
+            font=("Consolas", 11), relief="flat", highlightthickness=0, state="disabled"
         )
         self.output.pack(fill="both", expand=True, padx=12, pady=(8, 6))
 
         self.entry = tk.Entry(
-            self.content, bg="#0b1220", fg="#dbeafe",
-            insertbackground="#dbeafe", font=("Consolas", 11),
-            relief="flat", highlightthickness=1,
-            highlightbackground=BORDER
+            self.content, bg="#0b1220", fg="#dbeafe", insertbackground="#dbeafe",
+            font=("Consolas", 11), relief="flat", highlightthickness=1, highlightbackground=BORDER
         )
         self.entry.pack(fill="x", padx=12, pady=(0, 12), ipady=6)
         self.entry.bind("<Return>", self.run_cmd)
 
         self._print("Hospital MS — Recepción\n")
-        self._print("Ejemplos:\n")
+        self._print("Comandos principales:\n")
         self._print("  ADMITIR Juan GRAVEDAD 2 TIEMPO 10\n")
         self._print("  TRIAGE GRAVEDAD\n")
         self._print("  OPERAR 1 QUIROFANO\n")
@@ -77,7 +65,7 @@ class TerminalApp(WindowBase):
 
         upper = cmd.upper()
         if upper == "EASTER":
-            Toast(self.master, "Snake.exe desbloqueado", GREEN)
+            Toast(self.master, "Snake desbloqueado", GREEN)
             SnakeApp(self.master, self.state, 460, 150)
         elif upper.startswith("DEADLOCK"):
             Toast(self.master, "Deadlock demo lanzada", RED)
