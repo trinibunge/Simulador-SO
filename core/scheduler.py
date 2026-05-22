@@ -5,6 +5,21 @@ from collections import deque
 
 
 class Scheduler(threading.Thread):
+    """
+    Planificador de procesos.
+
+    Diferencia clave respecto a versiones anteriores: ya NO hace busy-wait
+    con time.sleep() cuando no hay procesos READY.  Ahora duerme sobre una
+    Condition variable (state.ready_cv) y se despierta cuando algún hilo
+    le hace notify (admitir, request_resource exitoso, fin de quantum, etc).
+
+    Esto es el patrón canónico de un scheduler real: bloquearse en una CV
+    es lo que hace, por ejemplo, el scheduler de Linux cuando no hay tareas
+    runnable en su cola.
+    """
+
+    WAIT_TIMEOUT = 0.5  # timeout defensivo por si nos perdemos un notify
+
     def __init__(self, state, quantum: float = 0.4):
         super().__init__(daemon=True)
         self.state = state
@@ -14,12 +29,24 @@ class Scheduler(threading.Thread):
 
     def run(self):
         while self.state.running:
-            pacientes = [p for p in self.state.get_pacientes() if p.state == "READY"]
+            # ─── Esperar (sin polling) a que haya algún proceso READY ───
+            with self.state.ready_cv:
+                while self.state.running:
+                    pacientes_ready = [
+                        p for p in self.state.pacientes.values() if p.state == "READY"
+                    ]
+                    if pacientes_ready:
+                        break
+                    # No hay nada que correr: dormimos en la CV.  Salimos
+                    # solo cuando notify_all() (timeout es defensa, no la regla).
+                    self.state.ready_cv.wait(timeout=self.WAIT_TIMEOUT)
 
-            if not pacientes:
-                time.sleep(0.15)
-                continue
+                if not self.state.running:
+                    return
+                # Snapshot bajo el lock
+                pacientes = list(pacientes_ready)
 
+            # ─── Elegir víctima según política ───
             if self.state.chaos_mode:
                 paciente = random.choice(pacientes)
             elif self.state.scheduler_mode == "PRIORITY":
@@ -27,9 +54,9 @@ class Scheduler(threading.Thread):
             else:
                 paciente = self._pick_rr(pacientes)
                 if paciente is None:
-                    time.sleep(0.15)
                     continue
 
+            # ─── Adquirir CPU (semáforo) ───
             if not self.state.cpu_sem.acquire(timeout=0.3):
                 continue
 
@@ -47,7 +74,8 @@ class Scheduler(threading.Thread):
                 self.state.log("CPU", f"t={tick}: atendiendo a {paciente.name}")
                 time.sleep(self.quantum)
 
-                with self.state.lock:
+                # ─── Fin del quantum: actualizar estado ───
+                with self.state.ready_cv:
                     if paciente.pid in self.state.pacientes:
                         paciente = self.state.pacientes[paciente.pid]
                         paciente.cpu_used += 1
@@ -61,6 +89,8 @@ class Scheduler(threading.Thread):
                             if paciente.state == "RUNNING":
                                 paciente.state = "READY"
                                 self._rr_queue.append(paciente.pid)
+                                # Despertar a nosotros mismos / a otro scheduler
+                                self.state.ready_cv.notify_all()
             finally:
                 self.state.cpu_sem.release()
 
