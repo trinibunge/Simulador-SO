@@ -1,0 +1,2151 @@
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-22 14:27:17
+  PID daemon de logging: 21064
+============================================================
+[14:27:29] [ADMIT] Paciente 1 admitido (PID 1, gravedad 8)
+[14:27:29] [CPU] t=1: atendiendo a Paciente 1
+[14:27:29] [CPU] t=2: atendiendo a Paciente 1
+[14:27:29] [CPU] t=3: atendiendo a Paciente 1
+[14:27:30] [CPU] t=4: atendiendo a Paciente 1
+[14:27:30] [CPU] t=5: atendiendo a Paciente 1
+[14:27:31] [CPU] t=6: atendiendo a Paciente 1
+[14:27:31] [ADMIT] Paciente 2 admitido (PID 2, gravedad 5)
+[14:27:31] [ALTA] Paciente 1 terminó su atención y es dado de alta
+[14:27:31] [CPU] t=7: atendiendo a Paciente 2
+[14:27:31] [CPU] t=8: atendiendo a Paciente 2
+[14:27:32] [CPU] t=9: atendiendo a Paciente 2
+[14:27:32] [CPU] t=10: atendiendo a Paciente 2
+[14:27:33] [CPU] t=11: atendiendo a Paciente 2
+[14:27:33] [CPU] t=12: atendiendo a Paciente 2
+[14:27:33] [CPU] t=13: atendiendo a Paciente 2
+[14:27:34] [ADMIT] Paciente 3 admitido (PID 3, gravedad 4)
+[14:27:34] [ADMIT] Paciente 4 admitido (PID 4, gravedad 4)
+[14:27:34] [ADMIT] Paciente 5 admitido (PID 5, gravedad 8)
+[14:27:34] [ADMIT] Paciente 6 admitido (PID 6, gravedad 4)
+[14:27:34] [ADMIT] Paciente 7 admitido (PID 7, gravedad 8)
+[14:27:34] [ADMIT] Paciente 8 admitido (PID 8, gravedad 4)
+[14:27:34] [ADMIT] Paciente 9 admitido (PID 9, gravedad 8)
+[14:27:34] [ADMIT] Paciente 10 admitido (PID 10, gravedad 6)
+[14:27:34] [CPU] t=14: atendiendo a Paciente 2
+[14:27:34] [CPU] t=15: atendiendo a Paciente 3
+[14:27:35] [CPU] t=16: atendiendo a Paciente 4
+[14:27:35] [CPU] t=17: atendiendo a Paciente 5
+[14:27:35] [CPU] t=18: atendiendo a Paciente 6
+[14:27:36] [CPU] t=19: atendiendo a Paciente 7
+[14:27:36] [CPU] t=20: atendiendo a Paciente 8
+[14:27:37] [CPU] t=21: atendiendo a Paciente 9
+[14:27:37] [CPU] t=22: atendiendo a Paciente 10
+[14:27:37] [DEADLOCK] Iniciando demo: dos pacientes pelearán por Quirófano + Cirujano
+[14:27:37] [ADMIT] Paciente 11 admitido (PID 11, gravedad 4)
+[14:27:37] [ADMIT] Paciente 12 admitido (PID 12, gravedad 6)
+[14:27:37] [RECURSO] Paciente 11 solicita QUIROFANO
+[14:27:37] [RECURSO] Paciente 11 obtuvo QUIROFANO
+[14:27:37] [RECURSO] Paciente 12 solicita CIRUJANO
+[14:27:37] [RECURSO] Paciente 12 obtuvo CIRUJANO
+[14:27:37] [RECURSO] Paciente 12 solicita QUIROFANO
+[14:27:37] [RECURSO] Paciente 11 solicita CIRUJANO
+[14:27:37] [CPU] t=23: atendiendo a Paciente 2
+[14:27:38] [DEADLOCK] ⚠️ DEADLOCK: Paciente 11 → Paciente 12 → Paciente 11 se bloquean mutuamente
+[14:27:38] [DEADLOCK] Se derivará un paciente en 10s, o tocá 'Resolver Deadlock'
+[14:27:38] [CPU] t=24: atendiendo a Paciente 3
+[14:27:38] [CPU] t=25: atendiendo a Paciente 4
+[14:27:39] [CPU] t=26: atendiendo a Paciente 5
+[14:27:39] [CPU] t=27: atendiendo a Paciente 6
+[14:27:39] [CPU] t=28: atendiendo a Paciente 7
+[14:27:40] [CPU] t=29: atendiendo a Paciente 8
+[14:27:40] [CPU] t=30: atendiendo a Paciente 9
+[14:27:41] [CPU] t=31: atendiendo a Paciente 10
+[14:27:41] [CPU] t=32: atendiendo a Paciente 2
+[14:27:41] [CPU] t=33: atendiendo a Paciente 3
+[14:27:42] [CPU] t=34: atendiendo a Paciente 4
+[14:27:42] [CPU] t=35: atendiendo a Paciente 5
+[14:27:43] [CPU] t=36: atendiendo a Paciente 6
+[14:27:43] [CPU] t=37: atendiendo a Paciente 7
+[14:27:43] [CPU] t=38: atendiendo a Paciente 8
+[14:27:44] [CPU] t=39: atendiendo a Paciente 9
+[14:27:44] [CPU] t=40: atendiendo a Paciente 10
+[14:27:45] [CPU] t=41: atendiendo a Paciente 2
+[14:27:45] [ALTA] Paciente 2 terminó su atención y es dado de alta
+[14:27:45] [CPU] t=42: atendiendo a Paciente 3
+[14:27:45] [DEADLOCK] Resolución manual solicitada
+[14:27:45] [DEADLOCK] Resolviendo: Paciente 12 es derivado a otro hospital
+[14:27:45] [ALTA] Paciente 12 (PID 12) dado de alta
+[14:27:45] [RECURSO] Paciente 11 obtuvo CIRUJANO
+[14:27:45] [RECURSO] Paciente 11 libera CIRUJANO
+[14:27:45] [RECURSO] Paciente 11 libera QUIROFANO
+[14:27:45] [CPU] t=43: atendiendo a Paciente 4
+[14:27:46] [CPU] t=44: atendiendo a Paciente 5
+[14:27:46] [CPU] t=45: atendiendo a Paciente 6
+[14:27:47] [CPU] t=46: atendiendo a Paciente 7
+[14:27:47] [CPU] t=47: atendiendo a Paciente 8
+[14:27:47] [CPU] t=48: atendiendo a Paciente 9
+[14:27:48] [TRIAGE] Atención: por gravedad
+[14:27:48] [CPU] t=49: atendiendo a Paciente 3
+[14:27:48] [CPU] t=50: atendiendo a Paciente 3
+[14:27:49] [CPU] t=51: atendiendo a Paciente 3
+[14:27:49] [CPU] t=52: atendiendo a Paciente 3
+[14:27:49] [CPU] t=53: atendiendo a Paciente 3
+[14:27:50] [CPU] t=54: atendiendo a Paciente 3
+[14:27:50] [CPU] t=55: atendiendo a Paciente 3
+[14:27:51] [CPU] t=56: atendiendo a Paciente 3
+[14:27:51] [ALTA] Paciente 3 terminó su atención y es dado de alta
+[14:27:51] [CPU] t=57: atendiendo a Paciente 4
+[14:27:51] [CPU] t=58: atendiendo a Paciente 4
+[14:27:52] [HISTORIA] Enf. Cruz llega a actualizar la historia clínica
+[14:27:52] [CPU] t=59: atendiendo a Paciente 4
+[14:27:52] [CPU] t=60: atendiendo a Paciente 4
+[14:27:53] [ALTA] Paciente 4 terminó su atención y es dado de alta
+[14:27:53] [CPU] t=61: atendiendo a Paciente 6
+[14:27:53] [HISTORIA] Enf. Cruz obtiene acceso EXCLUSIVO y comienza a escribir
+[14:27:53] [CPU] t=62: atendiendo a Paciente 6
+[14:27:53] [CPU] t=63: atendiendo a Paciente 6
+[14:27:54] [CPU] t=64: atendiendo a Paciente 6
+[14:27:54] [CPU] t=65: atendiendo a Paciente 6
+[14:27:54] [HISTORIA] Dra. Torres llega a consultar la historia clínica
+[14:27:55] [CPU] t=66: atendiendo a Paciente 6
+[14:27:55] [HISTORIA] Dra. López llega a consultar la historia clínica
+[14:27:55] [CPU] t=67: atendiendo a Paciente 6
+[14:27:55] [HISTORIA] Dra. López llega a consultar la historia clínica
+[14:27:55] [HISTORIA] Dra. Torres debe esperar: una enfermera está escribiendo
+[14:27:55] [CPU] t=68: atendiendo a Paciente 6
+[14:27:56] [HISTORIA] Dr. García llega a consultar la historia clínica
+[14:27:56] [ALTA] Paciente 6 terminó su atención y es dado de alta
+[14:27:56] [CPU] t=69: atendiendo a Paciente 8
+[14:27:56] [HISTORIA] Dra. Torres llega a consultar la historia clínica
+[14:27:56] [CPU] t=70: atendiendo a Paciente 8
+[14:27:57] [HISTORIA] Enf. Díaz llega a actualizar la historia clínica
+[14:27:57] [ALTA] Paciente 8 terminó su atención y es dado de alta
+[14:27:57] [CPU] t=71: atendiendo a Paciente 11
+[14:27:57] [CPU] t=72: atendiendo a Paciente 11
+[14:27:57] [CPU] t=73: atendiendo a Paciente 11
+[14:27:58] [HISTORIA] Enf. Díaz debe esperar: hay lectores o un escritor activo
+[14:27:58] [HISTORIA] Enf. Cruz termina la actualización: Temp: 36.9°C · PA: 122/78 · FC: 70 bpm · Estable
+[14:27:58] [HISTORIA] Dra. Torres comienza a leer tras esperar 1.1s (lectores activos: 1)
+[14:27:58] [HISTORIA] Dra. López comienza a leer tras esperar 0.5s (lectores activos: 2)
+[14:27:58] [HISTORIA] Dra. López comienza a leer tras esperar 0.1s (lectores activos: 3)
+[14:27:58] [HISTORIA] Dr. García comienza a leer (lectores activos: 4)
+[14:27:58] [HISTORIA] Dra. Torres comienza a leer (lectores activos: 5)
+[14:27:58] [HISTORIA] Enf. Silva llega a actualizar la historia clínica
+[14:27:58] [CPU] t=74: atendiendo a Paciente 11
+[14:27:58] [HISTORIA] Enf. Gómez llega a actualizar la historia clínica
+[14:27:58] [HISTORIA] Enf. Silva llega a actualizar la historia clínica
+[14:27:58] [CPU] t=75: atendiendo a Paciente 11
+[14:27:59] [CPU] t=76: atendiendo a Paciente 11
+[14:27:59] [HISTORIA] Enf. Silva debe esperar: hay lectores o un escritor activo
+[14:27:59] [HISTORIA] Enf. Gómez debe esperar: hay lectores o un escritor activo
+[14:27:59] [CPU] t=77: atendiendo a Paciente 11
+[14:27:59] [HISTORIA] Enf. Silva debe esperar: hay lectores o un escritor activo
+[14:28:00] [CPU] t=78: atendiendo a Paciente 11
+[14:28:00] [CPU] t=79: atendiendo a Paciente 11
+[14:28:00] [CPU] t=80: atendiendo a Paciente 11
+[14:28:00] [HISTORIA] Dra. Castro llega a consultar la historia clínica
+[14:28:01] [HISTORIA] Dra. Torres termina su consulta
+[14:28:01] [HISTORIA] Dra. Castro llega a consultar la historia clínica
+[14:28:01] [CPU] t=81: atendiendo a Paciente 11
+[14:28:01] [CPU] t=82: atendiendo a Paciente 11
+[14:28:01] [HISTORIA] Dra. López termina su consulta
+[14:28:01] [HISTORIA] Dra. Castro comienza a leer (lectores activos: 4)
+[14:28:02] [CPU] t=83: atendiendo a Paciente 11
+[14:28:02] [HISTORIA] Dra. Castro comienza a leer (lectores activos: 5)
+[14:28:02] [HISTORIA] Dra. López termina su consulta
+[14:28:02] [CPU] t=84: atendiendo a Paciente 11
+[14:28:02] [HISTORIA] Dra. Torres termina su consulta
+[14:28:02] [CPU] t=85: atendiendo a Paciente 11
+[14:28:02] [HISTORIA] Dr. García termina su consulta
+[14:28:03] [CPU] t=86: atendiendo a Paciente 11
+[14:28:03] [HISTORIA] Dr. Sosa llega a consultar la historia clínica
+[14:28:03] [HISTORIA] Dra. Vega llega a consultar la historia clínica
+[14:28:03] [CPU] t=87: atendiendo a Paciente 11
+[14:28:03] [HISTORIA] Dra. Vega llega a consultar la historia clínica
+[14:28:04] [CPU] t=88: atendiendo a Paciente 11
+[14:28:04] [HISTORIA] Dr. Sosa comienza a leer (lectores activos: 3)
+[14:28:04] [CPU] t=89: atendiendo a Paciente 11
+[14:28:04] [HISTORIA] Dra. Vega comienza a leer (lectores activos: 4)
+[14:28:04] [HISTORIA] Dra. Vega comienza a leer (lectores activos: 5)
+[14:28:04] [CPU] t=90: atendiendo a Paciente 11
+[14:28:05] [CPU] t=91: atendiendo a Paciente 11
+[14:28:05] [CPU] t=92: atendiendo a Paciente 11
+[14:28:06] [CPU] t=93: atendiendo a Paciente 11
+[14:28:06] [HISTORIA] Dra. Castro termina su consulta
+[14:28:06] [CPU] t=94: atendiendo a Paciente 11
+[14:28:06] [HISTORIA] Dra. Castro termina su consulta
+[14:28:06] [CPU] t=95: atendiendo a Paciente 11
+[14:28:07] [CPU] t=96: atendiendo a Paciente 11
+[14:28:07] [CPU] t=97: atendiendo a Paciente 11
+[14:28:08] [CPU] t=98: atendiendo a Paciente 11
+[14:28:08] [HISTORIA] Dra. Vega termina su consulta
+[14:28:08] [CPU] t=99: atendiendo a Paciente 11
+[14:28:08] [HISTORIA] Dr. Sosa termina su consulta
+[14:28:08] [CPU] t=100: atendiendo a Paciente 11
+[14:28:09] [HISTORIA] Dra. Vega termina su consulta
+[14:28:09] [HISTORIA] Último lector se retira: historia clínica disponible para escritura
+[14:28:09] [HISTORIA] Enf. Díaz obtiene acceso EXCLUSIVO tras esperar 11.1s
+[14:28:09] [CPU] t=101: atendiendo a Paciente 11
+[14:28:09] [CPU] t=102: atendiendo a Paciente 11
+[14:28:09] [HISTORIA] Dra. Torres llega a consultar la historia clínica
+[14:28:10] [CPU] t=103: atendiendo a Paciente 11
+[14:28:10] [CPU] t=104: atendiendo a Paciente 11
+[14:28:10] [CPU] t=105: atendiendo a Paciente 11
+[14:28:10] [HISTORIA] Dra. Torres debe esperar: una enfermera está escribiendo
+[14:28:10] [HISTORIA] Dra. Vega llega a consultar la historia clínica
+[14:28:11] [CPU] t=106: atendiendo a Paciente 11
+[14:28:11] [CPU] t=107: atendiendo a Paciente 11
+[14:28:11] [HISTORIA] Dra. Vega llega a consultar la historia clínica
+[14:28:12] [CPU] t=108: atendiendo a Paciente 11
+[14:28:12] [CPU] t=109: atendiendo a Paciente 11
+[14:28:12] [CPU] t=110: atendiendo a Paciente 11
+[14:28:13] [CPU] t=111: atendiendo a Paciente 11
+[14:28:13] [HISTORIA] Enf. Díaz termina la actualización: Temp: 37.2°C · PA: 130/85 · FC: 88 bpm · Observación
+[14:28:13] [HISTORIA] Enf. Silva obtiene acceso EXCLUSIVO tras esperar 14.4s
+[14:28:13] [CPU] t=112: atendiendo a Paciente 11
+[14:28:14] [CPU] t=113: atendiendo a Paciente 11
+[14:28:14] [CPU] t=114: atendiendo a Paciente 11
+[14:28:14] [CPU] t=115: atendiendo a Paciente 11
+[14:28:15] [CPU] t=116: atendiendo a Paciente 11
+[14:28:15] [CPU] t=117: atendiendo a Paciente 11
+[14:28:16] [CPU] t=118: atendiendo a Paciente 11
+[14:28:16] [CPU] t=119: atendiendo a Paciente 11
+[14:28:16] [CPU] t=120: atendiendo a Paciente 11
+[14:28:17] [CPU] t=121: atendiendo a Paciente 11
+[14:28:17] [CPU] t=122: atendiendo a Paciente 11
+[14:28:17] [HISTORIA] Dra. Vega llega a consultar la historia clínica
+[14:28:18] [CPU] t=123: atendiendo a Paciente 11
+[14:28:18] [CPU] t=124: atendiendo a Paciente 11
+[14:28:18] [CPU] t=125: atendiendo a Paciente 11
+[14:28:19] [HISTORIA] Enf. Silva termina la actualización: Temp: 38.1°C · PA: 145/92 · FC: 95 bpm · Medicación ajustada
+[14:28:19] [HISTORIA] Enf. Gómez obtiene acceso EXCLUSIVO tras esperar 19.6s
+[14:28:19] [HISTORIA] Dr. Ramírez llega a consultar la historia clínica
+[14:28:19] [CPU] t=126: atendiendo a Paciente 11
+[14:28:19] [CPU] t=127: atendiendo a Paciente 11
+[14:28:20] [CPU] t=128: atendiendo a Paciente 11
+[14:28:20] [CPU] t=129: atendiendo a Paciente 11
+[14:28:20] [CPU] t=130: atendiendo a Paciente 11
+[14:28:21] [CPU] t=131: atendiendo a Paciente 11
+[14:28:21] [CPU] t=132: atendiendo a Paciente 11
+[14:28:22] [CPU] t=133: atendiendo a Paciente 11
+[14:28:22] [CPU] t=134: atendiendo a Paciente 11
+[14:28:22] [CPU] t=135: atendiendo a Paciente 11
+[14:28:23] [CPU] t=136: atendiendo a Paciente 11
+[14:28:23] [HISTORIA] Enf. Gómez termina la actualización: Temp: 36.5°C · PA: 118/76 · FC: 65 bpm · Alta próxima
+[14:28:23] [HISTORIA] Enf. Silva obtiene acceso EXCLUSIVO tras esperar 23.9s
+[14:28:23] [CPU] t=137: atendiendo a Paciente 11
+[14:28:24] [CPU] t=138: atendiendo a Paciente 11
+[14:28:24] [CPU] t=139: atendiendo a Paciente 11
+[14:28:24] [CPU] t=140: atendiendo a Paciente 11
+[14:28:25] [CPU] t=141: atendiendo a Paciente 11
+[14:28:25] [CPU] t=142: atendiendo a Paciente 11
+[14:28:26] [CPU] t=143: atendiendo a Paciente 11
+[14:28:26] [CPU] t=144: atendiendo a Paciente 11
+[14:28:26] [CPU] t=145: atendiendo a Paciente 11
+[14:28:27] [CPU] t=146: atendiendo a Paciente 11
+[14:28:27] [CPU] t=147: atendiendo a Paciente 11
+[14:28:27] [HISTORIA] Enf. Silva termina la actualización: Temp: 37.5°C · PA: 135/88 · FC: 80 bpm · En observación
+[14:28:27] [HISTORIA] Dra. Torres comienza a leer tras esperar 15.7s (lectores activos: 1)
+[14:28:27] [HISTORIA] Dra. Vega comienza a leer tras esperar 14.7s (lectores activos: 2)
+[14:28:27] [HISTORIA] Dra. Vega comienza a leer tras esperar 13.8s (lectores activos: 3)
+[14:28:27] [HISTORIA] Dra. Vega comienza a leer tras esperar 7.8s (lectores activos: 4)
+[14:28:27] [HISTORIA] Dr. Ramírez comienza a leer tras esperar 6.6s (lectores activos: 5)
+[14:28:28] [CPU] t=148: atendiendo a Paciente 11
+[14:28:28] [CPU] t=149: atendiendo a Paciente 11
+[14:28:28] [HISTORIA] Enf. Perez llega a actualizar la historia clínica
+[14:28:28] [CPU] t=150: atendiendo a Paciente 11
+[14:28:29] [CPU] t=151: atendiendo a Paciente 11
+[14:28:29] [CPU] t=152: atendiendo a Paciente 11
+[14:28:29] [HISTORIA] Enf. Perez obtiene acceso EXCLUSIVO y comienza a escribir
+[14:28:30] [CPU] t=153: atendiendo a Paciente 11
+[14:28:30] [CPU] t=154: atendiendo a Paciente 11
+[14:28:30] [HISTORIA] Dra. Torres termina su consulta
+[14:28:30] [CPU] t=155: atendiendo a Paciente 11
+[14:28:31] [HISTORIA] Dra. Vega termina su consulta
+[14:28:31] [CPU] t=156: atendiendo a Paciente 11
+[14:28:31] [HISTORIA] Dra. Vega termina su consulta
+[14:28:31] [CPU] t=157: atendiendo a Paciente 11
+[14:28:31] [HISTORIA] Dr. Ramírez termina su consulta
+[14:28:32] [CPU] t=158: atendiendo a Paciente 11
+[14:28:32] [HISTORIA] Dra. Vega termina su consulta
+[14:28:32] [HISTORIA] Último lector se retira: historia clínica disponible para escritura
+[14:28:32] [CPU] t=159: atendiendo a Paciente 11
+[14:28:32] [CPU] t=160: atendiendo a Paciente 11
+[14:28:33] [CPU] t=161: atendiendo a Paciente 11
+[14:28:33] [HISTORIA] Enf. Perez termina la actualización: Temp: 36.8°C · PA: 120/80 · FC: 72 bpm · Sin novedades
+[14:28:33] [CPU] t=162: atendiendo a Paciente 11
+[14:28:34] [CPU] t=163: atendiendo a Paciente 11
+[14:28:34] [CPU] t=164: atendiendo a Paciente 11
+[14:28:34] [CPU] t=165: atendiendo a Paciente 11
+[14:28:35] [CPU] t=166: atendiendo a Paciente 11
+[14:28:35] [CPU] t=167: atendiendo a Paciente 11
+[14:28:36] [CPU] t=168: atendiendo a Paciente 11
+[14:28:36] [CPU] t=169: atendiendo a Paciente 11
+[14:28:36] [CPU] t=170: atendiendo a Paciente 11
+[14:28:37] [CPU] t=171: atendiendo a Paciente 11
+[14:28:37] [CPU] t=172: atendiendo a Paciente 11
+[14:28:38] [CPU] t=173: atendiendo a Paciente 11
+[14:28:38] [CPU] t=174: atendiendo a Paciente 11
+[14:28:38] [CPU] t=175: atendiendo a Paciente 11
+[14:28:39] [CPU] t=176: atendiendo a Paciente 11
+[14:28:39] [CPU] t=177: atendiendo a Paciente 11
+[14:28:40] [CPU] t=178: atendiendo a Paciente 11
+[14:28:40] [CPU] t=179: atendiendo a Paciente 11
+[14:28:40] [CPU] t=180: atendiendo a Paciente 11
+[14:28:41] [CPU] t=181: atendiendo a Paciente 11
+[14:28:41] [CPU] t=182: atendiendo a Paciente 11
+[14:28:42] [CPU] t=183: atendiendo a Paciente 11
+[14:28:42] [CPU] t=184: atendiendo a Paciente 11
+[14:28:42] [CPU] t=185: atendiendo a Paciente 11
+[14:28:43] [CPU] t=186: atendiendo a Paciente 11
+[14:28:43] [CPU] t=187: atendiendo a Paciente 11
+[14:28:43] [HISTORIA] Dr. Martín llega a consultar la historia clínica
+[14:28:44] [CPU] t=188: atendiendo a Paciente 11
+[14:28:44] [CPU] t=189: atendiendo a Paciente 11
+[14:28:44] [CPU] t=190: atendiendo a Paciente 11
+[14:28:44] [HISTORIA] Dr. Martín comienza a leer (lectores activos: 1)
+[14:28:45] [CPU] t=191: atendiendo a Paciente 11
+[14:28:45] [CPU] t=192: atendiendo a Paciente 11
+[14:28:46] [CPU] t=193: atendiendo a Paciente 11
+[14:28:46] [CPU] t=194: atendiendo a Paciente 11
+[14:28:46] [CPU] t=195: atendiendo a Paciente 11
+[14:28:47] [CPU] t=196: atendiendo a Paciente 11
+[14:28:47] [CPU] t=197: atendiendo a Paciente 11
+[14:28:48] [CPU] t=198: atendiendo a Paciente 11
+[14:28:48] [CPU] t=199: atendiendo a Paciente 11
+[14:28:48] [CPU] t=200: atendiendo a Paciente 11
+[14:28:49] [CPU] t=201: atendiendo a Paciente 11
+[14:28:49] [HISTORIA] Dr. Martín termina su consulta
+[14:28:49] [HISTORIA] Último lector se retira: historia clínica disponible para escritura
+[14:28:49] [CPU] t=202: atendiendo a Paciente 11
+[14:28:50] [CPU] t=203: atendiendo a Paciente 11
+[14:28:50] [CPU] t=204: atendiendo a Paciente 11
+[14:28:50] [CPU] t=205: atendiendo a Paciente 11
+[14:28:51] [CPU] t=206: atendiendo a Paciente 11
+[14:28:51] [CPU] t=207: atendiendo a Paciente 11
+[14:28:52] [CPU] t=208: atendiendo a Paciente 11
+[14:28:52] [CPU] t=209: atendiendo a Paciente 11
+[14:28:52] [CPU] t=210: atendiendo a Paciente 11
+[14:28:53] [CPU] t=211: atendiendo a Paciente 11
+[14:28:53] [FARMACIA] Iniciando turno de producción
+[14:28:53] [CPU] t=212: atendiendo a Paciente 11
+[14:28:54] [CPU] t=213: atendiendo a Paciente 11
+[14:28:54] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:28:54] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:28:54] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:28:54] [CPU] t=214: atendiendo a Paciente 11
+[14:28:54] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:28:54] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:28:54] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:28:54] [CPU] t=215: atendiendo a Paciente 11
+[14:28:55] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:28:55] [CPU] t=216: atendiendo a Paciente 11
+[14:28:55] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:28:55] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:28:55] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:28:55] [CPU] t=217: atendiendo a Paciente 11
+[14:28:55] [FARMACIA] Medicamento añadido (manual)
+[14:28:55] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:28:56] [CPU] t=218: atendiendo a Paciente 11
+[14:28:56] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:28:56] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:28:56] [FARMACIA] Medicamento añadido (manual)
+[14:28:56] [CPU] t=219: atendiendo a Paciente 11
+[14:28:56] [FARMACIA] Medicamento añadido (manual)
+[14:28:56] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:28:56] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:28:56] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:28:56] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:28:56] [FARMACIA] Medicamento añadido (manual)
+[14:28:56] [CPU] t=220: atendiendo a Paciente 11
+[14:28:57] [FARMACIA] Medicamento añadido (manual)
+[14:28:57] [CPU] t=221: atendiendo a Paciente 11
+[14:28:57] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:28:57] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:28:57] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:28:57] [FARMACIA] Medicamento añadido (manual)
+[14:28:57] [CPU] t=222: atendiendo a Paciente 11
+[14:28:57] [FARMACIA] Buffer lleno
+[14:28:57] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:28:57] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:28:58] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:28:58] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:28:58] [FARMACIA] Medicamento añadido (manual)
+[14:28:58] [CPU] t=223: atendiendo a Paciente 11
+[14:28:58] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:28:58] [CPU] t=224: atendiendo a Paciente 11
+[14:28:58] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:28:58] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:28:58] [CPU] t=225: atendiendo a Paciente 11
+[14:28:58] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:28:58] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:28:59] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:28:59] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:28:59] [CPU] t=226: atendiendo a Paciente 11
+[14:28:59] [CPU] t=227: atendiendo a Paciente 11
+[14:29:00] [CPU] t=228: atendiendo a Paciente 11
+[14:29:00] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:00] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:00] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:00] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:00] [CPU] t=229: atendiendo a Paciente 11
+[14:29:00] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:00] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:00] [CPU] t=230: atendiendo a Paciente 11
+[14:29:01] [CPU] t=231: atendiendo a Paciente 11
+[14:29:01] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:01] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:01] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:01] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:01] [CPU] t=232: atendiendo a Paciente 11
+[14:29:02] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:02] [CPU] t=233: atendiendo a Paciente 11
+[14:29:02] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:02] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:02] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:02] [CPU] t=234: atendiendo a Paciente 11
+[14:29:02] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:02] [CPU] t=235: atendiendo a Paciente 11
+[14:29:03] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:03] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:03] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:03] [CPU] t=236: atendiendo a Paciente 11
+[14:29:03] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:03] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:03] [CPU] t=237: atendiendo a Paciente 11
+[14:29:03] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:04] [CPU] t=238: atendiendo a Paciente 11
+[14:29:04] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:04] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:04] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:04] [CPU] t=239: atendiendo a Paciente 11
+[14:29:04] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:04] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:04] [CPU] t=240: atendiendo a Paciente 11
+[14:29:05] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:05] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:05] [CPU] t=241: atendiendo a Paciente 11
+[14:29:05] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:05] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:05] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:05] [CPU] t=242: atendiendo a Paciente 11
+[14:29:05] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:06] [CPU] t=243: atendiendo a Paciente 11
+[14:29:06] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:06] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:06] [CPU] t=244: atendiendo a Paciente 11
+[14:29:06] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:06] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:06] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:06] [CPU] t=245: atendiendo a Paciente 11
+[14:29:07] [CPU] t=246: atendiendo a Paciente 11
+[14:29:07] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:07] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:07] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:07] [CPU] t=247: atendiendo a Paciente 11
+[14:29:07] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:07] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:08] [CPU] t=248: atendiendo a Paciente 11
+[14:29:08] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:08] [HISTORIA] Enf. Díaz llega a actualizar la historia clínica
+[14:29:08] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:08] [CPU] t=249: atendiendo a Paciente 11
+[14:29:08] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:08] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:08] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:08] [CPU] t=250: atendiendo a Paciente 11
+[14:29:09] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:09] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:09] [CPU] t=251: atendiendo a Paciente 11
+[14:29:09] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:09] [HISTORIA] Dra. Vega llega a consultar la historia clínica
+[14:29:09] [HISTORIA] Enf. Díaz obtiene acceso EXCLUSIVO y comienza a escribir
+[14:29:09] [CPU] t=252: atendiendo a Paciente 11
+[14:29:09] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:09] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:10] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:10] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:10] [CPU] t=253: atendiendo a Paciente 11
+[14:29:10] [HISTORIA] Dra. Vega debe esperar: una enfermera está escribiendo
+[14:29:10] [CPU] t=254: atendiendo a Paciente 11
+[14:29:10] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:10] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:10] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:10] [CPU] t=255: atendiendo a Paciente 11
+[14:29:10] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:11] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:11] [CPU] t=256: atendiendo a Paciente 11
+[14:29:11] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:11] [CPU] t=257: atendiendo a Paciente 11
+[14:29:11] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:11] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:12] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:12] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:12] [CPU] t=258: atendiendo a Paciente 11
+[14:29:12] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:12] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:12] [CPU] t=259: atendiendo a Paciente 11
+[14:29:12] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:12] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:12] [CPU] t=260: atendiendo a Paciente 11
+[14:29:13] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:13] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:13] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:13] [CPU] t=261: atendiendo a Paciente 11
+[14:29:13] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:13] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:13] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:13] [CPU] t=262: atendiendo a Paciente 11
+[14:29:13] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:14] [CPU] t=263: atendiendo a Paciente 11
+[14:29:14] [HISTORIA] Enf. Díaz termina la actualización: Temp: 37.2°C · PA: 130/85 · FC: 88 bpm · Observación
+[14:29:14] [HISTORIA] Dra. Vega comienza a leer tras esperar 2.8s (lectores activos: 1)
+[14:29:14] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:14] [CPU] t=264: atendiendo a Paciente 11
+[14:29:14] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:14] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:14] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:14] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:14] [CPU] t=265: atendiendo a Paciente 11
+[14:29:15] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:15] [CPU] t=266: atendiendo a Paciente 11
+[14:29:15] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:15] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:15] [CPU] t=267: atendiendo a Paciente 11
+[14:29:15] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:15] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:15] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:16] [CPU] t=268: atendiendo a Paciente 11
+[14:29:16] [HISTORIA] Enf. Silva llega a actualizar la historia clínica
+[14:29:16] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:16] [CPU] t=269: atendiendo a Paciente 11
+[14:29:16] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:16] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:16] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:16] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:16] [CPU] t=270: atendiendo a Paciente 11
+[14:29:17] [HISTORIA] Enf. Silva debe esperar: hay lectores o un escritor activo
+[14:29:17] [HISTORIA] Dra. Vega termina su consulta
+[14:29:17] [HISTORIA] Último lector se retira: historia clínica disponible para escritura
+[14:29:17] [HISTORIA] Enf. Silva obtiene acceso EXCLUSIVO tras esperar 0.1s
+[14:29:17] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:17] [CPU] t=271: atendiendo a Paciente 11
+[14:29:17] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:17] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:17] [CPU] t=272: atendiendo a Paciente 11
+[14:29:18] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:18] [CPU] t=273: atendiendo a Paciente 11
+[14:29:18] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:18] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:18] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:18] [CPU] t=274: atendiendo a Paciente 11
+[14:29:18] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:18] [CPU] t=275: atendiendo a Paciente 11
+[14:29:19] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:19] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:19] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:19] [CPU] t=276: atendiendo a Paciente 11
+[14:29:19] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:19] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:19] [CPU] t=277: atendiendo a Paciente 11
+[14:29:19] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:19] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:20] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:20] [CPU] t=278: atendiendo a Paciente 11
+[14:29:20] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:20] [CPU] t=279: atendiendo a Paciente 11
+[14:29:20] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:20] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:20] [CPU] t=280: atendiendo a Paciente 11
+[14:29:21] [HISTORIA] Enf. Díaz llega a actualizar la historia clínica
+[14:29:21] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:21] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:21] [HISTORIA] Enf. Silva llega a actualizar la historia clínica
+[14:29:21] [CPU] t=281: atendiendo a Paciente 11
+[14:29:21] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:21] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:21] [HISTORIA] Enf. Perez llega a actualizar la historia clínica
+[14:29:21] [HISTORIA] Enf. Silva termina la actualización: Temp: 36.9°C · PA: 122/78 · FC: 70 bpm · Estable
+[14:29:21] [CPU] t=282: atendiendo a Paciente 11
+[14:29:21] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:22] [HISTORIA] Enf. Díaz obtiene acceso EXCLUSIVO y comienza a escribir
+[14:29:22] [CPU] t=283: atendiendo a Paciente 11
+[14:29:22] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:22] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:22] [HISTORIA] Enf. Silva debe esperar: hay lectores o un escritor activo
+[14:29:22] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:22] [HISTORIA] Enf. Perez debe esperar: hay lectores o un escritor activo
+[14:29:22] [CPU] t=284: atendiendo a Paciente 11
+[14:29:22] [CPU] t=285: atendiendo a Paciente 11
+[14:29:23] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:23] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:23] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:23] [CPU] t=286: atendiendo a Paciente 11
+[14:29:23] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:23] [CPU] t=287: atendiendo a Paciente 11
+[14:29:23] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:23] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:24] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:24] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:24] [CPU] t=288: atendiendo a Paciente 11
+[14:29:24] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:24] [CPU] t=289: atendiendo a Paciente 11
+[14:29:24] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:24] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:24] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:24] [CPU] t=290: atendiendo a Paciente 11
+[14:29:25] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:25] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:25] [CPU] t=291: atendiendo a Paciente 11
+[14:29:25] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:25] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:25] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:25] [CPU] t=292: atendiendo a Paciente 11
+[14:29:25] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:26] [CPU] t=293: atendiendo a Paciente 11
+[14:29:26] [CPU] t=294: atendiendo a Paciente 11
+[14:29:26] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:26] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:26] [HISTORIA] Enf. Díaz termina la actualización: Temp: 36.9°C · PA: 122/78 · FC: 70 bpm · Estable
+[14:29:26] [HISTORIA] Enf. Silva obtiene acceso EXCLUSIVO tras esperar 4.6s
+[14:29:26] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:26] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:26] [CPU] t=295: atendiendo a Paciente 11
+[14:29:27] [CPU] t=296: atendiendo a Paciente 11
+[14:29:27] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:27] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:27] [CPU] t=297: atendiendo a Paciente 11
+[14:29:27] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:27] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:28] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:28] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:28] [CPU] t=298: atendiendo a Paciente 11
+[14:29:28] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:28] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:28] [CPU] t=299: atendiendo a Paciente 11
+[14:29:28] [CPU] t=300: atendiendo a Paciente 11
+[14:29:29] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:29] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:29] [CPU] t=301: atendiendo a Paciente 11
+[14:29:29] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:29] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:29] [CPU] t=302: atendiendo a Paciente 11
+[14:29:30] [CPU] t=303: atendiendo a Paciente 11
+[14:29:30] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:30] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:30] [CPU] t=304: atendiendo a Paciente 11
+[14:29:30] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:30] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:30] [FARMACIA] Medicamento añadido (manual)
+[14:29:30] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:30] [FARMACIA] Medicamento añadido (manual)
+[14:29:30] [CPU] t=305: atendiendo a Paciente 11
+[14:29:31] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:31] [FARMACIA] Medicamento añadido (manual)
+[14:29:31] [CPU] t=306: atendiendo a Paciente 11
+[14:29:31] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:31] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:31] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:31] [HISTORIA] Enf. Silva termina la actualización: Temp: 38.1°C · PA: 145/92 · FC: 95 bpm · Medicación ajustada
+[14:29:31] [HISTORIA] Enf. Perez obtiene acceso EXCLUSIVO tras esperar 9.2s
+[14:29:31] [CPU] t=307: atendiendo a Paciente 11
+[14:29:31] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:32] [CPU] t=308: atendiendo a Paciente 11
+[14:29:32] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:32] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:32] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:32] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:32] [CPU] t=309: atendiendo a Paciente 11
+[14:29:32] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:33] [CPU] t=310: atendiendo a Paciente 11
+[14:29:33] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:33] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:33] [FARMACIA] Buffer vacío
+[14:29:33] [CPU] t=311: atendiendo a Paciente 11
+[14:29:33] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:33] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:33] [FARMACIA] Medicamento añadido (manual)
+[14:29:33] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:33] [CPU] t=312: atendiendo a Paciente 11
+[14:29:33] [FARMACIA] Medicamento añadido (manual)
+[14:29:34] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:34] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:34] [FARMACIA] Medicamento añadido (manual)
+[14:29:34] [CPU] t=313: atendiendo a Paciente 11
+[14:29:34] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:34] [FARMACIA] Medicamento añadido (manual)
+[14:29:34] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:34] [FARMACIA] Medicamento añadido (manual)
+[14:29:34] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:34] [CPU] t=314: atendiendo a Paciente 11
+[14:29:34] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:34] [FARMACIA] Medicamento añadido (manual)
+[14:29:34] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:34] [FARMACIA] Medicamento añadido (manual)
+[14:29:34] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:35] [CPU] t=315: atendiendo a Paciente 11
+[14:29:35] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:35] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:35] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:35] [CPU] t=316: atendiendo a Paciente 11
+[14:29:35] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:35] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:35] [CPU] t=317: atendiendo a Paciente 11
+[14:29:35] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:36] [CPU] t=318: atendiendo a Paciente 11
+[14:29:36] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:36] [HISTORIA] Enf. Perez termina la actualización: Temp: 37.2°C · PA: 130/85 · FC: 88 bpm · Observación
+[14:29:36] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:36] [CPU] t=319: atendiendo a Paciente 11
+[14:29:36] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:36] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:37] [CPU] t=320: atendiendo a Paciente 11
+[14:29:37] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:37] [CPU] t=321: atendiendo a Paciente 11
+[14:29:37] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:37] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:37] [CPU] t=322: atendiendo a Paciente 11
+[14:29:37] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:38] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:38] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:38] [CPU] t=323: atendiendo a Paciente 11
+[14:29:38] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:38] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:38] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:38] [CPU] t=324: atendiendo a Paciente 11
+[14:29:39] [CPU] t=325: atendiendo a Paciente 11
+[14:29:39] [ADMIT] Paciente 13 admitido (PID 13, gravedad 3)
+[14:29:39] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:39] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:39] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:39] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:39] [CPU] t=326: atendiendo a Paciente 13
+[14:29:39] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:39] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:39] [CPU] t=327: atendiendo a Paciente 13
+[14:29:39] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:40] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:40] [CPU] t=328: atendiendo a Paciente 13
+[14:29:40] [ADMIT] Paciente 14 admitido (PID 14, gravedad 3)
+[14:29:40] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:40] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:40] [CPU] t=329: atendiendo a Paciente 13
+[14:29:40] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:40] [ADMIT] Paciente 15 admitido (PID 15, gravedad 6)
+[14:29:40] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:40] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:41] [CPU] t=330: atendiendo a Paciente 13
+[14:29:41] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:41] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:41] [ALTA] Paciente 13 terminó su atención y es dado de alta
+[14:29:41] [CPU] t=331: atendiendo a Paciente 14
+[14:29:41] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:41] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:41] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:41] [CPU] t=332: atendiendo a Paciente 14
+[14:29:41] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:42] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:42] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:42] [CPU] t=333: atendiendo a Paciente 14
+[14:29:42] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:42] [CPU] t=334: atendiendo a Paciente 14
+[14:29:42] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:42] [ADMIT] Paciente 16 admitido (PID 16, gravedad 7)
+[14:29:42] [ADMIT] Paciente 17 admitido (PID 17, gravedad 6)
+[14:29:42] [ADMIT] Paciente 18 admitido (PID 18, gravedad 6)
+[14:29:42] [ADMIT] Paciente 19 admitido (PID 19, gravedad 5)
+[14:29:42] [ADMIT] Paciente 20 admitido (PID 20, gravedad 5)
+[14:29:42] [HOSPITAL] Sala llena. No se admiten más pacientes.
+[14:29:42] [HOSPITAL] Sala llena. No se admiten más pacientes.
+[14:29:42] [HOSPITAL] Sala llena. No se admiten más pacientes.
+[14:29:42] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:42] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:42] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:43] [CPU] t=335: atendiendo a Paciente 14
+[14:29:43] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:43] [CPU] t=336: atendiendo a Paciente 14
+[14:29:43] [CPU] t=337: atendiendo a Paciente 14
+[14:29:44] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:44] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:44] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:44] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:44] [CPU] t=338: atendiendo a Paciente 14
+[14:29:44] [CPU] t=339: atendiendo a Paciente 14
+[14:29:45] [CPU] t=340: atendiendo a Paciente 14
+[14:29:45] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:45] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:45] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:45] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:45] [CPU] t=341: atendiendo a Paciente 14
+[14:29:45] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:45] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:45] [CPU] t=342: atendiendo a Paciente 14
+[14:29:45] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:46] [ALTA] Paciente 14 terminó su atención y es dado de alta
+[14:29:46] [CPU] t=343: atendiendo a Paciente 11
+[14:29:46] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:46] [CPU] t=344: atendiendo a Paciente 11
+[14:29:46] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:46] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:46] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:46] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:47] [CPU] t=345: atendiendo a Paciente 11
+[14:29:47] [CPU] t=346: atendiendo a Paciente 11
+[14:29:47] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:47] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:47] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:47] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:47] [CPU] t=347: atendiendo a Paciente 11
+[14:29:47] [ALTA] Paciente 11 (PID 11) dado de alta
+[14:29:47] [WARN] No existe paciente 12
+[14:29:48] [CPU] t=348: atendiendo a Paciente 19
+[14:29:48] [DEADLOCK] Iniciando demo: dos pacientes pelearán por Quirófano + Cirujano
+[14:29:48] [ADMIT] Paciente 21 admitido (PID 21, gravedad 4)
+[14:29:48] [ADMIT] Paciente 22 admitido (PID 22, gravedad 6)
+[14:29:48] [RECURSO] Paciente 21 solicita QUIROFANO
+[14:29:48] [RECURSO] Paciente 21 obtuvo QUIROFANO
+[14:29:48] [RECURSO] Paciente 22 solicita CIRUJANO
+[14:29:48] [RECURSO] Paciente 22 obtuvo CIRUJANO
+[14:29:48] [RECURSO] Paciente 22 solicita QUIROFANO
+[14:29:48] [RECURSO] Paciente 21 solicita CIRUJANO
+[14:29:48] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:48] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:48] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:48] [CPU] t=349: atendiendo a Paciente 19
+[14:29:48] [DEADLOCK] ⚠️ DEADLOCK: Paciente 21 → Paciente 22 → Paciente 21 se bloquean mutuamente
+[14:29:48] [DEADLOCK] Se derivará un paciente en 10s, o tocá 'Resolver Deadlock'
+[14:29:48] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:48] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:49] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:49] [CPU] t=350: atendiendo a Paciente 19
+[14:29:49] [CPU] t=351: atendiendo a Paciente 19
+[14:29:49] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:49] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:49] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:49] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:49] [CPU] t=352: atendiendo a Paciente 19
+[14:29:50] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:50] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:50] [CPU] t=353: atendiendo a Paciente 19
+[14:29:50] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:50] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:50] [CPU] t=354: atendiendo a Paciente 19
+[14:29:51] [ALTA] Paciente 19 terminó su atención y es dado de alta
+[14:29:51] [CPU] t=355: atendiendo a Paciente 20
+[14:29:51] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:51] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:51] [CPU] t=356: atendiendo a Paciente 20
+[14:29:51] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:51] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:51] [CPU] t=357: atendiendo a Paciente 20
+[14:29:52] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:52] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:52] [CPU] t=358: atendiendo a Paciente 20
+[14:29:52] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:52] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:52] [CPU] t=359: atendiendo a Paciente 20
+[14:29:52] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:52] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:53] [CPU] t=360: atendiendo a Paciente 20
+[14:29:53] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:53] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:53] [ALTA] Paciente 20 terminó su atención y es dado de alta
+[14:29:53] [CPU] t=361: atendiendo a Paciente 10
+[14:29:53] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:53] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:53] [CPU] t=362: atendiendo a Paciente 10
+[14:29:54] [CPU] t=363: atendiendo a Paciente 10
+[14:29:54] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:54] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:29:54] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:54] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:54] [CPU] t=364: atendiendo a Paciente 10
+[14:29:55] [CPU] t=365: atendiendo a Paciente 10
+[14:29:55] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:29:55] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:29:55] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:29:55] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:29:55] [CPU] t=366: atendiendo a Paciente 10
+[14:29:55] [ALTA] Paciente 10 terminó su atención y es dado de alta
+[14:29:55] [CPU] t=367: atendiendo a Paciente 15
+[14:29:56] [CPU] t=368: atendiendo a Paciente 15
+[14:29:56] [CPU] t=369: atendiendo a Paciente 15
+[14:29:57] [CPU] t=370: atendiendo a Paciente 15
+[14:29:57] [FARMACIA] Enfermero 3 esperando (buffer vacío)
+[14:29:57] [CPU] t=371: atendiendo a Paciente 15
+[14:29:57] [CPU] t=372: atendiendo a Paciente 15
+[14:29:58] [CPU] t=373: atendiendo a Paciente 15
+[14:29:58] [CPU] t=374: atendiendo a Paciente 15
+[14:29:58] [DEADLOCK] ⏰ Timeout: derivando paciente
+[14:29:58] [DEADLOCK] Resolviendo: Paciente 22 es derivado a otro hospital
+[14:29:58] [ALTA] Paciente 22 (PID 22) dado de alta
+[14:29:58] [RECURSO] Paciente 21 obtuvo CIRUJANO
+[14:29:58] [RECURSO] Paciente 21 libera CIRUJANO
+[14:29:58] [RECURSO] Paciente 21 libera QUIROFANO
+[14:29:59] [CPU] t=375: atendiendo a Paciente 21
+[14:29:59] [CPU] t=376: atendiendo a Paciente 21
+[14:29:59] [CPU] t=377: atendiendo a Paciente 21
+[14:30:00] [CPU] t=378: atendiendo a Paciente 21
+[14:30:00] [CPU] t=379: atendiendo a Paciente 21
+[14:30:01] [CPU] t=380: atendiendo a Paciente 21
+[14:30:01] [CPU] t=381: atendiendo a Paciente 21
+[14:30:01] [CPU] t=382: atendiendo a Paciente 21
+[14:30:02] [CPU] t=383: atendiendo a Paciente 21
+[14:30:02] [CPU] t=384: atendiendo a Paciente 21
+[14:30:03] [CPU] t=385: atendiendo a Paciente 21
+[14:30:03] [CPU] t=386: atendiendo a Paciente 21
+[14:30:03] [CPU] t=387: atendiendo a Paciente 21
+[14:30:04] [CPU] t=388: atendiendo a Paciente 21
+[14:30:04] [CPU] t=389: atendiendo a Paciente 21
+[14:30:05] [CPU] t=390: atendiendo a Paciente 21
+[14:30:05] [CPU] t=391: atendiendo a Paciente 21
+[14:30:05] [CPU] t=392: atendiendo a Paciente 21
+[14:30:06] [CPU] t=393: atendiendo a Paciente 21
+[14:30:06] [CPU] t=394: atendiendo a Paciente 21
+[14:30:07] [CPU] t=395: atendiendo a Paciente 21
+[14:30:07] [CPU] t=396: atendiendo a Paciente 21
+[14:30:07] [CPU] t=397: atendiendo a Paciente 21
+[14:30:08] [CPU] t=398: atendiendo a Paciente 21
+[14:30:08] [CPU] t=399: atendiendo a Paciente 21
+[14:30:09] [CPU] t=400: atendiendo a Paciente 21
+[14:30:09] [CPU] t=401: atendiendo a Paciente 21
+[14:30:09] [CPU] t=402: atendiendo a Paciente 21
+[14:30:10] [CPU] t=403: atendiendo a Paciente 21
+[14:30:10] [CPU] t=404: atendiendo a Paciente 21
+[14:30:11] [CPU] t=405: atendiendo a Paciente 21
+[14:30:11] [CPU] t=406: atendiendo a Paciente 21
+[14:30:11] [CPU] t=407: atendiendo a Paciente 21
+[14:30:12] [CPU] t=408: atendiendo a Paciente 21
+[14:30:12] [CPU] t=409: atendiendo a Paciente 21
+[14:30:13] [CPU] t=410: atendiendo a Paciente 21
+[14:30:13] [CPU] t=411: atendiendo a Paciente 21
+[14:30:13] [CPU] t=412: atendiendo a Paciente 21
+[14:30:14] [CPU] t=413: atendiendo a Paciente 21
+[14:30:14] [CPU] t=414: atendiendo a Paciente 21
+[14:30:15] [CPU] t=415: atendiendo a Paciente 21
+[14:30:15] [CPU] t=416: atendiendo a Paciente 21
+[14:30:15] [CPU] t=417: atendiendo a Paciente 21
+[14:30:16] [CPU] t=418: atendiendo a Paciente 21
+[14:30:16] [CPU] t=419: atendiendo a Paciente 21
+[14:30:17] [CPU] t=420: atendiendo a Paciente 21
+[14:30:17] [CPU] t=421: atendiendo a Paciente 21
+[14:30:17] [CPU] t=422: atendiendo a Paciente 21
+[14:30:18] [CPU] t=423: atendiendo a Paciente 21
+[14:30:18] [CPU] t=424: atendiendo a Paciente 21
+[14:30:19] [CPU] t=425: atendiendo a Paciente 21
+[14:30:19] [CPU] t=426: atendiendo a Paciente 21
+[14:30:19] [CPU] t=427: atendiendo a Paciente 21
+[14:30:20] [CPU] t=428: atendiendo a Paciente 21
+[14:30:20] [CPU] t=429: atendiendo a Paciente 21
+[14:30:21] [CPU] t=430: atendiendo a Paciente 21
+[14:30:21] [CPU] t=431: atendiendo a Paciente 21
+[14:30:21] [CPU] t=432: atendiendo a Paciente 21
+[14:30:22] [CPU] t=433: atendiendo a Paciente 21
+[14:30:22] [CPU] t=434: atendiendo a Paciente 21
+[14:30:23] [CPU] t=435: atendiendo a Paciente 21
+[14:30:23] [CPU] t=436: atendiendo a Paciente 21
+[14:30:23] [CPU] t=437: atendiendo a Paciente 21
+[14:30:24] [CPU] t=438: atendiendo a Paciente 21
+[14:30:24] [CPU] t=439: atendiendo a Paciente 21
+[14:30:25] [CPU] t=440: atendiendo a Paciente 21
+[14:30:25] [CPU] t=441: atendiendo a Paciente 21
+[14:30:25] [CPU] t=442: atendiendo a Paciente 21
+[14:30:26] [CPU] t=443: atendiendo a Paciente 21
+[14:30:26] [CPU] t=444: atendiendo a Paciente 21
+[14:30:27] [CPU] t=445: atendiendo a Paciente 21
+[14:30:27] [CPU] t=446: atendiendo a Paciente 21
+[14:30:27] [CPU] t=447: atendiendo a Paciente 21
+[14:30:28] [CPU] t=448: atendiendo a Paciente 21
+[14:30:28] [CPU] t=449: atendiendo a Paciente 21
+[14:30:29] [CPU] t=450: atendiendo a Paciente 21
+[14:30:29] [CPU] t=451: atendiendo a Paciente 21
+[14:30:29] [CPU] t=452: atendiendo a Paciente 21
+[14:30:30] [CPU] t=453: atendiendo a Paciente 21
+[14:30:30] [CPU] t=454: atendiendo a Paciente 21
+[14:30:31] [CPU] t=455: atendiendo a Paciente 21
+[14:30:31] [CPU] t=456: atendiendo a Paciente 21
+[14:30:31] [CPU] t=457: atendiendo a Paciente 21
+[14:30:32] [CPU] t=458: atendiendo a Paciente 21
+[14:30:32] [CPU] t=459: atendiendo a Paciente 21
+[14:30:33] [CPU] t=460: atendiendo a Paciente 21
+[14:30:33] [CPU] t=461: atendiendo a Paciente 21
+[14:30:33] [CPU] t=462: atendiendo a Paciente 21
+[14:30:34] [CPU] t=463: atendiendo a Paciente 21
+[14:30:34] [CPU] t=464: atendiendo a Paciente 21
+[14:30:35] [CPU] t=465: atendiendo a Paciente 21
+[14:30:35] [CPU] t=466: atendiendo a Paciente 21
+[14:30:35] [CPU] t=467: atendiendo a Paciente 21
+[14:30:36] [CPU] t=468: atendiendo a Paciente 21
+[14:30:36] [CPU] t=469: atendiendo a Paciente 21
+[14:30:37] [CPU] t=470: atendiendo a Paciente 21
+[14:30:37] [CPU] t=471: atendiendo a Paciente 21
+[14:30:37] [CPU] t=472: atendiendo a Paciente 21
+[14:30:38] [CPU] t=473: atendiendo a Paciente 21
+[14:30:38] [CPU] t=474: atendiendo a Paciente 21
+[14:30:39] [CPU] t=475: atendiendo a Paciente 21
+[14:30:39] [CPU] t=476: atendiendo a Paciente 21
+[14:30:39] [CPU] t=477: atendiendo a Paciente 21
+[14:30:40] [CPU] t=478: atendiendo a Paciente 21
+[14:30:40] [CPU] t=479: atendiendo a Paciente 21
+[14:30:41] [CPU] t=480: atendiendo a Paciente 21
+[14:30:41] [CPU] t=481: atendiendo a Paciente 21
+[14:30:41] [CPU] t=482: atendiendo a Paciente 21
+[14:30:42] [CPU] t=483: atendiendo a Paciente 21
+[14:30:42] [CPU] t=484: atendiendo a Paciente 21
+[14:30:43] [CPU] t=485: atendiendo a Paciente 21
+[14:30:43] [CPU] t=486: atendiendo a Paciente 21
+[14:30:43] [CPU] t=487: atendiendo a Paciente 21
+[14:30:44] [CPU] t=488: atendiendo a Paciente 21
+[14:30:44] [CPU] t=489: atendiendo a Paciente 21
+[14:30:45] [CPU] t=490: atendiendo a Paciente 21
+[14:30:45] [CPU] t=491: atendiendo a Paciente 21
+[14:30:45] [CPU] t=492: atendiendo a Paciente 21
+[14:30:46] [CPU] t=493: atendiendo a Paciente 21
+[14:30:46] [CPU] t=494: atendiendo a Paciente 21
+[14:30:47] [CPU] t=495: atendiendo a Paciente 21
+[14:30:47] [CPU] t=496: atendiendo a Paciente 21
+[14:30:47] [CPU] t=497: atendiendo a Paciente 21
+[14:30:48] [CPU] t=498: atendiendo a Paciente 21
+[14:30:48] [CPU] t=499: atendiendo a Paciente 21
+[14:30:49] [CPU] t=500: atendiendo a Paciente 21
+[14:30:49] [CPU] t=501: atendiendo a Paciente 21
+[14:30:49] [CPU] t=502: atendiendo a Paciente 21
+[14:30:50] [CPU] t=503: atendiendo a Paciente 21
+[14:30:50] [CPU] t=504: atendiendo a Paciente 21
+[14:30:51] [CPU] t=505: atendiendo a Paciente 21
+[14:30:51] [CPU] t=506: atendiendo a Paciente 21
+[14:30:51] [CPU] t=507: atendiendo a Paciente 21
+[14:30:52] [CPU] t=508: atendiendo a Paciente 21
+[14:30:52] [CPU] t=509: atendiendo a Paciente 21
+[14:30:53] [CPU] t=510: atendiendo a Paciente 21
+[14:30:53] [CPU] t=511: atendiendo a Paciente 21
+[14:30:53] [CPU] t=512: atendiendo a Paciente 21
+[14:30:54] [CPU] t=513: atendiendo a Paciente 21
+[14:30:54] [CPU] t=514: atendiendo a Paciente 21
+[14:30:55] [CPU] t=515: atendiendo a Paciente 21
+[14:30:55] [CPU] t=516: atendiendo a Paciente 21
+[14:30:55] [CPU] t=517: atendiendo a Paciente 21
+[14:30:56] [CPU] t=518: atendiendo a Paciente 21
+[14:30:56] [CPU] t=519: atendiendo a Paciente 21
+[14:30:57] [CPU] t=520: atendiendo a Paciente 21
+[14:30:57] [CPU] t=521: atendiendo a Paciente 21
+[14:30:57] [CPU] t=522: atendiendo a Paciente 21
+[14:30:58] [CPU] t=523: atendiendo a Paciente 21
+[14:30:58] [CPU] t=524: atendiendo a Paciente 21
+[14:30:59] [CPU] t=525: atendiendo a Paciente 21
+[14:30:59] [CPU] t=526: atendiendo a Paciente 21
+[14:30:59] [CPU] t=527: atendiendo a Paciente 21
+[14:31:00] [CPU] t=528: atendiendo a Paciente 21
+[14:31:00] [CPU] t=529: atendiendo a Paciente 21
+[14:31:01] [CPU] t=530: atendiendo a Paciente 21
+[14:31:01] [CPU] t=531: atendiendo a Paciente 21
+[14:31:01] [CPU] t=532: atendiendo a Paciente 21
+[14:31:02] [CPU] t=533: atendiendo a Paciente 21
+[14:31:02] [CPU] t=534: atendiendo a Paciente 21
+[14:31:03] [CPU] t=535: atendiendo a Paciente 21
+[14:31:03] [CPU] t=536: atendiendo a Paciente 21
+[14:31:03] [CPU] t=537: atendiendo a Paciente 21
+[14:31:04] [CPU] t=538: atendiendo a Paciente 21
+[14:31:04] [CPU] t=539: atendiendo a Paciente 21
+[14:31:05] [CPU] t=540: atendiendo a Paciente 21
+[14:31:05] [CPU] t=541: atendiendo a Paciente 21
+[14:31:05] [CPU] t=542: atendiendo a Paciente 21
+[14:31:06] [CPU] t=543: atendiendo a Paciente 21
+[14:31:06] [CPU] t=544: atendiendo a Paciente 21
+[14:31:07] [CPU] t=545: atendiendo a Paciente 21
+[14:31:07] [CPU] t=546: atendiendo a Paciente 21
+[14:31:07] [CPU] t=547: atendiendo a Paciente 21
+[14:31:08] [CPU] t=548: atendiendo a Paciente 21
+[14:31:08] [CPU] t=549: atendiendo a Paciente 21
+[14:31:09] [CPU] t=550: atendiendo a Paciente 21
+[14:31:09] [CPU] t=551: atendiendo a Paciente 21
+[14:31:09] [CPU] t=552: atendiendo a Paciente 21
+[14:31:10] [CPU] t=553: atendiendo a Paciente 21
+[14:31:10] [CPU] t=554: atendiendo a Paciente 21
+[14:31:11] [CPU] t=555: atendiendo a Paciente 21
+[14:31:11] [CPU] t=556: atendiendo a Paciente 21
+[14:31:12] [CPU] t=557: atendiendo a Paciente 21
+[14:31:12] [CPU] t=558: atendiendo a Paciente 21
+[14:31:12] [CPU] t=559: atendiendo a Paciente 21
+[14:31:13] [CPU] t=560: atendiendo a Paciente 21
+[14:31:13] [CPU] t=561: atendiendo a Paciente 21
+[14:31:14] [CPU] t=562: atendiendo a Paciente 21
+[14:31:14] [CPU] t=563: atendiendo a Paciente 21
+[14:31:14] [CPU] t=564: atendiendo a Paciente 21
+[14:31:15] [CPU] t=565: atendiendo a Paciente 21
+[14:31:15] [CPU] t=566: atendiendo a Paciente 21
+[14:31:16] [CPU] t=567: atendiendo a Paciente 21
+[14:31:16] [CPU] t=568: atendiendo a Paciente 21
+[14:31:16] [CPU] t=569: atendiendo a Paciente 21
+[14:31:17] [CPU] t=570: atendiendo a Paciente 21
+[14:31:17] [CPU] t=571: atendiendo a Paciente 21
+[14:31:17] [ADMIT] Paciente 23 admitido (PID 23, gravedad 7)
+[14:31:17] [ADMIT] Paciente 24 admitido (PID 24, gravedad 6)
+[14:31:17] [ADMIT] Paciente 25 admitido (PID 25, gravedad 3)
+[14:31:17] [ADMIT] Paciente 26 admitido (PID 26, gravedad 4)
+[14:31:17] [HOSPITAL] Sala llena. No se admiten más pacientes.
+[14:31:17] [HOSPITAL] Sala llena. No se admiten más pacientes.
+[14:31:17] [HOSPITAL] Sala llena. No se admiten más pacientes.
+[14:31:17] [HOSPITAL] Sala llena. No se admiten más pacientes.
+[14:31:18] [CPU] t=572: atendiendo a Paciente 25
+[14:31:18] [CPU] t=573: atendiendo a Paciente 25
+[14:31:18] [CPU] t=574: atendiendo a Paciente 25
+[14:31:19] [CPU] t=575: atendiendo a Paciente 25
+[14:31:19] [CPU] t=576: atendiendo a Paciente 25
+[14:31:20] [CPU] t=577: atendiendo a Paciente 25
+[14:31:20] [ALTA] Paciente 25 terminó su atención y es dado de alta
+[14:31:20] [CPU] t=578: atendiendo a Paciente 21
+[14:31:20] [CPU] t=579: atendiendo a Paciente 21
+[14:31:21] [CPU] t=580: atendiendo a Paciente 21
+[14:31:21] [CPU] t=581: atendiendo a Paciente 21
+[14:31:22] [CPU] t=582: atendiendo a Paciente 21
+[14:31:22] [CPU] t=583: atendiendo a Paciente 21
+[14:31:22] [CPU] t=584: atendiendo a Paciente 21
+[14:31:23] [CPU] t=585: atendiendo a Paciente 21
+[14:31:23] [CPU] t=586: atendiendo a Paciente 21
+[14:31:24] [CPU] t=587: atendiendo a Paciente 21
+[14:31:24] [CPU] t=588: atendiendo a Paciente 21
+[14:31:24] [CPU] t=589: atendiendo a Paciente 21
+[14:31:25] [CPU] t=590: atendiendo a Paciente 21
+[14:31:25] [CPU] t=591: atendiendo a Paciente 21
+[14:31:26] [CPU] t=592: atendiendo a Paciente 21
+[14:31:26] [CPU] t=593: atendiendo a Paciente 21
+[14:31:26] [CPU] t=594: atendiendo a Paciente 21
+[14:31:27] [CPU] t=595: atendiendo a Paciente 21
+[14:31:27] [CPU] t=596: atendiendo a Paciente 21
+[14:31:28] [CPU] t=597: atendiendo a Paciente 21
+[14:31:28] [CPU] t=598: atendiendo a Paciente 21
+[14:31:28] [CPU] t=599: atendiendo a Paciente 21
+[14:31:29] [CPU] t=600: atendiendo a Paciente 21
+[14:31:29] [CPU] t=601: atendiendo a Paciente 21
+[14:31:30] [CPU] t=602: atendiendo a Paciente 21
+[14:31:30] [CPU] t=603: atendiendo a Paciente 21
+[14:31:30] [CPU] t=604: atendiendo a Paciente 21
+[14:31:31] [CPU] t=605: atendiendo a Paciente 21
+[14:31:31] [CPU] t=606: atendiendo a Paciente 21
+[14:31:32] [CPU] t=607: atendiendo a Paciente 21
+[14:31:32] [CPU] t=608: atendiendo a Paciente 21
+[14:31:32] [CPU] t=609: atendiendo a Paciente 21
+[14:31:33] [CPU] t=610: atendiendo a Paciente 21
+[14:31:33] [CPU] t=611: atendiendo a Paciente 21
+[14:31:34] [CPU] t=612: atendiendo a Paciente 21
+[14:31:34] [CPU] t=613: atendiendo a Paciente 21
+[14:31:34] [CPU] t=614: atendiendo a Paciente 21
+[14:31:35] [CPU] t=615: atendiendo a Paciente 21
+[14:31:35] [CPU] t=616: atendiendo a Paciente 21
+[14:31:36] [CPU] t=617: atendiendo a Paciente 21
+[14:31:36] [CPU] t=618: atendiendo a Paciente 21
+[14:31:36] [CPU] t=619: atendiendo a Paciente 21
+[14:31:37] [CPU] t=620: atendiendo a Paciente 21
+[14:31:37] [CPU] t=621: atendiendo a Paciente 21
+[14:31:38] [CPU] t=622: atendiendo a Paciente 21
+[14:31:38] [CPU] t=623: atendiendo a Paciente 21
+[14:31:38] [CPU] t=624: atendiendo a Paciente 21
+[14:31:39] [CPU] t=625: atendiendo a Paciente 21
+[14:31:39] [CPU] t=626: atendiendo a Paciente 21
+[14:31:40] [CPU] t=627: atendiendo a Paciente 21
+[14:31:40] [CPU] t=628: atendiendo a Paciente 21
+[14:31:40] [CPU] t=629: atendiendo a Paciente 21
+[14:31:41] [CPU] t=630: atendiendo a Paciente 21
+[14:31:41] [CPU] t=631: atendiendo a Paciente 21
+[14:31:42] [CPU] t=632: atendiendo a Paciente 21
+[14:31:42] [CPU] t=633: atendiendo a Paciente 21
+[14:31:42] [CPU] t=634: atendiendo a Paciente 21
+[14:31:43] [CPU] t=635: atendiendo a Paciente 21
+[14:31:43] [CPU] t=636: atendiendo a Paciente 21
+[14:31:44] [CPU] t=637: atendiendo a Paciente 21
+[14:31:44] [CPU] t=638: atendiendo a Paciente 21
+[14:31:44] [CPU] t=639: atendiendo a Paciente 21
+[14:31:45] [CPU] t=640: atendiendo a Paciente 21
+[14:31:45] [CPU] t=641: atendiendo a Paciente 21
+[14:31:46] [CPU] t=642: atendiendo a Paciente 21
+[14:31:46] [CPU] t=643: atendiendo a Paciente 21
+[14:31:46] [CPU] t=644: atendiendo a Paciente 21
+[14:31:47] [CPU] t=645: atendiendo a Paciente 21
+[14:31:47] [CPU] t=646: atendiendo a Paciente 21
+[14:31:48] [CPU] t=647: atendiendo a Paciente 21
+[14:31:48] [CPU] t=648: atendiendo a Paciente 21
+[14:31:48] [CPU] t=649: atendiendo a Paciente 21
+[14:31:49] [CPU] t=650: atendiendo a Paciente 21
+[14:31:49] [CPU] t=651: atendiendo a Paciente 21
+[14:31:50] [CPU] t=652: atendiendo a Paciente 21
+[14:31:50] [CPU] t=653: atendiendo a Paciente 21
+[14:31:50] [CPU] t=654: atendiendo a Paciente 21
+[14:31:51] [CPU] t=655: atendiendo a Paciente 21
+[14:31:51] [CPU] t=656: atendiendo a Paciente 21
+[14:31:52] [CPU] t=657: atendiendo a Paciente 21
+[14:31:52] [CPU] t=658: atendiendo a Paciente 21
+[14:31:52] [CPU] t=659: atendiendo a Paciente 21
+[14:31:53] [CPU] t=660: atendiendo a Paciente 21
+[14:31:53] [CPU] t=661: atendiendo a Paciente 21
+[14:31:54] [CPU] t=662: atendiendo a Paciente 21
+[14:31:54] [CPU] t=663: atendiendo a Paciente 21
+[14:31:54] [CPU] t=664: atendiendo a Paciente 21
+[14:31:55] [CPU] t=665: atendiendo a Paciente 21
+[14:31:55] [CPU] t=666: atendiendo a Paciente 21
+[14:31:56] [CPU] t=667: atendiendo a Paciente 21
+[14:31:56] [CPU] t=668: atendiendo a Paciente 21
+[14:31:56] [CPU] t=669: atendiendo a Paciente 21
+[14:31:57] [CPU] t=670: atendiendo a Paciente 21
+[14:31:57] [CPU] t=671: atendiendo a Paciente 21
+[14:31:58] [CPU] t=672: atendiendo a Paciente 21
+[14:31:58] [CPU] t=673: atendiendo a Paciente 21
+[14:31:58] [CPU] t=674: atendiendo a Paciente 21
+[14:31:59] [CPU] t=675: atendiendo a Paciente 21
+[14:31:59] [CPU] t=676: atendiendo a Paciente 21
+[14:32:00] [CPU] t=677: atendiendo a Paciente 21
+[14:32:00] [CPU] t=678: atendiendo a Paciente 21
+[14:32:00] [CPU] t=679: atendiendo a Paciente 21
+[14:32:01] [CPU] t=680: atendiendo a Paciente 21
+[14:32:01] [CPU] t=681: atendiendo a Paciente 21
+[14:32:02] [CPU] t=682: atendiendo a Paciente 21
+[14:32:02] [CPU] t=683: atendiendo a Paciente 21
+[14:32:02] [CPU] t=684: atendiendo a Paciente 21
+[14:32:03] [CPU] t=685: atendiendo a Paciente 21
+[14:32:03] [CPU] t=686: atendiendo a Paciente 21
+[14:32:04] [CPU] t=687: atendiendo a Paciente 21
+[14:32:04] [CPU] t=688: atendiendo a Paciente 21
+[14:32:04] [CPU] t=689: atendiendo a Paciente 21
+[14:32:05] [CPU] t=690: atendiendo a Paciente 21
+[14:32:05] [CPU] t=691: atendiendo a Paciente 21
+[14:32:06] [CPU] t=692: atendiendo a Paciente 21
+[14:32:06] [CPU] t=693: atendiendo a Paciente 21
+[14:32:06] [CPU] t=694: atendiendo a Paciente 21
+[14:32:07] [CPU] t=695: atendiendo a Paciente 21
+[14:32:07] [CPU] t=696: atendiendo a Paciente 21
+[14:32:08] [CPU] t=697: atendiendo a Paciente 21
+[14:32:08] [CPU] t=698: atendiendo a Paciente 21
+[14:32:08] [CPU] t=699: atendiendo a Paciente 21
+[14:32:09] [CPU] t=700: atendiendo a Paciente 21
+[14:32:09] [CPU] t=701: atendiendo a Paciente 21
+[14:32:10] [CPU] t=702: atendiendo a Paciente 21
+[14:32:10] [CPU] t=703: atendiendo a Paciente 21
+[14:32:10] [CPU] t=704: atendiendo a Paciente 21
+[14:32:11] [CPU] t=705: atendiendo a Paciente 21
+[14:32:11] [CPU] t=706: atendiendo a Paciente 21
+[14:32:12] [CPU] t=707: atendiendo a Paciente 21
+[14:32:12] [CPU] t=708: atendiendo a Paciente 21
+[14:32:12] [CPU] t=709: atendiendo a Paciente 21
+[14:32:13] [CPU] t=710: atendiendo a Paciente 21
+[14:32:13] [CPU] t=711: atendiendo a Paciente 21
+[14:32:14] [CPU] t=712: atendiendo a Paciente 21
+[14:32:14] [CPU] t=713: atendiendo a Paciente 21
+[14:32:14] [CPU] t=714: atendiendo a Paciente 21
+[14:32:15] [CPU] t=715: atendiendo a Paciente 21
+[14:32:15] [CPU] t=716: atendiendo a Paciente 21
+[14:32:16] [CPU] t=717: atendiendo a Paciente 21
+[14:32:16] [CPU] t=718: atendiendo a Paciente 21
+[14:32:16] [CPU] t=719: atendiendo a Paciente 21
+[14:32:17] [CPU] t=720: atendiendo a Paciente 21
+[14:32:17] [logd] Demonio de logging detenido.
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-22 14:32:42
+  PID daemon de logging: 9160
+============================================================
+[14:33:27] [FARMACIA] Iniciando turno de producción
+[14:33:27] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:33:27] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:33:28] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:33:28] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:33:28] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:33:28] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:33:29] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:33:29] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:33:29] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:33:29] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:33:29] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:33:30] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:33:30] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:33:30] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:33:30] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:33:30] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:33:30] [FARMACIA] Medicamento añadido (manual)
+[14:33:30] [FARMACIA] Medicamento añadido (manual)
+[14:33:30] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:33:31] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:33:31] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:33:31] [FARMACIA] Medicamento añadido (manual)
+[14:33:31] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:33:31] [FARMACIA] Medicamento añadido (manual)
+[14:33:31] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:33:31] [FARMACIA] Medicamento añadido (manual)
+[14:33:31] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:33:31] [FARMACIA] Medicamento añadido (manual)
+[14:33:31] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:33:32] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:33:32] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:33:32] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:33:32] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:33:32] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:33:33] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:33:33] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:33:33] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:33:33] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:33:33] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:33:33] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:33:34] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:33:34] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:33:34] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:33:34] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:33:56] [HISTORIA] Enf. Silva llega a actualizar la historia clínica
+[14:33:57] [HISTORIA] Enf. Silva obtiene acceso EXCLUSIVO y comienza a escribir
+[14:33:59] [HISTORIA] Dra. Reyes llega a consultar la historia clínica
+[14:33:59] [HISTORIA] Dra. Vega llega a consultar la historia clínica
+[14:34:00] [HISTORIA] Dr. Martín llega a consultar la historia clínica
+[14:34:00] [HISTORIA] Dra. Reyes debe esperar: una enfermera está escribiendo
+[14:34:00] [HISTORIA] Dra. Reyes llega a consultar la historia clínica
+[14:34:01] [HISTORIA] Enf. Gómez llega a actualizar la historia clínica
+[14:34:01] [HISTORIA] Enf. Silva termina la actualización: Temp: 38.1°C · PA: 145/92 · FC: 95 bpm · Medicación ajustada
+[14:34:01] [HISTORIA] Dra. Reyes comienza a leer tras esperar 0.5s (lectores activos: 1)
+[14:34:01] [HISTORIA] Dra. Vega comienza a leer (lectores activos: 2)
+[14:34:01] [HISTORIA] Dr. Martín comienza a leer (lectores activos: 3)
+[14:34:01] [HISTORIA] Dra. Reyes comienza a leer (lectores activos: 4)
+[14:34:02] [HISTORIA] Enf. Gómez debe esperar: hay lectores o un escritor activo
+[14:34:05] [HISTORIA] Dr. Martín termina su consulta
+[14:34:05] [HISTORIA] Dra. Vega termina su consulta
+[14:34:06] [HISTORIA] Dra. Reyes termina su consulta
+[14:34:06] [HISTORIA] Dra. Reyes termina su consulta
+[14:34:06] [HISTORIA] Último lector se retira: historia clínica disponible para escritura
+[14:34:06] [HISTORIA] Enf. Gómez obtiene acceso EXCLUSIVO tras esperar 3.8s
+[14:34:11] [ADMIT] Paciente 1 admitido (PID 1, gravedad 6)
+[14:34:11] [CPU] t=1: atendiendo a Paciente 1
+[14:34:11] [ADMIT] Paciente 2 admitido (PID 2, gravedad 4)
+[14:34:11] [CPU] t=2: atendiendo a Paciente 1
+[14:34:11] [ADMIT] Paciente 3 admitido (PID 3, gravedad 7)
+[14:34:11] [HISTORIA] Enf. Gómez termina la actualización: Temp: 36.8°C · PA: 120/80 · FC: 72 bpm · Sin novedades
+[14:34:11] [ADMIT] Paciente 4 admitido (PID 4, gravedad 6)
+[14:34:12] [CPU] t=3: atendiendo a Paciente 2
+[14:34:12] [ADMIT] Paciente 5 admitido (PID 5, gravedad 7)
+[14:34:12] [ADMIT] Paciente 6 admitido (PID 6, gravedad 5)
+[14:34:12] [CPU] t=4: atendiendo a Paciente 1
+[14:34:12] [CPU] t=5: atendiendo a Paciente 3
+[14:34:13] [ADMIT] Paciente 7 admitido (PID 7, gravedad 1)
+[14:34:13] [CPU] t=6: atendiendo a Paciente 4
+[14:34:13] [CPU] t=7: atendiendo a Paciente 2
+[14:34:14] [CPU] t=8: atendiendo a Paciente 5
+[14:34:14] [ADMIT] Paciente 8 admitido (PID 8, gravedad 8)
+[14:34:14] [ADMIT] Paciente 9 admitido (PID 9, gravedad 5)
+[14:34:14] [ADMIT] Paciente 10 admitido (PID 10, gravedad 3)
+[14:34:14] [ADMIT] Paciente 11 admitido (PID 11, gravedad 5)
+[14:34:14] [ADMIT] Paciente 12 admitido (PID 12, gravedad 7)
+[14:34:14] [HOSPITAL] Sala llena. No se admiten más pacientes.
+[14:34:14] [HOSPITAL] Sala llena. No se admiten más pacientes.
+[14:34:14] [HOSPITAL] Sala llena. No se admiten más pacientes.
+[14:34:14] [CPU] t=9: atendiendo a Paciente 6
+[14:34:14] [CPU] t=10: atendiendo a Paciente 1
+[14:34:15] [CPU] t=11: atendiendo a Paciente 3
+[14:34:15] [CPU] t=12: atendiendo a Paciente 7
+[14:34:16] [CPU] t=13: atendiendo a Paciente 4
+[14:34:16] [CPU] t=14: atendiendo a Paciente 2
+[14:34:16] [CPU] t=15: atendiendo a Paciente 5
+[14:34:17] [CPU] t=16: atendiendo a Paciente 8
+[14:34:17] [CPU] t=17: atendiendo a Paciente 9
+[14:34:17] [TRIAGE] Atención: por gravedad
+[14:34:18] [CPU] t=18: atendiendo a Paciente 7
+[14:34:18] [CPU] t=19: atendiendo a Paciente 7
+[14:34:18] [TRIAGE] Atención: orden de llegada
+[14:34:18] [CPU] t=20: atendiendo a Paciente 10
+[14:34:19] [CPU] t=21: atendiendo a Paciente 11
+[14:34:19] [CPU] t=22: atendiendo a Paciente 12
+[14:34:20] [CPU] t=23: atendiendo a Paciente 6
+[14:34:20] [CPU] t=24: atendiendo a Paciente 1
+[14:34:20] [DEADLOCK] Iniciando demo: dos pacientes pelearán por Quirófano + Cirujano
+[14:34:20] [HOSPITAL] Sala llena. No se admiten más pacientes.
+[14:34:20] [HOSPITAL] Sala llena. No se admiten más pacientes.
+[14:34:20] [ALTA] Paciente 1 terminó su atención y es dado de alta
+[14:34:20] [CPU] t=25: atendiendo a Paciente 3
+[14:34:21] [CPU] t=26: atendiendo a Paciente 7
+[14:34:21] [CPU] t=27: atendiendo a Paciente 4
+[14:34:22] [CPU] t=28: atendiendo a Paciente 2
+[14:34:22] [CPU] t=29: atendiendo a Paciente 5
+[14:34:22] [DEADLOCK] Iniciando demo: dos pacientes pelearán por Quirófano + Cirujano
+[14:34:22] [ADMIT] Paciente 13 admitido (PID 13, gravedad 4)
+[14:34:22] [HOSPITAL] Sala llena. No se admiten más pacientes.
+[14:34:22] [CPU] t=30: atendiendo a Paciente 8
+[14:34:23] [CPU] t=31: atendiendo a Paciente 9
+[14:34:23] [CPU] t=32: atendiendo a Paciente 7
+[14:34:24] [CPU] t=33: atendiendo a Paciente 7
+[14:34:24] [CPU] t=34: atendiendo a Paciente 10
+[14:34:24] [CPU] t=35: atendiendo a Paciente 11
+[14:34:25] [CPU] t=36: atendiendo a Paciente 12
+[14:34:25] [CPU] t=37: atendiendo a Paciente 6
+[14:34:26] [CPU] t=38: atendiendo a Paciente 3
+[14:34:26] [CPU] t=39: atendiendo a Paciente 7
+[14:34:26] [CPU] t=40: atendiendo a Paciente 4
+[14:34:27] [CPU] t=41: atendiendo a Paciente 2
+[14:34:27] [CPU] t=42: atendiendo a Paciente 5
+[14:34:28] [CPU] t=43: atendiendo a Paciente 13
+[14:34:28] [CPU] t=44: atendiendo a Paciente 8
+[14:34:28] [CPU] t=45: atendiendo a Paciente 9
+[14:34:29] [CPU] t=46: atendiendo a Paciente 7
+[14:34:29] [ALTA] Paciente 7 terminó su atención y es dado de alta
+[14:34:29] [CPU] t=47: atendiendo a Paciente 10
+[14:34:30] [CPU] t=48: atendiendo a Paciente 11
+[14:34:30] [CPU] t=49: atendiendo a Paciente 12
+[14:34:30] [DEADLOCK] Iniciando demo: dos pacientes pelearán por Quirófano + Cirujano
+[14:34:30] [ADMIT] Paciente 14 admitido (PID 14, gravedad 4)
+[14:34:30] [HOSPITAL] Sala llena. No se admiten más pacientes.
+[14:34:30] [CPU] t=50: atendiendo a Paciente 6
+[14:34:31] [DEADLOCK] Iniciando demo: dos pacientes pelearán por Quirófano + Cirujano
+[14:34:31] [HOSPITAL] Sala llena. No se admiten más pacientes.
+[14:34:31] [HOSPITAL] Sala llena. No se admiten más pacientes.
+[14:34:31] [CPU] t=51: atendiendo a Paciente 3
+[14:34:31] [DEADLOCK] Iniciando demo: dos pacientes pelearán por Quirófano + Cirujano
+[14:34:31] [HOSPITAL] Sala llena. No se admiten más pacientes.
+[14:34:31] [HOSPITAL] Sala llena. No se admiten más pacientes.
+[14:34:31] [CPU] t=52: atendiendo a Paciente 4
+[14:34:32] [ALTA] Paciente 4 terminó su atención y es dado de alta
+[14:34:32] [CPU] t=53: atendiendo a Paciente 2
+[14:34:32] [CPU] t=54: atendiendo a Paciente 5
+[14:34:32] [CPU] t=55: atendiendo a Paciente 13
+[14:34:33] [CPU] t=56: atendiendo a Paciente 8
+[14:34:33] [CPU] t=57: atendiendo a Paciente 9
+[14:34:34] [CPU] t=58: atendiendo a Paciente 10
+[14:34:34] [CPU] t=59: atendiendo a Paciente 11
+[14:34:34] [CPU] t=60: atendiendo a Paciente 12
+[14:34:35] [CPU] t=61: atendiendo a Paciente 14
+[14:34:35] [CPU] t=62: atendiendo a Paciente 6
+[14:34:36] [CPU] t=63: atendiendo a Paciente 3
+[14:34:36] [CPU] t=64: atendiendo a Paciente 2
+[14:34:36] [CPU] t=65: atendiendo a Paciente 5
+[14:34:37] [CPU] t=66: atendiendo a Paciente 13
+[14:34:37] [DEADLOCK] Iniciando demo: dos pacientes pelearán por Quirófano + Cirujano
+[14:34:37] [ADMIT] Paciente 15 admitido (PID 15, gravedad 4)
+[14:34:37] [HOSPITAL] Sala llena. No se admiten más pacientes.
+[14:34:37] [CPU] t=67: atendiendo a Paciente 8
+[14:34:38] [DEADLOCK] Iniciando demo: dos pacientes pelearán por Quirófano + Cirujano
+[14:34:38] [HOSPITAL] Sala llena. No se admiten más pacientes.
+[14:34:38] [HOSPITAL] Sala llena. No se admiten más pacientes.
+[14:34:38] [CPU] t=68: atendiendo a Paciente 9
+[14:34:38] [CPU] t=69: atendiendo a Paciente 10
+[14:34:38] [DEADLOCK] Iniciando demo: dos pacientes pelearán por Quirófano + Cirujano
+[14:34:38] [HOSPITAL] Sala llena. No se admiten más pacientes.
+[14:34:38] [HOSPITAL] Sala llena. No se admiten más pacientes.
+[14:34:38] [CPU] t=70: atendiendo a Paciente 11
+[14:34:39] [DEADLOCK] Iniciando demo: dos pacientes pelearán por Quirófano + Cirujano
+[14:34:39] [HOSPITAL] Sala llena. No se admiten más pacientes.
+[14:34:39] [HOSPITAL] Sala llena. No se admiten más pacientes.
+[14:34:39] [CPU] t=71: atendiendo a Paciente 12
+[14:34:39] [CPU] t=72: atendiendo a Paciente 14
+[14:34:40] [CPU] t=73: atendiendo a Paciente 6
+[14:34:40] [CPU] t=74: atendiendo a Paciente 3
+[14:34:40] [CPU] t=75: atendiendo a Paciente 2
+[14:34:41] [CPU] t=76: atendiendo a Paciente 5
+[14:34:41] [CPU] t=77: atendiendo a Paciente 13
+[14:34:41] [logd] Demonio de logging detenido.
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-22 14:34:45
+  PID daemon de logging: 13200
+============================================================
+[14:34:55] [ADMIT] Paciente 1 admitido (PID 1, gravedad 4)
+[14:34:55] [CPU] t=1: atendiendo a Paciente 1
+[14:34:55] [ADMIT] Paciente 2 admitido (PID 2, gravedad 6)
+[14:34:55] [CPU] t=2: atendiendo a Paciente 1
+[14:34:55] [ADMIT] Paciente 3 admitido (PID 3, gravedad 4)
+[14:34:56] [CPU] t=3: atendiendo a Paciente 2
+[14:34:56] [CPU] t=4: atendiendo a Paciente 1
+[14:34:56] [CPU] t=5: atendiendo a Paciente 3
+[14:34:57] [DEADLOCK] Iniciando demo: dos pacientes pelearán por Quirófano + Cirujano
+[14:34:57] [ADMIT] Paciente 4 admitido (PID 4, gravedad 4)
+[14:34:57] [ADMIT] Paciente 5 admitido (PID 5, gravedad 6)
+[14:34:57] [RECURSO] Paciente 4 solicita QUIROFANO
+[14:34:57] [RECURSO] Paciente 4 obtuvo QUIROFANO
+[14:34:57] [RECURSO] Paciente 5 solicita CIRUJANO
+[14:34:57] [RECURSO] Paciente 5 obtuvo CIRUJANO
+[14:34:57] [RECURSO] Paciente 5 solicita QUIROFANO
+[14:34:57] [RECURSO] Paciente 4 solicita CIRUJANO
+[14:34:57] [CPU] t=6: atendiendo a Paciente 2
+[14:34:57] [DEADLOCK] ⚠️ DEADLOCK: Paciente 4 → Paciente 5 → Paciente 4 se bloquean mutuamente
+[14:34:57] [DEADLOCK] Se derivará un paciente en 10s, o tocá 'Resolver Deadlock'
+[14:34:57] [CPU] t=7: atendiendo a Paciente 1
+[14:34:58] [CPU] t=8: atendiendo a Paciente 3
+[14:34:58] [ALTA] Paciente 4 (PID 4) dado de alta
+[14:34:58] [ALTA] Paciente 5 (PID 5) dado de alta
+[14:34:58] [CPU] t=9: atendiendo a Paciente 2
+[14:34:58] [DEADLOCK] Iniciando demo: dos pacientes pelearán por Quirófano + Cirujano
+[14:34:58] [ADMIT] Paciente 6 admitido (PID 6, gravedad 4)
+[14:34:58] [ADMIT] Paciente 7 admitido (PID 7, gravedad 6)
+[14:34:58] [RECURSO] Paciente 6 solicita QUIROFANO
+[14:34:58] [RECURSO] Paciente 6 obtuvo QUIROFANO
+[14:34:58] [RECURSO] Paciente 7 solicita CIRUJANO
+[14:34:58] [RECURSO] Paciente 7 obtuvo CIRUJANO
+[14:34:58] [RECURSO] Paciente 7 solicita QUIROFANO
+[14:34:58] [RECURSO] Paciente 6 solicita CIRUJANO
+[14:34:58] [CPU] t=10: atendiendo a Paciente 1
+[14:34:59] [DEADLOCK] ⚠️ DEADLOCK: Paciente 6 → Paciente 7 → Paciente 6 se bloquean mutuamente
+[14:34:59] [DEADLOCK] Se derivará un paciente en 10s, o tocá 'Resolver Deadlock'
+[14:34:59] [CPU] t=11: atendiendo a Paciente 3
+[14:34:59] [CPU] t=12: atendiendo a Paciente 2
+[14:35:00] [CPU] t=13: atendiendo a Paciente 1
+[14:35:00] [CPU] t=14: atendiendo a Paciente 3
+[14:35:00] [CPU] t=15: atendiendo a Paciente 2
+[14:35:01] [CPU] t=16: atendiendo a Paciente 1
+[14:35:01] [CPU] t=17: atendiendo a Paciente 3
+[14:35:02] [CPU] t=18: atendiendo a Paciente 2
+[14:35:02] [ALTA] Paciente 2 terminó su atención y es dado de alta
+[14:35:02] [CPU] t=19: atendiendo a Paciente 1
+[14:35:02] [DEADLOCK] Resolución manual solicitada
+[14:35:02] [DEADLOCK] Resolviendo: Paciente 7 es derivado a otro hospital
+[14:35:02] [ALTA] Paciente 7 (PID 7) dado de alta
+[14:35:02] [RECURSO] Paciente 6 obtuvo CIRUJANO
+[14:35:02] [RECURSO] Paciente 6 libera CIRUJANO
+[14:35:02] [RECURSO] Paciente 6 libera QUIROFANO
+[14:35:02] [CPU] t=20: atendiendo a Paciente 3
+[14:35:03] [ALTA] Paciente 3 terminó su atención y es dado de alta
+[14:35:03] [CPU] t=21: atendiendo a Paciente 1
+[14:35:03] [ALTA] Paciente 1 terminó su atención y es dado de alta
+[14:35:03] [CPU] t=22: atendiendo a Paciente 6
+[14:35:04] [CPU] t=23: atendiendo a Paciente 6
+[14:35:04] [CPU] t=24: atendiendo a Paciente 6
+[14:35:04] [CPU] t=25: atendiendo a Paciente 6
+[14:35:05] [CPU] t=26: atendiendo a Paciente 6
+[14:35:05] [CPU] t=27: atendiendo a Paciente 6
+[14:35:06] [CPU] t=28: atendiendo a Paciente 6
+[14:35:06] [CPU] t=29: atendiendo a Paciente 6
+[14:35:06] [CPU] t=30: atendiendo a Paciente 6
+[14:35:07] [CPU] t=31: atendiendo a Paciente 6
+[14:35:07] [CPU] t=32: atendiendo a Paciente 6
+[14:35:08] [CPU] t=33: atendiendo a Paciente 6
+[14:35:08] [CPU] t=34: atendiendo a Paciente 6
+[14:35:08] [CPU] t=35: atendiendo a Paciente 6
+[14:35:09] [CPU] t=36: atendiendo a Paciente 6
+[14:35:09] [CPU] t=37: atendiendo a Paciente 6
+[14:35:10] [CPU] t=38: atendiendo a Paciente 6
+[14:35:10] [CPU] t=39: atendiendo a Paciente 6
+[14:35:10] [CPU] t=40: atendiendo a Paciente 6
+[14:35:11] [CPU] t=41: atendiendo a Paciente 6
+[14:35:11] [CPU] t=42: atendiendo a Paciente 6
+[14:35:12] [CPU] t=43: atendiendo a Paciente 6
+[14:35:12] [CPU] t=44: atendiendo a Paciente 6
+[14:35:13] [CPU] t=45: atendiendo a Paciente 6
+[14:35:13] [CPU] t=46: atendiendo a Paciente 6
+[14:35:13] [CPU] t=47: atendiendo a Paciente 6
+[14:35:14] [CPU] t=48: atendiendo a Paciente 6
+[14:35:14] [CPU] t=49: atendiendo a Paciente 6
+[14:35:15] [CPU] t=50: atendiendo a Paciente 6
+[14:35:15] [CPU] t=51: atendiendo a Paciente 6
+[14:35:15] [CPU] t=52: atendiendo a Paciente 6
+[14:35:16] [CPU] t=53: atendiendo a Paciente 6
+[14:35:16] [CPU] t=54: atendiendo a Paciente 6
+[14:35:17] [CPU] t=55: atendiendo a Paciente 6
+[14:35:17] [CPU] t=56: atendiendo a Paciente 6
+[14:35:17] [CPU] t=57: atendiendo a Paciente 6
+[14:35:18] [CPU] t=58: atendiendo a Paciente 6
+[14:35:18] [CPU] t=59: atendiendo a Paciente 6
+[14:35:19] [CPU] t=60: atendiendo a Paciente 6
+[14:35:19] [CPU] t=61: atendiendo a Paciente 6
+[14:35:19] [CPU] t=62: atendiendo a Paciente 6
+[14:35:20] [CPU] t=63: atendiendo a Paciente 6
+[14:35:20] [CPU] t=64: atendiendo a Paciente 6
+[14:35:21] [CPU] t=65: atendiendo a Paciente 6
+[14:35:21] [CPU] t=66: atendiendo a Paciente 6
+[14:35:21] [CPU] t=67: atendiendo a Paciente 6
+[14:35:22] [CPU] t=68: atendiendo a Paciente 6
+[14:35:22] [CPU] t=69: atendiendo a Paciente 6
+[14:35:23] [CPU] t=70: atendiendo a Paciente 6
+[14:35:23] [CPU] t=71: atendiendo a Paciente 6
+[14:35:23] [CPU] t=72: atendiendo a Paciente 6
+[14:35:24] [CPU] t=73: atendiendo a Paciente 6
+[14:35:24] [CPU] t=74: atendiendo a Paciente 6
+[14:35:25] [CPU] t=75: atendiendo a Paciente 6
+[14:35:25] [CPU] t=76: atendiendo a Paciente 6
+[14:35:25] [CPU] t=77: atendiendo a Paciente 6
+[14:35:26] [CPU] t=78: atendiendo a Paciente 6
+[14:35:26] [CPU] t=79: atendiendo a Paciente 6
+[14:35:27] [CPU] t=80: atendiendo a Paciente 6
+[14:35:27] [CPU] t=81: atendiendo a Paciente 6
+[14:35:27] [CPU] t=82: atendiendo a Paciente 6
+[14:35:28] [CPU] t=83: atendiendo a Paciente 6
+[14:35:28] [CPU] t=84: atendiendo a Paciente 6
+[14:35:29] [CPU] t=85: atendiendo a Paciente 6
+[14:35:29] [CPU] t=86: atendiendo a Paciente 6
+[14:35:29] [CPU] t=87: atendiendo a Paciente 6
+[14:35:30] [CPU] t=88: atendiendo a Paciente 6
+[14:35:30] [CPU] t=89: atendiendo a Paciente 6
+[14:35:31] [CPU] t=90: atendiendo a Paciente 6
+[14:35:31] [CPU] t=91: atendiendo a Paciente 6
+[14:35:31] [CPU] t=92: atendiendo a Paciente 6
+[14:35:32] [CPU] t=93: atendiendo a Paciente 6
+[14:35:32] [CPU] t=94: atendiendo a Paciente 6
+[14:35:33] [CPU] t=95: atendiendo a Paciente 6
+[14:35:33] [CPU] t=96: atendiendo a Paciente 6
+[14:35:33] [CPU] t=97: atendiendo a Paciente 6
+[14:35:34] [CPU] t=98: atendiendo a Paciente 6
+[14:35:34] [CPU] t=99: atendiendo a Paciente 6
+[14:35:35] [CPU] t=100: atendiendo a Paciente 6
+[14:35:35] [CPU] t=101: atendiendo a Paciente 6
+[14:35:35] [CPU] t=102: atendiendo a Paciente 6
+[14:35:36] [CPU] t=103: atendiendo a Paciente 6
+[14:35:36] [ADMIT] Paciente 8 admitido (PID 8, gravedad 5)
+[14:35:36] [ADMIT] Paciente 9 admitido (PID 9, gravedad 6)
+[14:35:36] [ADMIT] Paciente 10 admitido (PID 10, gravedad 5)
+[14:35:36] [ADMIT] Paciente 11 admitido (PID 11, gravedad 4)
+[14:35:36] [ADMIT] Paciente 12 admitido (PID 12, gravedad 6)
+[14:35:36] [ADMIT] Paciente 13 admitido (PID 13, gravedad 6)
+[14:35:36] [ADMIT] Paciente 14 admitido (PID 14, gravedad 4)
+[14:35:36] [ADMIT] Paciente 15 admitido (PID 15, gravedad 5)
+[14:35:36] [CPU] t=104: atendiendo a Paciente 6
+[14:35:37] [CPU] t=105: atendiendo a Paciente 8
+[14:35:37] [CPU] t=106: atendiendo a Paciente 9
+[14:35:37] [CPU] t=107: atendiendo a Paciente 10
+[14:35:38] [CPU] t=108: atendiendo a Paciente 11
+[14:35:38] [CPU] t=109: atendiendo a Paciente 12
+[14:35:39] [CPU] t=110: atendiendo a Paciente 13
+[14:35:39] [CPU] t=111: atendiendo a Paciente 14
+[14:35:39] [CPU] t=112: atendiendo a Paciente 15
+[14:35:40] [CPU] t=113: atendiendo a Paciente 6
+[14:35:40] [CPU] t=114: atendiendo a Paciente 8
+[14:35:40] [HISTORIA] Enf. Silva llega a actualizar la historia clínica
+[14:35:41] [CPU] t=115: atendiendo a Paciente 9
+[14:35:41] [CPU] t=116: atendiendo a Paciente 10
+[14:35:41] [CPU] t=117: atendiendo a Paciente 11
+[14:35:41] [HISTORIA] Enf. Silva obtiene acceso EXCLUSIVO y comienza a escribir
+[14:35:42] [HISTORIA] Enf. Mora llega a actualizar la historia clínica
+[14:35:42] [CPU] t=118: atendiendo a Paciente 12
+[14:35:42] [CPU] t=119: atendiendo a Paciente 13
+[14:35:43] [CPU] t=120: atendiendo a Paciente 14
+[14:35:43] [HISTORIA] Enf. Mora debe esperar: hay lectores o un escritor activo
+[14:35:43] [HISTORIA] Dra. Castro llega a consultar la historia clínica
+[14:35:43] [CPU] t=121: atendiendo a Paciente 15
+[14:35:43] [CPU] t=122: atendiendo a Paciente 6
+[14:35:44] [HISTORIA] Dra. Castro debe esperar: una enfermera está escribiendo
+[14:35:44] [CPU] t=123: atendiendo a Paciente 8
+[14:35:44] [CPU] t=124: atendiendo a Paciente 9
+[14:35:45] [CPU] t=125: atendiendo a Paciente 10
+[14:35:45] [CPU] t=126: atendiendo a Paciente 11
+[14:35:45] [HISTORIA] Enf. Silva termina la actualización: Temp: 36.9°C · PA: 122/78 · FC: 70 bpm · Estable
+[14:35:45] [HISTORIA] Enf. Mora obtiene acceso EXCLUSIVO tras esperar 2.3s
+[14:35:45] [CPU] t=127: atendiendo a Paciente 12
+[14:35:46] [CPU] t=128: atendiendo a Paciente 13
+[14:35:46] [CPU] t=129: atendiendo a Paciente 14
+[14:35:47] [CPU] t=130: atendiendo a Paciente 15
+[14:35:47] [CPU] t=131: atendiendo a Paciente 6
+[14:35:47] [CPU] t=132: atendiendo a Paciente 8
+[14:35:48] [FARMACIA] Iniciando turno de producción
+[14:35:48] [CPU] t=133: atendiendo a Paciente 9
+[14:35:48] [CPU] t=134: atendiendo a Paciente 10
+[14:35:48] [FARMACIA] Medicamento añadido (manual)
+[14:35:48] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:35:49] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:35:49] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:35:49] [CPU] t=135: atendiendo a Paciente 11
+[14:35:49] [FARMACIA] Medicamento añadido (manual)
+[14:35:49] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:35:49] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:35:49] [CPU] t=136: atendiendo a Paciente 12
+[14:35:49] [HISTORIA] Enf. Mora termina la actualización: Temp: 36.9°C · PA: 122/78 · FC: 70 bpm · Estable
+[14:35:49] [HISTORIA] Dra. Castro comienza a leer tras esperar 4.3s (lectores activos: 1)
+[14:35:49] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:35:49] [CPU] t=137: atendiendo a Paciente 13
+[14:35:49] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:35:49] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:35:50] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:35:50] [CPU] t=138: atendiendo a Paciente 14
+[14:35:50] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:35:50] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:35:50] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:35:50] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:35:50] [CPU] t=139: atendiendo a Paciente 15
+[14:35:50] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:35:51] [CPU] t=140: atendiendo a Paciente 6
+[14:35:51] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:35:51] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:35:51] [CPU] t=141: atendiendo a Paciente 8
+[14:35:51] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:35:51] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:35:51] [CPU] t=142: atendiendo a Paciente 9
+[14:35:51] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:35:52] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:35:52] [CPU] t=143: atendiendo a Paciente 10
+[14:35:52] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:35:52] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:35:52] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:35:52] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:35:52] [CPU] t=144: atendiendo a Paciente 11
+[14:35:52] [HISTORIA] Dra. Castro termina su consulta
+[14:35:52] [HISTORIA] Último lector se retira: historia clínica disponible para escritura
+[14:35:53] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:35:53] [CPU] t=145: atendiendo a Paciente 12
+[14:35:53] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:35:53] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:35:53] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:35:53] [CPU] t=146: atendiendo a Paciente 13
+[14:35:53] [CPU] t=147: atendiendo a Paciente 14
+[14:35:53] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:35:54] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:35:54] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:35:54] [CPU] t=148: atendiendo a Paciente 15
+[14:35:54] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:35:54] [CPU] t=149: atendiendo a Paciente 6
+[14:35:54] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:35:54] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:35:54] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:35:54] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:35:55] [CPU] t=150: atendiendo a Paciente 8
+[14:35:55] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:35:55] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:35:55] [ALTA] Paciente 8 terminó su atención y es dado de alta
+[14:35:55] [CPU] t=151: atendiendo a Paciente 9
+[14:35:55] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:35:55] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:35:55] [CPU] t=152: atendiendo a Paciente 10
+[14:35:56] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:35:56] [CPU] t=153: atendiendo a Paciente 11
+[14:35:56] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:35:56] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:35:56] [CPU] t=154: atendiendo a Paciente 12
+[14:35:56] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:35:57] [CPU] t=155: atendiendo a Paciente 13
+[14:35:57] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:35:57] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:35:57] [ALTA] Paciente 13 terminó su atención y es dado de alta
+[14:35:57] [CPU] t=156: atendiendo a Paciente 14
+[14:35:57] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:35:57] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:35:57] [CPU] t=157: atendiendo a Paciente 15
+[14:35:58] [CPU] t=158: atendiendo a Paciente 6
+[14:35:58] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:35:58] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:35:58] [CPU] t=159: atendiendo a Paciente 9
+[14:35:58] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:35:58] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:35:59] [CPU] t=160: atendiendo a Paciente 10
+[14:35:59] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:35:59] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:35:59] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:35:59] [CPU] t=161: atendiendo a Paciente 11
+[14:35:59] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:35:59] [CPU] t=162: atendiendo a Paciente 12
+[14:36:00] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:00] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:36:00] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:00] [CPU] t=163: atendiendo a Paciente 14
+[14:36:00] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:36:00] [CPU] t=164: atendiendo a Paciente 15
+[14:36:01] [CPU] t=165: atendiendo a Paciente 6
+[14:36:01] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:01] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:36:01] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:01] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:36:01] [CPU] t=166: atendiendo a Paciente 9
+[14:36:01] [CPU] t=167: atendiendo a Paciente 10
+[14:36:02] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:02] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:36:02] [CPU] t=168: atendiendo a Paciente 11
+[14:36:02] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:02] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:36:02] [CPU] t=169: atendiendo a Paciente 12
+[14:36:02] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:02] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:36:03] [CPU] t=170: atendiendo a Paciente 14
+[14:36:03] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:03] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:36:03] [ALTA] Paciente 14 terminó su atención y es dado de alta
+[14:36:03] [CPU] t=171: atendiendo a Paciente 15
+[14:36:03] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:03] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:36:03] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:03] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:36:03] [CPU] t=172: atendiendo a Paciente 6
+[14:36:04] [CPU] t=173: atendiendo a Paciente 9
+[14:36:04] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:04] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:36:04] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:04] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:36:04] [CPU] t=174: atendiendo a Paciente 10
+[14:36:04] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:05] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:36:05] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:05] [CPU] t=175: atendiendo a Paciente 11
+[14:36:05] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:36:05] [CPU] t=176: atendiendo a Paciente 12
+[14:36:05] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:05] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:36:05] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:05] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:36:05] [ALTA] Paciente 12 terminó su atención y es dado de alta
+[14:36:05] [CPU] t=177: atendiendo a Paciente 15
+[14:36:06] [CPU] t=178: atendiendo a Paciente 6
+[14:36:06] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:06] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:36:06] [CPU] t=179: atendiendo a Paciente 9
+[14:36:07] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:07] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:36:07] [ALTA] Paciente 9 terminó su atención y es dado de alta
+[14:36:07] [CPU] t=180: atendiendo a Paciente 10
+[14:36:07] [ALTA] Paciente 10 terminó su atención y es dado de alta
+[14:36:07] [CPU] t=181: atendiendo a Paciente 11
+[14:36:07] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:07] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:36:07] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:07] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:36:07] [ALTA] Paciente 11 terminó su atención y es dado de alta
+[14:36:07] [CPU] t=182: atendiendo a Paciente 15
+[14:36:08] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:08] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:36:08] [ALTA] Paciente 15 terminó su atención y es dado de alta
+[14:36:08] [CPU] t=183: atendiendo a Paciente 6
+[14:36:08] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:08] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:36:08] [CPU] t=184: atendiendo a Paciente 6
+[14:36:09] [CPU] t=185: atendiendo a Paciente 6
+[14:36:09] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:09] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:36:09] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:09] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:36:09] [CPU] t=186: atendiendo a Paciente 6
+[14:36:09] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:09] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:36:09] [CPU] t=187: atendiendo a Paciente 6
+[14:36:10] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:10] [CPU] t=188: atendiendo a Paciente 6
+[14:36:10] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:10] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:36:10] [CPU] t=189: atendiendo a Paciente 6
+[14:36:10] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:36:10] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:11] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:36:11] [CPU] t=190: atendiendo a Paciente 6
+[14:36:11] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:11] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:11] [CPU] t=191: atendiendo a Paciente 6
+[14:36:11] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:36:11] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:11] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:36:11] [CPU] t=192: atendiendo a Paciente 6
+[14:36:12] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:36:12] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:12] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:36:12] [CPU] t=193: atendiendo a Paciente 6
+[14:36:12] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:12] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:36:12] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:12] [CPU] t=194: atendiendo a Paciente 6
+[14:36:13] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:36:13] [CPU] t=195: atendiendo a Paciente 6
+[14:36:13] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:13] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:36:13] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:13] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:36:13] [CPU] t=196: atendiendo a Paciente 6
+[14:36:13] [CPU] t=197: atendiendo a Paciente 6
+[14:36:14] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:14] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:36:14] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:14] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:36:14] [CPU] t=198: atendiendo a Paciente 6
+[14:36:14] [CPU] t=199: atendiendo a Paciente 6
+[14:36:15] [CPU] t=200: atendiendo a Paciente 6
+[14:36:15] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:15] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:36:15] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:15] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:36:15] [CPU] t=201: atendiendo a Paciente 6
+[14:36:15] [CPU] t=202: atendiendo a Paciente 6
+[14:36:16] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:16] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:36:16] [CPU] t=203: atendiendo a Paciente 6
+[14:36:16] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:16] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:36:16] [CPU] t=204: atendiendo a Paciente 6
+[14:36:17] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:17] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:36:17] [CPU] t=205: atendiendo a Paciente 6
+[14:36:17] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:17] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:36:17] [CPU] t=206: atendiendo a Paciente 6
+[14:36:17] [CPU] t=207: atendiendo a Paciente 6
+[14:36:18] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:18] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:36:18] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:18] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:36:18] [CPU] t=208: atendiendo a Paciente 6
+[14:36:18] [CPU] t=209: atendiendo a Paciente 6
+[14:36:18] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:18] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:36:19] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:19] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:36:19] [CPU] t=210: atendiendo a Paciente 6
+[14:36:19] [CPU] t=211: atendiendo a Paciente 6
+[14:36:19] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:19] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:36:19] [CPU] t=212: atendiendo a Paciente 6
+[14:36:20] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:20] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:36:20] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:20] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:36:20] [CPU] t=213: atendiendo a Paciente 6
+[14:36:20] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:20] [CPU] t=214: atendiendo a Paciente 6
+[14:36:20] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:36:21] [CPU] t=215: atendiendo a Paciente 6
+[14:36:21] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:21] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:21] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:36:21] [CPU] t=216: atendiendo a Paciente 6
+[14:36:21] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:36:21] [CPU] t=217: atendiendo a Paciente 6
+[14:36:22] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:22] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:22] [CPU] t=218: atendiendo a Paciente 6
+[14:36:22] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:36:22] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:36:22] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:22] [CPU] t=219: atendiendo a Paciente 6
+[14:36:22] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:36:23] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:23] [CPU] t=220: atendiendo a Paciente 6
+[14:36:23] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:36:23] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:23] [CPU] t=221: atendiendo a Paciente 6
+[14:36:23] [FARMACIA] Enfermero 3 retiró un medicamento
+[14:36:23] [CPU] t=222: atendiendo a Paciente 6
+[14:36:24] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[14:36:24] [FARMACIA] Enfermero 2 retiró un medicamento
+[14:36:24] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[14:36:24] [FARMACIA] Enfermero 1 retiró un medicamento
+[14:36:24] [CPU] t=223: atendiendo a Paciente 6
+[14:36:24] [CPU] t=224: atendiendo a Paciente 6
+[14:36:25] [CPU] t=225: atendiendo a Paciente 6
+[14:36:25] [CPU] t=226: atendiendo a Paciente 6
+[14:36:25] [CPU] t=227: atendiendo a Paciente 6
+[14:36:26] [CPU] t=228: atendiendo a Paciente 6
+[14:36:26] [CPU] t=229: atendiendo a Paciente 6
+[14:36:27] [CPU] t=230: atendiendo a Paciente 6
+[14:36:27] [CPU] t=231: atendiendo a Paciente 6
+[14:36:27] [CPU] t=232: atendiendo a Paciente 6
+[14:36:28] [CPU] t=233: atendiendo a Paciente 6
+[14:36:28] [CPU] t=234: atendiendo a Paciente 6
+[14:36:29] [CPU] t=235: atendiendo a Paciente 6
+[14:36:29] [CPU] t=236: atendiendo a Paciente 6
+[14:36:29] [CPU] t=237: atendiendo a Paciente 6
+[14:36:30] [CPU] t=238: atendiendo a Paciente 6
+[14:36:30] [CPU] t=239: atendiendo a Paciente 6
+[14:36:31] [CPU] t=240: atendiendo a Paciente 6
+[14:36:31] [CPU] t=241: atendiendo a Paciente 6
+[14:36:31] [CPU] t=242: atendiendo a Paciente 6
+[14:36:32] [CPU] t=243: atendiendo a Paciente 6
+[14:36:32] [CPU] t=244: atendiendo a Paciente 6
+[14:36:33] [CPU] t=245: atendiendo a Paciente 6
+[14:36:33] [CPU] t=246: atendiendo a Paciente 6
+[14:36:33] [CPU] t=247: atendiendo a Paciente 6
+[14:36:34] [CPU] t=248: atendiendo a Paciente 6
+[14:36:34] [CPU] t=249: atendiendo a Paciente 6
+[14:36:35] [CPU] t=250: atendiendo a Paciente 6
+[14:36:35] [CPU] t=251: atendiendo a Paciente 6
+[14:36:35] [CPU] t=252: atendiendo a Paciente 6
+[14:36:36] [CPU] t=253: atendiendo a Paciente 6
+[14:36:36] [CPU] t=254: atendiendo a Paciente 6
+[14:36:37] [CPU] t=255: atendiendo a Paciente 6
+[14:36:37] [CPU] t=256: atendiendo a Paciente 6
+[14:36:37] [CPU] t=257: atendiendo a Paciente 6
+[14:36:38] [CPU] t=258: atendiendo a Paciente 6
+[14:36:38] [CPU] t=259: atendiendo a Paciente 6
+[14:36:39] [CPU] t=260: atendiendo a Paciente 6
+[14:36:39] [CPU] t=261: atendiendo a Paciente 6
+[14:36:39] [CPU] t=262: atendiendo a Paciente 6
+[14:36:40] [CPU] t=263: atendiendo a Paciente 6
+[14:36:40] [CPU] t=264: atendiendo a Paciente 6
+[14:36:41] [CPU] t=265: atendiendo a Paciente 6
+[14:36:41] [CPU] t=266: atendiendo a Paciente 6
+[14:36:41] [CPU] t=267: atendiendo a Paciente 6
+[14:36:42] [CPU] t=268: atendiendo a Paciente 6
+[14:36:42] [CPU] t=269: atendiendo a Paciente 6
+[14:36:43] [CPU] t=270: atendiendo a Paciente 6
+[14:36:43] [CPU] t=271: atendiendo a Paciente 6
+[14:36:43] [CPU] t=272: atendiendo a Paciente 6
+[14:36:44] [CPU] t=273: atendiendo a Paciente 6
+[14:36:44] [CPU] t=274: atendiendo a Paciente 6
+[14:36:45] [CPU] t=275: atendiendo a Paciente 6
+[14:36:45] [CPU] t=276: atendiendo a Paciente 6
+[14:36:45] [CPU] t=277: atendiendo a Paciente 6
+[14:36:46] [CPU] t=278: atendiendo a Paciente 6
+[14:36:46] [CPU] t=279: atendiendo a Paciente 6
+[14:36:47] [CPU] t=280: atendiendo a Paciente 6
+[14:36:47] [CPU] t=281: atendiendo a Paciente 6
+[14:36:47] [CPU] t=282: atendiendo a Paciente 6
+[14:36:48] [CPU] t=283: atendiendo a Paciente 6
+[14:36:48] [CPU] t=284: atendiendo a Paciente 6
+[14:36:49] [CPU] t=285: atendiendo a Paciente 6
+[14:36:49] [CPU] t=286: atendiendo a Paciente 6
+[14:36:49] [CPU] t=287: atendiendo a Paciente 6
+[14:36:50] [CPU] t=288: atendiendo a Paciente 6
+[14:36:50] [CPU] t=289: atendiendo a Paciente 6
+[14:36:51] [CPU] t=290: atendiendo a Paciente 6
+[14:36:51] [CPU] t=291: atendiendo a Paciente 6
+[14:36:52] [CPU] t=292: atendiendo a Paciente 6
+[14:36:52] [CPU] t=293: atendiendo a Paciente 6
+[14:36:52] [CPU] t=294: atendiendo a Paciente 6
+[14:36:53] [CPU] t=295: atendiendo a Paciente 6
+[14:36:53] [CPU] t=296: atendiendo a Paciente 6
+[14:36:54] [CPU] t=297: atendiendo a Paciente 6
+[14:36:54] [CPU] t=298: atendiendo a Paciente 6
+[14:36:54] [CPU] t=299: atendiendo a Paciente 6
+[14:36:55] [CPU] t=300: atendiendo a Paciente 6
+[14:36:55] [CPU] t=301: atendiendo a Paciente 6
+[14:36:56] [CPU] t=302: atendiendo a Paciente 6
+[14:36:56] [CPU] t=303: atendiendo a Paciente 6
+[14:36:56] [CPU] t=304: atendiendo a Paciente 6
+[14:36:57] [CPU] t=305: atendiendo a Paciente 6
+[14:36:57] [CPU] t=306: atendiendo a Paciente 6
+[14:36:58] [CPU] t=307: atendiendo a Paciente 6
+[14:36:58] [CPU] t=308: atendiendo a Paciente 6
+[14:36:58] [CPU] t=309: atendiendo a Paciente 6
+[14:36:59] [CPU] t=310: atendiendo a Paciente 6
+[14:36:59] [CPU] t=311: atendiendo a Paciente 6
+[14:37:00] [CPU] t=312: atendiendo a Paciente 6
+[14:37:00] [CPU] t=313: atendiendo a Paciente 6
+[14:37:00] [CPU] t=314: atendiendo a Paciente 6
+[14:37:01] [CPU] t=315: atendiendo a Paciente 6
+[14:37:01] [CPU] t=316: atendiendo a Paciente 6
+[14:37:02] [CPU] t=317: atendiendo a Paciente 6
+[14:37:02] [CPU] t=318: atendiendo a Paciente 6
+[14:37:02] [CPU] t=319: atendiendo a Paciente 6
+[14:37:03] [CPU] t=320: atendiendo a Paciente 6
+[14:37:03] [CPU] t=321: atendiendo a Paciente 6
+[14:37:04] [CPU] t=322: atendiendo a Paciente 6
+[14:37:04] [CPU] t=323: atendiendo a Paciente 6
+[14:37:04] [CPU] t=324: atendiendo a Paciente 6
+[14:37:05] [CPU] t=325: atendiendo a Paciente 6
+[14:37:05] [CPU] t=326: atendiendo a Paciente 6
+[14:37:06] [CPU] t=327: atendiendo a Paciente 6
+[14:37:06] [CPU] t=328: atendiendo a Paciente 6
+[14:37:06] [CPU] t=329: atendiendo a Paciente 6
+[14:37:07] [CPU] t=330: atendiendo a Paciente 6
+[14:37:07] [CPU] t=331: atendiendo a Paciente 6
+[14:37:08] [CPU] t=332: atendiendo a Paciente 6
+[14:37:08] [CPU] t=333: atendiendo a Paciente 6
+[14:37:08] [CPU] t=334: atendiendo a Paciente 6
+[14:37:09] [CPU] t=335: atendiendo a Paciente 6
+[14:37:09] [CPU] t=336: atendiendo a Paciente 6
+[14:37:10] [CPU] t=337: atendiendo a Paciente 6
+[14:37:10] [CPU] t=338: atendiendo a Paciente 6
+[14:37:10] [CPU] t=339: atendiendo a Paciente 6
+[14:37:11] [CPU] t=340: atendiendo a Paciente 6
+[14:37:11] [CPU] t=341: atendiendo a Paciente 6
+[14:37:12] [CPU] t=342: atendiendo a Paciente 6
+[14:37:12] [CPU] t=343: atendiendo a Paciente 6
+[14:37:12] [CPU] t=344: atendiendo a Paciente 6
+[14:37:13] [CPU] t=345: atendiendo a Paciente 6
+[14:37:13] [CPU] t=346: atendiendo a Paciente 6
+[14:37:14] [CPU] t=347: atendiendo a Paciente 6
+[14:37:14] [CPU] t=348: atendiendo a Paciente 6
+[14:37:14] [CPU] t=349: atendiendo a Paciente 6
+[14:37:15] [CPU] t=350: atendiendo a Paciente 6
+[14:37:15] [CPU] t=351: atendiendo a Paciente 6
+[14:37:16] [CPU] t=352: atendiendo a Paciente 6
+[14:37:16] [CPU] t=353: atendiendo a Paciente 6
+[14:37:16] [CPU] t=354: atendiendo a Paciente 6
+[14:37:17] [CPU] t=355: atendiendo a Paciente 6
+[14:37:17] [CPU] t=356: atendiendo a Paciente 6
+[14:37:18] [CPU] t=357: atendiendo a Paciente 6
+[14:37:18] [CPU] t=358: atendiendo a Paciente 6
+[14:37:18] [CPU] t=359: atendiendo a Paciente 6
+[14:37:19] [CPU] t=360: atendiendo a Paciente 6
+[14:37:19] [CPU] t=361: atendiendo a Paciente 6
+[14:37:20] [CPU] t=362: atendiendo a Paciente 6
+[14:37:20] [CPU] t=363: atendiendo a Paciente 6
+[14:37:20] [CPU] t=364: atendiendo a Paciente 6
+[14:37:21] [CPU] t=365: atendiendo a Paciente 6
+[14:37:21] [CPU] t=366: atendiendo a Paciente 6
+[14:37:22] [CPU] t=367: atendiendo a Paciente 6
+[14:37:22] [CPU] t=368: atendiendo a Paciente 6
+[14:37:22] [CPU] t=369: atendiendo a Paciente 6
+[14:37:23] [CPU] t=370: atendiendo a Paciente 6
+[14:37:23] [CPU] t=371: atendiendo a Paciente 6
+[14:37:24] [CPU] t=372: atendiendo a Paciente 6
+[14:37:24] [CPU] t=373: atendiendo a Paciente 6
+[14:37:24] [CPU] t=374: atendiendo a Paciente 6
+[14:37:25] [CPU] t=375: atendiendo a Paciente 6
+[14:37:25] [CPU] t=376: atendiendo a Paciente 6
+[14:37:26] [CPU] t=377: atendiendo a Paciente 6
+[14:37:26] [CPU] t=378: atendiendo a Paciente 6
+[14:37:26] [CPU] t=379: atendiendo a Paciente 6
+[14:37:27] [CPU] t=380: atendiendo a Paciente 6
+[14:37:27] [CPU] t=381: atendiendo a Paciente 6
+[14:37:28] [CPU] t=382: atendiendo a Paciente 6
+[14:37:28] [CPU] t=383: atendiendo a Paciente 6
+[14:37:28] [CPU] t=384: atendiendo a Paciente 6
+[14:37:29] [CPU] t=385: atendiendo a Paciente 6
+[14:37:29] [CPU] t=386: atendiendo a Paciente 6
+[14:37:30] [CPU] t=387: atendiendo a Paciente 6
+[14:37:30] [CPU] t=388: atendiendo a Paciente 6
+[14:37:30] [CPU] t=389: atendiendo a Paciente 6
+[14:37:31] [CPU] t=390: atendiendo a Paciente 6
+[14:37:31] [CPU] t=391: atendiendo a Paciente 6
+[14:37:32] [CPU] t=392: atendiendo a Paciente 6
+[14:37:32] [CPU] t=393: atendiendo a Paciente 6
+[14:37:32] [CPU] t=394: atendiendo a Paciente 6
+[14:37:33] [CPU] t=395: atendiendo a Paciente 6
+[14:37:33] [CPU] t=396: atendiendo a Paciente 6
+[14:37:34] [CPU] t=397: atendiendo a Paciente 6
+[14:37:34] [CPU] t=398: atendiendo a Paciente 6
+[14:37:34] [CPU] t=399: atendiendo a Paciente 6
+[14:37:35] [CPU] t=400: atendiendo a Paciente 6
+[14:37:35] [CPU] t=401: atendiendo a Paciente 6
+[14:37:36] [CPU] t=402: atendiendo a Paciente 6
+[14:37:36] [CPU] t=403: atendiendo a Paciente 6
+[14:37:36] [CPU] t=404: atendiendo a Paciente 6
+[14:37:37] [CPU] t=405: atendiendo a Paciente 6
+[14:37:37] [CPU] t=406: atendiendo a Paciente 6
+[14:37:38] [CPU] t=407: atendiendo a Paciente 6
+[14:37:38] [CPU] t=408: atendiendo a Paciente 6
+[14:37:38] [CPU] t=409: atendiendo a Paciente 6
+[14:37:39] [CPU] t=410: atendiendo a Paciente 6
+[14:37:39] [CPU] t=411: atendiendo a Paciente 6
+[14:37:40] [CPU] t=412: atendiendo a Paciente 6
+[14:37:40] [CPU] t=413: atendiendo a Paciente 6
+[14:37:40] [CPU] t=414: atendiendo a Paciente 6
+[14:37:41] [CPU] t=415: atendiendo a Paciente 6
+[14:37:41] [CPU] t=416: atendiendo a Paciente 6
+[14:37:42] [CPU] t=417: atendiendo a Paciente 6
+[14:37:42] [CPU] t=418: atendiendo a Paciente 6
+[14:37:42] [CPU] t=419: atendiendo a Paciente 6
+[14:37:43] [CPU] t=420: atendiendo a Paciente 6
+[14:37:43] [HISTORIA] Enf. Perez llega a actualizar la historia clínica
+[14:37:43] [CPU] t=421: atendiendo a Paciente 6
+[14:37:44] [CPU] t=422: atendiendo a Paciente 6
+[14:37:44] [HISTORIA] Enf. Perez obtiene acceso EXCLUSIVO y comienza a escribir
+[14:37:44] [CPU] t=423: atendiendo a Paciente 6
+[14:37:44] [CPU] t=424: atendiendo a Paciente 6
+[14:37:45] [CPU] t=425: atendiendo a Paciente 6
+[14:37:45] [CPU] t=426: atendiendo a Paciente 6
+[14:37:46] [CPU] t=427: atendiendo a Paciente 6
+[14:37:46] [HISTORIA] Dr. García llega a consultar la historia clínica
+[14:37:46] [CPU] t=428: atendiendo a Paciente 6
+[14:37:46] [CPU] t=429: atendiendo a Paciente 6
+[14:37:47] [HISTORIA] Dr. García debe esperar: una enfermera está escribiendo
+[14:37:47] [HISTORIA] Enf. Perez llega a actualizar la historia clínica
+[14:37:47] [CPU] t=430: atendiendo a Paciente 6
+[14:37:47] [CPU] t=431: atendiendo a Paciente 6
+[14:37:48] [CPU] t=432: atendiendo a Paciente 6
+[14:37:48] [HISTORIA] Dr. García llega a consultar la historia clínica
+[14:37:48] [HISTORIA] Enf. Perez debe esperar: hay lectores o un escritor activo
+[14:37:48] [CPU] t=433: atendiendo a Paciente 6
+[14:37:48] [CPU] t=434: atendiendo a Paciente 6
+[14:37:49] [CPU] t=435: atendiendo a Paciente 6
+[14:37:49] [CPU] t=436: atendiendo a Paciente 6
+[14:37:49] [HISTORIA] Enf. Perez termina la actualización: Temp: 37.5°C · PA: 135/88 · FC: 80 bpm · En observación
+[14:37:49] [HISTORIA] Dr. García comienza a leer tras esperar 1.6s (lectores activos: 1)
+[14:37:49] [HISTORIA] Dr. García comienza a leer (lectores activos: 2)
+[14:37:50] [CPU] t=437: atendiendo a Paciente 6
+[14:37:50] [CPU] t=438: atendiendo a Paciente 6
+[14:37:50] [CPU] t=439: atendiendo a Paciente 6
+[14:37:51] [CPU] t=440: atendiendo a Paciente 6
+[14:37:51] [CPU] t=441: atendiendo a Paciente 6
+[14:37:52] [CPU] t=442: atendiendo a Paciente 6
+[14:37:52] [CPU] t=443: atendiendo a Paciente 6
+[14:37:52] [CPU] t=444: atendiendo a Paciente 6
+[14:37:53] [HISTORIA] Dr. García termina su consulta
+[14:37:53] [CPU] t=445: atendiendo a Paciente 6
+[14:37:53] [CPU] t=446: atendiendo a Paciente 6
+[14:37:54] [CPU] t=447: atendiendo a Paciente 6
+[14:37:54] [HISTORIA] Dr. García termina su consulta
+[14:37:54] [HISTORIA] Último lector se retira: historia clínica disponible para escritura
+[14:37:54] [HISTORIA] Enf. Perez obtiene acceso EXCLUSIVO tras esperar 5.9s
+[14:37:54] [CPU] t=448: atendiendo a Paciente 6
+[14:37:54] [CPU] t=449: atendiendo a Paciente 6
+[14:37:55] [CPU] t=450: atendiendo a Paciente 6
+[14:37:55] [CPU] t=451: atendiendo a Paciente 6
+[14:37:56] [CPU] t=452: atendiendo a Paciente 6
+[14:37:56] [CPU] t=453: atendiendo a Paciente 6
+[14:37:56] [CPU] t=454: atendiendo a Paciente 6
+[14:37:57] [logd] Demonio de logging detenido.

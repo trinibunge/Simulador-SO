@@ -1,4 +1,5 @@
 import tkinter as tk
+import queue
 from ui.window_base import WindowBase
 from ui.theme import *
 
@@ -12,7 +13,11 @@ class LogApp(WindowBase):
         head = tk.Frame(self.content, bg=PANEL)
         head.pack(fill="x", padx=12, pady=(12, 6))
         tk.Label(head, text="Eventos del sistema", bg=PANEL, fg=FG, font=FONT_BIG).pack(anchor="w")
-        tk.Label(head, text="Ingresos, scheduling, recursos y deadlocks", bg=PANEL, fg=MUTED, font=FONT_ITALIC).pack(anchor="w")
+        tk.Label(
+            head,
+            text="Logs persistidos por el demonio de logging (proceso separado)",
+            bg=PANEL, fg=MUTED, font=FONT_ITALIC
+        ).pack(anchor="w")
 
         self.text = tk.Text(
             self.content, bg="#0b1220", fg="#dbeafe",
@@ -26,9 +31,13 @@ class LogApp(WindowBase):
         if not self.alive or not self.frame.winfo_exists():
             return
 
+        # Drenar la cola local (alimentada por el bridge desde el proceso del daemon)
         try:
-            while not self.state.logs.empty():
-                self.text.insert(tk.END, self.state.logs.get_nowait() + "\n")
+            while True:
+                msg = self.state.logs.get_nowait()
+                self.text.insert(tk.END, msg + "\n")
+        except queue.Empty:
+            pass
         except Exception:
             pass
         self.text.see(tk.END)
