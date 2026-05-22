@@ -74,8 +74,10 @@ class AIApp(WindowBase):
 
     def focus_input(self):
         try:
-            self.master.lift()
             self.frame.lift()
+        except Exception:
+            pass
+        try:
             self.entry.focus_set()
             self.entry.icursor(tk.END)
         except Exception:

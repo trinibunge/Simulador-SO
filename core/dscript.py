@@ -1,4 +1,4 @@
-class DungScriptInterpreter:
+class ScriptInterpreter:
     """
     Lenguaje de comandos de la Recepción del Hospital.
 
