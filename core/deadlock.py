@@ -15,7 +15,7 @@ class DeadlockDetector(threading.Thread):
         super().__init__(daemon=True)
         self.state = state
         self.interval = interval
-        self.deadlock_since = None
+        self._demo_pids = []
 
     def run(self):
         while self.state.running:
@@ -29,13 +29,13 @@ class DeadlockDetector(threading.Thread):
             if cycle:
                 if not self.state.deadlock_active:
                     self.state.deadlock_active = True
-                    self.deadlock_since = time.time()
+                    self.state.deadlock_since = time.time()
                     names = []
                     with self.state.lock:
                         for pid in cycle:
-                            h = self.state.heroes.get(pid)
-                            if h:
-                                names.append(h.name)
+                            p = self.state.pacientes.get(pid)
+                            if p:
+                                names.append(p.name)
                     self.state.log("DEADLOCK",
                         f"⚠️ DEADLOCK: {' → '.join(names)} se bloquean mutuamente")
                     self.state.log("DEADLOCK",
@@ -45,32 +45,55 @@ class DeadlockDetector(threading.Thread):
                     self.state.deadlock_resolve_now = False
                     self.state.log("DEADLOCK", "Resolución manual solicitada")
                     self.state.break_deadlock(cycle)
-                    self.deadlock_since = None
+                    self.state.deadlock_since = None
                     continue
 
-                if self.deadlock_since and \
-                   (time.time() - self.deadlock_since) > self.AUTO_RESOLVE_SECONDS:
+                if self.state.deadlock_since and \
+                   (time.time() - self.state.deadlock_since) > self.AUTO_RESOLVE_SECONDS:
                     self.state.log("DEADLOCK", "⏰ Timeout: derivando paciente")
                     self.state.break_deadlock(cycle)
-                    self.deadlock_since = None
+                    self.state.deadlock_since = None
             else:
                 if self.state.deadlock_active:
                     self.state.deadlock_active = False
-                    self.deadlock_since = None
+                    self.state.deadlock_since = None
 
     def _launch_demo(self):
+        # Limpiar pacientes de demos anteriores para liberar recursos
+        had_prev = bool(self._demo_pids)
+        for pid in self._demo_pids:
+            self.state.dar_alta(pid)
+        self._demo_pids.clear()
+        if had_prev:
+            time.sleep(0.4)  # dar tiempo a que los workers previos suelten los locks
+
         self.state.log("DEADLOCK",
                        "Iniciando demo: dos pacientes pelearán por Quirófano + Cirujano")
-        a = self.state.add_hero("Paciente Demo 1", priority=4, burst=999)
-        b = self.state.add_hero("Paciente Demo 2", priority=6, burst=999)
+        name_a = f"Paciente {self.state.pid_counter}"
+        a = self.state.admitir(name_a, priority=4, burst=999)
+        name_b = f"Paciente {self.state.pid_counter}"
+        b = self.state.admitir(name_b, priority=6, burst=999)
         if not a or not b:
             return
+        self._demo_pids = [a.pid, b.pid]
+
+        # Ambos threads deben adquirir su primer recurso antes de que cualquiera
+        # intente el segundo, garantizando que el deadlock siempre se forme.
+        barrier = threading.Barrier(2)
 
         def worker(pid, first, second):
-            if not self.state.request_resource(pid, first, timeout=2.0):
+            if not self.state.request_resource(pid, first, timeout=5.0):
+                try:
+                    barrier.abort()
+                except Exception:
+                    pass
                 return
-            time.sleep(0.5)
-            self.state.request_resource(pid, second, timeout=12.0)
+            try:
+                barrier.wait(timeout=5.0)
+            except threading.BrokenBarrierError:
+                self.state.release_resource(pid, first)
+                return
+            self.state.request_resource(pid, second, timeout=15.0)
             self.state.release_resource(pid, second)
             self.state.release_resource(pid, first)
 

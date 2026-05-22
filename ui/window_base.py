@@ -59,6 +59,17 @@ class WindowBase:
             w.bind("<B1-Motion>", self.do_move)
 
         self.frame.bind("<FocusIn>", lambda _e: self.lift(), add=True)
+        self.frame.bind("<ButtonPress-1>", self._activate, add=True)
+
+    def _activate(self, event):
+        try:
+            self.master.focus_force()
+        except Exception:
+            pass
+        try:
+            event.widget.focus_set()
+        except Exception:
+            pass
 
     def on_close(self):
         pass

@@ -83,5 +83,5 @@ class Taskbar:
 
     def refresh(self):
         self.clock.config(text=f"{self.state.clock_tick:02d}:{(self.state.clock_tick * 3) % 60:02d}")
-        self.status.config(text=f"Héroes: {len(self.state.get_heroes())} | {self.state.scheduler_mode}")
+        self.status.config(text=f"Pacientes: {len(self.state.get_pacientes())} | {self.state.scheduler_mode}")
         self.bar.after(300, self.refresh)

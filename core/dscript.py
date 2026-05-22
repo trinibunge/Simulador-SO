@@ -53,13 +53,13 @@ class DungScriptInterpreter:
                         burst = int(parts[i + 1]); i += 2
                     else:
                         i += 1
-                h = self.state.add_hero(name, priority, burst)
+                h = self.state.admitir(name, priority, burst)
                 return f"OK: {name} admitido con PID={h.pid}" if h else "ERROR: sala llena"
 
             if cmd in ("ALTA", "KILL"):
                 if len(parts) < 2:
                     return "Uso: ALTA nombre|pid"
-                return ("OK: alta dada" if self.state.kill_hero(parts[1])
+                return ("OK: alta dada" if self.state.dar_alta(parts[1])
                         else "No existe ese paciente")
 
             if cmd in ("TRIAGE", "SCHEDULE"):
@@ -75,19 +75,19 @@ class DungScriptInterpreter:
                 return "Demo de deadlock disparada"
 
             if cmd in ("LISTA", "MEMDUMP"):
-                heroes = self.state.get_heroes()
-                if not heroes:
+                pacientes = self.state.get_pacientes()
+                if not pacientes:
                     return "(no hay pacientes)"
                 lines = ["PID  PACIENTE        GRAV  ESTADO     ATENCIÓN  RECURSOS"]
-                for h in heroes:
-                    held = ",".join(h.holding) or "-"
+                for p in pacientes:
+                    held = ",".join(p.holding) or "-"
                     estado = {
                         "READY":   "sala-esp",
                         "RUNNING": "atendido",
                         "BLOCKED": "bloqueado",
-                    }.get(h.state, h.state)
-                    lines.append(f"{h.pid:<4} {h.name:<15} {h.priority:<4} "
-                                 f"{estado:<9} {h.cpu_used}/{h.burst:<7} {held}")
+                    }.get(p.state, p.state)
+                    lines.append(f"{p.pid:<4} {p.name:<15} {p.priority:<4} "
+                                 f"{estado:<9} {p.cpu_used}/{p.burst:<7} {held}")
                 return "\n".join(lines)
 
             if cmd in ("OPERAR", "REQUEST"):

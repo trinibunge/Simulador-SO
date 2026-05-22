@@ -31,19 +31,19 @@ class ProcessApp(WindowBase):
         self.text.insert(tk.END, " PID   NOMBRE           PRIO  ESTADO      CPU   RECURSOS\n")
         self.text.insert(tk.END, " " + "─" * 62 + "\n")
 
-        for h in sorted(self.state.get_heroes(), key=lambda x: x.pid):
-            held = ",".join(h.holding) or "-"
-            estado = h.state
+        for p in sorted(self.state.get_pacientes(), key=lambda x: x.pid):
+            held = ",".join(p.holding) or "-"
+            estado = p.state
             self.text.insert(
                 tk.END,
-                f" {h.pid:<4}  {h.name:<15}  {h.priority:<4}  {estado:<10}  {h.cpu_used}/{h.burst:<3}  {held}\n"
+                f" {p.pid:<4}  {p.name:<15}  {p.priority:<4}  {estado:<10}  {p.cpu_used}/{p.burst:<3}  {held}\n"
             )
 
         self.text.insert(tk.END, "\n")
         modo = "orden de llegada" if self.state.scheduler_mode == "ROUNDROBIN" else "por gravedad"
         self.text.insert(tk.END, f" Triage    : {modo}\n")
         self.text.insert(tk.END, f" CPUs      : {self.state.num_cpus}\n")
-        self.text.insert(tk.END, f" Capacidad : {len(self.state.get_heroes())}/{self.state.ram_limit}\n")
+        self.text.insert(tk.END, f" Capacidad : {len(self.state.get_pacientes())}/{self.state.ram_limit}\n")
         self.text.config(state="disabled")
 
         if self.alive:

@@ -4,7 +4,7 @@ from ui.topbar import TopBar
 from ui.dock import Dock
 from ui.toast import Toast
 from ui.hospital_app import HospitalApp
-from ui.process_app import ProcessApp
+from ui.readers_app import ReadersApp
 from ui.terminal_app import TerminalApp
 from ui.log_app import LogApp
 from ui.snake_app import SnakeApp
@@ -42,9 +42,6 @@ class Desktop:
         self.apps = {}
         Toast(self.root, "Bienvenido a Hospital MS", BLUE)
 
-        self.open_hospital()
-        self.open_process()
-
     def _open(self, key, factory):
         existing = self.apps.get(key)
         if existing is not None and existing.alive and existing.frame.winfo_exists():
@@ -67,19 +64,30 @@ class Desktop:
     def draw_wallpaper(self):
         self.bg.delete("all")
         w, h = 1280, 720
+        # gradient
         for y in range(h):
             t = y / h
             c = self.mix(BG_TOP, BG_BOTTOM, t)
             self.bg.create_line(0, y, w, y, fill=c)
-        for x in range(0, w, 96):
-            self.bg.create_line(x, 0, x, h, fill=DESKTOP_GRID)
-        for y in range(0, h, 96):
-            self.bg.create_line(0, y, w, y, fill=DESKTOP_GRID)
-        self.bg.create_text(58, 52, anchor="nw", fill=FG,
-                            font=("Segoe UI", 26, "bold"),
+        # dot grid (replaces full grid lines)
+        for x in range(48, w, 48):
+            for y in range(48, h, 48):
+                self.bg.create_oval(x - 1, y - 1, x + 1, y + 1,
+                                    fill=DESKTOP_GRID, outline="")
+        # faint cross watermark (bottom-right area)
+        cx, cy = 1060, 560
+        v, h2, t = 130, 72, 44
+        wm = "#d4dce8"
+        self.bg.create_rectangle(cx - t // 2, cy - v, cx + t // 2, cy + v,
+                                  fill=wm, outline="")
+        self.bg.create_rectangle(cx - h2, cy - t // 2, cx + h2, cy + t // 2,
+                                  fill=wm, outline="")
+        # title text (below topbar, top-left)
+        self.bg.create_text(18, 50, anchor="nw", fill=FG,
+                            font=("Segoe UI", 13, "bold"),
                             text="Hospital MS")
-        self.bg.create_text(60, 92, anchor="nw", fill=MUTED,
-                            font=("Segoe UI", 11),
+        self.bg.create_text(18, 70, anchor="nw", fill=MUTED,
+                            font=("Segoe UI", 9),
                             text="Simulador de Sistemas Operativos")
 
     def mix(self, c1, c2, t):
@@ -91,8 +99,8 @@ class Desktop:
     def build_dock(self):
         self.dock.add_icon("Hospital",  "assets/icons/hospital.png", self.open_hospital,
                            "Panel principal: procesos, CPUs y recursos compartidos")
-        self.dock.add_icon("Historia",  "assets/icons/process.png", self.open_process,
-                           "Tabla de procesos en tiempo real")
+        self.dock.add_icon("H. Clínica", "assets/icons/process.png", self.open_readers,
+                           "Lectores y Escritores: historia clínica compartida")
         self.dock.add_icon("Recepción", "assets/icons/terminal.png", self.open_terminal,
                            "Terminal de comandos del sistema")
         self.dock.add_icon("Bitácora",  "assets/icons/log.png", self.open_log,
@@ -105,7 +113,7 @@ class Desktop:
                            "Mini juego")
 
     def open_hospital(self): self._open("hospital", lambda: HospitalApp(self.root, self.state, 10, 40))
-    def open_process(self):  self._open("process",  lambda: ProcessApp(self.root, self.state, 740, 110))
+    def open_readers(self):  self._open("readers",  lambda: ReadersApp(self.root, self.state, 80, 60))
     def open_terminal(self): self._open("terminal", lambda: TerminalApp(self.root, self.state, 180, 470))
     def open_log(self):      self._open("log",      lambda: LogApp(self.root, self.state, 820, 40))
     def open_pharmacy(self): self._open("pharmacy", lambda: PharmacyApp(self.root, self.state, 380, 150))

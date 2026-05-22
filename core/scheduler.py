@@ -1,6 +1,7 @@
 import threading
 import time
 import random
+from collections import deque
 
 
 class Scheduler(threading.Thread):
@@ -8,53 +9,74 @@ class Scheduler(threading.Thread):
         super().__init__(daemon=True)
         self.state = state
         self.quantum = quantum
-        self.rr_index = 0
+        self._rr_queue: deque = deque()
+        self._pick_lock = threading.Lock()
 
     def run(self):
         while self.state.running:
-            heroes = [h for h in self.state.get_heroes() if h.state == "READY"]
+            pacientes = [p for p in self.state.get_pacientes() if p.state == "READY"]
 
-            if not heroes:
+            if not pacientes:
                 time.sleep(0.15)
                 continue
 
             if self.state.chaos_mode:
-                hero = random.choice(heroes)
+                paciente = random.choice(pacientes)
             elif self.state.scheduler_mode == "PRIORITY":
-                hero = min(heroes, key=lambda h: h.priority)
+                paciente = min(pacientes, key=lambda p: p.priority)
             else:
-                self.rr_index = (self.rr_index + 1) % len(heroes)
-                hero = heroes[self.rr_index]
+                paciente = self._pick_rr(pacientes)
+                if paciente is None:
+                    time.sleep(0.15)
+                    continue
 
             if not self.state.cpu_sem.acquire(timeout=0.3):
                 continue
 
             try:
                 with self.state.lock:
-                    if hero.pid not in self.state.heroes:
+                    if paciente.pid not in self.state.pacientes:
                         continue
-                    hero = self.state.heroes[hero.pid]
-                    if hero.state != "READY":
+                    paciente = self.state.pacientes[paciente.pid]
+                    if paciente.state != "READY":
                         continue
-                    hero.state = "RUNNING"
+                    paciente.state = "RUNNING"
                     self.state.clock_tick += 1
                     tick = self.state.clock_tick
 
-                self.state.log("CPU", f"t={tick}: atendiendo a {hero.name}")
+                self.state.log("CPU", f"t={tick}: atendiendo a {paciente.name}")
                 time.sleep(self.quantum)
 
                 with self.state.lock:
-                    if hero.pid in self.state.heroes:
-                        hero = self.state.heroes[hero.pid]
-                        hero.cpu_used += 1
-                        if hero.cpu_used >= hero.burst:
+                    if paciente.pid in self.state.pacientes:
+                        paciente = self.state.pacientes[paciente.pid]
+                        paciente.cpu_used += 1
+                        if paciente.cpu_used >= paciente.burst:
                             self.state.log("ALTA",
-                                f"{hero.name} terminó su atención y es dado de alta")
-                            for r in list(hero.holding):
-                                self.state._force_release(hero.pid, r)
-                            del self.state.heroes[hero.pid]
+                                f"{paciente.name} terminó su atención y es dado de alta")
+                            for r in list(paciente.holding):
+                                self.state._force_release(paciente.pid, r)
+                            del self.state.pacientes[paciente.pid]
                         else:
-                            if hero.state == "RUNNING":
-                                hero.state = "READY"
+                            if paciente.state == "RUNNING":
+                                paciente.state = "READY"
+                                self._rr_queue.append(paciente.pid)
             finally:
                 self.state.cpu_sem.release()
+
+    def _pick_rr(self, pacientes: list):
+        with self._pick_lock:
+            ready_pids = {p.pid for p in pacientes}
+            pid_map = {p.pid: p for p in pacientes}
+            queued = set(self._rr_queue)
+
+            for p in pacientes:
+                if p.pid not in queued:
+                    self._rr_queue.append(p.pid)
+
+            self._rr_queue = deque(p for p in self._rr_queue if p in ready_pids)
+
+            if not self._rr_queue:
+                return None
+
+            return pid_map[self._rr_queue.popleft()]

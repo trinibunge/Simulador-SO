@@ -11,7 +11,7 @@ def main():
     root = tk.Tk()
     root.withdraw()
 
-    state = HospitalState()
+    state = HospitalState(num_cpus=1)
 
     Scheduler(state).start()
     DeadlockDetector(state).start()
