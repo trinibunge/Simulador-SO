@@ -1,22 +1,46 @@
 import threading
 import multiprocessing as mp
 import queue
+import time
 from dataclasses import dataclass, field
 from typing import Dict, List, Optional
 
 
 @dataclass
 class Paciente:
-    """Representa un proceso (paciente) en el simulador."""
+    """Representa un proceso (paciente o app) en el simulador."""
     pid: int
     name: str
     priority: int          # 1 = crítico, 10 = leve
     state: str = "READY"   # READY | RUNNING | BLOCKED
     symbol: str = "🤒"
-    cpu_used: int = 0
+    cpu_used: int = 0      # ticks de quantum (mantengo por compatibilidad con UI Hospital)
     burst: int = 8
     holding: list = field(default_factory=list)
     waiting_for: Optional[str] = None
+
+    # ─── Instrumentación para métricas reales ───
+    kind: str = "patient"  # "patient" | "app". Las apps no terminan por burst.
+    admitted_at: float = 0.0
+    first_run_at: Optional[float] = None
+    completed_at: Optional[float] = None
+    last_state_change: float = 0.0
+    ready_acc: float = 0.0     # tiempo total en READY (segundos)
+    running_acc: float = 0.0   # tiempo total en RUNNING (segundos)
+    blocked_acc: float = 0.0   # tiempo total en BLOCKED (segundos)
+
+    # Métricas derivadas (las usa metrics.py — no mutan el objeto)
+    def turnaround(self) -> float:
+        end = self.completed_at if self.completed_at is not None else time.time()
+        return max(0.0, end - self.admitted_at)
+
+    def response_time(self) -> float:
+        if self.first_run_at is None:
+            return 0.0
+        return max(0.0, self.first_run_at - self.admitted_at)
+
+    def waiting_time(self) -> float:
+        return self.ready_acc
 
 
 class HospitalState:
@@ -24,17 +48,15 @@ class HospitalState:
     Estado global del hospital-SO.
 
     Sincronización REAL:
-    - lock (RLock): exclusión mutua sobre los pacientes.
+    - lock (RLock): exclusión mutua sobre los pacientes y acumuladores.
     - ready_cv (Condition): el scheduler duerme acá cuando no hay READY;
-      cualquier transición a READY le hace notify().  Reemplaza el viejo
-      busy-wait con time.sleep().
+      cualquier transición a READY le hace notify().
     - cpu_sem (Semaphore): N doctores disponibles a la vez.
     - resources (Locks): Quirófano y Cirujano, uno a la vez.
     - log_in_queue / log_out_queue (multiprocessing.Queue):
       IPC con el proceso del demonio de logging.
     - logs (queue.Queue): cola local que la UI consume; un thread "bridge"
-      mueve mensajes desde log_out_queue (cruzando el límite de proceso) a
-      esta cola intra-proceso, así la UI no tiene que saber de multiprocessing.
+      mueve mensajes desde log_out_queue hacia esta cola intra-proceso.
     - pharmacy_queue (Queue acotada): productor-consumidor de medicamentos.
     """
 
@@ -42,15 +64,11 @@ class HospitalState:
 
     def __init__(self, num_cpus: int = 2):
         self.lock = threading.RLock()
-        # Condition variable: el scheduler espera acá cuando no hay READY.
-        # Comparte el mismo RLock que protege a pacientes, así notify() es
-        # consistente con cualquier cambio de estado.
         self.ready_cv = threading.Condition(self.lock)
 
         self.num_cpus = num_cpus
         self.cpu_sem = threading.Semaphore(num_cpus)
 
-        # Solo dos recursos: los del deadlock
         self.resources: Dict[str, threading.Lock] = {
             "QUIROFANO": threading.Lock(),
             "CIRUJANO":  threading.Lock(),
@@ -61,17 +79,18 @@ class HospitalState:
         self.pid_counter = 1
         self.pacientes: Dict[int, Paciente] = {}
 
-        # ─── Logging IPC: dos colas que cruzan al proceso del daemon ───
-        # Estas son mp.Queue (no queue.Queue): viajan entre procesos.
-        self.log_in_queue: "mp.Queue" = mp.Queue()    # padre -> daemon
-        self.log_out_queue: "mp.Queue" = mp.Queue()   # daemon -> padre
+        # Histórico de procesos terminados (solo pacientes, para métricas)
+        self.completed_history: List[Paciente] = []
+        self.simulation_start = time.time()
 
-        # La UI consume de esta cola intra-proceso (más simple para Tkinter).
-        # Un thread "bridge" la alimenta desde log_out_queue.
+        # ─── Logging IPC ───
+        self.log_in_queue: "mp.Queue" = mp.Queue()
+        self.log_out_queue: "mp.Queue" = mp.Queue()
         self.logs: "queue.Queue[str]" = queue.Queue()
         self._log_bridge_thread: Optional[threading.Thread] = None
+        self.log_process = None
 
-        # ─── Farmacia: productor-consumidor clásico con buffer acotado ───
+        # ─── Farmacia ───
         self.pharmacy_queue: "queue.Queue[str]" = queue.Queue(maxsize=self.PHARMACY_CAPACITY)
         self.pharmacy_running = False
         self.pharmacy_stats = {"producidos": 0, "consumidos": 0}
@@ -87,15 +106,41 @@ class HospitalState:
         self.clock_tick = 0
 
     # ─────────────────────────────────────────────────────────────────────
+    #  Transición de estado central (instrumentada)
+    # ─────────────────────────────────────────────────────────────────────
+
+    def _set_state(self, paciente: Paciente, new_state: str, now: Optional[float] = None):
+        """
+        Cambia el estado de un paciente acumulando el tiempo que pasó en el
+        estado anterior. CALLER DEBE TENER self.lock.
+
+        Es la única forma legítima de cambiar paciente.state. Si lo hacés
+        manualmente (paciente.state = "..."), las métricas mienten.
+        """
+        if now is None:
+            now = time.time()
+
+        elapsed = max(0.0, now - paciente.last_state_change)
+
+        if paciente.state == "READY":
+            paciente.ready_acc += elapsed
+        elif paciente.state == "RUNNING":
+            paciente.running_acc += elapsed
+        elif paciente.state == "BLOCKED":
+            paciente.blocked_acc += elapsed
+
+        # Primera vez que arranca CPU
+        if new_state == "RUNNING" and paciente.first_run_at is None:
+            paciente.first_run_at = now
+
+        paciente.state = new_state
+        paciente.last_state_change = now
+
+    # ─────────────────────────────────────────────────────────────────────
     #  Logging
     # ─────────────────────────────────────────────────────────────────────
 
     def start_log_bridge(self):
-        """
-        Arranca un thread que mueve mensajes desde log_out_queue (mp.Queue,
-        viene del proceso del daemon) hacia self.logs (queue.Queue local
-        que la UI consume).  Sin esto, la UI tendría que hablar mp.Queue.
-        """
         if self._log_bridge_thread is not None:
             return
 
@@ -116,31 +161,53 @@ class HospitalState:
         self._log_bridge_thread.start()
 
     def log(self, tag: str, message: str):
-        """Envía el evento al proceso del demonio de logging vía IPC."""
         try:
             self.log_in_queue.put((tag, message), timeout=0.1)
         except Exception:
-            # Si la cola está saturada, dropeamos el log antes que bloquear
-            # un hilo del kernel. Es un trade-off típico de loggers.
             pass
 
     # ─────────────────────────────────────────────────────────────────────
     #  Procesos / Scheduling
     # ─────────────────────────────────────────────────────────────────────
 
-    def admitir(self, name: str, priority: int, burst: int = 8):
-        with self.ready_cv:  # equivale a self.lock + notify() abajo
+    def admitir(self, name: str, priority: int, burst: int = 8,
+                kind: str = "patient", symbol: Optional[str] = None):
+        """
+        Registra un nuevo proceso (paciente o aplicación) en el sistema.
+
+        - kind="patient": termina cuando cpu_used >= burst
+        - kind="app":     nunca termina por burst (es una aplicación interactiva
+                          que compite por la CPU mientras esté abierta)
+        """
+        with self.ready_cv:
             if len(self.pacientes) >= self.ram_limit:
                 self.log("HOSPITAL", "Sala llena. No se admiten más pacientes.")
                 return None
+
             pid = self.pid_counter
             self.pid_counter += 1
-            symbol = "🚨" if priority <= 2 else ("🤕" if priority <= 5 else "🤒")
-            paciente = Paciente(pid=pid, name=name, priority=priority,
-                                state="READY", symbol=symbol, burst=burst)
+
+            if symbol is None:
+                if kind == "app":
+                    symbol = "🖥️"
+                else:
+                    symbol = "🚨" if priority <= 2 else ("🤕" if priority <= 5 else "🤒")
+
+            now = time.time()
+            paciente = Paciente(
+                pid=pid, name=name, priority=priority,
+                state="READY", symbol=symbol, burst=burst, kind=kind,
+                admitted_at=now, last_state_change=now,
+            )
             self.pacientes[pid] = paciente
-            self.log("ADMIT", f"{name} admitido (PID {pid}, gravedad {priority})")
-            # Despertar al scheduler: hay un nuevo READY
+
+            if kind == "app":
+                self.log("APP",
+                    f"'{name}' se registra como proceso (PID {pid}, prio {priority})")
+            else:
+                self.log("ADMIT",
+                    f"{name} admitido (PID {pid}, gravedad {priority})")
+
             self.ready_cv.notify_all()
             return paciente
 
@@ -148,10 +215,27 @@ class HospitalState:
         with self.lock:
             for pid, paciente in list(self.pacientes.items()):
                 if paciente.name == target or str(paciente.pid) == str(target):
+                    now = time.time()
+                    # cerrar acumuladores del estado actual
+                    self._set_state(paciente, paciente.state, now)
+                    paciente.completed_at = now
+
                     for res in list(paciente.holding):
                         self._force_release(pid, res)
+
                     del self.pacientes[pid]
-                    self.log("ALTA", f"{paciente.name} (PID {pid}) dado de alta")
+
+                    if paciente.kind == "app":
+                        self.log("APP",
+                            f"'{paciente.name}' (PID {pid}) cerrada por el usuario")
+                    else:
+                        # archivar paciente terminado para métricas
+                        self.completed_history.append(paciente)
+                        if len(self.completed_history) > 200:
+                            self.completed_history = self.completed_history[-200:]
+                        self.log("ALTA",
+                            f"{paciente.name} (PID {pid}) dado de alta "
+                            f"· esperó {paciente.waiting_time():.1f}s")
                     return True
         self.log("WARN", f"No existe paciente {target}")
         return False
@@ -166,11 +250,16 @@ class HospitalState:
         return False
 
     def get_pacientes(self) -> List[Paciente]:
+        """Devuelve TODOS los procesos (pacientes + apps). Compat con UI vieja."""
         with self.lock:
             return list(self.pacientes.values())
 
+    def get_active_patients(self) -> List[Paciente]:
+        """Solo procesos kind='patient' — para la app Hospital."""
+        with self.lock:
+            return [p for p in self.pacientes.values() if p.kind == "patient"]
+
     def notify_ready(self):
-        """Despierta al scheduler.  Llamar después de poner un proceso en READY."""
         with self.ready_cv:
             self.ready_cv.notify_all()
 
@@ -187,7 +276,7 @@ class HospitalState:
             if not paciente:
                 return False
             paciente.waiting_for = res_name
-            paciente.state = "BLOCKED"
+            self._set_state(paciente, "BLOCKED")
             if pid not in self.resource_waiters[res_name]:
                 self.resource_waiters[res_name].append(pid)
             self.log("RECURSO", f"{paciente.name} solicita {res_name}")
@@ -206,9 +295,8 @@ class HospitalState:
                 self.resource_owner[res_name] = pid
                 paciente.holding.append(res_name)
                 paciente.waiting_for = None
-                paciente.state = "READY"
+                self._set_state(paciente, "READY")
                 self.log("RECURSO", f"{paciente.name} obtuvo {res_name}")
-                # Volvió a READY: despertar al scheduler
                 self.ready_cv.notify_all()
                 return True
             else:
@@ -278,13 +366,11 @@ class HospitalState:
     def shutdown(self):
         self.running = False
         self.pharmacy_running = False
-        # Despertar a cualquier hilo bloqueado en la CV
         try:
             with self.ready_cv:
                 self.ready_cv.notify_all()
         except Exception:
             pass
-        # Señal de fin al proceso del daemon
         try:
             self.log_in_queue.put(None, timeout=0.5)
         except Exception:

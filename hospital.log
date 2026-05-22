@@ -2149,3 +2149,508 @@
 [14:37:56] [CPU] t=453: atendiendo a Paciente 6
 [14:37:56] [CPU] t=454: atendiendo a Paciente 6
 [14:37:57] [logd] Demonio de logging detenido.
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-22 18:12:56
+  PID daemon de logging: 8312
+============================================================
+[18:16:17] [logd] Demonio de logging detenido.
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-22 18:17:54
+  PID daemon de logging: 1368
+============================================================
+[18:18:44] [logd] Demonio de logging detenido.
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-22 18:19:50
+  PID daemon de logging: 13920
+============================================================
+[18:20:21] [logd] Demonio de logging detenido.
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-22 18:23:22
+  PID daemon de logging: 18388
+============================================================
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-22 18:27:10
+  PID daemon de logging: 11428
+============================================================
+[18:29:49] [logd] Demonio de logging detenido.
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-22 18:35:01
+  PID daemon de logging: 16424
+============================================================
+[19:00:25] [logd] Demonio de logging detenido.
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-22 19:03:53
+  PID daemon de logging: 17848
+============================================================
+[19:04:03] [APP] 'Juego Snake' se registra como proceso (PID 1, prio 8)
+[19:04:03] [CPU] t=1: atendiendo a Juego Snake
+[19:04:03] [CPU] t=2: atendiendo a Juego Snake
+[19:04:04] [CPU] t=3: atendiendo a Juego Snake
+[19:04:04] [CPU] t=4: atendiendo a Juego Snake
+[19:04:04] [APP] 'Juego Snake' reiniciado por el usuario
+[19:04:05] [CPU] t=5: atendiendo a Juego Snake
+[19:04:05] [CPU] t=6: atendiendo a Juego Snake
+[19:04:05] [CPU] t=7: atendiendo a Juego Snake
+[19:04:06] [APP] 'Juego Snake' reiniciado por el usuario
+[19:04:06] [CPU] t=8: atendiendo a Juego Snake
+[19:04:06] [CPU] t=9: atendiendo a Juego Snake
+[19:04:07] [CPU] t=10: atendiendo a Juego Snake
+[19:04:07] [APP] 'Juego Snake' reiniciado por el usuario
+[19:04:07] [CPU] t=11: atendiendo a Juego Snake
+[19:04:07] [CPU] t=12: atendiendo a Juego Snake
+[19:04:08] [CPU] t=13: atendiendo a Juego Snake
+[19:04:08] [APP] 'Juego Snake' reiniciado por el usuario
+[19:04:08] [CPU] t=14: atendiendo a Juego Snake
+[19:04:09] [CPU] t=15: atendiendo a Juego Snake
+[19:04:09] [CPU] t=16: atendiendo a Juego Snake
+[19:04:09] [APP] 'Juego Snake' reiniciado por el usuario
+[19:04:09] [CPU] t=17: atendiendo a Juego Snake
+[19:04:10] [CPU] t=18: atendiendo a Juego Snake
+[19:04:10] [CPU] t=19: atendiendo a Juego Snake
+[19:04:11] [APP] 'Juego Snake' reiniciado por el usuario
+[19:04:11] [CPU] t=20: atendiendo a Juego Snake
+[19:04:11] [CPU] t=21: atendiendo a Juego Snake
+[19:04:11] [CPU] t=22: atendiendo a Juego Snake
+[19:04:12] [CPU] t=23: atendiendo a Juego Snake
+[19:04:12] [APP] 'Juego Snake' reiniciado por el usuario
+[19:04:12] [CPU] t=24: atendiendo a Juego Snake
+[19:04:13] [CPU] t=25: atendiendo a Juego Snake
+[19:04:13] [CPU] t=26: atendiendo a Juego Snake
+[19:04:13] [APP] 'Juego Snake' reiniciado por el usuario
+[19:04:13] [CPU] t=27: atendiendo a Juego Snake
+[19:04:14] [CPU] t=28: atendiendo a Juego Snake
+[19:04:14] [CPU] t=29: atendiendo a Juego Snake
+[19:04:14] [APP] 'Juego Snake' reiniciado por el usuario
+[19:04:15] [CPU] t=30: atendiendo a Juego Snake
+[19:04:15] [CPU] t=31: atendiendo a Juego Snake
+[19:04:15] [CPU] t=32: atendiendo a Juego Snake
+[19:04:16] [APP] 'Juego Snake' reiniciado por el usuario
+[19:04:16] [CPU] t=33: atendiendo a Juego Snake
+[19:04:16] [CPU] t=34: atendiendo a Juego Snake
+[19:04:17] [CPU] t=35: atendiendo a Juego Snake
+[19:04:17] [APP] 'Juego Snake' reiniciado por el usuario
+[19:04:17] [CPU] t=36: atendiendo a Juego Snake
+[19:04:17] [CPU] t=37: atendiendo a Juego Snake
+[19:04:18] [CPU] t=38: atendiendo a Juego Snake
+[19:04:18] [CPU] t=39: atendiendo a Juego Snake
+[19:04:18] [APP] 'Juego Snake' reiniciado por el usuario
+[19:04:19] [CPU] t=40: atendiendo a Juego Snake
+[19:04:19] [CPU] t=41: atendiendo a Juego Snake
+[19:04:19] [CPU] t=42: atendiendo a Juego Snake
+[19:04:20] [APP] 'Juego Snake' reiniciado por el usuario
+[19:04:20] [CPU] t=43: atendiendo a Juego Snake
+[19:04:20] [CPU] t=44: atendiendo a Juego Snake
+[19:04:21] [CPU] t=45: atendiendo a Juego Snake
+[19:04:21] [APP] 'Juego Snake' reiniciado por el usuario
+[19:04:21] [CPU] t=46: atendiendo a Juego Snake
+[19:04:21] [CPU] t=47: atendiendo a Juego Snake
+[19:04:22] [CPU] t=48: atendiendo a Juego Snake
+[19:04:22] [APP] 'Juego Snake' reiniciado por el usuario
+[19:04:22] [CPU] t=49: atendiendo a Juego Snake
+[19:04:22] [logd] Demonio de logging detenido.
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-22 19:05:56
+  PID daemon de logging: 9752
+============================================================
+[19:06:40] [ADMIT] caffa admitido (PID 1, gravedad 8)
+[19:06:40] [CPU] t=1: atendiendo a caffa
+[19:06:41] [CPU] t=2: atendiendo a caffa
+[19:06:41] [CPU] t=3: atendiendo a caffa
+[19:06:41] [CPU] t=4: atendiendo a caffa
+[19:06:42] [CPU] t=5: atendiendo a caffa
+[19:06:42] [CPU] t=6: atendiendo a caffa
+[19:06:43] [CPU] t=7: atendiendo a caffa
+[19:06:43] [CPU] t=8: atendiendo a caffa
+[19:06:43] [CPU] t=9: atendiendo a caffa
+[19:06:44] [CPU] t=10: atendiendo a caffa
+[19:06:44] [CPU] t=11: atendiendo a caffa
+[19:06:45] [CPU] t=12: atendiendo a caffa
+[19:06:45] [CPU] t=13: atendiendo a caffa
+[19:06:45] [CPU] t=14: atendiendo a caffa
+[19:06:46] [CPU] t=15: atendiendo a caffa
+[19:06:46] [CPU] t=16: atendiendo a caffa
+[19:06:47] [CPU] t=17: atendiendo a caffa
+[19:06:47] [CPU] t=18: atendiendo a caffa
+[19:06:47] [CPU] t=19: atendiendo a caffa
+[19:06:48] [CPU] t=20: atendiendo a caffa
+[19:06:48] [CPU] t=21: atendiendo a caffa
+[19:06:49] [CPU] t=22: atendiendo a caffa
+[19:06:49] [CPU] t=23: atendiendo a caffa
+[19:06:49] [CPU] t=24: atendiendo a caffa
+[19:06:50] [CPU] t=25: atendiendo a caffa
+[19:06:50] [CPU] t=26: atendiendo a caffa
+[19:06:51] [CPU] t=27: atendiendo a caffa
+[19:06:51] [CPU] t=28: atendiendo a caffa
+[19:06:51] [CPU] t=29: atendiendo a caffa
+[19:06:52] [CPU] t=30: atendiendo a caffa
+[19:06:52] [CPU] t=31: atendiendo a caffa
+[19:06:53] [CPU] t=32: atendiendo a caffa
+[19:06:53] [CPU] t=33: atendiendo a caffa
+[19:06:53] [CPU] t=34: atendiendo a caffa
+[19:06:54] [CPU] t=35: atendiendo a caffa
+[19:06:54] [CPU] t=36: atendiendo a caffa
+[19:06:55] [CPU] t=37: atendiendo a caffa
+[19:06:55] [CPU] t=38: atendiendo a caffa
+[19:06:55] [CPU] t=39: atendiendo a caffa
+[19:06:56] [CPU] t=40: atendiendo a caffa
+[19:06:56] [CPU] t=41: atendiendo a caffa
+[19:06:57] [CPU] t=42: atendiendo a caffa
+[19:06:57] [CPU] t=43: atendiendo a caffa
+[19:06:57] [CPU] t=44: atendiendo a caffa
+[19:06:58] [CPU] t=45: atendiendo a caffa
+[19:06:58] [CPU] t=46: atendiendo a caffa
+[19:06:59] [CPU] t=47: atendiendo a caffa
+[19:06:59] [CPU] t=48: atendiendo a caffa
+[19:06:59] [CPU] t=49: atendiendo a caffa
+[19:07:00] [CPU] t=50: atendiendo a caffa
+[19:07:00] [CPU] t=51: atendiendo a caffa
+[19:07:01] [CPU] t=52: atendiendo a caffa
+[19:07:01] [ADMIT] Paciente 2 admitido (PID 2, gravedad 4)
+[19:07:01] [ADMIT] Paciente 3 admitido (PID 3, gravedad 5)
+[19:07:01] [ADMIT] Paciente 4 admitido (PID 4, gravedad 7)
+[19:07:01] [ADMIT] Paciente 5 admitido (PID 5, gravedad 8)
+[19:07:01] [ADMIT] Paciente 6 admitido (PID 6, gravedad 3)
+[19:07:01] [ADMIT] Paciente 7 admitido (PID 7, gravedad 4)
+[19:07:01] [ADMIT] Paciente 8 admitido (PID 8, gravedad 8)
+[19:07:01] [ADMIT] Paciente 9 admitido (PID 9, gravedad 5)
+[19:07:01] [CPU] t=53: atendiendo a caffa
+[19:07:01] [CPU] t=54: atendiendo a Paciente 2
+[19:07:02] [CPU] t=55: atendiendo a Paciente 3
+[19:07:02] [CPU] t=56: atendiendo a Paciente 4
+[19:07:03] [CPU] t=57: atendiendo a Paciente 5
+[19:07:03] [CPU] t=58: atendiendo a Paciente 6
+[19:07:03] [CPU] t=59: atendiendo a Paciente 7
+[19:07:04] [CPU] t=60: atendiendo a Paciente 8
+[19:07:04] [CPU] t=61: atendiendo a Paciente 9
+[19:07:05] [CPU] t=62: atendiendo a caffa
+[19:07:05] [DEADLOCK] Iniciando demo: dos pacientes pelearán por Quirófano + Cirujano
+[19:07:05] [ADMIT] Paciente 10 admitido (PID 10, gravedad 4)
+[19:07:05] [ADMIT] Paciente 11 admitido (PID 11, gravedad 6)
+[19:07:05] [RECURSO] Paciente 10 solicita QUIROFANO
+[19:07:05] [RECURSO] Paciente 10 obtuvo QUIROFANO
+[19:07:05] [RECURSO] Paciente 11 solicita CIRUJANO
+[19:07:05] [RECURSO] Paciente 11 obtuvo CIRUJANO
+[19:07:05] [RECURSO] Paciente 11 solicita QUIROFANO
+[19:07:05] [RECURSO] Paciente 10 solicita CIRUJANO
+[19:07:05] [CPU] t=63: atendiendo a Paciente 2
+[19:07:05] [DEADLOCK] ⚠️ DEADLOCK: Paciente 10 → Paciente 11 → Paciente 10 se bloquean mutuamente
+[19:07:05] [DEADLOCK] Se derivará un paciente en 10s, o tocá 'Resolver Deadlock'
+[19:07:05] [CPU] t=64: atendiendo a Paciente 3
+[19:07:06] [CPU] t=65: atendiendo a Paciente 4
+[19:07:06] [CPU] t=66: atendiendo a Paciente 5
+[19:07:07] [CPU] t=67: atendiendo a Paciente 6
+[19:07:07] [CPU] t=68: atendiendo a Paciente 7
+[19:07:07] [CPU] t=69: atendiendo a Paciente 8
+[19:07:08] [CPU] t=70: atendiendo a Paciente 9
+[19:07:08] [CPU] t=71: atendiendo a caffa
+[19:07:09] [CPU] t=72: atendiendo a Paciente 2
+[19:07:09] [CPU] t=73: atendiendo a Paciente 3
+[19:07:09] [CPU] t=74: atendiendo a Paciente 4
+[19:07:10] [CPU] t=75: atendiendo a Paciente 5
+[19:07:10] [CPU] t=76: atendiendo a Paciente 6
+[19:07:11] [CPU] t=77: atendiendo a Paciente 7
+[19:07:11] [CPU] t=78: atendiendo a Paciente 8
+[19:07:11] [CPU] t=79: atendiendo a Paciente 9
+[19:07:12] [CPU] t=80: atendiendo a caffa
+[19:07:12] [CPU] t=81: atendiendo a Paciente 2
+[19:07:13] [CPU] t=82: atendiendo a Paciente 3
+[19:07:13] [DEADLOCK] Resolución manual solicitada
+[19:07:13] [DEADLOCK] Resolviendo: Paciente 11 es derivado a otro hospital
+[19:07:13] [ALTA] Paciente 11 (PID 11) dado de alta · esperó 0.0s
+[19:07:13] [RECURSO] Paciente 10 obtuvo CIRUJANO
+[19:07:13] [RECURSO] Paciente 10 libera CIRUJANO
+[19:07:13] [RECURSO] Paciente 10 libera QUIROFANO
+[19:07:13] [CPU] t=83: atendiendo a Paciente 4
+[19:07:13] [CPU] t=84: atendiendo a Paciente 5
+[19:07:14] [CPU] t=85: atendiendo a Paciente 6
+[19:07:14] [CPU] t=86: atendiendo a Paciente 7
+[19:07:15] [CPU] t=87: atendiendo a Paciente 8
+[19:07:15] [CPU] t=88: atendiendo a Paciente 9
+[19:07:15] [CPU] t=89: atendiendo a caffa
+[19:07:16] [CPU] t=90: atendiendo a Paciente 2
+[19:07:16] [CPU] t=91: atendiendo a Paciente 3
+[19:07:17] [ALTA] Paciente 3 terminó su atención · esperó 13.6s
+[19:07:17] [CPU] t=92: atendiendo a Paciente 10
+[19:07:17] [CPU] t=93: atendiendo a Paciente 4
+[19:07:17] [CPU] t=94: atendiendo a Paciente 5
+[19:07:18] [CPU] t=95: atendiendo a Paciente 6
+[19:07:18] [CPU] t=96: atendiendo a Paciente 7
+[19:07:19] [ALTA] Paciente 7 terminó su atención · esperó 15.7s
+[19:07:19] [CPU] t=97: atendiendo a Paciente 8
+[19:07:19] [CPU] t=98: atendiendo a Paciente 9
+[19:07:19] [CPU] t=99: atendiendo a caffa
+[19:07:20] [CPU] t=100: atendiendo a Paciente 2
+[19:07:20] [CPU] t=101: atendiendo a Paciente 10
+[19:07:21] [CPU] t=102: atendiendo a Paciente 4
+[19:07:21] [CPU] t=103: atendiendo a Paciente 5
+[19:07:21] [ALTA] Paciente 5 terminó su atención · esperó 18.1s
+[19:07:21] [CPU] t=104: atendiendo a Paciente 6
+[19:07:22] [CPU] t=105: atendiendo a Paciente 8
+[19:07:22] [CPU] t=106: atendiendo a Paciente 9
+[19:07:23] [CPU] t=107: atendiendo a caffa
+[19:07:23] [CPU] t=108: atendiendo a Paciente 2
+[19:07:23] [CPU] t=109: atendiendo a Paciente 10
+[19:07:24] [CPU] t=110: atendiendo a Paciente 4
+[19:07:24] [ALTA] Paciente 4 terminó su atención · esperó 20.5s
+[19:07:24] [CPU] t=111: atendiendo a Paciente 6
+[19:07:25] [CPU] t=112: atendiendo a Paciente 8
+[19:07:25] [CPU] t=113: atendiendo a Paciente 9
+[19:07:25] [CPU] t=114: atendiendo a caffa
+[19:07:26] [CPU] t=115: atendiendo a Paciente 2
+[19:07:26] [ALTA] Paciente 2 terminó su atención · esperó 22.1s
+[19:07:26] [CPU] t=116: atendiendo a Paciente 10
+[19:07:27] [CPU] t=117: atendiendo a Paciente 6
+[19:07:27] [CPU] t=118: atendiendo a Paciente 8
+[19:07:27] [CPU] t=119: atendiendo a Paciente 9
+[19:07:28] [CPU] t=120: atendiendo a caffa
+[19:07:28] [CPU] t=121: atendiendo a Paciente 10
+[19:07:29] [CPU] t=122: atendiendo a Paciente 6
+[19:07:29] [CPU] t=123: atendiendo a Paciente 8
+[19:07:29] [CPU] t=124: atendiendo a Paciente 9
+[19:07:30] [CPU] t=125: atendiendo a caffa
+[19:07:30] [CPU] t=126: atendiendo a Paciente 10
+[19:07:31] [CPU] t=127: atendiendo a Paciente 6
+[19:07:31] [CPU] t=128: atendiendo a Paciente 8
+[19:07:31] [ALTA] Paciente 8 terminó su atención · esperó 26.5s
+[19:07:31] [CPU] t=129: atendiendo a Paciente 9
+[19:07:32] [ALTA] Paciente 9 terminó su atención · esperó 26.9s
+[19:07:32] [CPU] t=130: atendiendo a caffa
+[19:07:32] [CPU] t=131: atendiendo a Paciente 10
+[19:07:33] [CPU] t=132: atendiendo a Paciente 6
+[19:07:33] [CPU] t=133: atendiendo a caffa
+[19:07:33] [CPU] t=134: atendiendo a Paciente 10
+[19:07:34] [CPU] t=135: atendiendo a Paciente 6
+[19:07:34] [ALTA] Paciente 6 terminó su atención · esperó 28.5s
+[19:07:34] [CPU] t=136: atendiendo a caffa
+[19:07:35] [CPU] t=137: atendiendo a Paciente 10
+[19:07:35] [CPU] t=138: atendiendo a caffa
+[19:07:35] [CPU] t=139: atendiendo a Paciente 10
+[19:07:36] [CPU] t=140: atendiendo a caffa
+[19:07:36] [ALTA] caffa terminó su atención · esperó 29.3s
+[19:07:36] [CPU] t=141: atendiendo a Paciente 10
+[19:07:37] [CPU] t=142: atendiendo a Paciente 10
+[19:07:37] [CPU] t=143: atendiendo a Paciente 10
+[19:07:37] [CPU] t=144: atendiendo a Paciente 10
+[19:07:38] [CPU] t=145: atendiendo a Paciente 10
+[19:07:38] [CPU] t=146: atendiendo a Paciente 10
+[19:07:39] [CPU] t=147: atendiendo a Paciente 10
+[19:07:39] [CPU] t=148: atendiendo a Paciente 10
+[19:07:40] [CPU] t=149: atendiendo a Paciente 10
+[19:07:40] [CPU] t=150: atendiendo a Paciente 10
+[19:07:40] [CPU] t=151: atendiendo a Paciente 10
+[19:07:41] [CPU] t=152: atendiendo a Paciente 10
+[19:07:41] [CPU] t=153: atendiendo a Paciente 10
+[19:07:42] [CPU] t=154: atendiendo a Paciente 10
+[19:07:42] [CPU] t=155: atendiendo a Paciente 10
+[19:07:42] [CPU] t=156: atendiendo a Paciente 10
+[19:07:43] [CPU] t=157: atendiendo a Paciente 10
+[19:07:43] [CPU] t=158: atendiendo a Paciente 10
+[19:07:44] [CPU] t=159: atendiendo a Paciente 10
+[19:07:44] [CPU] t=160: atendiendo a Paciente 10
+[19:07:44] [CPU] t=161: atendiendo a Paciente 10
+[19:07:45] [CPU] t=162: atendiendo a Paciente 10
+[19:07:45] [CPU] t=163: atendiendo a Paciente 10
+[19:07:46] [CPU] t=164: atendiendo a Paciente 10
+[19:07:46] [CPU] t=165: atendiendo a Paciente 10
+[19:07:46] [CPU] t=166: atendiendo a Paciente 10
+[19:07:47] [CPU] t=167: atendiendo a Paciente 10
+[19:07:47] [CPU] t=168: atendiendo a Paciente 10
+[19:07:48] [CPU] t=169: atendiendo a Paciente 10
+[19:07:48] [CPU] t=170: atendiendo a Paciente 10
+[19:07:48] [CPU] t=171: atendiendo a Paciente 10
+[19:07:49] [CPU] t=172: atendiendo a Paciente 10
+[19:07:49] [CPU] t=173: atendiendo a Paciente 10
+[19:07:50] [CPU] t=174: atendiendo a Paciente 10
+[19:07:50] [CPU] t=175: atendiendo a Paciente 10
+[19:07:50] [CPU] t=176: atendiendo a Paciente 10
+[19:07:51] [CPU] t=177: atendiendo a Paciente 10
+[19:07:51] [CPU] t=178: atendiendo a Paciente 10
+[19:07:52] [CPU] t=179: atendiendo a Paciente 10
+[19:07:52] [CPU] t=180: atendiendo a Paciente 10
+[19:07:52] [CPU] t=181: atendiendo a Paciente 10
+[19:07:53] [CPU] t=182: atendiendo a Paciente 10
+[19:07:53] [CPU] t=183: atendiendo a Paciente 10
+[19:07:53] [APP] 'Asistente Médico' se registra como proceso (PID 12, prio 7)
+[19:07:54] [CPU] t=184: atendiendo a Paciente 10
+[19:07:54] [CPU] t=185: atendiendo a Asistente Médico
+[19:07:54] [CPU] t=186: atendiendo a Paciente 10
+[19:07:55] [CPU] t=187: atendiendo a Asistente Médico
+[19:07:55] [CPU] t=188: atendiendo a Paciente 10
+[19:07:56] [CPU] t=189: atendiendo a Asistente Médico
+[19:07:56] [CPU] t=190: atendiendo a Paciente 10
+[19:07:56] [CPU] t=191: atendiendo a Asistente Médico
+[19:07:57] [CPU] t=192: atendiendo a Paciente 10
+[19:07:57] [CPU] t=193: atendiendo a Asistente Médico
+[19:07:58] [CPU] t=194: atendiendo a Paciente 10
+[19:07:58] [CPU] t=195: atendiendo a Asistente Médico
+[19:07:58] [CPU] t=196: atendiendo a Paciente 10
+[19:07:58] [APP] 'Asistente Médico' (PID 12) cerrada por el usuario
+[19:07:59] [CPU] t=197: atendiendo a Paciente 10
+[19:07:59] [CPU] t=198: atendiendo a Paciente 10
+[19:08:00] [CPU] t=199: atendiendo a Paciente 10
+[19:08:00] [CPU] t=200: atendiendo a Paciente 10
+[19:08:00] [CPU] t=201: atendiendo a Paciente 10
+[19:08:01] [CPU] t=202: atendiendo a Paciente 10
+[19:08:01] [CPU] t=203: atendiendo a Paciente 10
+[19:08:02] [CPU] t=204: atendiendo a Paciente 10
+[19:08:02] [CPU] t=205: atendiendo a Paciente 10
+[19:08:02] [CPU] t=206: atendiendo a Paciente 10
+[19:08:03] [CPU] t=207: atendiendo a Paciente 10
+[19:08:03] [CPU] t=208: atendiendo a Paciente 10
+[19:08:04] [CPU] t=209: atendiendo a Paciente 10
+[19:08:04] [CPU] t=210: atendiendo a Paciente 10
+[19:08:04] [CPU] t=211: atendiendo a Paciente 10
+[19:08:05] [CPU] t=212: atendiendo a Paciente 10
+[19:08:05] [CPU] t=213: atendiendo a Paciente 10
+[19:08:06] [CPU] t=214: atendiendo a Paciente 10
+[19:08:06] [CPU] t=215: atendiendo a Paciente 10
+[19:08:06] [CPU] t=216: atendiendo a Paciente 10
+[19:08:07] [CPU] t=217: atendiendo a Paciente 10
+[19:08:07] [CPU] t=218: atendiendo a Paciente 10
+[19:08:08] [CPU] t=219: atendiendo a Paciente 10
+[19:08:08] [CPU] t=220: atendiendo a Paciente 10
+[19:08:08] [CPU] t=221: atendiendo a Paciente 10
+[19:08:09] [CPU] t=222: atendiendo a Paciente 10
+[19:08:09] [CPU] t=223: atendiendo a Paciente 10
+[19:08:10] [CPU] t=224: atendiendo a Paciente 10
+[19:08:10] [CPU] t=225: atendiendo a Paciente 10
+[19:08:10] [CPU] t=226: atendiendo a Paciente 10
+[19:08:11] [CPU] t=227: atendiendo a Paciente 10
+[19:08:11] [CPU] t=228: atendiendo a Paciente 10
+[19:08:12] [CPU] t=229: atendiendo a Paciente 10
+[19:08:12] [CPU] t=230: atendiendo a Paciente 10
+[19:08:12] [CPU] t=231: atendiendo a Paciente 10
+[19:08:13] [CPU] t=232: atendiendo a Paciente 10
+[19:08:13] [CPU] t=233: atendiendo a Paciente 10
+[19:08:14] [CPU] t=234: atendiendo a Paciente 10
+[19:08:14] [CPU] t=235: atendiendo a Paciente 10
+[19:08:14] [CPU] t=236: atendiendo a Paciente 10
+[19:08:15] [CPU] t=237: atendiendo a Paciente 10
+[19:08:15] [CPU] t=238: atendiendo a Paciente 10
+[19:08:16] [CPU] t=239: atendiendo a Paciente 10
+[19:08:16] [CPU] t=240: atendiendo a Paciente 10
+[19:08:16] [CPU] t=241: atendiendo a Paciente 10
+[19:08:17] [CPU] t=242: atendiendo a Paciente 10
+[19:08:17] [CPU] t=243: atendiendo a Paciente 10
+[19:08:18] [CPU] t=244: atendiendo a Paciente 10
+[19:08:18] [CPU] t=245: atendiendo a Paciente 10
+[19:08:18] [CPU] t=246: atendiendo a Paciente 10
+[19:08:19] [CPU] t=247: atendiendo a Paciente 10
+[19:08:19] [CPU] t=248: atendiendo a Paciente 10
+[19:08:20] [CPU] t=249: atendiendo a Paciente 10
+[19:08:20] [CPU] t=250: atendiendo a Paciente 10
+[19:08:20] [CPU] t=251: atendiendo a Paciente 10
+[19:08:21] [CPU] t=252: atendiendo a Paciente 10
+[19:08:21] [CPU] t=253: atendiendo a Paciente 10
+[19:08:22] [CPU] t=254: atendiendo a Paciente 10
+[19:08:22] [CPU] t=255: atendiendo a Paciente 10
+[19:08:22] [CPU] t=256: atendiendo a Paciente 10
+[19:08:23] [CPU] t=257: atendiendo a Paciente 10
+[19:08:23] [CPU] t=258: atendiendo a Paciente 10
+[19:08:24] [CPU] t=259: atendiendo a Paciente 10
+[19:08:24] [CPU] t=260: atendiendo a Paciente 10
+[19:08:24] [ADMIT] Paciente 13 admitido (PID 13, gravedad 1)
+[19:08:24] [CPU] t=261: atendiendo a Paciente 10
+[19:08:25] [CPU] t=262: atendiendo a Paciente 13
+[19:08:25] [CPU] t=263: atendiendo a Paciente 10
+[19:08:26] [CPU] t=264: atendiendo a Paciente 13
+[19:08:26] [CPU] t=265: atendiendo a Paciente 10
+[19:08:26] [CPU] t=266: atendiendo a Paciente 13
+[19:08:27] [CPU] t=267: atendiendo a Paciente 10
+[19:08:27] [CPU] t=268: atendiendo a Paciente 13
+[19:08:28] [CPU] t=269: atendiendo a Paciente 10
+[19:08:28] [CPU] t=270: atendiendo a Paciente 13
+[19:08:28] [CPU] t=271: atendiendo a Paciente 10
+[19:08:29] [CPU] t=272: atendiendo a Paciente 13
+[19:08:29] [CPU] t=273: atendiendo a Paciente 10
+[19:08:30] [CPU] t=274: atendiendo a Paciente 13
+[19:08:30] [CPU] t=275: atendiendo a Paciente 10
+[19:08:30] [CPU] t=276: atendiendo a Paciente 13
+[19:08:31] [ALTA] Paciente 13 terminó su atención · esperó 3.5s
+[19:08:31] [CPU] t=277: atendiendo a Paciente 10
+[19:08:31] [CPU] t=278: atendiendo a Paciente 10
+[19:08:32] [CPU] t=279: atendiendo a Paciente 10
+[19:08:32] [CPU] t=280: atendiendo a Paciente 10
+[19:08:32] [CPU] t=281: atendiendo a Paciente 10
+[19:08:33] [CPU] t=282: atendiendo a Paciente 10
+[19:08:33] [CPU] t=283: atendiendo a Paciente 10
+[19:08:34] [CPU] t=284: atendiendo a Paciente 10
+[19:08:34] [CPU] t=285: atendiendo a Paciente 10
+[19:08:34] [CPU] t=286: atendiendo a Paciente 10
+[19:08:35] [CPU] t=287: atendiendo a Paciente 10
+[19:08:35] [CPU] t=288: atendiendo a Paciente 10
+[19:08:36] [CPU] t=289: atendiendo a Paciente 10
+[19:08:36] [CPU] t=290: atendiendo a Paciente 10
+[19:08:36] [CPU] t=291: atendiendo a Paciente 10
+[19:08:37] [CPU] t=292: atendiendo a Paciente 10
+[19:08:37] [logd] Demonio de logging detenido.
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-22 19:18:07
+  PID daemon de logging: 4260
+============================================================
+[19:18:16] [APP] 'Asistente Médico' se registra como proceso (PID 1, prio 7)
+[19:18:16] [CPU] t=1: atendiendo a Asistente Médico
+[19:18:16] [CPU] t=2: atendiendo a Asistente Médico
+[19:18:16] [CPU] t=3: atendiendo a Asistente Médico
+[19:18:17] [CPU] t=4: atendiendo a Asistente Médico
+[19:18:17] [APP] 'Asistente Médico' (PID 1) cerrada por el usuario
+[19:18:18] [APP] 'Juego Snake' se registra como proceso (PID 2, prio 8)
+[19:18:18] [CPU] t=5: atendiendo a Juego Snake
+[19:18:18] [CPU] t=6: atendiendo a Juego Snake
+[19:18:19] [CPU] t=7: atendiendo a Juego Snake
+[19:18:19] [CPU] t=8: atendiendo a Juego Snake
+[19:18:19] [APP] 'Juego Snake' reiniciado por el usuario
+[19:18:19] [CPU] t=9: atendiendo a Juego Snake
+[19:18:20] [CPU] t=10: atendiendo a Juego Snake
+[19:18:20] [CPU] t=11: atendiendo a Juego Snake
+[19:18:21] [CPU] t=12: atendiendo a Juego Snake
+[19:18:21] [CPU] t=13: atendiendo a Juego Snake
+[19:18:21] [CPU] t=14: atendiendo a Juego Snake
+[19:18:22] [APP] 'Juego Snake' reiniciado por el usuario
+[19:18:22] [CPU] t=15: atendiendo a Juego Snake
+[19:18:22] [CPU] t=16: atendiendo a Juego Snake
+[19:18:23] [CPU] t=17: atendiendo a Juego Snake
+[19:18:23] [CPU] t=18: atendiendo a Juego Snake
+[19:18:23] [CPU] t=19: atendiendo a Juego Snake
+[19:18:24] [CPU] t=20: atendiendo a Juego Snake
+[19:18:24] [CPU] t=21: atendiendo a Juego Snake
+[19:18:25] [CPU] t=22: atendiendo a Juego Snake
+[19:18:25] [CPU] t=23: atendiendo a Juego Snake
+[19:18:25] [CPU] t=24: atendiendo a Juego Snake
+[19:18:26] [CPU] t=25: atendiendo a Juego Snake
+[19:18:26] [CPU] t=26: atendiendo a Juego Snake
+[19:18:27] [CPU] t=27: atendiendo a Juego Snake
+[19:18:27] [CPU] t=28: atendiendo a Juego Snake
+[19:18:27] [CPU] t=29: atendiendo a Juego Snake
+[19:18:28] [CPU] t=30: atendiendo a Juego Snake
+[19:18:28] [CPU] t=31: atendiendo a Juego Snake
+[19:18:29] [CPU] t=32: atendiendo a Juego Snake
+[19:18:29] [CPU] t=33: atendiendo a Juego Snake
+[19:18:29] [CPU] t=34: atendiendo a Juego Snake
+[19:18:30] [CPU] t=35: atendiendo a Juego Snake
+[19:18:30] [CPU] t=36: atendiendo a Juego Snake
+[19:18:31] [CPU] t=37: atendiendo a Juego Snake
+[19:18:31] [CPU] t=38: atendiendo a Juego Snake
+[19:18:31] [CPU] t=39: atendiendo a Juego Snake
+[19:18:32] [CPU] t=40: atendiendo a Juego Snake
+[19:18:32] [CPU] t=41: atendiendo a Juego Snake
+[19:18:33] [CPU] t=42: atendiendo a Juego Snake
+[19:18:33] [CPU] t=43: atendiendo a Juego Snake
+[19:18:33] [APP] 'Juego Snake' reiniciado por el usuario
+[19:18:33] [CPU] t=44: atendiendo a Juego Snake
+[19:18:34] [CPU] t=45: atendiendo a Juego Snake
+[19:18:34] [CPU] t=46: atendiendo a Juego Snake
+[19:18:35] [APP] 'Juego Snake' reiniciado por el usuario
+[19:18:35] [CPU] t=47: atendiendo a Juego Snake
+[19:18:35] [CPU] t=48: atendiendo a Juego Snake
+[19:18:35] [APP] 'Juego Snake' (PID 2) cerrada por el usuario
+[19:18:51] [logd] Demonio de logging detenido.

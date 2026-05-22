@@ -6,12 +6,33 @@ from core.ai_brain import HospitalAI
 
 
 class AIApp(WindowBase):
+    """
+    Asistente Médico (chat con IA).
+
+    Se registra como proceso al abrir y se da de alta al cerrar.
+    Cada consulta del usuario se loguea en la Bitácora con tag APP.
+    """
+
+    APP_NAME = "Asistente Médico"
+    APP_PRIORITY = 7
+    APP_BURST = 999_999_999
+
     def __init__(self, master, state, x=480, y=120):
         super().__init__(master, "Asistente Médico", TEAL, 650, 520, x, y)
         self.state = state
         self.ai = HospitalAI(state)
         self.thinking = False
         self.content.configure(bg=PANEL)
+
+        # Registrar como proceso
+        self._app_paciente = None
+        if state is not None:
+            self._app_paciente = state.admitir(
+                self.APP_NAME,
+                priority=self.APP_PRIORITY,
+                burst=self.APP_BURST,
+                kind="app",
+            )
 
         top = tk.Frame(self.content, bg=PANEL)
         top.pack(fill="x", padx=14, pady=(14, 8))
@@ -72,6 +93,13 @@ class AIApp(WindowBase):
         self._write("Asistente: Hola. Preguntame sobre el simulador o sobre Sistemas Operativos.\n\n")
         self.master.after(100, self.focus_input)
 
+    def on_close(self):
+        if self.state is not None and self._app_paciente is not None:
+            try:
+                self.state.dar_alta(self._app_paciente.pid)
+            except Exception:
+                pass
+
     def focus_input(self):
         try:
             self.frame.lift()
@@ -106,6 +134,11 @@ class AIApp(WindowBase):
         if not q:
             self.focus_input()
             return
+
+        # Loguear la consulta del usuario en la Bitácora
+        if self.state is not None:
+            short = q if len(q) <= 80 else q[:77] + "..."
+            self.state.log("APP", f"'{self.APP_NAME}' recibió consulta: \"{short}\"")
 
         self._write(f"Vos: {q}\n")
         self.set_thinking(True)
