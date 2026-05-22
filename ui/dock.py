@@ -1,4 +1,3 @@
-
 import tkinter as tk
 from ui.theme import *
 from PIL import Image, ImageTk

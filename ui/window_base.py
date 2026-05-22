@@ -3,13 +3,6 @@ from ui.theme import *
 
 
 class WindowBase:
-    """
-    Ventana flotante estable:
-    - mover por titlebar
-    - minimizar
-    - sin resize custom para evitar bugs
-    """
-
     def __init__(self, master, title, accent=BLUE, width=520, height=360, x=120, y=80):
         self.master = master
         self.accent = accent
@@ -58,18 +51,25 @@ class WindowBase:
             w.bind("<ButtonPress-1>", self.start_move)
             w.bind("<B1-Motion>", self.do_move)
 
-        self.frame.bind("<FocusIn>", lambda _e: self.lift(), add=True)
-        self.frame.bind("<ButtonPress-1>", self._activate, add=True)
+        # Solo activar la ventana, sin tocar focus aquí
+        for w in (self.frame, self.titlebar, self.title_label, self.color_dot, self.content):
+            w.bind("<ButtonPress-1>", self._activate, add=True)
 
-    def _activate(self, event):
+        self.master.after(100, self._activate_window)
+
+    def _activate_window(self):
         try:
-            self.master.focus_force()
+            self.master.lift()
         except Exception:
             pass
         try:
-            event.widget.focus_set()
+            self.frame.lift()
         except Exception:
             pass
+
+    def _activate(self, event=None):
+        self._activate_window()
+        return None
 
     def on_close(self):
         pass
