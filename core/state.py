@@ -180,7 +180,13 @@ class HospitalState:
                           que compite por la CPU mientras esté abierta)
         """
         with self.ready_cv:
-            if len(self.pacientes) >= self.ram_limit:
+            # Las apps NO compiten por la sala de espera del hospital.
+            # Una app es un proceso del SO ficticio (Snake, Asistente), no
+            # un paciente físico que ocupe cama. Si limitáramos las apps al
+            # ram_limit, un hospital lleno volvería las apps no-abribles —
+            # exactamente al revés del modelo: las apps siempre pueden correr,
+            # los pacientes son los que llenan la sala.
+            if kind == "patient" and len(self.pacientes) >= self.ram_limit:
                 self.log("HOSPITAL", "Sala llena. No se admiten más pacientes.")
                 return None
 

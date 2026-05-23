@@ -2654,3 +2654,3278 @@
 [19:18:35] [CPU] t=48: atendiendo a Juego Snake
 [19:18:35] [APP] 'Juego Snake' (PID 2) cerrada por el usuario
 [19:18:51] [logd] Demonio de logging detenido.
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-23 01:46:58
+  PID daemon de logging: 22176
+============================================================
+[01:47:27] [ADMIT] Paciente 1 admitido (PID 1, gravedad 6)
+[01:47:27] [ADMIT] Paciente 2 admitido (PID 2, gravedad 5)
+[01:47:27] [ADMIT] Paciente 3 admitido (PID 3, gravedad 7)
+[01:47:27] [ADMIT] Paciente 4 admitido (PID 4, gravedad 5)
+[01:47:27] [ADMIT] Paciente 5 admitido (PID 5, gravedad 3)
+[01:47:27] [ADMIT] Paciente 6 admitido (PID 6, gravedad 6)
+[01:47:27] [ADMIT] Paciente 7 admitido (PID 7, gravedad 5)
+[01:47:27] [ADMIT] Paciente 8 admitido (PID 8, gravedad 6)
+[01:47:27] [CPU] t=1: atendiendo a Paciente 1
+[01:47:27] [CPU] t=2: atendiendo a Paciente 2
+[01:47:27] [CPU] t=3: atendiendo a Paciente 3
+[01:47:28] [CPU] t=4: atendiendo a Paciente 4
+[01:47:28] [CPU] t=5: atendiendo a Paciente 5
+[01:47:29] [CPU] t=6: atendiendo a Paciente 6
+[01:47:29] [CPU] t=7: atendiendo a Paciente 7
+[01:47:29] [CPU] t=8: atendiendo a Paciente 8
+[01:47:30] [CPU] t=9: atendiendo a Paciente 1
+[01:47:30] [CPU] t=10: atendiendo a Paciente 2
+[01:47:31] [CPU] t=11: atendiendo a Paciente 3
+[01:47:31] [CPU] t=12: atendiendo a Paciente 4
+[01:47:31] [CPU] t=13: atendiendo a Paciente 5
+[01:47:32] [CPU] t=14: atendiendo a Paciente 6
+[01:47:32] [CPU] t=15: atendiendo a Paciente 7
+[01:47:33] [CPU] t=16: atendiendo a Paciente 8
+[01:47:33] [CPU] t=17: atendiendo a Paciente 1
+[01:47:33] [CPU] t=18: atendiendo a Paciente 2
+[01:47:34] [CPU] t=19: atendiendo a Paciente 3
+[01:47:34] [CPU] t=20: atendiendo a Paciente 4
+[01:47:35] [CPU] t=21: atendiendo a Paciente 5
+[01:47:35] [CPU] t=22: atendiendo a Paciente 6
+[01:47:35] [CPU] t=23: atendiendo a Paciente 7
+[01:47:36] [CPU] t=24: atendiendo a Paciente 8
+[01:47:36] [CPU] t=25: atendiendo a Paciente 1
+[01:47:37] [CPU] t=26: atendiendo a Paciente 2
+[01:47:37] [CPU] t=27: atendiendo a Paciente 3
+[01:47:37] [CPU] t=28: atendiendo a Paciente 4
+[01:47:38] [CPU] t=29: atendiendo a Paciente 5
+[01:47:38] [CPU] t=30: atendiendo a Paciente 6
+[01:47:39] [CPU] t=31: atendiendo a Paciente 7
+[01:47:39] [CPU] t=32: atendiendo a Paciente 8
+[01:47:39] [CPU] t=33: atendiendo a Paciente 1
+[01:47:40] [CPU] t=34: atendiendo a Paciente 2
+[01:47:40] [CPU] t=35: atendiendo a Paciente 3
+[01:47:41] [ALTA] Paciente 3 terminó su atención · esperó 12.0s
+[01:47:41] [CPU] t=36: atendiendo a Paciente 4
+[01:47:41] [CPU] t=37: atendiendo a Paciente 5
+[01:47:42] [CPU] t=38: atendiendo a Paciente 6
+[01:47:42] [ALTA] Paciente 6 terminó su atención · esperó 13.2s
+[01:47:42] [CPU] t=39: atendiendo a Paciente 7
+[01:47:42] [ALTA] Paciente 7 terminó su atención · esperó 13.6s
+[01:47:42] [CPU] t=40: atendiendo a Paciente 8
+[01:47:43] [CPU] t=41: atendiendo a Paciente 1
+[01:47:43] [CPU] t=42: atendiendo a Paciente 2
+[01:47:44] [CPU] t=43: atendiendo a Paciente 4
+[01:47:44] [CPU] t=44: atendiendo a Paciente 5
+[01:47:44] [CPU] t=45: atendiendo a Paciente 8
+[01:47:45] [CPU] t=46: atendiendo a Paciente 1
+[01:47:45] [CPU] t=47: atendiendo a Paciente 2
+[01:47:46] [CPU] t=48: atendiendo a Paciente 4
+[01:47:46] [CPU] t=49: atendiendo a Paciente 5
+[01:47:46] [CPU] t=50: atendiendo a Paciente 8
+[01:47:47] [CPU] t=51: atendiendo a Paciente 1
+[01:47:47] [CPU] t=52: atendiendo a Paciente 2
+[01:47:48] [CPU] t=53: atendiendo a Paciente 4
+[01:47:48] [CPU] t=54: atendiendo a Paciente 5
+[01:47:48] [ALTA] Paciente 5 terminó su atención · esperó 18.4s
+[01:47:48] [CPU] t=55: atendiendo a Paciente 8
+[01:47:49] [ALTA] Paciente 8 terminó su atención · esperó 18.8s
+[01:47:49] [CPU] t=56: atendiendo a Paciente 1
+[01:47:49] [CPU] t=57: atendiendo a Paciente 2
+[01:47:50] [CPU] t=58: atendiendo a Paciente 4
+[01:47:50] [CPU] t=59: atendiendo a Paciente 1
+[01:47:50] [ALTA] Paciente 1 terminó su atención · esperó 19.6s
+[01:47:50] [CPU] t=60: atendiendo a Paciente 2
+[01:47:51] [ALTA] Paciente 2 terminó su atención · esperó 20.0s
+[01:47:51] [CPU] t=61: atendiendo a Paciente 4
+[01:47:51] [CPU] t=62: atendiendo a Paciente 4
+[01:47:52] [ALTA] Paciente 4 terminó su atención · esperó 20.4s
+[01:47:52] [DEADLOCK] Iniciando demo: dos pacientes pelearán por Quirófano + Cirujano
+[01:47:52] [ADMIT] Paciente 9 admitido (PID 9, gravedad 4)
+[01:47:52] [ADMIT] Paciente 10 admitido (PID 10, gravedad 6)
+[01:47:52] [CPU] t=63: atendiendo a Paciente 9
+[01:47:52] [RECURSO] Paciente 9 solicita QUIROFANO
+[01:47:52] [RECURSO] Paciente 9 obtuvo QUIROFANO
+[01:47:52] [RECURSO] Paciente 10 solicita CIRUJANO
+[01:47:52] [RECURSO] Paciente 10 obtuvo CIRUJANO
+[01:47:52] [RECURSO] Paciente 10 solicita QUIROFANO
+[01:47:52] [RECURSO] Paciente 9 solicita CIRUJANO
+[01:47:53] [DEADLOCK] ⚠️ DEADLOCK: Paciente 9 → Paciente 10 → Paciente 9 se bloquean mutuamente
+[01:47:53] [DEADLOCK] Se derivará un paciente en 10s, o tocá 'Resolver Deadlock'
+[01:47:58] [HISTORIA] Enf. Cruz llega a actualizar la historia clínica
+[01:47:59] [HISTORIA] Enf. Cruz obtiene acceso EXCLUSIVO y comienza a escribir
+[01:48:00] [HISTORIA] Enf. Cruz llega a actualizar la historia clínica
+[01:48:01] [HISTORIA] Enf. Cruz debe esperar: hay lectores o un escritor activo
+[01:48:01] [HISTORIA] Dr. Sosa llega a consultar la historia clínica
+[01:48:02] [HISTORIA] Dr. Sosa debe esperar: una enfermera está escribiendo
+[01:48:03] [DEADLOCK] ⏰ Timeout: derivando paciente
+[01:48:03] [DEADLOCK] Resolviendo: Paciente 10 es derivado a otro hospital
+[01:48:03] [ALTA] Paciente 10 (PID 10) dado de alta · esperó 0.0s
+[01:48:03] [RECURSO] Paciente 9 obtuvo CIRUJANO
+[01:48:03] [RECURSO] Paciente 9 libera CIRUJANO
+[01:48:03] [RECURSO] Paciente 9 libera QUIROFANO
+[01:48:03] [CPU] t=64: atendiendo a Paciente 9
+[01:48:03] [CPU] t=65: atendiendo a Paciente 9
+[01:48:04] [CPU] t=66: atendiendo a Paciente 9
+[01:48:04] [CPU] t=67: atendiendo a Paciente 9
+[01:48:04] [HISTORIA] Enf. Cruz termina la actualización: Temp: 37.5°C · PA: 135/88 · FC: 80 bpm · En observación
+[01:48:04] [HISTORIA] Enf. Cruz obtiene acceso EXCLUSIVO tras esperar 3.5s
+[01:48:04] [CPU] t=68: atendiendo a Paciente 9
+[01:48:05] [CPU] t=69: atendiendo a Paciente 9
+[01:48:05] [CPU] t=70: atendiendo a Paciente 9
+[01:48:06] [CPU] t=71: atendiendo a Paciente 9
+[01:48:06] [HISTORIA] Dr. Ramírez llega a consultar la historia clínica
+[01:48:06] [CPU] t=72: atendiendo a Paciente 9
+[01:48:06] [CPU] t=73: atendiendo a Paciente 9
+[01:48:07] [CPU] t=74: atendiendo a Paciente 9
+[01:48:07] [HISTORIA] Dra. López llega a consultar la historia clínica
+[01:48:07] [CPU] t=75: atendiendo a Paciente 9
+[01:48:08] [CPU] t=76: atendiendo a Paciente 9
+[01:48:08] [CPU] t=77: atendiendo a Paciente 9
+[01:48:08] [HISTORIA] Enf. Gómez llega a actualizar la historia clínica
+[01:48:08] [CPU] t=78: atendiendo a Paciente 9
+[01:48:09] [HISTORIA] Enf. Cruz termina la actualización: Temp: 36.5°C · PA: 118/76 · FC: 65 bpm · Alta próxima
+[01:48:09] [HISTORIA] Dr. Sosa comienza a leer tras esperar 5.7s (lectores activos: 1)
+[01:48:09] [HISTORIA] Dr. Ramírez comienza a leer tras esperar 0.8s (lectores activos: 2)
+[01:48:09] [HISTORIA] Dra. López comienza a leer (lectores activos: 3)
+[01:48:09] [CPU] t=79: atendiendo a Paciente 9
+[01:48:09] [HISTORIA] Enf. Gómez debe esperar: hay lectores o un escritor activo
+[01:48:09] [CPU] t=80: atendiendo a Paciente 9
+[01:48:10] [CPU] t=81: atendiendo a Paciente 9
+[01:48:10] [CPU] t=82: atendiendo a Paciente 9
+[01:48:10] [CPU] t=83: atendiendo a Paciente 9
+[01:48:11] [CPU] t=84: atendiendo a Paciente 9
+[01:48:11] [CPU] t=85: atendiendo a Paciente 9
+[01:48:12] [CPU] t=86: atendiendo a Paciente 9
+[01:48:12] [CPU] t=87: atendiendo a Paciente 9
+[01:48:12] [HISTORIA] Dr. Sosa termina su consulta
+[01:48:12] [HISTORIA] Dra. López termina su consulta
+[01:48:12] [CPU] t=88: atendiendo a Paciente 9
+[01:48:13] [CPU] t=89: atendiendo a Paciente 9
+[01:48:13] [CPU] t=90: atendiendo a Paciente 9
+[01:48:13] [HISTORIA] Dr. Ramírez termina su consulta
+[01:48:13] [HISTORIA] Último lector se retira: historia clínica disponible para escritura
+[01:48:13] [HISTORIA] Enf. Gómez obtiene acceso EXCLUSIVO tras esperar 4.2s
+[01:48:14] [CPU] t=91: atendiendo a Paciente 9
+[01:48:14] [CPU] t=92: atendiendo a Paciente 9
+[01:48:14] [CPU] t=93: atendiendo a Paciente 9
+[01:48:15] [CPU] t=94: atendiendo a Paciente 9
+[01:48:15] [CPU] t=95: atendiendo a Paciente 9
+[01:48:16] [CPU] t=96: atendiendo a Paciente 9
+[01:48:16] [CPU] t=97: atendiendo a Paciente 9
+[01:48:16] [CPU] t=98: atendiendo a Paciente 9
+[01:48:17] [CPU] t=99: atendiendo a Paciente 9
+[01:48:17] [CPU] t=100: atendiendo a Paciente 9
+[01:48:17] [HISTORIA] Enf. Gómez termina la actualización: Temp: 37.2°C · PA: 130/85 · FC: 88 bpm · Observación
+[01:48:18] [CPU] t=101: atendiendo a Paciente 9
+[01:48:18] [CPU] t=102: atendiendo a Paciente 9
+[01:48:18] [CPU] t=103: atendiendo a Paciente 9
+[01:48:19] [CPU] t=104: atendiendo a Paciente 9
+[01:48:19] [CPU] t=105: atendiendo a Paciente 9
+[01:48:20] [CPU] t=106: atendiendo a Paciente 9
+[01:48:20] [CPU] t=107: atendiendo a Paciente 9
+[01:48:20] [CPU] t=108: atendiendo a Paciente 9
+[01:48:21] [CPU] t=109: atendiendo a Paciente 9
+[01:48:21] [CPU] t=110: atendiendo a Paciente 9
+[01:48:22] [CPU] t=111: atendiendo a Paciente 9
+[01:48:22] [CPU] t=112: atendiendo a Paciente 9
+[01:48:22] [CPU] t=113: atendiendo a Paciente 9
+[01:48:23] [CPU] t=114: atendiendo a Paciente 9
+[01:48:23] [CPU] t=115: atendiendo a Paciente 9
+[01:48:24] [CPU] t=116: atendiendo a Paciente 9
+[01:48:24] [CPU] t=117: atendiendo a Paciente 9
+[01:48:24] [CPU] t=118: atendiendo a Paciente 9
+[01:48:25] [CPU] t=119: atendiendo a Paciente 9
+[01:48:25] [CPU] t=120: atendiendo a Paciente 9
+[01:48:25] [APP] 'Asistente Médico' se registra como proceso (PID 11, prio 7)
+[01:48:26] [CPU] t=121: atendiendo a Paciente 9
+[01:48:26] [CPU] t=122: atendiendo a Asistente Médico
+[01:48:26] [CPU] t=123: atendiendo a Paciente 9
+[01:48:27] [CPU] t=124: atendiendo a Asistente Médico
+[01:48:27] [CPU] t=125: atendiendo a Paciente 9
+[01:48:28] [CPU] t=126: atendiendo a Asistente Médico
+[01:48:28] [APP] 'Juego Snake' se registra como proceso (PID 12, prio 8)
+[01:48:28] [CPU] t=127: atendiendo a Paciente 9
+[01:48:28] [CPU] t=128: atendiendo a Asistente Médico
+[01:48:29] [CPU] t=129: atendiendo a Juego Snake
+[01:48:29] [APP] 'Juego Snake' reiniciado por el usuario
+[01:48:29] [CPU] t=130: atendiendo a Paciente 9
+[01:48:30] [CPU] t=131: atendiendo a Asistente Médico
+[01:48:30] [CPU] t=132: atendiendo a Juego Snake
+[01:48:30] [CPU] t=133: atendiendo a Paciente 9
+[01:48:31] [CPU] t=134: atendiendo a Asistente Médico
+[01:48:31] [CPU] t=135: atendiendo a Juego Snake
+[01:48:32] [CPU] t=136: atendiendo a Paciente 9
+[01:48:32] [APP] 'Juego Snake' reiniciado por el usuario
+[01:48:32] [CPU] t=137: atendiendo a Asistente Médico
+[01:48:32] [CPU] t=138: atendiendo a Juego Snake
+[01:48:33] [CPU] t=139: atendiendo a Paciente 9
+[01:48:33] [CPU] t=140: atendiendo a Asistente Médico
+[01:48:34] [CPU] t=141: atendiendo a Juego Snake
+[01:48:34] [CPU] t=142: atendiendo a Paciente 9
+[01:48:34] [CPU] t=143: atendiendo a Asistente Médico
+[01:48:35] [CPU] t=144: atendiendo a Juego Snake
+[01:48:35] [CPU] t=145: atendiendo a Paciente 9
+[01:48:36] [CPU] t=146: atendiendo a Asistente Médico
+[01:48:36] [CPU] t=147: atendiendo a Juego Snake
+[01:48:36] [CPU] t=148: atendiendo a Paciente 9
+[01:48:37] [CPU] t=149: atendiendo a Asistente Médico
+[01:48:37] [CPU] t=150: atendiendo a Juego Snake
+[01:48:38] [CPU] t=151: atendiendo a Paciente 9
+[01:48:38] [CPU] t=152: atendiendo a Asistente Médico
+[01:48:38] [CPU] t=153: atendiendo a Juego Snake
+[01:48:39] [CPU] t=154: atendiendo a Paciente 9
+[01:48:39] [CPU] t=155: atendiendo a Asistente Médico
+[01:48:40] [CPU] t=156: atendiendo a Juego Snake
+[01:48:40] [CPU] t=157: atendiendo a Paciente 9
+[01:48:40] [CPU] t=158: atendiendo a Asistente Médico
+[01:48:41] [CPU] t=159: atendiendo a Juego Snake
+[01:48:41] [CPU] t=160: atendiendo a Paciente 9
+[01:48:41] [APP] 'Juego Snake' reiniciado por el usuario
+[01:48:42] [CPU] t=161: atendiendo a Asistente Médico
+[01:48:42] [CPU] t=162: atendiendo a Juego Snake
+[01:48:42] [CPU] t=163: atendiendo a Paciente 9
+[01:48:43] [CPU] t=164: atendiendo a Asistente Médico
+[01:48:43] [CPU] t=165: atendiendo a Juego Snake
+[01:48:44] [CPU] t=166: atendiendo a Paciente 9
+[01:48:44] [CPU] t=167: atendiendo a Asistente Médico
+[01:48:44] [CPU] t=168: atendiendo a Juego Snake
+[01:48:45] [CPU] t=169: atendiendo a Paciente 9
+[01:48:45] [CPU] t=170: atendiendo a Asistente Médico
+[01:48:46] [CPU] t=171: atendiendo a Juego Snake
+[01:48:46] [CPU] t=172: atendiendo a Paciente 9
+[01:48:46] [CPU] t=173: atendiendo a Asistente Médico
+[01:48:47] [CPU] t=174: atendiendo a Juego Snake
+[01:48:47] [CPU] t=175: atendiendo a Paciente 9
+[01:48:48] [CPU] t=176: atendiendo a Asistente Médico
+[01:48:48] [CPU] t=177: atendiendo a Juego Snake
+[01:48:48] [CPU] t=178: atendiendo a Paciente 9
+[01:48:49] [CPU] t=179: atendiendo a Asistente Médico
+[01:48:49] [CPU] t=180: atendiendo a Juego Snake
+[01:48:50] [CPU] t=181: atendiendo a Paciente 9
+[01:48:50] [CPU] t=182: atendiendo a Asistente Médico
+[01:48:50] [CPU] t=183: atendiendo a Juego Snake
+[01:48:51] [CPU] t=184: atendiendo a Paciente 9
+[01:48:51] [CPU] t=185: atendiendo a Asistente Médico
+[01:48:52] [CPU] t=186: atendiendo a Juego Snake
+[01:48:52] [CPU] t=187: atendiendo a Paciente 9
+[01:48:52] [CPU] t=188: atendiendo a Asistente Médico
+[01:48:53] [CPU] t=189: atendiendo a Juego Snake
+[01:48:53] [CPU] t=190: atendiendo a Paciente 9
+[01:48:54] [CPU] t=191: atendiendo a Asistente Médico
+[01:48:54] [CPU] t=192: atendiendo a Juego Snake
+[01:48:54] [CPU] t=193: atendiendo a Paciente 9
+[01:48:55] [CPU] t=194: atendiendo a Asistente Médico
+[01:48:55] [CPU] t=195: atendiendo a Juego Snake
+[01:48:56] [CPU] t=196: atendiendo a Paciente 9
+[01:48:56] [CPU] t=197: atendiendo a Asistente Médico
+[01:48:56] [CPU] t=198: atendiendo a Juego Snake
+[01:48:57] [CPU] t=199: atendiendo a Paciente 9
+[01:48:57] [CPU] t=200: atendiendo a Asistente Médico
+[01:48:58] [CPU] t=201: atendiendo a Juego Snake
+[01:48:58] [CPU] t=202: atendiendo a Paciente 9
+[01:48:58] [CPU] t=203: atendiendo a Asistente Médico
+[01:48:59] [CPU] t=204: atendiendo a Juego Snake
+[01:48:59] [CPU] t=205: atendiendo a Paciente 9
+[01:49:00] [CPU] t=206: atendiendo a Asistente Médico
+[01:49:00] [CPU] t=207: atendiendo a Juego Snake
+[01:49:00] [CPU] t=208: atendiendo a Paciente 9
+[01:49:01] [CPU] t=209: atendiendo a Asistente Médico
+[01:49:01] [CPU] t=210: atendiendo a Juego Snake
+[01:49:02] [CPU] t=211: atendiendo a Paciente 9
+[01:49:02] [CPU] t=212: atendiendo a Asistente Médico
+[01:49:02] [CPU] t=213: atendiendo a Juego Snake
+[01:49:03] [CPU] t=214: atendiendo a Paciente 9
+[01:49:03] [CPU] t=215: atendiendo a Asistente Médico
+[01:49:04] [CPU] t=216: atendiendo a Juego Snake
+[01:49:04] [CPU] t=217: atendiendo a Paciente 9
+[01:49:04] [CPU] t=218: atendiendo a Asistente Médico
+[01:49:05] [CPU] t=219: atendiendo a Juego Snake
+[01:49:05] [APP] 'Juego Snake' reiniciado por el usuario
+[01:49:05] [CPU] t=220: atendiendo a Paciente 9
+[01:49:06] [CPU] t=221: atendiendo a Asistente Médico
+[01:49:06] [CPU] t=222: atendiendo a Juego Snake
+[01:49:06] [APP] 'Juego Snake' reiniciado por el usuario
+[01:49:07] [CPU] t=223: atendiendo a Paciente 9
+[01:49:07] [CPU] t=224: atendiendo a Asistente Médico
+[01:49:07] [CPU] t=225: atendiendo a Juego Snake
+[01:49:08] [CPU] t=226: atendiendo a Paciente 9
+[01:49:08] [APP] 'Juego Snake' reiniciado por el usuario
+[01:49:08] [CPU] t=227: atendiendo a Asistente Médico
+[01:49:09] [CPU] t=228: atendiendo a Juego Snake
+[01:49:09] [CPU] t=229: atendiendo a Paciente 9
+[01:49:09] [APP] 'Juego Snake' reiniciado por el usuario
+[01:49:09] [CPU] t=230: atendiendo a Asistente Médico
+[01:49:09] [APP] 'Juego Snake' (PID 12) cerrada por el usuario
+[01:49:10] [CPU] t=231: atendiendo a Paciente 9
+[01:49:10] [CPU] t=232: atendiendo a Asistente Médico
+[01:49:10] [APP] 'Asistente Médico' (PID 11) cerrada por el usuario
+[01:49:11] [CPU] t=233: atendiendo a Paciente 9
+[01:49:11] [CPU] t=234: atendiendo a Paciente 9
+[01:49:11] [CPU] t=235: atendiendo a Paciente 9
+[01:49:12] [CPU] t=236: atendiendo a Paciente 9
+[01:49:12] [CPU] t=237: atendiendo a Paciente 9
+[01:49:13] [CPU] t=238: atendiendo a Paciente 9
+[01:49:13] [CPU] t=239: atendiendo a Paciente 9
+[01:49:13] [CPU] t=240: atendiendo a Paciente 9
+[01:49:14] [CPU] t=241: atendiendo a Paciente 9
+[01:49:14] [CPU] t=242: atendiendo a Paciente 9
+[01:49:15] [CPU] t=243: atendiendo a Paciente 9
+[01:49:15] [CPU] t=244: atendiendo a Paciente 9
+[01:49:15] [CPU] t=245: atendiendo a Paciente 9
+[01:49:16] [CPU] t=246: atendiendo a Paciente 9
+[01:49:16] [CPU] t=247: atendiendo a Paciente 9
+[01:49:17] [CPU] t=248: atendiendo a Paciente 9
+[01:49:17] [CPU] t=249: atendiendo a Paciente 9
+[01:49:17] [CPU] t=250: atendiendo a Paciente 9
+[01:49:18] [CPU] t=251: atendiendo a Paciente 9
+[01:49:18] [CPU] t=252: atendiendo a Paciente 9
+[01:49:19] [CPU] t=253: atendiendo a Paciente 9
+[01:49:19] [CPU] t=254: atendiendo a Paciente 9
+[01:49:19] [CPU] t=255: atendiendo a Paciente 9
+[01:49:20] [CPU] t=256: atendiendo a Paciente 9
+[01:49:20] [CPU] t=257: atendiendo a Paciente 9
+[01:49:21] [CPU] t=258: atendiendo a Paciente 9
+[01:49:21] [CPU] t=259: atendiendo a Paciente 9
+[01:49:21] [CPU] t=260: atendiendo a Paciente 9
+[01:49:22] [APP] 'Asistente Médico' se registra como proceso (PID 13, prio 7)
+[01:49:22] [CPU] t=261: atendiendo a Paciente 9
+[01:49:22] [CPU] t=262: atendiendo a Asistente Médico
+[01:49:23] [CPU] t=263: atendiendo a Paciente 9
+[01:49:23] [CPU] t=264: atendiendo a Asistente Médico
+[01:49:23] [CPU] t=265: atendiendo a Paciente 9
+[01:49:24] [CPU] t=266: atendiendo a Asistente Médico
+[01:49:24] [CPU] t=267: atendiendo a Paciente 9
+[01:49:25] [CPU] t=268: atendiendo a Asistente Médico
+[01:49:25] [CPU] t=269: atendiendo a Paciente 9
+[01:49:25] [CPU] t=270: atendiendo a Asistente Médico
+[01:49:26] [CPU] t=271: atendiendo a Paciente 9
+[01:49:26] [CPU] t=272: atendiendo a Asistente Médico
+[01:49:27] [CPU] t=273: atendiendo a Paciente 9
+[01:49:27] [CPU] t=274: atendiendo a Asistente Médico
+[01:49:27] [CPU] t=275: atendiendo a Paciente 9
+[01:49:28] [CPU] t=276: atendiendo a Asistente Médico
+[01:49:28] [CPU] t=277: atendiendo a Paciente 9
+[01:49:29] [CPU] t=278: atendiendo a Asistente Médico
+[01:49:29] [CPU] t=279: atendiendo a Paciente 9
+[01:49:29] [CPU] t=280: atendiendo a Asistente Médico
+[01:49:30] [CPU] t=281: atendiendo a Paciente 9
+[01:49:30] [CPU] t=282: atendiendo a Asistente Médico
+[01:49:31] [CPU] t=283: atendiendo a Paciente 9
+[01:49:31] [CPU] t=284: atendiendo a Asistente Médico
+[01:49:31] [CPU] t=285: atendiendo a Paciente 9
+[01:49:32] [CPU] t=286: atendiendo a Asistente Médico
+[01:49:32] [CPU] t=287: atendiendo a Paciente 9
+[01:49:33] [CPU] t=288: atendiendo a Asistente Médico
+[01:49:33] [CPU] t=289: atendiendo a Paciente 9
+[01:49:33] [CPU] t=290: atendiendo a Asistente Médico
+[01:49:34] [CPU] t=291: atendiendo a Paciente 9
+[01:49:34] [CPU] t=292: atendiendo a Asistente Médico
+[01:49:35] [CPU] t=293: atendiendo a Paciente 9
+[01:49:35] [CPU] t=294: atendiendo a Asistente Médico
+[01:49:35] [CPU] t=295: atendiendo a Paciente 9
+[01:49:36] [CPU] t=296: atendiendo a Asistente Médico
+[01:49:36] [CPU] t=297: atendiendo a Paciente 9
+[01:49:37] [CPU] t=298: atendiendo a Asistente Médico
+[01:49:37] [CPU] t=299: atendiendo a Paciente 9
+[01:49:37] [CPU] t=300: atendiendo a Asistente Médico
+[01:49:38] [CPU] t=301: atendiendo a Paciente 9
+[01:49:38] [CPU] t=302: atendiendo a Asistente Médico
+[01:49:39] [CPU] t=303: atendiendo a Paciente 9
+[01:49:39] [CPU] t=304: atendiendo a Asistente Médico
+[01:49:39] [CPU] t=305: atendiendo a Paciente 9
+[01:49:40] [CPU] t=306: atendiendo a Asistente Médico
+[01:49:40] [CPU] t=307: atendiendo a Paciente 9
+[01:49:40] [APP] 'Asistente Médico' (PID 13) cerrada por el usuario
+[01:49:41] [CPU] t=308: atendiendo a Paciente 9
+[01:49:41] [CPU] t=309: atendiendo a Paciente 9
+[01:49:41] [CPU] t=310: atendiendo a Paciente 9
+[01:49:42] [CPU] t=311: atendiendo a Paciente 9
+[01:49:42] [CPU] t=312: atendiendo a Paciente 9
+[01:49:43] [CPU] t=313: atendiendo a Paciente 9
+[01:49:43] [CPU] t=314: atendiendo a Paciente 9
+[01:49:43] [CPU] t=315: atendiendo a Paciente 9
+[01:49:44] [CPU] t=316: atendiendo a Paciente 9
+[01:49:44] [CPU] t=317: atendiendo a Paciente 9
+[01:49:45] [CPU] t=318: atendiendo a Paciente 9
+[01:49:45] [CPU] t=319: atendiendo a Paciente 9
+[01:49:45] [CPU] t=320: atendiendo a Paciente 9
+[01:49:46] [CPU] t=321: atendiendo a Paciente 9
+[01:49:46] [CPU] t=322: atendiendo a Paciente 9
+[01:49:47] [CPU] t=323: atendiendo a Paciente 9
+[01:49:47] [CPU] t=324: atendiendo a Paciente 9
+[01:49:47] [logd] Demonio de logging detenido.
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-23 02:11:42
+  PID daemon de logging: 1620
+============================================================
+[02:12:08] [HISTORIA] Enf. Silva llega a actualizar la historia clínica
+[02:12:09] [HISTORIA] Enf. Silva obtiene acceso EXCLUSIVO y comienza a escribir
+[02:12:14] [HISTORIA] Enf. Silva termina la actualización: Temp: 37.2°C · PA: 130/85 · FC: 88 bpm · Observación
+[02:12:18] [ADMIT] Paciente 1 admitido (PID 1, gravedad 5)
+[02:12:18] [CPU] t=1: atendiendo a Paciente 1
+[02:12:18] [ADMIT] Paciente 2 admitido (PID 2, gravedad 8)
+[02:12:18] [CPU] t=2: atendiendo a Paciente 1
+[02:12:18] [ADMIT] Paciente 3 admitido (PID 3, gravedad 8)
+[02:12:19] [ADMIT] Paciente 4 admitido (PID 4, gravedad 6)
+[02:12:19] [CPU] t=3: atendiendo a Paciente 2
+[02:12:19] [ADMIT] Paciente 5 admitido (PID 5, gravedad 5)
+[02:12:19] [ADMIT] Paciente 6 admitido (PID 6, gravedad 6)
+[02:12:19] [CPU] t=4: atendiendo a Paciente 1
+[02:12:20] [CPU] t=5: atendiendo a Paciente 3
+[02:12:20] [CPU] t=6: atendiendo a Paciente 4
+[02:12:20] [CPU] t=7: atendiendo a Paciente 2
+[02:12:21] [CPU] t=8: atendiendo a Paciente 5
+[02:12:21] [CPU] t=9: atendiendo a Paciente 6
+[02:12:22] [CPU] t=10: atendiendo a Paciente 1
+[02:12:22] [CPU] t=11: atendiendo a Paciente 3
+[02:12:22] [CPU] t=12: atendiendo a Paciente 4
+[02:12:23] [CPU] t=13: atendiendo a Paciente 2
+[02:12:23] [CPU] t=14: atendiendo a Paciente 5
+[02:12:24] [CPU] t=15: atendiendo a Paciente 6
+[02:12:24] [CPU] t=16: atendiendo a Paciente 1
+[02:12:24] [CPU] t=17: atendiendo a Paciente 3
+[02:12:25] [CPU] t=18: atendiendo a Paciente 4
+[02:12:25] [CPU] t=19: atendiendo a Paciente 2
+[02:12:26] [CPU] t=20: atendiendo a Paciente 5
+[02:12:26] [CPU] t=21: atendiendo a Paciente 6
+[02:12:26] [CPU] t=22: atendiendo a Paciente 1
+[02:12:27] [ALTA] Paciente 1 terminó su atención · esperó 6.4s
+[02:12:27] [CPU] t=23: atendiendo a Paciente 3
+[02:12:27] [CPU] t=24: atendiendo a Paciente 4
+[02:12:28] [CPU] t=25: atendiendo a Paciente 2
+[02:12:28] [CPU] t=26: atendiendo a Paciente 5
+[02:12:28] [CPU] t=27: atendiendo a Paciente 6
+[02:12:29] [CPU] t=28: atendiendo a Paciente 3
+[02:12:29] [CPU] t=29: atendiendo a Paciente 4
+[02:12:30] [CPU] t=30: atendiendo a Paciente 2
+[02:12:30] [ALTA] Paciente 2 terminó su atención · esperó 9.4s
+[02:12:30] [CPU] t=31: atendiendo a Paciente 5
+[02:12:30] [CPU] t=32: atendiendo a Paciente 6
+[02:12:31] [CPU] t=33: atendiendo a Paciente 3
+[02:12:31] [CPU] t=34: atendiendo a Paciente 4
+[02:12:32] [CPU] t=35: atendiendo a Paciente 5
+[02:12:32] [CPU] t=36: atendiendo a Paciente 6
+[02:12:32] [CPU] t=37: atendiendo a Paciente 3
+[02:12:33] [CPU] t=38: atendiendo a Paciente 4
+[02:12:33] [CPU] t=39: atendiendo a Paciente 5
+[02:12:34] [CPU] t=40: atendiendo a Paciente 6
+[02:12:34] [CPU] t=41: atendiendo a Paciente 3
+[02:12:34] [CPU] t=42: atendiendo a Paciente 4
+[02:12:35] [CPU] t=43: atendiendo a Paciente 5
+[02:12:35] [CPU] t=44: atendiendo a Paciente 6
+[02:12:36] [ALTA] Paciente 6 terminó su atención · esperó 13.3s
+[02:12:36] [CPU] t=45: atendiendo a Paciente 3
+[02:12:36] [CPU] t=46: atendiendo a Paciente 4
+[02:12:36] [ALTA] Paciente 4 terminó su atención · esperó 14.2s
+[02:12:36] [CPU] t=47: atendiendo a Paciente 5
+[02:12:37] [CPU] t=48: atendiendo a Paciente 3
+[02:12:37] [ALTA] Paciente 3 terminó su atención · esperó 14.8s
+[02:12:37] [CPU] t=49: atendiendo a Paciente 5
+[02:12:38] [CPU] t=50: atendiendo a Paciente 5
+[02:12:38] [ALTA] Paciente 5 terminó su atención · esperó 14.7s
+[02:12:57] [FARMACIA] Iniciando turno de producción
+[02:12:58] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:12:58] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:12:58] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:12:58] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:12:58] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:12:58] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:12:59] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:12:59] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:12:59] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:12:59] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:12:59] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:12:59] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:00] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:00] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:00] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:00] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:00] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:01] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:01] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:01] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:01] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:01] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:01] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:02] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:02] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:02] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:02] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:02] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:02] [FARMACIA] Medicamento añadido (manual)
+[02:13:02] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:03] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:03] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:03] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:03] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:04] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:04] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:04] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:04] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:05] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:05] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:05] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:05] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:05] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:05] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:06] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:06] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:06] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:06] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:06] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:07] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:07] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:07] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:07] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:07] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:07] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:07] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:08] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:08] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:08] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:08] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:08] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:09] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:09] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:09] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:09] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:09] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:10] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:10] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:10] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:10] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:11] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:11] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:11] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:11] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:11] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:12] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:12] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:12] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:12] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:12] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:13] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:13] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:13] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:13] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:14] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:14] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:14] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:14] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:14] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:14] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:14] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:15] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:15] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:15] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:15] [APP] 'Juego Snake' se registra como proceso (PID 7, prio 8)
+[02:13:15] [CPU] t=51: atendiendo a Juego Snake
+[02:13:15] [CPU] t=52: atendiendo a Juego Snake
+[02:13:15] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:15] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:15] [CPU] t=53: atendiendo a Juego Snake
+[02:13:16] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:16] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:16] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:16] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:16] [CPU] t=54: atendiendo a Juego Snake
+[02:13:16] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:16] [APP] 'Juego Snake' reiniciado por el usuario
+[02:13:16] [CPU] t=55: atendiendo a Juego Snake
+[02:13:17] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:17] [CPU] t=56: atendiendo a Juego Snake
+[02:13:17] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:17] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:17] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:17] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:17] [CPU] t=57: atendiendo a Juego Snake
+[02:13:17] [CPU] t=58: atendiendo a Juego Snake
+[02:13:18] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:18] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:18] [CPU] t=59: atendiendo a Juego Snake
+[02:13:18] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:18] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:18] [CPU] t=60: atendiendo a Juego Snake
+[02:13:18] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:18] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:18] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:19] [CPU] t=61: atendiendo a Juego Snake
+[02:13:19] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:19] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:19] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:19] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:19] [CPU] t=62: atendiendo a Juego Snake
+[02:13:19] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:19] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:19] [CPU] t=63: atendiendo a Juego Snake
+[02:13:20] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:20] [CPU] t=64: atendiendo a Juego Snake
+[02:13:20] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:20] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:20] [CPU] t=65: atendiendo a Juego Snake
+[02:13:20] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:21] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:21] [CPU] t=66: atendiendo a Juego Snake
+[02:13:21] [CPU] t=67: atendiendo a Juego Snake
+[02:13:21] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:21] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:21] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:21] [CPU] t=68: atendiendo a Juego Snake
+[02:13:22] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:22] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:22] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:22] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:22] [CPU] t=69: atendiendo a Juego Snake
+[02:13:22] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:22] [CPU] t=70: atendiendo a Juego Snake
+[02:13:23] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:23] [CPU] t=71: atendiendo a Juego Snake
+[02:13:23] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:23] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:23] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:23] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:23] [CPU] t=72: atendiendo a Juego Snake
+[02:13:23] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:23] [APP] 'Juego Snake' reiniciado por el usuario
+[02:13:23] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:23] [CPU] t=73: atendiendo a Juego Snake
+[02:13:24] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:24] [CPU] t=74: atendiendo a Juego Snake
+[02:13:24] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:24] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:24] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:24] [CPU] t=75: atendiendo a Juego Snake
+[02:13:25] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:25] [CPU] t=76: atendiendo a Juego Snake
+[02:13:25] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:25] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:25] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:25] [CPU] t=77: atendiendo a Juego Snake
+[02:13:25] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:25] [CPU] t=78: atendiendo a Juego Snake
+[02:13:26] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:26] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:26] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:26] [CPU] t=79: atendiendo a Juego Snake
+[02:13:26] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:26] [CPU] t=80: atendiendo a Juego Snake
+[02:13:26] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:26] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:26] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:26] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:27] [CPU] t=81: atendiendo a Juego Snake
+[02:13:27] [CPU] t=82: atendiendo a Juego Snake
+[02:13:27] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:27] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:27] [CPU] t=83: atendiendo a Juego Snake
+[02:13:28] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:28] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:28] [CPU] t=84: atendiendo a Juego Snake
+[02:13:28] [CPU] t=85: atendiendo a Juego Snake
+[02:13:28] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:28] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:28] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:28] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:29] [CPU] t=86: atendiendo a Juego Snake
+[02:13:29] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:29] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:29] [CPU] t=87: atendiendo a Juego Snake
+[02:13:29] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:29] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:30] [CPU] t=88: atendiendo a Juego Snake
+[02:13:30] [CPU] t=89: atendiendo a Juego Snake
+[02:13:30] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:30] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:30] [CPU] t=90: atendiendo a Juego Snake
+[02:13:31] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:31] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:31] [CPU] t=91: atendiendo a Juego Snake
+[02:13:31] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:31] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:31] [CPU] t=92: atendiendo a Juego Snake
+[02:13:31] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:31] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:32] [CPU] t=93: atendiendo a Juego Snake
+[02:13:32] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:32] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:32] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:32] [CPU] t=94: atendiendo a Juego Snake
+[02:13:32] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:32] [CPU] t=95: atendiendo a Juego Snake
+[02:13:33] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:33] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:33] [CPU] t=96: atendiendo a Juego Snake
+[02:13:33] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:33] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:33] [CPU] t=97: atendiendo a Juego Snake
+[02:13:34] [CPU] t=98: atendiendo a Juego Snake
+[02:13:34] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:34] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:34] [CPU] t=99: atendiendo a Juego Snake
+[02:13:34] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:34] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:34] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:34] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:34] [CPU] t=100: atendiendo a Juego Snake
+[02:13:35] [CPU] t=101: atendiendo a Juego Snake
+[02:13:35] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:35] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:35] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:35] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:35] [CPU] t=102: atendiendo a Juego Snake
+[02:13:36] [CPU] t=103: atendiendo a Juego Snake
+[02:13:36] [CPU] t=104: atendiendo a Juego Snake
+[02:13:36] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:36] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:36] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:36] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:36] [CPU] t=105: atendiendo a Juego Snake
+[02:13:37] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:37] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:37] [CPU] t=106: atendiendo a Juego Snake
+[02:13:37] [CPU] t=107: atendiendo a Juego Snake
+[02:13:37] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:37] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:38] [CPU] t=108: atendiendo a Juego Snake
+[02:13:38] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:38] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:38] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:38] [CPU] t=109: atendiendo a Juego Snake
+[02:13:38] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:38] [CPU] t=110: atendiendo a Juego Snake
+[02:13:39] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:39] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:39] [CPU] t=111: atendiendo a Juego Snake
+[02:13:39] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:39] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:39] [CPU] t=112: atendiendo a Juego Snake
+[02:13:39] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:39] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:40] [CPU] t=113: atendiendo a Juego Snake
+[02:13:40] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:40] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:40] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:40] [CPU] t=114: atendiendo a Juego Snake
+[02:13:40] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:40] [CPU] t=115: atendiendo a Juego Snake
+[02:13:41] [APP] 'Juego Snake' reiniciado por el usuario
+[02:13:41] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:41] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:41] [CPU] t=116: atendiendo a Juego Snake
+[02:13:41] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:41] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:41] [CPU] t=117: atendiendo a Juego Snake
+[02:13:41] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:41] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:42] [CPU] t=118: atendiendo a Juego Snake
+[02:13:42] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:42] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:42] [CPU] t=119: atendiendo a Juego Snake
+[02:13:42] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:42] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:42] [CPU] t=120: atendiendo a Juego Snake
+[02:13:42] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:43] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:43] [CPU] t=121: atendiendo a Juego Snake
+[02:13:43] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:43] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:43] [CPU] t=122: atendiendo a Juego Snake
+[02:13:44] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:44] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:44] [CPU] t=123: atendiendo a Juego Snake
+[02:13:44] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:44] [CPU] t=124: atendiendo a Juego Snake
+[02:13:44] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:44] [CPU] t=125: atendiendo a Juego Snake
+[02:13:45] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:45] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:45] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:45] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:45] [CPU] t=126: atendiendo a Juego Snake
+[02:13:45] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:45] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:45] [CPU] t=127: atendiendo a Juego Snake
+[02:13:45] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:45] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:46] [CPU] t=128: atendiendo a Juego Snake
+[02:13:46] [CPU] t=129: atendiendo a Juego Snake
+[02:13:46] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:46] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:46] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:46] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:46] [CPU] t=130: atendiendo a Juego Snake
+[02:13:46] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:46] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:47] [CPU] t=131: atendiendo a Juego Snake
+[02:13:47] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:47] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:47] [CPU] t=132: atendiendo a Juego Snake
+[02:13:47] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:47] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:47] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:48] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:48] [CPU] t=133: atendiendo a Juego Snake
+[02:13:48] [APP] 'Juego Snake' reiniciado por el usuario
+[02:13:48] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:48] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:48] [CPU] t=134: atendiendo a Juego Snake
+[02:13:48] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:48] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:48] [CPU] t=135: atendiendo a Juego Snake
+[02:13:49] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:49] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:49] [CPU] t=136: atendiendo a Juego Snake
+[02:13:49] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:49] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:49] [CPU] t=137: atendiendo a Juego Snake
+[02:13:49] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:50] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:50] [CPU] t=138: atendiendo a Juego Snake
+[02:13:50] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:50] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:50] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:50] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:50] [CPU] t=139: atendiendo a Juego Snake
+[02:13:50] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:50] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:50] [CPU] t=140: atendiendo a Juego Snake
+[02:13:50] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:50] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:51] [CPU] t=141: atendiendo a Juego Snake
+[02:13:51] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:51] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:51] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:51] [CPU] t=142: atendiendo a Juego Snake
+[02:13:51] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:52] [CPU] t=143: atendiendo a Juego Snake
+[02:13:52] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:52] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:52] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:52] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:52] [CPU] t=144: atendiendo a Juego Snake
+[02:13:52] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:52] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:52] [CPU] t=145: atendiendo a Juego Snake
+[02:13:53] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:53] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:53] [CPU] t=146: atendiendo a Juego Snake
+[02:13:53] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:53] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:53] [CPU] t=147: atendiendo a Juego Snake
+[02:13:54] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:54] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:54] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:54] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:54] [CPU] t=148: atendiendo a Juego Snake
+[02:13:54] [CPU] t=149: atendiendo a Juego Snake
+[02:13:54] [CPU] t=150: atendiendo a Juego Snake
+[02:13:54] [APP] 'Juego Snake' reiniciado por el usuario
+[02:13:55] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:55] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:55] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:55] [CPU] t=151: atendiendo a Juego Snake
+[02:13:55] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:55] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:55] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:55] [CPU] t=152: atendiendo a Juego Snake
+[02:13:55] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:56] [CPU] t=153: atendiendo a Juego Snake
+[02:13:56] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:56] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:56] [CPU] t=154: atendiendo a Juego Snake
+[02:13:56] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:56] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:56] [CPU] t=155: atendiendo a Juego Snake
+[02:13:56] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:56] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:57] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:57] [CPU] t=156: atendiendo a Juego Snake
+[02:13:57] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:57] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:57] [CPU] t=157: atendiendo a Juego Snake
+[02:13:57] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:58] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:58] [CPU] t=158: atendiendo a Juego Snake
+[02:13:58] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:58] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:58] [CPU] t=159: atendiendo a Juego Snake
+[02:13:58] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:58] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:58] [CPU] t=160: atendiendo a Juego Snake
+[02:13:58] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:13:59] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:13:59] [CPU] t=161: atendiendo a Juego Snake
+[02:13:59] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:13:59] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:13:59] [CPU] t=162: atendiendo a Juego Snake
+[02:13:59] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:13:59] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:00] [CPU] t=163: atendiendo a Juego Snake
+[02:14:00] [CPU] t=164: atendiendo a Juego Snake
+[02:14:00] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:00] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:00] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:00] [CPU] t=165: atendiendo a Juego Snake
+[02:14:01] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:01] [CPU] t=166: atendiendo a Juego Snake
+[02:14:01] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:01] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:01] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:01] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:01] [CPU] t=167: atendiendo a Juego Snake
+[02:14:02] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:02] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:02] [CPU] t=168: atendiendo a Juego Snake
+[02:14:02] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:02] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:02] [CPU] t=169: atendiendo a Juego Snake
+[02:14:02] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:02] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:02] [CPU] t=170: atendiendo a Juego Snake
+[02:14:03] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:03] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:03] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:03] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:03] [CPU] t=171: atendiendo a Juego Snake
+[02:14:03] [CPU] t=172: atendiendo a Juego Snake
+[02:14:03] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:03] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:04] [CPU] t=173: atendiendo a Juego Snake
+[02:14:04] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:04] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:04] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:04] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:04] [CPU] t=174: atendiendo a Juego Snake
+[02:14:04] [CPU] t=175: atendiendo a Juego Snake
+[02:14:04] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:05] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:05] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:05] [CPU] t=176: atendiendo a Juego Snake
+[02:14:05] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:05] [CPU] t=177: atendiendo a Juego Snake
+[02:14:05] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:05] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:05] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:06] [CPU] t=178: atendiendo a Juego Snake
+[02:14:06] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:06] [CPU] t=179: atendiendo a Juego Snake
+[02:14:06] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:06] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:06] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:06] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:06] [CPU] t=180: atendiendo a Juego Snake
+[02:14:07] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:07] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:07] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:07] [CPU] t=181: atendiendo a Juego Snake
+[02:14:07] [CPU] t=182: atendiendo a Juego Snake
+[02:14:07] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:07] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:07] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:08] [CPU] t=183: atendiendo a Juego Snake
+[02:14:08] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:08] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:08] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:08] [CPU] t=184: atendiendo a Juego Snake
+[02:14:08] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:08] [CPU] t=185: atendiendo a Juego Snake
+[02:14:09] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:09] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:09] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:09] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:09] [CPU] t=186: atendiendo a Juego Snake
+[02:14:09] [CPU] t=187: atendiendo a Juego Snake
+[02:14:10] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:10] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:10] [CPU] t=188: atendiendo a Juego Snake
+[02:14:10] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:10] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:10] [CPU] t=189: atendiendo a Juego Snake
+[02:14:10] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:10] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:10] [CPU] t=190: atendiendo a Juego Snake
+[02:14:11] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:11] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:11] [CPU] t=191: atendiendo a Juego Snake
+[02:14:11] [CPU] t=192: atendiendo a Juego Snake
+[02:14:11] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:11] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:11] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:11] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:12] [CPU] t=193: atendiendo a Juego Snake
+[02:14:12] [CPU] t=194: atendiendo a Juego Snake
+[02:14:12] [CPU] t=195: atendiendo a Juego Snake
+[02:14:12] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:12] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:13] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:13] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:13] [CPU] t=196: atendiendo a Juego Snake
+[02:14:13] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:13] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:13] [CPU] t=197: atendiendo a Juego Snake
+[02:14:13] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:13] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:14] [CPU] t=198: atendiendo a Juego Snake
+[02:14:14] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:14] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:14] [CPU] t=199: atendiendo a Juego Snake
+[02:14:14] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:14] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:14] [CPU] t=200: atendiendo a Juego Snake
+[02:14:15] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:15] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:15] [CPU] t=201: atendiendo a Juego Snake
+[02:14:15] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:15] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:15] [CPU] t=202: atendiendo a Juego Snake
+[02:14:16] [CPU] t=203: atendiendo a Juego Snake
+[02:14:16] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:16] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:16] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:16] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:16] [CPU] t=204: atendiendo a Juego Snake
+[02:14:16] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:16] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:16] [CPU] t=205: atendiendo a Juego Snake
+[02:14:17] [CPU] t=206: atendiendo a Juego Snake
+[02:14:17] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:17] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:17] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:17] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:17] [APP] 'Juego Snake' reiniciado por el usuario
+[02:14:17] [CPU] t=207: atendiendo a Juego Snake
+[02:14:17] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:17] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:17] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:18] [CPU] t=208: atendiendo a Juego Snake
+[02:14:18] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:18] [CPU] t=209: atendiendo a Juego Snake
+[02:14:18] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:18] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:18] [APP] 'Juego Snake' reiniciado por el usuario
+[02:14:18] [CPU] t=210: atendiendo a Juego Snake
+[02:14:18] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:18] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:19] [CPU] t=211: atendiendo a Juego Snake
+[02:14:19] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:19] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:19] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:19] [CPU] t=212: atendiendo a Juego Snake
+[02:14:19] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:20] [APP] 'Juego Snake' reiniciado por el usuario
+[02:14:20] [CPU] t=213: atendiendo a Juego Snake
+[02:14:20] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:20] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:20] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:20] [CPU] t=214: atendiendo a Juego Snake
+[02:14:20] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:20] [CPU] t=215: atendiendo a Juego Snake
+[02:14:21] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:21] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:21] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:21] [APP] 'Juego Snake' reiniciado por el usuario
+[02:14:21] [CPU] t=216: atendiendo a Juego Snake
+[02:14:21] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:21] [CPU] t=217: atendiendo a Juego Snake
+[02:14:22] [CPU] t=218: atendiendo a Juego Snake
+[02:14:22] [APP] 'Juego Snake' (PID 7) cerrada por el usuario
+[02:14:22] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:22] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:22] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:22] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:22] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:22] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:23] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:23] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:24] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:24] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:24] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:24] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:24] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:24] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:25] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:25] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:25] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:25] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:25] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:25] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:26] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:26] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:26] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:26] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:27] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:27] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:27] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:27] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:28] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:28] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:28] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:28] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:28] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:28] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:29] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:29] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:29] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:29] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:29] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:29] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:29] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:29] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:30] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:30] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:30] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:30] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:30] [APP] 'Asistente Médico' se registra como proceso (PID 8, prio 7)
+[02:14:30] [CPU] t=219: atendiendo a Asistente Médico
+[02:14:30] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:30] [CPU] t=220: atendiendo a Asistente Médico
+[02:14:30] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:31] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:31] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:31] [CPU] t=221: atendiendo a Asistente Médico
+[02:14:31] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:31] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:31] [CPU] t=222: atendiendo a Asistente Médico
+[02:14:31] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:31] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:31] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:31] [CPU] t=223: atendiendo a Asistente Médico
+[02:14:32] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:32] [CPU] t=224: atendiendo a Asistente Médico
+[02:14:32] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:32] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:32] [CPU] t=225: atendiendo a Asistente Médico
+[02:14:32] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:32] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:33] [CPU] t=226: atendiendo a Asistente Médico
+[02:14:33] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:33] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:33] [CPU] t=227: atendiendo a Asistente Médico
+[02:14:33] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:33] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:33] [CPU] t=228: atendiendo a Asistente Médico
+[02:14:34] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:34] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:34] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:34] [CPU] t=229: atendiendo a Asistente Médico
+[02:14:34] [APP] 'Asistente Médico' (PID 8) cerrada por el usuario
+[02:14:34] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:34] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:34] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:34] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:35] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:35] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:35] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:35] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:35] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:36] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:36] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:36] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:36] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:37] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:37] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:37] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:37] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:37] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:37] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:38] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:38] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:38] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:38] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:39] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:39] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:39] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:39] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:39] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:39] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:40] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:40] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:40] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:40] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:41] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:41] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:41] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:41] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:41] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:41] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:42] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:42] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:42] [HISTORIA] Enf. Mora llega a actualizar la historia clínica
+[02:14:42] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:42] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:43] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:43] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:43] [HISTORIA] Enf. Mora obtiene acceso EXCLUSIVO y comienza a escribir
+[02:14:44] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:44] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:44] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:44] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:45] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:45] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:45] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:45] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:45] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:45] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:46] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:46] [HISTORIA] Dra. Reyes llega a consultar la historia clínica
+[02:14:46] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:46] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:46] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:46] [HISTORIA] Enf. Mora termina la actualización: Temp: 37.2°C · PA: 130/85 · FC: 88 bpm · Observación
+[02:14:47] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:47] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:47] [HISTORIA] Dra. López llega a consultar la historia clínica
+[02:14:47] [HISTORIA] Dra. Reyes comienza a leer (lectores activos: 1)
+[02:14:47] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:47] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:48] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:48] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:48] [HISTORIA] Dra. López comienza a leer (lectores activos: 2)
+[02:14:48] [HISTORIA] Dr. Ramírez llega a consultar la historia clínica
+[02:14:48] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:48] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:49] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:49] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:49] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:49] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:49] [HISTORIA] Dr. Ramírez comienza a leer (lectores activos: 3)
+[02:14:49] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:49] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:49] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:50] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:50] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:50] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:50] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:50] [HISTORIA] Dra. Reyes termina su consulta
+[02:14:50] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:50] [HISTORIA] Enf. Silva llega a actualizar la historia clínica
+[02:14:50] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:50] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:51] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:51] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:51] [HISTORIA] Dr. Martín llega a consultar la historia clínica
+[02:14:51] [HISTORIA] Enf. Silva debe esperar: hay lectores o un escritor activo
+[02:14:51] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:51] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:52] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:52] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:52] [HISTORIA] Dra. López termina su consulta
+[02:14:52] [HISTORIA] Dr. Martín comienza a leer (lectores activos: 2)
+[02:14:52] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:52] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:52] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:52] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:53] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:53] [HISTORIA] Dra. Castro llega a consultar la historia clínica
+[02:14:53] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:53] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:53] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:53] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:54] [HISTORIA] Dr. Ramírez termina su consulta
+[02:14:54] [HISTORIA] Dra. Castro comienza a leer (lectores activos: 2)
+[02:14:54] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:54] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:54] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:54] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:54] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:54] [HISTORIA] Dra. Castro llega a consultar la historia clínica
+[02:14:54] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:55] [HISTORIA] Dra. Torres llega a consultar la historia clínica
+[02:14:55] [HISTORIA] Dra. Castro llega a consultar la historia clínica
+[02:14:55] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:55] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:55] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:55] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:55] [HISTORIA] Dra. Castro comienza a leer (lectores activos: 3)
+[02:14:56] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:56] [HISTORIA] Dra. Torres comienza a leer (lectores activos: 4)
+[02:14:56] [HISTORIA] Dra. Castro comienza a leer (lectores activos: 5)
+[02:14:56] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:56] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:56] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:56] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:57] [HISTORIA] Dr. Martín termina su consulta
+[02:14:57] [HISTORIA] Dra. Castro termina su consulta
+[02:14:57] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:57] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:57] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:57] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:58] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:58] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:58] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:58] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:14:59] [HISTORIA] Dra. Torres termina su consulta
+[02:14:59] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:14:59] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:14:59] [HISTORIA] Dra. Castro termina su consulta
+[02:14:59] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:14:59] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:14:59] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:15:00] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:15:00] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:15:00] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:15:00] [HISTORIA] Dra. Castro termina su consulta
+[02:15:00] [HISTORIA] Último lector se retira: historia clínica disponible para escritura
+[02:15:00] [HISTORIA] Enf. Silva obtiene acceso EXCLUSIVO tras esperar 9.0s
+[02:15:01] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:15:01] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:15:01] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:15:01] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:15:02] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:15:02] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:15:02] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:15:02] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:15:03] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:15:03] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:15:03] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:15:03] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:15:03] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:15:03] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:15:03] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:15:04] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:15:04] [HISTORIA] Enf. Silva termina la actualización: Temp: 37.5°C · PA: 135/88 · FC: 80 bpm · En observación
+[02:15:04] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:15:04] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:15:04] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:15:05] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:15:05] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:15:05] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:15:05] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:15:05] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:15:05] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:15:06] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:15:06] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:15:06] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:15:06] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:15:06] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:15:07] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:15:07] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:15:07] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:15:07] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:15:08] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:15:08] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:15:08] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:15:08] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:15:09] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:15:09] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:15:09] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:15:09] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:15:09] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:15:09] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:15:10] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:15:10] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:15:10] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:15:10] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:15:10] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:15:10] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:15:11] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:15:11] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:15:11] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:15:11] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:15:11] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:15:11] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:15:12] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:15:12] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:15:12] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:15:12] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:15:13] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:15:13] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:15:13] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:15:13] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:15:13] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:15:14] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:15:14] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:15:14] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:15:14] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:15:14] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:15:14] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:15:15] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:15:15] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:15:15] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:15:15] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:15:15] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:15:15] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:15:16] [FARMACIA] Enfermero 3 retiró un medicamento
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-23 02:22:15
+  PID daemon de logging: 7736
+============================================================
+[02:22:35] [ADMIT] Paciente 1 admitido (PID 1, gravedad 6)
+[02:22:35] [CPU] t=1: atendiendo a Paciente 1
+[02:22:35] [CPU] t=2: atendiendo a Paciente 1
+[02:22:36] [CPU] t=3: atendiendo a Paciente 1
+[02:22:36] [CPU] t=4: atendiendo a Paciente 1
+[02:22:37] [CPU] t=5: atendiendo a Paciente 1
+[02:22:37] [CPU] t=6: atendiendo a Paciente 1
+[02:22:37] [CPU] t=7: atendiendo a Paciente 1
+[02:22:38] [CPU] t=8: atendiendo a Paciente 1
+[02:22:38] [CPU] t=9: atendiendo a Paciente 1
+[02:22:39] [CPU] t=10: atendiendo a Paciente 1
+[02:22:39] [ALTA] Paciente 1 terminó su atención · esperó 0.0s
+[02:22:43] [ADMIT] Paciente 2 admitido (PID 2, gravedad 3)
+[02:22:43] [CPU] t=11: atendiendo a Paciente 2
+[02:22:43] [ADMIT] Paciente 3 admitido (PID 3, gravedad 7)
+[02:22:43] [CPU] t=12: atendiendo a Paciente 2
+[02:22:43] [ADMIT] Paciente 4 admitido (PID 4, gravedad 5)
+[02:22:43] [CPU] t=13: atendiendo a Paciente 3
+[02:22:44] [CPU] t=14: atendiendo a Paciente 2
+[02:22:44] [CPU] t=15: atendiendo a Paciente 4
+[02:22:45] [CPU] t=16: atendiendo a Paciente 3
+[02:22:45] [CPU] t=17: atendiendo a Paciente 2
+[02:22:45] [CPU] t=18: atendiendo a Paciente 4
+[02:22:46] [CPU] t=19: atendiendo a Paciente 3
+[02:22:46] [DEADLOCK] Iniciando demo: dos pacientes pelearán por Quirófano + Cirujano
+[02:22:46] [ADMIT] Paciente 5 admitido (PID 5, gravedad 4)
+[02:22:46] [ADMIT] Paciente 6 admitido (PID 6, gravedad 6)
+[02:22:46] [RECURSO] Paciente 5 solicita QUIROFANO
+[02:22:46] [RECURSO] Paciente 5 obtuvo QUIROFANO
+[02:22:46] [RECURSO] Paciente 6 solicita CIRUJANO
+[02:22:46] [RECURSO] Paciente 6 obtuvo CIRUJANO
+[02:22:46] [RECURSO] Paciente 6 solicita QUIROFANO
+[02:22:46] [RECURSO] Paciente 5 solicita CIRUJANO
+[02:22:46] [CPU] t=20: atendiendo a Paciente 2
+[02:22:47] [CPU] t=21: atendiendo a Paciente 4
+[02:22:47] [DEADLOCK] ⚠️ DEADLOCK: Paciente 5 → Paciente 6 → Paciente 5 se bloquean mutuamente
+[02:22:47] [DEADLOCK] Se derivará un paciente en 10s, o tocá 'Resolver Deadlock'
+[02:22:47] [CPU] t=22: atendiendo a Paciente 3
+[02:22:47] [CPU] t=23: atendiendo a Paciente 2
+[02:22:48] [ALTA] Paciente 2 terminó su atención · esperó 2.8s
+[02:22:48] [CPU] t=24: atendiendo a Paciente 4
+[02:22:48] [CPU] t=25: atendiendo a Paciente 3
+[02:22:49] [CPU] t=26: atendiendo a Paciente 4
+[02:22:49] [CPU] t=27: atendiendo a Paciente 3
+[02:22:49] [CPU] t=28: atendiendo a Paciente 4
+[02:22:50] [ALTA] Paciente 4 terminó su atención · esperó 4.4s
+[02:22:50] [CPU] t=29: atendiendo a Paciente 3
+[02:22:50] [CPU] t=30: atendiendo a Paciente 3
+[02:22:51] [CPU] t=31: atendiendo a Paciente 3
+[02:22:51] [ALTA] Paciente 3 terminó su atención · esperó 4.6s
+[02:22:56] [DEADLOCK] Resolución manual solicitada
+[02:22:56] [DEADLOCK] Resolviendo: Paciente 6 es derivado a otro hospital
+[02:22:56] [ALTA] Paciente 6 (PID 6) dado de alta · esperó 0.0s
+[02:22:56] [RECURSO] Paciente 5 obtuvo CIRUJANO
+[02:22:56] [RECURSO] Paciente 5 libera CIRUJANO
+[02:22:56] [RECURSO] Paciente 5 libera QUIROFANO
+[02:22:56] [CPU] t=32: atendiendo a Paciente 5
+[02:22:56] [CPU] t=33: atendiendo a Paciente 5
+[02:22:57] [CPU] t=34: atendiendo a Paciente 5
+[02:22:57] [CPU] t=35: atendiendo a Paciente 5
+[02:22:57] [CPU] t=36: atendiendo a Paciente 5
+[02:22:58] [CPU] t=37: atendiendo a Paciente 5
+[02:22:58] [CPU] t=38: atendiendo a Paciente 5
+[02:22:59] [CPU] t=39: atendiendo a Paciente 5
+[02:22:59] [CPU] t=40: atendiendo a Paciente 5
+[02:22:59] [CPU] t=41: atendiendo a Paciente 5
+[02:23:00] [CPU] t=42: atendiendo a Paciente 5
+[02:23:00] [CPU] t=43: atendiendo a Paciente 5
+[02:23:01] [CPU] t=44: atendiendo a Paciente 5
+[02:23:01] [CPU] t=45: atendiendo a Paciente 5
+[02:23:01] [CPU] t=46: atendiendo a Paciente 5
+[02:23:02] [CPU] t=47: atendiendo a Paciente 5
+[02:23:02] [CPU] t=48: atendiendo a Paciente 5
+[02:23:02] [HISTORIA] Enf. Cruz llega a actualizar la historia clínica
+[02:23:03] [CPU] t=49: atendiendo a Paciente 5
+[02:23:03] [CPU] t=50: atendiendo a Paciente 5
+[02:23:03] [HISTORIA] Enf. Cruz obtiene acceso EXCLUSIVO y comienza a escribir
+[02:23:03] [CPU] t=51: atendiendo a Paciente 5
+[02:23:04] [CPU] t=52: atendiendo a Paciente 5
+[02:23:04] [HISTORIA] Dr. García llega a consultar la historia clínica
+[02:23:04] [CPU] t=53: atendiendo a Paciente 5
+[02:23:05] [CPU] t=54: atendiendo a Paciente 5
+[02:23:05] [HISTORIA] Dr. García debe esperar: una enfermera está escribiendo
+[02:23:05] [CPU] t=55: atendiendo a Paciente 5
+[02:23:05] [HISTORIA] Dr. Ramírez llega a consultar la historia clínica
+[02:23:05] [CPU] t=56: atendiendo a Paciente 5
+[02:23:06] [CPU] t=57: atendiendo a Paciente 5
+[02:23:06] [CPU] t=58: atendiendo a Paciente 5
+[02:23:06] [HISTORIA] Enf. Cruz llega a actualizar la historia clínica
+[02:23:07] [CPU] t=59: atendiendo a Paciente 5
+[02:23:07] [CPU] t=60: atendiendo a Paciente 5
+[02:23:07] [HISTORIA] Enf. Cruz debe esperar: hay lectores o un escritor activo
+[02:23:07] [CPU] t=61: atendiendo a Paciente 5
+[02:23:08] [CPU] t=62: atendiendo a Paciente 5
+[02:23:08] [HISTORIA] Enf. Cruz termina la actualización: Temp: 36.9°C · PA: 122/78 · FC: 70 bpm · Estable
+[02:23:08] [HISTORIA] Dr. García comienza a leer tras esperar 2.3s (lectores activos: 1)
+[02:23:08] [HISTORIA] Dr. Ramírez comienza a leer tras esperar 1.1s (lectores activos: 2)
+[02:23:08] [CPU] t=63: atendiendo a Paciente 5
+[02:23:09] [CPU] t=64: atendiendo a Paciente 5
+[02:23:09] [CPU] t=65: atendiendo a Paciente 5
+[02:23:09] [CPU] t=66: atendiendo a Paciente 5
+[02:23:09] [HISTORIA] Dra. López llega a consultar la historia clínica
+[02:23:10] [CPU] t=67: atendiendo a Paciente 5
+[02:23:10] [CPU] t=68: atendiendo a Paciente 5
+[02:23:10] [HISTORIA] Dra. López comienza a leer (lectores activos: 3)
+[02:23:11] [CPU] t=69: atendiendo a Paciente 5
+[02:23:11] [CPU] t=70: atendiendo a Paciente 5
+[02:23:11] [HISTORIA] Dr. Ramírez termina su consulta
+[02:23:11] [CPU] t=71: atendiendo a Paciente 5
+[02:23:12] [HISTORIA] Dr. García llega a consultar la historia clínica
+[02:23:12] [CPU] t=72: atendiendo a Paciente 5
+[02:23:12] [HISTORIA] Dr. García termina su consulta
+[02:23:12] [CPU] t=73: atendiendo a Paciente 5
+[02:23:13] [HISTORIA] Dr. García comienza a leer (lectores activos: 2)
+[02:23:13] [CPU] t=74: atendiendo a Paciente 5
+[02:23:13] [CPU] t=75: atendiendo a Paciente 5
+[02:23:13] [CPU] t=76: atendiendo a Paciente 5
+[02:23:13] [HISTORIA] Enf. Mora llega a actualizar la historia clínica
+[02:23:14] [CPU] t=77: atendiendo a Paciente 5
+[02:23:14] [CPU] t=78: atendiendo a Paciente 5
+[02:23:14] [HISTORIA] Enf. Mora debe esperar: hay lectores o un escritor activo
+[02:23:14] [HISTORIA] Dr. Sosa llega a consultar la historia clínica
+[02:23:15] [CPU] t=79: atendiendo a Paciente 5
+[02:23:15] [HISTORIA] Dra. Reyes llega a consultar la historia clínica
+[02:23:15] [CPU] t=80: atendiendo a Paciente 5
+[02:23:15] [HISTORIA] Dra. López termina su consulta
+[02:23:15] [CPU] t=81: atendiendo a Paciente 5
+[02:23:15] [HISTORIA] Dr. Sosa comienza a leer (lectores activos: 2)
+[02:23:16] [HISTORIA] Dra. Reyes comienza a leer (lectores activos: 3)
+[02:23:16] [CPU] t=82: atendiendo a Paciente 5
+[02:23:16] [CPU] t=83: atendiendo a Paciente 5
+[02:23:16] [HISTORIA] Dr. Sosa llega a consultar la historia clínica
+[02:23:17] [CPU] t=84: atendiendo a Paciente 5
+[02:23:17] [HISTORIA] Dr. García termina su consulta
+[02:23:17] [CPU] t=85: atendiendo a Paciente 5
+[02:23:17] [HISTORIA] Dr. Sosa comienza a leer (lectores activos: 3)
+[02:23:17] [CPU] t=86: atendiendo a Paciente 5
+[02:23:18] [HISTORIA] Enf. Díaz llega a actualizar la historia clínica
+[02:23:18] [CPU] t=87: atendiendo a Paciente 5
+[02:23:18] [CPU] t=88: atendiendo a Paciente 5
+[02:23:19] [HISTORIA] Enf. Díaz debe esperar: hay lectores o un escritor activo
+[02:23:19] [CPU] t=89: atendiendo a Paciente 5
+[02:23:19] [HISTORIA] Dr. Sosa termina su consulta
+[02:23:19] [CPU] t=90: atendiendo a Paciente 5
+[02:23:19] [HISTORIA] Dra. Reyes llega a consultar la historia clínica
+[02:23:19] [CPU] t=91: atendiendo a Paciente 5
+[02:23:20] [CPU] t=92: atendiendo a Paciente 5
+[02:23:20] [HISTORIA] Dra. Reyes comienza a leer (lectores activos: 3)
+[02:23:20] [HISTORIA] Dra. Reyes termina su consulta
+[02:23:20] [CPU] t=93: atendiendo a Paciente 5
+[02:23:21] [CPU] t=94: atendiendo a Paciente 5
+[02:23:21] [HISTORIA] Dr. Martín llega a consultar la historia clínica
+[02:23:21] [CPU] t=95: atendiendo a Paciente 5
+[02:23:21] [HISTORIA] Dr. Sosa termina su consulta
+[02:23:21] [CPU] t=96: atendiendo a Paciente 5
+[02:23:21] [HISTORIA] Dra. Castro llega a consultar la historia clínica
+[02:23:22] [HISTORIA] Dra. Reyes llega a consultar la historia clínica
+[02:23:22] [HISTORIA] Dr. Martín comienza a leer (lectores activos: 2)
+[02:23:22] [CPU] t=97: atendiendo a Paciente 5
+[02:23:22] [CPU] t=98: atendiendo a Paciente 5
+[02:23:22] [HISTORIA] Dra. Castro comienza a leer (lectores activos: 3)
+[02:23:23] [CPU] t=99: atendiendo a Paciente 5
+[02:23:23] [HISTORIA] Dra. Reyes comienza a leer (lectores activos: 4)
+[02:23:23] [CPU] t=100: atendiendo a Paciente 5
+[02:23:23] [CPU] t=101: atendiendo a Paciente 5
+[02:23:24] [CPU] t=102: atendiendo a Paciente 5
+[02:23:24] [HISTORIA] Dra. Reyes termina su consulta
+[02:23:24] [CPU] t=103: atendiendo a Paciente 5
+[02:23:25] [CPU] t=104: atendiendo a Paciente 5
+[02:23:25] [CPU] t=105: atendiendo a Paciente 5
+[02:23:25] [CPU] t=106: atendiendo a Paciente 5
+[02:23:26] [CPU] t=107: atendiendo a Paciente 5
+[02:23:26] [HISTORIA] Dra. Reyes termina su consulta
+[02:23:26] [CPU] t=108: atendiendo a Paciente 5
+[02:23:26] [HISTORIA] Dr. Martín termina su consulta
+[02:23:27] [HISTORIA] Dra. Castro termina su consulta
+[02:23:27] [HISTORIA] Último lector se retira: historia clínica disponible para escritura
+[02:23:27] [HISTORIA] Enf. Cruz obtiene acceso EXCLUSIVO tras esperar 19.3s
+[02:23:27] [CPU] t=109: atendiendo a Paciente 5
+[02:23:27] [CPU] t=110: atendiendo a Paciente 5
+[02:23:27] [CPU] t=111: atendiendo a Paciente 5
+[02:23:28] [CPU] t=112: atendiendo a Paciente 5
+[02:23:28] [CPU] t=113: atendiendo a Paciente 5
+[02:23:29] [CPU] t=114: atendiendo a Paciente 5
+[02:23:29] [CPU] t=115: atendiendo a Paciente 5
+[02:23:29] [CPU] t=116: atendiendo a Paciente 5
+[02:23:30] [CPU] t=117: atendiendo a Paciente 5
+[02:23:30] [CPU] t=118: atendiendo a Paciente 5
+[02:23:31] [CPU] t=119: atendiendo a Paciente 5
+[02:23:31] [CPU] t=120: atendiendo a Paciente 5
+[02:23:31] [CPU] t=121: atendiendo a Paciente 5
+[02:23:31] [HISTORIA] Enf. Cruz termina la actualización: Temp: 37.5°C · PA: 135/88 · FC: 80 bpm · En observación
+[02:23:31] [HISTORIA] Enf. Mora obtiene acceso EXCLUSIVO tras esperar 17.1s
+[02:23:32] [CPU] t=122: atendiendo a Paciente 5
+[02:23:32] [CPU] t=123: atendiendo a Paciente 5
+[02:23:33] [CPU] t=124: atendiendo a Paciente 5
+[02:23:33] [CPU] t=125: atendiendo a Paciente 5
+[02:23:33] [CPU] t=126: atendiendo a Paciente 5
+[02:23:34] [CPU] t=127: atendiendo a Paciente 5
+[02:23:34] [CPU] t=128: atendiendo a Paciente 5
+[02:23:35] [CPU] t=129: atendiendo a Paciente 5
+[02:23:35] [CPU] t=130: atendiendo a Paciente 5
+[02:23:35] [CPU] t=131: atendiendo a Paciente 5
+[02:23:36] [CPU] t=132: atendiendo a Paciente 5
+[02:23:36] [HISTORIA] Enf. Mora termina la actualización: Temp: 38.1°C · PA: 145/92 · FC: 95 bpm · Medicación ajustada
+[02:23:36] [HISTORIA] Enf. Díaz obtiene acceso EXCLUSIVO tras esperar 17.5s
+[02:23:36] [CPU] t=133: atendiendo a Paciente 5
+[02:23:37] [CPU] t=134: atendiendo a Paciente 5
+[02:23:37] [CPU] t=135: atendiendo a Paciente 5
+[02:23:37] [CPU] t=136: atendiendo a Paciente 5
+[02:23:38] [CPU] t=137: atendiendo a Paciente 5
+[02:23:38] [CPU] t=138: atendiendo a Paciente 5
+[02:23:39] [CPU] t=139: atendiendo a Paciente 5
+[02:23:39] [CPU] t=140: atendiendo a Paciente 5
+[02:23:39] [CPU] t=141: atendiendo a Paciente 5
+[02:23:40] [CPU] t=142: atendiendo a Paciente 5
+[02:23:40] [HISTORIA] Enf. Díaz termina la actualización: Temp: 36.9°C · PA: 122/78 · FC: 70 bpm · Estable
+[02:23:40] [CPU] t=143: atendiendo a Paciente 5
+[02:23:41] [CPU] t=144: atendiendo a Paciente 5
+[02:23:41] [CPU] t=145: atendiendo a Paciente 5
+[02:23:41] [CPU] t=146: atendiendo a Paciente 5
+[02:23:42] [CPU] t=147: atendiendo a Paciente 5
+[02:23:42] [CPU] t=148: atendiendo a Paciente 5
+[02:23:43] [CPU] t=149: atendiendo a Paciente 5
+[02:23:43] [CPU] t=150: atendiendo a Paciente 5
+[02:23:43] [CPU] t=151: atendiendo a Paciente 5
+[02:23:44] [CPU] t=152: atendiendo a Paciente 5
+[02:23:44] [CPU] t=153: atendiendo a Paciente 5
+[02:23:45] [CPU] t=154: atendiendo a Paciente 5
+[02:23:45] [CPU] t=155: atendiendo a Paciente 5
+[02:23:45] [CPU] t=156: atendiendo a Paciente 5
+[02:23:46] [CPU] t=157: atendiendo a Paciente 5
+[02:23:46] [CPU] t=158: atendiendo a Paciente 5
+[02:23:47] [CPU] t=159: atendiendo a Paciente 5
+[02:23:47] [CPU] t=160: atendiendo a Paciente 5
+[02:23:47] [CPU] t=161: atendiendo a Paciente 5
+[02:23:48] [CPU] t=162: atendiendo a Paciente 5
+[02:23:48] [CPU] t=163: atendiendo a Paciente 5
+[02:23:49] [CPU] t=164: atendiendo a Paciente 5
+[02:23:49] [CPU] t=165: atendiendo a Paciente 5
+[02:23:49] [CPU] t=166: atendiendo a Paciente 5
+[02:23:50] [CPU] t=167: atendiendo a Paciente 5
+[02:23:50] [CPU] t=168: atendiendo a Paciente 5
+[02:23:51] [CPU] t=169: atendiendo a Paciente 5
+[02:23:51] [CPU] t=170: atendiendo a Paciente 5
+[02:23:51] [CPU] t=171: atendiendo a Paciente 5
+[02:23:52] [CPU] t=172: atendiendo a Paciente 5
+[02:23:52] [CPU] t=173: atendiendo a Paciente 5
+[02:23:53] [CPU] t=174: atendiendo a Paciente 5
+[02:23:53] [CPU] t=175: atendiendo a Paciente 5
+[02:23:53] [CPU] t=176: atendiendo a Paciente 5
+[02:23:54] [CPU] t=177: atendiendo a Paciente 5
+[02:23:54] [CPU] t=178: atendiendo a Paciente 5
+[02:23:55] [CPU] t=179: atendiendo a Paciente 5
+[02:23:55] [CPU] t=180: atendiendo a Paciente 5
+[02:23:55] [CPU] t=181: atendiendo a Paciente 5
+[02:23:56] [CPU] t=182: atendiendo a Paciente 5
+[02:23:56] [CPU] t=183: atendiendo a Paciente 5
+[02:23:57] [CPU] t=184: atendiendo a Paciente 5
+[02:23:57] [CPU] t=185: atendiendo a Paciente 5
+[02:23:57] [CPU] t=186: atendiendo a Paciente 5
+[02:23:58] [CPU] t=187: atendiendo a Paciente 5
+[02:23:58] [CPU] t=188: atendiendo a Paciente 5
+[02:23:59] [CPU] t=189: atendiendo a Paciente 5
+[02:23:59] [CPU] t=190: atendiendo a Paciente 5
+[02:23:59] [CPU] t=191: atendiendo a Paciente 5
+[02:24:00] [CPU] t=192: atendiendo a Paciente 5
+[02:24:00] [CPU] t=193: atendiendo a Paciente 5
+[02:24:01] [CPU] t=194: atendiendo a Paciente 5
+[02:24:01] [CPU] t=195: atendiendo a Paciente 5
+[02:24:01] [CPU] t=196: atendiendo a Paciente 5
+[02:24:02] [CPU] t=197: atendiendo a Paciente 5
+[02:24:02] [CPU] t=198: atendiendo a Paciente 5
+[02:24:03] [CPU] t=199: atendiendo a Paciente 5
+[02:24:03] [CPU] t=200: atendiendo a Paciente 5
+[02:24:03] [CPU] t=201: atendiendo a Paciente 5
+[02:24:04] [CPU] t=202: atendiendo a Paciente 5
+[02:24:04] [CPU] t=203: atendiendo a Paciente 5
+[02:24:05] [CPU] t=204: atendiendo a Paciente 5
+[02:24:05] [CPU] t=205: atendiendo a Paciente 5
+[02:24:05] [CPU] t=206: atendiendo a Paciente 5
+[02:24:06] [CPU] t=207: atendiendo a Paciente 5
+[02:24:06] [CPU] t=208: atendiendo a Paciente 5
+[02:24:07] [CPU] t=209: atendiendo a Paciente 5
+[02:24:07] [CPU] t=210: atendiendo a Paciente 5
+[02:24:07] [CPU] t=211: atendiendo a Paciente 5
+[02:24:08] [CPU] t=212: atendiendo a Paciente 5
+[02:24:08] [CPU] t=213: atendiendo a Paciente 5
+[02:24:09] [CPU] t=214: atendiendo a Paciente 5
+[02:24:09] [CPU] t=215: atendiendo a Paciente 5
+[02:24:09] [CPU] t=216: atendiendo a Paciente 5
+[02:24:10] [CPU] t=217: atendiendo a Paciente 5
+[02:24:10] [CPU] t=218: atendiendo a Paciente 5
+[02:24:11] [CPU] t=219: atendiendo a Paciente 5
+[02:24:11] [CPU] t=220: atendiendo a Paciente 5
+[02:24:11] [CPU] t=221: atendiendo a Paciente 5
+[02:24:12] [CPU] t=222: atendiendo a Paciente 5
+[02:24:12] [CPU] t=223: atendiendo a Paciente 5
+[02:24:13] [CPU] t=224: atendiendo a Paciente 5
+[02:24:13] [CPU] t=225: atendiendo a Paciente 5
+[02:24:13] [CPU] t=226: atendiendo a Paciente 5
+[02:24:14] [CPU] t=227: atendiendo a Paciente 5
+[02:24:14] [CPU] t=228: atendiendo a Paciente 5
+[02:24:15] [CPU] t=229: atendiendo a Paciente 5
+[02:24:15] [CPU] t=230: atendiendo a Paciente 5
+[02:24:15] [CPU] t=231: atendiendo a Paciente 5
+[02:24:16] [CPU] t=232: atendiendo a Paciente 5
+[02:24:16] [CPU] t=233: atendiendo a Paciente 5
+[02:24:17] [CPU] t=234: atendiendo a Paciente 5
+[02:24:17] [CPU] t=235: atendiendo a Paciente 5
+[02:24:17] [CPU] t=236: atendiendo a Paciente 5
+[02:24:18] [CPU] t=237: atendiendo a Paciente 5
+[02:24:18] [CPU] t=238: atendiendo a Paciente 5
+[02:24:19] [CPU] t=239: atendiendo a Paciente 5
+[02:24:19] [CPU] t=240: atendiendo a Paciente 5
+[02:24:19] [CPU] t=241: atendiendo a Paciente 5
+[02:24:20] [CPU] t=242: atendiendo a Paciente 5
+[02:24:20] [CPU] t=243: atendiendo a Paciente 5
+[02:24:21] [CPU] t=244: atendiendo a Paciente 5
+[02:24:21] [CPU] t=245: atendiendo a Paciente 5
+[02:24:21] [CPU] t=246: atendiendo a Paciente 5
+[02:24:22] [CPU] t=247: atendiendo a Paciente 5
+[02:24:22] [CPU] t=248: atendiendo a Paciente 5
+[02:24:23] [CPU] t=249: atendiendo a Paciente 5
+[02:24:23] [CPU] t=250: atendiendo a Paciente 5
+[02:24:23] [CPU] t=251: atendiendo a Paciente 5
+[02:24:24] [CPU] t=252: atendiendo a Paciente 5
+[02:24:24] [CPU] t=253: atendiendo a Paciente 5
+[02:24:25] [CPU] t=254: atendiendo a Paciente 5
+[02:24:25] [CPU] t=255: atendiendo a Paciente 5
+[02:24:25] [CPU] t=256: atendiendo a Paciente 5
+[02:24:26] [CPU] t=257: atendiendo a Paciente 5
+[02:24:26] [CPU] t=258: atendiendo a Paciente 5
+[02:24:27] [CPU] t=259: atendiendo a Paciente 5
+[02:24:27] [CPU] t=260: atendiendo a Paciente 5
+[02:24:27] [CPU] t=261: atendiendo a Paciente 5
+[02:24:28] [CPU] t=262: atendiendo a Paciente 5
+[02:24:28] [CPU] t=263: atendiendo a Paciente 5
+[02:24:29] [CPU] t=264: atendiendo a Paciente 5
+[02:24:29] [CPU] t=265: atendiendo a Paciente 5
+[02:24:29] [CPU] t=266: atendiendo a Paciente 5
+[02:24:30] [CPU] t=267: atendiendo a Paciente 5
+[02:24:30] [CPU] t=268: atendiendo a Paciente 5
+[02:24:31] [CPU] t=269: atendiendo a Paciente 5
+[02:24:31] [CPU] t=270: atendiendo a Paciente 5
+[02:24:31] [CPU] t=271: atendiendo a Paciente 5
+[02:24:32] [CPU] t=272: atendiendo a Paciente 5
+[02:24:32] [CPU] t=273: atendiendo a Paciente 5
+[02:24:33] [CPU] t=274: atendiendo a Paciente 5
+[02:24:33] [CPU] t=275: atendiendo a Paciente 5
+[02:24:33] [CPU] t=276: atendiendo a Paciente 5
+[02:24:34] [CPU] t=277: atendiendo a Paciente 5
+[02:24:34] [CPU] t=278: atendiendo a Paciente 5
+[02:24:35] [CPU] t=279: atendiendo a Paciente 5
+[02:24:35] [CPU] t=280: atendiendo a Paciente 5
+[02:24:35] [CPU] t=281: atendiendo a Paciente 5
+[02:24:36] [CPU] t=282: atendiendo a Paciente 5
+[02:24:36] [CPU] t=283: atendiendo a Paciente 5
+[02:24:37] [CPU] t=284: atendiendo a Paciente 5
+[02:24:37] [CPU] t=285: atendiendo a Paciente 5
+[02:24:37] [CPU] t=286: atendiendo a Paciente 5
+[02:24:38] [CPU] t=287: atendiendo a Paciente 5
+[02:24:38] [CPU] t=288: atendiendo a Paciente 5
+[02:24:39] [CPU] t=289: atendiendo a Paciente 5
+[02:24:39] [CPU] t=290: atendiendo a Paciente 5
+[02:24:39] [CPU] t=291: atendiendo a Paciente 5
+[02:24:40] [CPU] t=292: atendiendo a Paciente 5
+[02:24:40] [CPU] t=293: atendiendo a Paciente 5
+[02:24:41] [CPU] t=294: atendiendo a Paciente 5
+[02:24:41] [CPU] t=295: atendiendo a Paciente 5
+[02:24:41] [CPU] t=296: atendiendo a Paciente 5
+[02:24:42] [CPU] t=297: atendiendo a Paciente 5
+[02:24:42] [CPU] t=298: atendiendo a Paciente 5
+[02:24:43] [CPU] t=299: atendiendo a Paciente 5
+[02:24:43] [CPU] t=300: atendiendo a Paciente 5
+[02:24:43] [CPU] t=301: atendiendo a Paciente 5
+[02:24:44] [CPU] t=302: atendiendo a Paciente 5
+[02:24:44] [CPU] t=303: atendiendo a Paciente 5
+[02:24:45] [CPU] t=304: atendiendo a Paciente 5
+[02:24:45] [CPU] t=305: atendiendo a Paciente 5
+[02:24:45] [CPU] t=306: atendiendo a Paciente 5
+[02:24:46] [CPU] t=307: atendiendo a Paciente 5
+[02:24:46] [CPU] t=308: atendiendo a Paciente 5
+[02:24:47] [CPU] t=309: atendiendo a Paciente 5
+[02:24:47] [CPU] t=310: atendiendo a Paciente 5
+[02:24:47] [CPU] t=311: atendiendo a Paciente 5
+[02:24:48] [CPU] t=312: atendiendo a Paciente 5
+[02:24:48] [CPU] t=313: atendiendo a Paciente 5
+[02:24:49] [CPU] t=314: atendiendo a Paciente 5
+[02:24:49] [CPU] t=315: atendiendo a Paciente 5
+[02:24:50] [CPU] t=316: atendiendo a Paciente 5
+[02:24:50] [FARMACIA] Iniciando turno de producción
+[02:24:50] [CPU] t=317: atendiendo a Paciente 5
+[02:24:50] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:24:50] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:24:50] [CPU] t=318: atendiendo a Paciente 5
+[02:24:50] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:24:50] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:24:51] [CPU] t=319: atendiendo a Paciente 5
+[02:24:51] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:24:51] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:24:51] [CPU] t=320: atendiendo a Paciente 5
+[02:24:51] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:24:51] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:24:52] [CPU] t=321: atendiendo a Paciente 5
+[02:24:52] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:24:52] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:24:52] [CPU] t=322: atendiendo a Paciente 5
+[02:24:52] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:24:52] [FARMACIA] Medicamento añadido (manual)
+[02:24:52] [CPU] t=323: atendiendo a Paciente 5
+[02:24:52] [FARMACIA] Medicamento añadido (manual)
+[02:24:52] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:24:52] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:24:53] [FARMACIA] Medicamento añadido (manual)
+[02:24:53] [CPU] t=324: atendiendo a Paciente 5
+[02:24:53] [FARMACIA] Medicamento añadido (manual)
+[02:24:53] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:24:53] [FARMACIA] Medicamento añadido (manual)
+[02:24:53] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:24:53] [CPU] t=325: atendiendo a Paciente 5
+[02:24:53] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:24:53] [FARMACIA] Medicamento añadido (manual)
+[02:24:53] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:24:54] [CPU] t=326: atendiendo a Paciente 5
+[02:24:54] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:24:54] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:24:54] [FARMACIA] Medicamento añadido (manual)
+[02:24:54] [CPU] t=327: atendiendo a Paciente 5
+[02:24:54] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:24:54] [FARMACIA] Medicamento añadido (manual)
+[02:24:54] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:24:54] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:24:54] [CPU] t=328: atendiendo a Paciente 5
+[02:24:54] [FARMACIA] Buffer lleno
+[02:24:55] [CPU] t=329: atendiendo a Paciente 5
+[02:24:55] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:24:55] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:24:55] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:24:55] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:24:55] [CPU] t=330: atendiendo a Paciente 5
+[02:24:55] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:24:55] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:24:56] [CPU] t=331: atendiendo a Paciente 5
+[02:24:56] [CPU] t=332: atendiendo a Paciente 5
+[02:24:56] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:24:56] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:24:56] [CPU] t=333: atendiendo a Paciente 5
+[02:24:56] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:24:56] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:24:56] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:24:57] [CPU] t=334: atendiendo a Paciente 5
+[02:24:57] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:24:57] [CPU] t=335: atendiendo a Paciente 5
+[02:24:57] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:24:58] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:24:58] [CPU] t=336: atendiendo a Paciente 5
+[02:24:58] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:24:58] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:24:58] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:24:58] [CPU] t=337: atendiendo a Paciente 5
+[02:24:58] [CPU] t=338: atendiendo a Paciente 5
+[02:24:59] [CPU] t=339: atendiendo a Paciente 5
+[02:24:59] [CPU] t=340: atendiendo a Paciente 5
+[02:25:00] [CPU] t=341: atendiendo a Paciente 5
+[02:25:00] [CPU] t=342: atendiendo a Paciente 5
+[02:25:00] [CPU] t=343: atendiendo a Paciente 5
+[02:25:01] [CPU] t=344: atendiendo a Paciente 5
+[02:25:01] [CPU] t=345: atendiendo a Paciente 5
+[02:25:02] [CPU] t=346: atendiendo a Paciente 5
+[02:25:02] [CPU] t=347: atendiendo a Paciente 5
+[02:25:02] [CPU] t=348: atendiendo a Paciente 5
+[02:25:03] [CPU] t=349: atendiendo a Paciente 5
+[02:25:03] [CPU] t=350: atendiendo a Paciente 5
+[02:25:04] [CPU] t=351: atendiendo a Paciente 5
+[02:25:04] [CPU] t=352: atendiendo a Paciente 5
+[02:25:04] [CPU] t=353: atendiendo a Paciente 5
+[02:25:05] [CPU] t=354: atendiendo a Paciente 5
+[02:25:05] [CPU] t=355: atendiendo a Paciente 5
+[02:25:06] [CPU] t=356: atendiendo a Paciente 5
+[02:25:06] [CPU] t=357: atendiendo a Paciente 5
+[02:25:06] [CPU] t=358: atendiendo a Paciente 5
+[02:25:07] [CPU] t=359: atendiendo a Paciente 5
+[02:25:07] [CPU] t=360: atendiendo a Paciente 5
+[02:25:08] [CPU] t=361: atendiendo a Paciente 5
+[02:25:08] [CPU] t=362: atendiendo a Paciente 5
+[02:25:08] [CPU] t=363: atendiendo a Paciente 5
+[02:25:09] [CPU] t=364: atendiendo a Paciente 5
+[02:25:09] [CPU] t=365: atendiendo a Paciente 5
+[02:25:10] [CPU] t=366: atendiendo a Paciente 5
+[02:25:10] [CPU] t=367: atendiendo a Paciente 5
+[02:25:10] [CPU] t=368: atendiendo a Paciente 5
+[02:25:11] [CPU] t=369: atendiendo a Paciente 5
+[02:25:11] [CPU] t=370: atendiendo a Paciente 5
+[02:25:12] [CPU] t=371: atendiendo a Paciente 5
+[02:25:12] [CPU] t=372: atendiendo a Paciente 5
+[02:25:12] [CPU] t=373: atendiendo a Paciente 5
+[02:25:13] [CPU] t=374: atendiendo a Paciente 5
+[02:25:13] [CPU] t=375: atendiendo a Paciente 5
+[02:25:14] [CPU] t=376: atendiendo a Paciente 5
+[02:25:14] [CPU] t=377: atendiendo a Paciente 5
+[02:25:14] [CPU] t=378: atendiendo a Paciente 5
+[02:25:15] [CPU] t=379: atendiendo a Paciente 5
+[02:25:15] [CPU] t=380: atendiendo a Paciente 5
+[02:25:16] [CPU] t=381: atendiendo a Paciente 5
+[02:25:16] [CPU] t=382: atendiendo a Paciente 5
+[02:25:16] [CPU] t=383: atendiendo a Paciente 5
+[02:25:17] [CPU] t=384: atendiendo a Paciente 5
+[02:25:17] [CPU] t=385: atendiendo a Paciente 5
+[02:25:18] [CPU] t=386: atendiendo a Paciente 5
+[02:25:18] [CPU] t=387: atendiendo a Paciente 5
+[02:25:18] [CPU] t=388: atendiendo a Paciente 5
+[02:25:19] [CPU] t=389: atendiendo a Paciente 5
+[02:25:19] [CPU] t=390: atendiendo a Paciente 5
+[02:25:20] [CPU] t=391: atendiendo a Paciente 5
+[02:25:20] [CPU] t=392: atendiendo a Paciente 5
+[02:25:20] [CPU] t=393: atendiendo a Paciente 5
+[02:25:21] [CPU] t=394: atendiendo a Paciente 5
+[02:25:21] [CPU] t=395: atendiendo a Paciente 5
+[02:25:22] [CPU] t=396: atendiendo a Paciente 5
+[02:25:22] [CPU] t=397: atendiendo a Paciente 5
+[02:25:22] [CPU] t=398: atendiendo a Paciente 5
+[02:25:23] [CPU] t=399: atendiendo a Paciente 5
+[02:25:23] [CPU] t=400: atendiendo a Paciente 5
+[02:25:24] [CPU] t=401: atendiendo a Paciente 5
+[02:25:24] [CPU] t=402: atendiendo a Paciente 5
+[02:25:24] [CPU] t=403: atendiendo a Paciente 5
+[02:25:25] [CPU] t=404: atendiendo a Paciente 5
+[02:25:25] [CPU] t=405: atendiendo a Paciente 5
+[02:25:26] [CPU] t=406: atendiendo a Paciente 5
+[02:25:26] [CPU] t=407: atendiendo a Paciente 5
+[02:25:26] [CPU] t=408: atendiendo a Paciente 5
+[02:25:27] [CPU] t=409: atendiendo a Paciente 5
+[02:25:27] [CPU] t=410: atendiendo a Paciente 5
+[02:25:28] [CPU] t=411: atendiendo a Paciente 5
+[02:25:28] [CPU] t=412: atendiendo a Paciente 5
+[02:25:28] [CPU] t=413: atendiendo a Paciente 5
+[02:25:29] [CPU] t=414: atendiendo a Paciente 5
+[02:25:29] [CPU] t=415: atendiendo a Paciente 5
+[02:25:30] [CPU] t=416: atendiendo a Paciente 5
+[02:25:30] [CPU] t=417: atendiendo a Paciente 5
+[02:25:30] [CPU] t=418: atendiendo a Paciente 5
+[02:25:31] [CPU] t=419: atendiendo a Paciente 5
+[02:25:31] [CPU] t=420: atendiendo a Paciente 5
+[02:25:32] [CPU] t=421: atendiendo a Paciente 5
+[02:25:32] [CPU] t=422: atendiendo a Paciente 5
+[02:25:32] [CPU] t=423: atendiendo a Paciente 5
+[02:25:33] [CPU] t=424: atendiendo a Paciente 5
+[02:25:33] [CPU] t=425: atendiendo a Paciente 5
+[02:25:34] [CPU] t=426: atendiendo a Paciente 5
+[02:25:34] [CPU] t=427: atendiendo a Paciente 5
+[02:25:34] [CPU] t=428: atendiendo a Paciente 5
+[02:25:35] [CPU] t=429: atendiendo a Paciente 5
+[02:25:35] [CPU] t=430: atendiendo a Paciente 5
+[02:25:36] [CPU] t=431: atendiendo a Paciente 5
+[02:25:36] [CPU] t=432: atendiendo a Paciente 5
+[02:25:36] [CPU] t=433: atendiendo a Paciente 5
+[02:25:37] [CPU] t=434: atendiendo a Paciente 5
+[02:25:37] [CPU] t=435: atendiendo a Paciente 5
+[02:25:38] [CPU] t=436: atendiendo a Paciente 5
+[02:25:38] [CPU] t=437: atendiendo a Paciente 5
+[02:25:38] [CPU] t=438: atendiendo a Paciente 5
+[02:25:39] [CPU] t=439: atendiendo a Paciente 5
+[02:25:39] [CPU] t=440: atendiendo a Paciente 5
+[02:25:40] [CPU] t=441: atendiendo a Paciente 5
+[02:25:40] [CPU] t=442: atendiendo a Paciente 5
+[02:25:40] [CPU] t=443: atendiendo a Paciente 5
+[02:25:41] [CPU] t=444: atendiendo a Paciente 5
+[02:25:41] [CPU] t=445: atendiendo a Paciente 5
+[02:25:42] [CPU] t=446: atendiendo a Paciente 5
+[02:25:42] [CPU] t=447: atendiendo a Paciente 5
+[02:25:42] [CPU] t=448: atendiendo a Paciente 5
+[02:25:43] [CPU] t=449: atendiendo a Paciente 5
+[02:25:43] [CPU] t=450: atendiendo a Paciente 5
+[02:25:44] [CPU] t=451: atendiendo a Paciente 5
+[02:25:44] [CPU] t=452: atendiendo a Paciente 5
+[02:25:44] [CPU] t=453: atendiendo a Paciente 5
+[02:25:45] [CPU] t=454: atendiendo a Paciente 5
+[02:25:45] [CPU] t=455: atendiendo a Paciente 5
+[02:25:46] [CPU] t=456: atendiendo a Paciente 5
+[02:25:46] [CPU] t=457: atendiendo a Paciente 5
+[02:25:46] [CPU] t=458: atendiendo a Paciente 5
+[02:25:47] [CPU] t=459: atendiendo a Paciente 5
+[02:25:47] [CPU] t=460: atendiendo a Paciente 5
+[02:25:48] [CPU] t=461: atendiendo a Paciente 5
+[02:25:48] [CPU] t=462: atendiendo a Paciente 5
+[02:25:48] [CPU] t=463: atendiendo a Paciente 5
+[02:25:49] [CPU] t=464: atendiendo a Paciente 5
+[02:25:49] [CPU] t=465: atendiendo a Paciente 5
+[02:25:50] [CPU] t=466: atendiendo a Paciente 5
+[02:25:50] [CPU] t=467: atendiendo a Paciente 5
+[02:25:50] [CPU] t=468: atendiendo a Paciente 5
+[02:25:51] [CPU] t=469: atendiendo a Paciente 5
+[02:25:51] [CPU] t=470: atendiendo a Paciente 5
+[02:25:52] [CPU] t=471: atendiendo a Paciente 5
+[02:25:52] [CPU] t=472: atendiendo a Paciente 5
+[02:25:52] [CPU] t=473: atendiendo a Paciente 5
+[02:25:53] [CPU] t=474: atendiendo a Paciente 5
+[02:25:53] [CPU] t=475: atendiendo a Paciente 5
+[02:25:54] [CPU] t=476: atendiendo a Paciente 5
+[02:25:54] [CPU] t=477: atendiendo a Paciente 5
+[02:25:54] [CPU] t=478: atendiendo a Paciente 5
+[02:25:55] [CPU] t=479: atendiendo a Paciente 5
+[02:25:55] [CPU] t=480: atendiendo a Paciente 5
+[02:25:56] [CPU] t=481: atendiendo a Paciente 5
+[02:25:56] [CPU] t=482: atendiendo a Paciente 5
+[02:25:56] [CPU] t=483: atendiendo a Paciente 5
+[02:25:57] [CPU] t=484: atendiendo a Paciente 5
+[02:25:57] [CPU] t=485: atendiendo a Paciente 5
+[02:25:58] [CPU] t=486: atendiendo a Paciente 5
+[02:25:58] [CPU] t=487: atendiendo a Paciente 5
+[02:25:58] [CPU] t=488: atendiendo a Paciente 5
+[02:25:59] [CPU] t=489: atendiendo a Paciente 5
+[02:25:59] [CPU] t=490: atendiendo a Paciente 5
+[02:26:00] [CPU] t=491: atendiendo a Paciente 5
+[02:26:00] [CPU] t=492: atendiendo a Paciente 5
+[02:26:00] [CPU] t=493: atendiendo a Paciente 5
+[02:26:01] [CPU] t=494: atendiendo a Paciente 5
+[02:26:01] [CPU] t=495: atendiendo a Paciente 5
+[02:26:02] [CPU] t=496: atendiendo a Paciente 5
+[02:26:02] [CPU] t=497: atendiendo a Paciente 5
+[02:26:02] [CPU] t=498: atendiendo a Paciente 5
+[02:26:03] [CPU] t=499: atendiendo a Paciente 5
+[02:26:03] [CPU] t=500: atendiendo a Paciente 5
+[02:26:04] [CPU] t=501: atendiendo a Paciente 5
+[02:26:04] [CPU] t=502: atendiendo a Paciente 5
+[02:26:04] [CPU] t=503: atendiendo a Paciente 5
+[02:26:05] [CPU] t=504: atendiendo a Paciente 5
+[02:26:05] [CPU] t=505: atendiendo a Paciente 5
+[02:26:06] [CPU] t=506: atendiendo a Paciente 5
+[02:26:06] [CPU] t=507: atendiendo a Paciente 5
+[02:26:06] [CPU] t=508: atendiendo a Paciente 5
+[02:26:07] [CPU] t=509: atendiendo a Paciente 5
+[02:26:07] [CPU] t=510: atendiendo a Paciente 5
+[02:26:08] [CPU] t=511: atendiendo a Paciente 5
+[02:26:08] [CPU] t=512: atendiendo a Paciente 5
+[02:26:08] [CPU] t=513: atendiendo a Paciente 5
+[02:26:09] [CPU] t=514: atendiendo a Paciente 5
+[02:26:09] [CPU] t=515: atendiendo a Paciente 5
+[02:26:10] [CPU] t=516: atendiendo a Paciente 5
+[02:26:10] [CPU] t=517: atendiendo a Paciente 5
+[02:26:10] [CPU] t=518: atendiendo a Paciente 5
+[02:26:11] [CPU] t=519: atendiendo a Paciente 5
+[02:26:11] [CPU] t=520: atendiendo a Paciente 5
+[02:26:12] [CPU] t=521: atendiendo a Paciente 5
+[02:26:12] [CPU] t=522: atendiendo a Paciente 5
+[02:26:12] [CPU] t=523: atendiendo a Paciente 5
+[02:26:13] [CPU] t=524: atendiendo a Paciente 5
+[02:26:13] [CPU] t=525: atendiendo a Paciente 5
+[02:26:14] [CPU] t=526: atendiendo a Paciente 5
+[02:26:14] [CPU] t=527: atendiendo a Paciente 5
+[02:26:14] [CPU] t=528: atendiendo a Paciente 5
+[02:26:15] [CPU] t=529: atendiendo a Paciente 5
+[02:26:15] [CPU] t=530: atendiendo a Paciente 5
+[02:26:16] [CPU] t=531: atendiendo a Paciente 5
+[02:26:16] [CPU] t=532: atendiendo a Paciente 5
+[02:26:16] [CPU] t=533: atendiendo a Paciente 5
+[02:26:17] [CPU] t=534: atendiendo a Paciente 5
+[02:26:17] [CPU] t=535: atendiendo a Paciente 5
+[02:26:18] [CPU] t=536: atendiendo a Paciente 5
+[02:26:18] [CPU] t=537: atendiendo a Paciente 5
+[02:26:18] [CPU] t=538: atendiendo a Paciente 5
+[02:26:19] [CPU] t=539: atendiendo a Paciente 5
+[02:26:19] [CPU] t=540: atendiendo a Paciente 5
+[02:26:20] [CPU] t=541: atendiendo a Paciente 5
+[02:26:20] [CPU] t=542: atendiendo a Paciente 5
+[02:26:20] [CPU] t=543: atendiendo a Paciente 5
+[02:26:21] [CPU] t=544: atendiendo a Paciente 5
+[02:26:21] [CPU] t=545: atendiendo a Paciente 5
+[02:26:22] [CPU] t=546: atendiendo a Paciente 5
+[02:26:22] [CPU] t=547: atendiendo a Paciente 5
+[02:26:22] [CPU] t=548: atendiendo a Paciente 5
+[02:26:23] [CPU] t=549: atendiendo a Paciente 5
+[02:26:23] [CPU] t=550: atendiendo a Paciente 5
+[02:26:24] [CPU] t=551: atendiendo a Paciente 5
+[02:26:24] [CPU] t=552: atendiendo a Paciente 5
+[02:26:24] [CPU] t=553: atendiendo a Paciente 5
+[02:26:25] [CPU] t=554: atendiendo a Paciente 5
+[02:26:25] [CPU] t=555: atendiendo a Paciente 5
+[02:26:26] [CPU] t=556: atendiendo a Paciente 5
+[02:26:26] [CPU] t=557: atendiendo a Paciente 5
+[02:26:26] [CPU] t=558: atendiendo a Paciente 5
+[02:26:27] [CPU] t=559: atendiendo a Paciente 5
+[02:26:27] [CPU] t=560: atendiendo a Paciente 5
+[02:26:28] [CPU] t=561: atendiendo a Paciente 5
+[02:26:28] [CPU] t=562: atendiendo a Paciente 5
+[02:26:28] [CPU] t=563: atendiendo a Paciente 5
+[02:26:29] [CPU] t=564: atendiendo a Paciente 5
+[02:26:29] [CPU] t=565: atendiendo a Paciente 5
+[02:26:30] [CPU] t=566: atendiendo a Paciente 5
+[02:26:30] [CPU] t=567: atendiendo a Paciente 5
+[02:26:30] [CPU] t=568: atendiendo a Paciente 5
+[02:26:31] [CPU] t=569: atendiendo a Paciente 5
+[02:26:31] [CPU] t=570: atendiendo a Paciente 5
+[02:26:32] [CPU] t=571: atendiendo a Paciente 5
+[02:26:32] [CPU] t=572: atendiendo a Paciente 5
+[02:26:32] [CPU] t=573: atendiendo a Paciente 5
+[02:26:33] [CPU] t=574: atendiendo a Paciente 5
+[02:26:33] [CPU] t=575: atendiendo a Paciente 5
+[02:26:34] [CPU] t=576: atendiendo a Paciente 5
+[02:26:34] [CPU] t=577: atendiendo a Paciente 5
+[02:26:34] [CPU] t=578: atendiendo a Paciente 5
+[02:26:35] [CPU] t=579: atendiendo a Paciente 5
+[02:26:35] [CPU] t=580: atendiendo a Paciente 5
+[02:26:36] [CPU] t=581: atendiendo a Paciente 5
+[02:26:36] [CPU] t=582: atendiendo a Paciente 5
+[02:26:36] [CPU] t=583: atendiendo a Paciente 5
+[02:26:37] [CPU] t=584: atendiendo a Paciente 5
+[02:26:37] [CPU] t=585: atendiendo a Paciente 5
+[02:26:38] [CPU] t=586: atendiendo a Paciente 5
+[02:26:38] [CPU] t=587: atendiendo a Paciente 5
+[02:26:38] [CPU] t=588: atendiendo a Paciente 5
+[02:26:39] [CPU] t=589: atendiendo a Paciente 5
+[02:26:39] [CPU] t=590: atendiendo a Paciente 5
+[02:26:40] [CPU] t=591: atendiendo a Paciente 5
+[02:26:40] [CPU] t=592: atendiendo a Paciente 5
+[02:26:41] [CPU] t=593: atendiendo a Paciente 5
+[02:26:41] [CPU] t=594: atendiendo a Paciente 5
+[02:26:41] [CPU] t=595: atendiendo a Paciente 5
+[02:26:42] [CPU] t=596: atendiendo a Paciente 5
+[02:26:42] [CPU] t=597: atendiendo a Paciente 5
+[02:26:43] [CPU] t=598: atendiendo a Paciente 5
+[02:26:43] [CPU] t=599: atendiendo a Paciente 5
+[02:26:43] [CPU] t=600: atendiendo a Paciente 5
+[02:26:44] [CPU] t=601: atendiendo a Paciente 5
+[02:26:44] [CPU] t=602: atendiendo a Paciente 5
+[02:26:45] [CPU] t=603: atendiendo a Paciente 5
+[02:26:45] [CPU] t=604: atendiendo a Paciente 5
+[02:26:45] [CPU] t=605: atendiendo a Paciente 5
+[02:26:46] [CPU] t=606: atendiendo a Paciente 5
+[02:26:46] [CPU] t=607: atendiendo a Paciente 5
+[02:26:47] [CPU] t=608: atendiendo a Paciente 5
+[02:26:47] [CPU] t=609: atendiendo a Paciente 5
+[02:26:47] [CPU] t=610: atendiendo a Paciente 5
+[02:26:48] [CPU] t=611: atendiendo a Paciente 5
+[02:26:48] [CPU] t=612: atendiendo a Paciente 5
+[02:26:49] [CPU] t=613: atendiendo a Paciente 5
+[02:26:49] [CPU] t=614: atendiendo a Paciente 5
+[02:26:49] [CPU] t=615: atendiendo a Paciente 5
+[02:26:50] [APP] 'Juego Snake' se registra como proceso (PID 7, prio 8)
+[02:26:50] [CPU] t=616: atendiendo a Paciente 5
+[02:26:50] [CPU] t=617: atendiendo a Juego Snake
+[02:26:51] [CPU] t=618: atendiendo a Paciente 5
+[02:26:51] [CPU] t=619: atendiendo a Juego Snake
+[02:26:51] [CPU] t=620: atendiendo a Paciente 5
+[02:26:52] [CPU] t=621: atendiendo a Juego Snake
+[02:26:52] [APP] 'Juego Snake' reiniciado por el usuario
+[02:26:52] [CPU] t=622: atendiendo a Paciente 5
+[02:26:53] [CPU] t=623: atendiendo a Juego Snake
+[02:26:53] [CPU] t=624: atendiendo a Paciente 5
+[02:26:53] [CPU] t=625: atendiendo a Juego Snake
+[02:26:54] [CPU] t=626: atendiendo a Paciente 5
+[02:26:54] [CPU] t=627: atendiendo a Juego Snake
+[02:26:55] [CPU] t=628: atendiendo a Paciente 5
+[02:26:55] [CPU] t=629: atendiendo a Juego Snake
+[02:26:55] [CPU] t=630: atendiendo a Paciente 5
+[02:26:56] [CPU] t=631: atendiendo a Juego Snake
+[02:26:56] [CPU] t=632: atendiendo a Paciente 5
+[02:26:57] [CPU] t=633: atendiendo a Juego Snake
+[02:26:57] [CPU] t=634: atendiendo a Paciente 5
+[02:26:57] [CPU] t=635: atendiendo a Juego Snake
+[02:26:58] [CPU] t=636: atendiendo a Paciente 5
+[02:26:58] [CPU] t=637: atendiendo a Juego Snake
+[02:26:59] [CPU] t=638: atendiendo a Paciente 5
+[02:26:59] [CPU] t=639: atendiendo a Juego Snake
+[02:26:59] [CPU] t=640: atendiendo a Paciente 5
+[02:27:00] [CPU] t=641: atendiendo a Juego Snake
+[02:27:00] [CPU] t=642: atendiendo a Paciente 5
+[02:27:01] [CPU] t=643: atendiendo a Juego Snake
+[02:27:01] [CPU] t=644: atendiendo a Paciente 5
+[02:27:01] [CPU] t=645: atendiendo a Juego Snake
+[02:27:02] [CPU] t=646: atendiendo a Paciente 5
+[02:27:02] [CPU] t=647: atendiendo a Juego Snake
+[02:27:03] [CPU] t=648: atendiendo a Paciente 5
+[02:27:03] [CPU] t=649: atendiendo a Juego Snake
+[02:27:03] [CPU] t=650: atendiendo a Paciente 5
+[02:27:04] [CPU] t=651: atendiendo a Juego Snake
+[02:27:04] [CPU] t=652: atendiendo a Paciente 5
+[02:27:05] [CPU] t=653: atendiendo a Juego Snake
+[02:27:05] [CPU] t=654: atendiendo a Paciente 5
+[02:27:05] [CPU] t=655: atendiendo a Juego Snake
+[02:27:06] [CPU] t=656: atendiendo a Paciente 5
+[02:27:06] [APP] 'Juego Snake' reiniciado por el usuario
+[02:27:06] [CPU] t=657: atendiendo a Juego Snake
+[02:27:07] [CPU] t=658: atendiendo a Paciente 5
+[02:27:07] [CPU] t=659: atendiendo a Juego Snake
+[02:27:07] [CPU] t=660: atendiendo a Paciente 5
+[02:27:08] [CPU] t=661: atendiendo a Juego Snake
+[02:27:08] [CPU] t=662: atendiendo a Paciente 5
+[02:27:09] [CPU] t=663: atendiendo a Juego Snake
+[02:27:09] [CPU] t=664: atendiendo a Paciente 5
+[02:27:09] [CPU] t=665: atendiendo a Juego Snake
+[02:27:10] [CPU] t=666: atendiendo a Paciente 5
+[02:27:10] [CPU] t=667: atendiendo a Juego Snake
+[02:27:11] [CPU] t=668: atendiendo a Paciente 5
+[02:27:11] [CPU] t=669: atendiendo a Juego Snake
+[02:27:11] [CPU] t=670: atendiendo a Paciente 5
+[02:27:12] [CPU] t=671: atendiendo a Juego Snake
+[02:27:12] [CPU] t=672: atendiendo a Paciente 5
+[02:27:13] [CPU] t=673: atendiendo a Juego Snake
+[02:27:13] [CPU] t=674: atendiendo a Paciente 5
+[02:27:13] [CPU] t=675: atendiendo a Juego Snake
+[02:27:14] [CPU] t=676: atendiendo a Paciente 5
+[02:27:14] [CPU] t=677: atendiendo a Juego Snake
+[02:27:15] [CPU] t=678: atendiendo a Paciente 5
+[02:27:15] [CPU] t=679: atendiendo a Juego Snake
+[02:27:15] [CPU] t=680: atendiendo a Paciente 5
+[02:27:16] [CPU] t=681: atendiendo a Juego Snake
+[02:27:16] [CPU] t=682: atendiendo a Paciente 5
+[02:27:17] [CPU] t=683: atendiendo a Juego Snake
+[02:27:17] [CPU] t=684: atendiendo a Paciente 5
+[02:27:17] [CPU] t=685: atendiendo a Juego Snake
+[02:27:18] [CPU] t=686: atendiendo a Paciente 5
+[02:27:18] [CPU] t=687: atendiendo a Juego Snake
+[02:27:19] [CPU] t=688: atendiendo a Paciente 5
+[02:27:19] [CPU] t=689: atendiendo a Juego Snake
+[02:27:19] [CPU] t=690: atendiendo a Paciente 5
+[02:27:20] [CPU] t=691: atendiendo a Juego Snake
+[02:27:20] [CPU] t=692: atendiendo a Paciente 5
+[02:27:21] [CPU] t=693: atendiendo a Juego Snake
+[02:27:21] [CPU] t=694: atendiendo a Paciente 5
+[02:27:21] [CPU] t=695: atendiendo a Juego Snake
+[02:27:22] [CPU] t=696: atendiendo a Paciente 5
+[02:27:22] [CPU] t=697: atendiendo a Juego Snake
+[02:27:23] [CPU] t=698: atendiendo a Paciente 5
+[02:27:23] [CPU] t=699: atendiendo a Juego Snake
+[02:27:23] [CPU] t=700: atendiendo a Paciente 5
+[02:27:24] [CPU] t=701: atendiendo a Juego Snake
+[02:27:24] [CPU] t=702: atendiendo a Paciente 5
+[02:27:25] [CPU] t=703: atendiendo a Juego Snake
+[02:27:25] [CPU] t=704: atendiendo a Paciente 5
+[02:27:25] [CPU] t=705: atendiendo a Juego Snake
+[02:27:26] [CPU] t=706: atendiendo a Paciente 5
+[02:27:26] [CPU] t=707: atendiendo a Juego Snake
+[02:27:27] [CPU] t=708: atendiendo a Paciente 5
+[02:27:27] [CPU] t=709: atendiendo a Juego Snake
+[02:27:27] [CPU] t=710: atendiendo a Paciente 5
+[02:27:28] [CPU] t=711: atendiendo a Juego Snake
+[02:27:28] [CPU] t=712: atendiendo a Paciente 5
+[02:27:29] [CPU] t=713: atendiendo a Juego Snake
+[02:27:29] [CPU] t=714: atendiendo a Paciente 5
+[02:27:29] [CPU] t=715: atendiendo a Juego Snake
+[02:27:30] [CPU] t=716: atendiendo a Paciente 5
+[02:27:30] [CPU] t=717: atendiendo a Juego Snake
+[02:27:31] [CPU] t=718: atendiendo a Paciente 5
+[02:27:31] [CPU] t=719: atendiendo a Juego Snake
+[02:27:31] [CPU] t=720: atendiendo a Paciente 5
+[02:27:32] [CPU] t=721: atendiendo a Juego Snake
+[02:27:32] [CPU] t=722: atendiendo a Paciente 5
+[02:27:33] [CPU] t=723: atendiendo a Juego Snake
+[02:27:33] [CPU] t=724: atendiendo a Paciente 5
+[02:27:33] [CPU] t=725: atendiendo a Juego Snake
+[02:27:34] [CPU] t=726: atendiendo a Paciente 5
+[02:27:34] [CPU] t=727: atendiendo a Juego Snake
+[02:27:35] [CPU] t=728: atendiendo a Paciente 5
+[02:27:35] [CPU] t=729: atendiendo a Juego Snake
+[02:27:35] [CPU] t=730: atendiendo a Paciente 5
+[02:27:36] [CPU] t=731: atendiendo a Juego Snake
+[02:27:36] [CPU] t=732: atendiendo a Paciente 5
+[02:27:37] [CPU] t=733: atendiendo a Juego Snake
+[02:27:37] [CPU] t=734: atendiendo a Paciente 5
+[02:27:37] [CPU] t=735: atendiendo a Juego Snake
+[02:27:38] [CPU] t=736: atendiendo a Paciente 5
+[02:27:38] [CPU] t=737: atendiendo a Juego Snake
+[02:27:39] [CPU] t=738: atendiendo a Paciente 5
+[02:27:39] [CPU] t=739: atendiendo a Juego Snake
+[02:27:39] [CPU] t=740: atendiendo a Paciente 5
+[02:27:40] [CPU] t=741: atendiendo a Juego Snake
+[02:27:40] [APP] 'Juego Snake' reiniciado por el usuario
+[02:27:40] [CPU] t=742: atendiendo a Paciente 5
+[02:27:41] [CPU] t=743: atendiendo a Juego Snake
+[02:27:41] [CPU] t=744: atendiendo a Paciente 5
+[02:27:41] [CPU] t=745: atendiendo a Juego Snake
+[02:27:42] [CPU] t=746: atendiendo a Paciente 5
+[02:27:42] [CPU] t=747: atendiendo a Juego Snake
+[02:27:43] [CPU] t=748: atendiendo a Paciente 5
+[02:27:43] [CPU] t=749: atendiendo a Juego Snake
+[02:27:43] [CPU] t=750: atendiendo a Paciente 5
+[02:27:44] [CPU] t=751: atendiendo a Juego Snake
+[02:27:44] [CPU] t=752: atendiendo a Paciente 5
+[02:27:45] [CPU] t=753: atendiendo a Juego Snake
+[02:27:45] [CPU] t=754: atendiendo a Paciente 5
+[02:27:45] [CPU] t=755: atendiendo a Juego Snake
+[02:27:46] [CPU] t=756: atendiendo a Paciente 5
+[02:27:46] [CPU] t=757: atendiendo a Juego Snake
+[02:27:47] [CPU] t=758: atendiendo a Paciente 5
+[02:27:47] [CPU] t=759: atendiendo a Juego Snake
+[02:27:47] [CPU] t=760: atendiendo a Paciente 5
+[02:27:48] [CPU] t=761: atendiendo a Juego Snake
+[02:27:48] [CPU] t=762: atendiendo a Paciente 5
+[02:27:49] [CPU] t=763: atendiendo a Juego Snake
+[02:27:49] [CPU] t=764: atendiendo a Paciente 5
+[02:27:49] [CPU] t=765: atendiendo a Juego Snake
+[02:27:50] [CPU] t=766: atendiendo a Paciente 5
+[02:27:50] [CPU] t=767: atendiendo a Juego Snake
+[02:27:51] [CPU] t=768: atendiendo a Paciente 5
+[02:27:51] [CPU] t=769: atendiendo a Juego Snake
+[02:27:51] [CPU] t=770: atendiendo a Paciente 5
+[02:27:52] [CPU] t=771: atendiendo a Juego Snake
+[02:27:52] [CPU] t=772: atendiendo a Paciente 5
+[02:27:53] [CPU] t=773: atendiendo a Juego Snake
+[02:27:53] [CPU] t=774: atendiendo a Paciente 5
+[02:27:53] [CPU] t=775: atendiendo a Juego Snake
+[02:27:54] [CPU] t=776: atendiendo a Paciente 5
+[02:27:54] [CPU] t=777: atendiendo a Juego Snake
+[02:27:55] [CPU] t=778: atendiendo a Paciente 5
+[02:27:55] [CPU] t=779: atendiendo a Juego Snake
+[02:27:55] [CPU] t=780: atendiendo a Paciente 5
+[02:27:56] [CPU] t=781: atendiendo a Juego Snake
+[02:27:56] [CPU] t=782: atendiendo a Paciente 5
+[02:27:56] [APP] 'Juego Snake' reiniciado por el usuario
+[02:27:57] [CPU] t=783: atendiendo a Juego Snake
+[02:27:57] [CPU] t=784: atendiendo a Paciente 5
+[02:27:57] [CPU] t=785: atendiendo a Juego Snake
+[02:27:58] [APP] 'Juego Snake' reiniciado por el usuario
+[02:27:58] [CPU] t=786: atendiendo a Paciente 5
+[02:27:58] [CPU] t=787: atendiendo a Juego Snake
+[02:27:59] [CPU] t=788: atendiendo a Paciente 5
+[02:27:59] [APP] 'Juego Snake' reiniciado por el usuario
+[02:27:59] [CPU] t=789: atendiendo a Juego Snake
+[02:27:59] [CPU] t=790: atendiendo a Paciente 5
+[02:28:00] [CPU] t=791: atendiendo a Juego Snake
+[02:28:00] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:00] [CPU] t=792: atendiendo a Paciente 5
+[02:28:01] [CPU] t=793: atendiendo a Juego Snake
+[02:28:01] [CPU] t=794: atendiendo a Paciente 5
+[02:28:01] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:01] [CPU] t=795: atendiendo a Juego Snake
+[02:28:02] [CPU] t=796: atendiendo a Paciente 5
+[02:28:02] [CPU] t=797: atendiendo a Juego Snake
+[02:28:03] [CPU] t=798: atendiendo a Paciente 5
+[02:28:03] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:03] [CPU] t=799: atendiendo a Juego Snake
+[02:28:03] [CPU] t=800: atendiendo a Paciente 5
+[02:28:04] [CPU] t=801: atendiendo a Juego Snake
+[02:28:04] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:04] [CPU] t=802: atendiendo a Paciente 5
+[02:28:05] [CPU] t=803: atendiendo a Juego Snake
+[02:28:05] [CPU] t=804: atendiendo a Paciente 5
+[02:28:05] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:05] [CPU] t=805: atendiendo a Juego Snake
+[02:28:06] [CPU] t=806: atendiendo a Paciente 5
+[02:28:06] [CPU] t=807: atendiendo a Juego Snake
+[02:28:07] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:07] [CPU] t=808: atendiendo a Paciente 5
+[02:28:07] [CPU] t=809: atendiendo a Juego Snake
+[02:28:07] [CPU] t=810: atendiendo a Paciente 5
+[02:28:08] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:08] [CPU] t=811: atendiendo a Juego Snake
+[02:28:08] [CPU] t=812: atendiendo a Paciente 5
+[02:28:09] [CPU] t=813: atendiendo a Juego Snake
+[02:28:09] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:09] [CPU] t=814: atendiendo a Paciente 5
+[02:28:09] [CPU] t=815: atendiendo a Juego Snake
+[02:28:10] [CPU] t=816: atendiendo a Paciente 5
+[02:28:10] [CPU] t=817: atendiendo a Juego Snake
+[02:28:10] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:11] [CPU] t=818: atendiendo a Paciente 5
+[02:28:11] [CPU] t=819: atendiendo a Juego Snake
+[02:28:11] [CPU] t=820: atendiendo a Paciente 5
+[02:28:12] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:12] [CPU] t=821: atendiendo a Juego Snake
+[02:28:12] [CPU] t=822: atendiendo a Paciente 5
+[02:28:13] [CPU] t=823: atendiendo a Juego Snake
+[02:28:13] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:13] [CPU] t=824: atendiendo a Paciente 5
+[02:28:13] [CPU] t=825: atendiendo a Juego Snake
+[02:28:14] [CPU] t=826: atendiendo a Paciente 5
+[02:28:14] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:14] [CPU] t=827: atendiendo a Juego Snake
+[02:28:15] [CPU] t=828: atendiendo a Paciente 5
+[02:28:15] [CPU] t=829: atendiendo a Juego Snake
+[02:28:15] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:15] [CPU] t=830: atendiendo a Paciente 5
+[02:28:16] [CPU] t=831: atendiendo a Juego Snake
+[02:28:16] [CPU] t=832: atendiendo a Paciente 5
+[02:28:17] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:17] [CPU] t=833: atendiendo a Juego Snake
+[02:28:17] [CPU] t=834: atendiendo a Paciente 5
+[02:28:17] [CPU] t=835: atendiendo a Juego Snake
+[02:28:18] [CPU] t=836: atendiendo a Paciente 5
+[02:28:18] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:18] [CPU] t=837: atendiendo a Juego Snake
+[02:28:19] [CPU] t=838: atendiendo a Paciente 5
+[02:28:19] [CPU] t=839: atendiendo a Juego Snake
+[02:28:19] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:19] [CPU] t=840: atendiendo a Paciente 5
+[02:28:20] [CPU] t=841: atendiendo a Juego Snake
+[02:28:20] [CPU] t=842: atendiendo a Paciente 5
+[02:28:20] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:21] [CPU] t=843: atendiendo a Juego Snake
+[02:28:21] [CPU] t=844: atendiendo a Paciente 5
+[02:28:21] [CPU] t=845: atendiendo a Juego Snake
+[02:28:22] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:22] [CPU] t=846: atendiendo a Paciente 5
+[02:28:22] [CPU] t=847: atendiendo a Juego Snake
+[02:28:23] [CPU] t=848: atendiendo a Paciente 5
+[02:28:23] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:23] [CPU] t=849: atendiendo a Juego Snake
+[02:28:23] [CPU] t=850: atendiendo a Paciente 5
+[02:28:24] [CPU] t=851: atendiendo a Juego Snake
+[02:28:24] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:24] [CPU] t=852: atendiendo a Paciente 5
+[02:28:25] [CPU] t=853: atendiendo a Juego Snake
+[02:28:25] [ADMIT] Paciente 8 admitido (PID 8, gravedad 6)
+[02:28:25] [ADMIT] Paciente 9 admitido (PID 9, gravedad 4)
+[02:28:25] [ADMIT] Paciente 10 admitido (PID 10, gravedad 8)
+[02:28:25] [ADMIT] Paciente 11 admitido (PID 11, gravedad 7)
+[02:28:25] [ADMIT] Paciente 12 admitido (PID 12, gravedad 5)
+[02:28:25] [ADMIT] Paciente 13 admitido (PID 13, gravedad 4)
+[02:28:25] [ADMIT] Paciente 14 admitido (PID 14, gravedad 4)
+[02:28:25] [ADMIT] Paciente 15 admitido (PID 15, gravedad 6)
+[02:28:25] [CPU] t=854: atendiendo a Paciente 5
+[02:28:26] [CPU] t=855: atendiendo a Juego Snake
+[02:28:26] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:26] [CPU] t=856: atendiendo a Paciente 8
+[02:28:26] [CPU] t=857: atendiendo a Paciente 9
+[02:28:27] [CPU] t=858: atendiendo a Paciente 10
+[02:28:27] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:27] [CPU] t=859: atendiendo a Paciente 11
+[02:28:28] [CPU] t=860: atendiendo a Paciente 12
+[02:28:28] [CPU] t=861: atendiendo a Paciente 13
+[02:28:28] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:28] [CPU] t=862: atendiendo a Paciente 14
+[02:28:29] [CPU] t=863: atendiendo a Paciente 15
+[02:28:29] [CPU] t=864: atendiendo a Paciente 5
+[02:28:29] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:30] [CPU] t=865: atendiendo a Juego Snake
+[02:28:30] [CPU] t=866: atendiendo a Paciente 8
+[02:28:30] [CPU] t=867: atendiendo a Paciente 9
+[02:28:31] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:31] [CPU] t=868: atendiendo a Paciente 10
+[02:28:31] [CPU] t=869: atendiendo a Paciente 11
+[02:28:32] [CPU] t=870: atendiendo a Paciente 12
+[02:28:32] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:32] [ADMIT] Paciente 16 admitido (PID 16, gravedad 1)
+[02:28:32] [CPU] t=871: atendiendo a Paciente 13
+[02:28:32] [CPU] t=872: atendiendo a Paciente 14
+[02:28:33] [CPU] t=873: atendiendo a Paciente 15
+[02:28:33] [CPU] t=874: atendiendo a Paciente 5
+[02:28:33] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:34] [CPU] t=875: atendiendo a Juego Snake
+[02:28:34] [CPU] t=876: atendiendo a Paciente 8
+[02:28:34] [ALTA] Paciente 5 (PID 5) dado de alta · esperó 55.5s
+[02:28:34] [WARN] No existe paciente 6
+[02:28:34] [CPU] t=877: atendiendo a Paciente 9
+[02:28:34] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:34] [DEADLOCK] Iniciando demo: dos pacientes pelearán por Quirófano + Cirujano
+[02:28:34] [ADMIT] Paciente 17 admitido (PID 17, gravedad 4)
+[02:28:34] [ADMIT] Paciente 18 admitido (PID 18, gravedad 6)
+[02:28:34] [RECURSO] Paciente 17 solicita QUIROFANO
+[02:28:34] [RECURSO] Paciente 17 obtuvo QUIROFANO
+[02:28:34] [RECURSO] Paciente 18 solicita CIRUJANO
+[02:28:34] [RECURSO] Paciente 18 obtuvo CIRUJANO
+[02:28:34] [RECURSO] Paciente 18 solicita QUIROFANO
+[02:28:34] [RECURSO] Paciente 17 solicita CIRUJANO
+[02:28:35] [CPU] t=878: atendiendo a Paciente 10
+[02:28:35] [DEADLOCK] ⚠️ DEADLOCK: Paciente 17 → Paciente 18 → Paciente 17 se bloquean mutuamente
+[02:28:35] [DEADLOCK] Se derivará un paciente en 10s, o tocá 'Resolver Deadlock'
+[02:28:35] [CPU] t=879: atendiendo a Paciente 11
+[02:28:36] [CPU] t=880: atendiendo a Paciente 12
+[02:28:36] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:36] [CPU] t=881: atendiendo a Paciente 16
+[02:28:36] [CPU] t=882: atendiendo a Paciente 13
+[02:28:37] [CPU] t=883: atendiendo a Paciente 14
+[02:28:37] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:37] [CPU] t=884: atendiendo a Paciente 15
+[02:28:38] [CPU] t=885: atendiendo a Juego Snake
+[02:28:38] [CPU] t=886: atendiendo a Paciente 8
+[02:28:38] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:38] [CPU] t=887: atendiendo a Paciente 9
+[02:28:39] [CPU] t=888: atendiendo a Paciente 10
+[02:28:39] [CPU] t=889: atendiendo a Paciente 11
+[02:28:39] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:40] [CPU] t=890: atendiendo a Paciente 12
+[02:28:40] [CPU] t=891: atendiendo a Paciente 16
+[02:28:40] [CPU] t=892: atendiendo a Paciente 13
+[02:28:41] [CPU] t=893: atendiendo a Paciente 14
+[02:28:41] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:41] [CPU] t=894: atendiendo a Paciente 15
+[02:28:41] [DEADLOCK] Resolución manual solicitada
+[02:28:41] [DEADLOCK] Resolviendo: Paciente 18 es derivado a otro hospital
+[02:28:41] [ALTA] Paciente 18 (PID 18) dado de alta · esperó 0.0s
+[02:28:41] [RECURSO] Paciente 17 obtuvo CIRUJANO
+[02:28:41] [RECURSO] Paciente 17 libera CIRUJANO
+[02:28:41] [RECURSO] Paciente 17 libera QUIROFANO
+[02:28:42] [CPU] t=895: atendiendo a Juego Snake
+[02:28:42] [CPU] t=896: atendiendo a Paciente 8
+[02:28:42] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:42] [CPU] t=897: atendiendo a Paciente 9
+[02:28:43] [CPU] t=898: atendiendo a Paciente 10
+[02:28:43] [CPU] t=899: atendiendo a Paciente 11
+[02:28:43] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:44] [CPU] t=900: atendiendo a Paciente 12
+[02:28:44] [CPU] t=901: atendiendo a Paciente 16
+[02:28:44] [CPU] t=902: atendiendo a Paciente 13
+[02:28:45] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:45] [CPU] t=903: atendiendo a Paciente 14
+[02:28:45] [CPU] t=904: atendiendo a Paciente 15
+[02:28:46] [CPU] t=905: atendiendo a Paciente 17
+[02:28:46] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:46] [CPU] t=906: atendiendo a Juego Snake
+[02:28:46] [CPU] t=907: atendiendo a Paciente 8
+[02:28:47] [ALTA] Paciente 8 terminó su atención · esperó 19.3s
+[02:28:47] [CPU] t=908: atendiendo a Paciente 9
+[02:28:47] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:47] [CPU] t=909: atendiendo a Paciente 10
+[02:28:48] [CPU] t=910: atendiendo a Paciente 11
+[02:28:48] [CPU] t=911: atendiendo a Paciente 12
+[02:28:48] [CPU] t=912: atendiendo a Paciente 16
+[02:28:48] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:49] [CPU] t=913: atendiendo a Paciente 13
+[02:28:49] [CPU] t=914: atendiendo a Paciente 14
+[02:28:50] [CPU] t=915: atendiendo a Paciente 15
+[02:28:50] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:50] [ALTA] Paciente 15 terminó su atención · esperó 22.5s
+[02:28:50] [CPU] t=916: atendiendo a Paciente 17
+[02:28:50] [CPU] t=917: atendiendo a Juego Snake
+[02:28:51] [CPU] t=918: atendiendo a Paciente 9
+[02:28:51] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:51] [ALTA] Paciente 9 terminó su atención · esperó 23.3s
+[02:28:51] [CPU] t=919: atendiendo a Paciente 10
+[02:28:52] [CPU] t=920: atendiendo a Paciente 11
+[02:28:52] [CPU] t=921: atendiendo a Paciente 12
+[02:28:52] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:52] [ALTA] Paciente 12 terminó su atención · esperó 24.5s
+[02:28:52] [CPU] t=922: atendiendo a Paciente 16
+[02:28:53] [CPU] t=923: atendiendo a Paciente 13
+[02:28:53] [CPU] t=924: atendiendo a Paciente 14
+[02:28:53] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:54] [CPU] t=925: atendiendo a Paciente 17
+[02:28:54] [CPU] t=926: atendiendo a Juego Snake
+[02:28:54] [CPU] t=927: atendiendo a Paciente 10
+[02:28:55] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:55] [ALTA] Paciente 10 terminó su atención · esperó 26.5s
+[02:28:55] [CPU] t=928: atendiendo a Paciente 11
+[02:28:55] [ALTA] Paciente 11 terminó su atención · esperó 26.9s
+[02:28:55] [CPU] t=929: atendiendo a Paciente 16
+[02:28:56] [CPU] t=930: atendiendo a Paciente 13
+[02:28:56] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:56] [CPU] t=931: atendiendo a Paciente 14
+[02:28:56] [CPU] t=932: atendiendo a Paciente 17
+[02:28:57] [CPU] t=933: atendiendo a Juego Snake
+[02:28:57] [CPU] t=934: atendiendo a Paciente 16
+[02:28:57] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:58] [CPU] t=935: atendiendo a Paciente 13
+[02:28:58] [CPU] t=936: atendiendo a Paciente 14
+[02:28:58] [CPU] t=937: atendiendo a Paciente 17
+[02:28:58] [APP] 'Juego Snake' reiniciado por el usuario
+[02:28:58] [FARMACIA] Iniciando turno de producción
+[02:28:59] [CPU] t=938: atendiendo a Juego Snake
+[02:28:59] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:28:59] [CPU] t=939: atendiendo a Paciente 16
+[02:28:59] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:28:59] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:28:59] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:28:59] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:00] [ALTA] Paciente 16 terminó su atención · esperó 24.5s
+[02:29:00] [CPU] t=940: atendiendo a Paciente 13
+[02:29:00] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:00] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:00] [ALTA] Paciente 13 terminó su atención · esperó 30.9s
+[02:29:00] [CPU] t=941: atendiendo a Paciente 14
+[02:29:00] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:00] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:00] [CPU] t=942: atendiendo a Paciente 17
+[02:29:00] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:00] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:01] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:01] [CPU] t=943: atendiendo a Juego Snake
+[02:29:01] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:01] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:01] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:01] [CPU] t=944: atendiendo a Paciente 14
+[02:29:01] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:02] [ALTA] Paciente 14 terminó su atención · esperó 32.1s
+[02:29:02] [CPU] t=945: atendiendo a Paciente 17
+[02:29:02] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:02] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:02] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:02] [CPU] t=946: atendiendo a Juego Snake
+[02:29:02] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:02] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:02] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:02] [CPU] t=947: atendiendo a Paciente 17
+[02:29:03] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:03] [CPU] t=948: atendiendo a Juego Snake
+[02:29:03] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:03] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:03] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:03] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:03] [CPU] t=949: atendiendo a Paciente 17
+[02:29:03] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:03] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:03] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:04] [CPU] t=950: atendiendo a Juego Snake
+[02:29:04] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:04] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:04] [CPU] t=951: atendiendo a Paciente 17
+[02:29:04] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:04] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:04] [CPU] t=952: atendiendo a Juego Snake
+[02:29:04] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:05] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:05] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:05] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:05] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:05] [CPU] t=953: atendiendo a Paciente 17
+[02:29:05] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:05] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:05] [CPU] t=954: atendiendo a Juego Snake
+[02:29:05] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:05] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:06] [CPU] t=955: atendiendo a Paciente 17
+[02:29:06] [HISTORIA] Enf. Perez llega a actualizar la historia clínica
+[02:29:06] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:06] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:06] [CPU] t=956: atendiendo a Juego Snake
+[02:29:06] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:06] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:06] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:06] [CPU] t=957: atendiendo a Paciente 17
+[02:29:06] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:07] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:07] [HISTORIA] Enf. Perez obtiene acceso EXCLUSIVO y comienza a escribir
+[02:29:07] [CPU] t=958: atendiendo a Juego Snake
+[02:29:07] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:07] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:07] [CPU] t=959: atendiendo a Paciente 17
+[02:29:07] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:07] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:07] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:08] [CPU] t=960: atendiendo a Juego Snake
+[02:29:08] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:08] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:08] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:08] [CPU] t=961: atendiendo a Paciente 17
+[02:29:08] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:08] [CPU] t=962: atendiendo a Juego Snake
+[02:29:08] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:09] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:09] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:09] [CPU] t=963: atendiendo a Paciente 17
+[02:29:09] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:09] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:09] [CPU] t=964: atendiendo a Juego Snake
+[02:29:10] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:10] [CPU] t=965: atendiendo a Paciente 17
+[02:29:10] [HISTORIA] Dr. García llega a consultar la historia clínica
+[02:29:10] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:10] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:10] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:10] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:10] [CPU] t=966: atendiendo a Juego Snake
+[02:29:10] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:10] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:10] [HISTORIA] Enf. Perez termina la actualización: Temp: 38.1°C · PA: 145/92 · FC: 95 bpm · Medicación ajustada
+[02:29:10] [CPU] t=967: atendiendo a Paciente 17
+[02:29:11] [HISTORIA] Dr. García comienza a leer (lectores activos: 1)
+[02:29:11] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:11] [CPU] t=968: atendiendo a Juego Snake
+[02:29:11] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:11] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:11] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:11] [HISTORIA] Dr. Sosa llega a consultar la historia clínica
+[02:29:11] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:11] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:11] [CPU] t=969: atendiendo a Paciente 17
+[02:29:12] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:12] [CPU] t=970: atendiendo a Juego Snake
+[02:29:12] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:12] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:12] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:12] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:12] [CPU] t=971: atendiendo a Paciente 17
+[02:29:12] [HISTORIA] Dr. Sosa comienza a leer (lectores activos: 2)
+[02:29:12] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:12] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:12] [CPU] t=972: atendiendo a Juego Snake
+[02:29:13] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:13] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:13] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:13] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:13] [CPU] t=973: atendiendo a Paciente 17
+[02:29:13] [CPU] t=974: atendiendo a Juego Snake
+[02:29:13] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:13] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:14] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:14] [CPU] t=975: atendiendo a Paciente 17
+[02:29:14] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:14] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:14] [CPU] t=976: atendiendo a Juego Snake
+[02:29:14] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:14] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:14] [CPU] t=977: atendiendo a Paciente 17
+[02:29:14] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:14] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:15] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:15] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:15] [CPU] t=978: atendiendo a Juego Snake
+[02:29:15] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:15] [HISTORIA] Dr. Sosa termina su consulta
+[02:29:15] [CPU] t=979: atendiendo a Paciente 17
+[02:29:15] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:15] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:15] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:15] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:15] [HISTORIA] Dr. García termina su consulta
+[02:29:15] [HISTORIA] Último lector se retira: historia clínica disponible para escritura
+[02:29:16] [CPU] t=980: atendiendo a Juego Snake
+[02:29:16] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:16] [CPU] t=981: atendiendo a Paciente 17
+[02:29:16] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:16] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:16] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:16] [CPU] t=982: atendiendo a Juego Snake
+[02:29:17] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:17] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:17] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:17] [CPU] t=983: atendiendo a Paciente 17
+[02:29:17] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:17] [CPU] t=984: atendiendo a Juego Snake
+[02:29:17] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:17] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:17] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:17] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:18] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:18] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:18] [CPU] t=985: atendiendo a Paciente 17
+[02:29:18] [CPU] t=986: atendiendo a Juego Snake
+[02:29:18] [CPU] t=987: atendiendo a Paciente 17
+[02:29:19] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:19] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:19] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:19] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:19] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:19] [CPU] t=988: atendiendo a Juego Snake
+[02:29:19] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:19] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:19] [CPU] t=989: atendiendo a Paciente 17
+[02:29:19] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:19] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:20] [CPU] t=990: atendiendo a Juego Snake
+[02:29:20] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:20] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:20] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:20] [CPU] t=991: atendiendo a Paciente 17
+[02:29:20] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:20] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:20] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:20] [CPU] t=992: atendiendo a Juego Snake
+[02:29:21] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:21] [CPU] t=993: atendiendo a Paciente 17
+[02:29:21] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:21] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:21] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:21] [CPU] t=994: atendiendo a Juego Snake
+[02:29:21] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:21] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:22] [CPU] t=995: atendiendo a Paciente 17
+[02:29:22] [CPU] t=996: atendiendo a Juego Snake
+[02:29:22] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:22] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:22] [CPU] t=997: atendiendo a Paciente 17
+[02:29:22] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:22] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:22] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:23] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:23] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:23] [CPU] t=998: atendiendo a Juego Snake
+[02:29:23] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:23] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:23] [CPU] t=999: atendiendo a Paciente 17
+[02:29:23] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:24] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:24] [CPU] t=1000: atendiendo a Juego Snake
+[02:29:24] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:24] [CPU] t=1001: atendiendo a Paciente 17
+[02:29:24] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:24] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:24] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:24] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:24] [CPU] t=1002: atendiendo a Juego Snake
+[02:29:25] [CPU] t=1003: atendiendo a Paciente 17
+[02:29:25] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:25] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:25] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:25] [HISTORIA] Enf. Díaz llega a actualizar la historia clínica
+[02:29:25] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:25] [CPU] t=1004: atendiendo a Juego Snake
+[02:29:25] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:26] [CPU] t=1005: atendiendo a Paciente 17
+[02:29:26] [CPU] t=1006: atendiendo a Juego Snake
+[02:29:26] [HISTORIA] Enf. Díaz obtiene acceso EXCLUSIVO y comienza a escribir
+[02:29:26] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:26] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:26] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:26] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:26] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:26] [CPU] t=1007: atendiendo a Paciente 17
+[02:29:27] [CPU] t=1008: atendiendo a Juego Snake
+[02:29:27] [CPU] t=1009: atendiendo a Paciente 17
+[02:29:27] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:27] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:27] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:27] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:28] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:28] [CPU] t=1010: atendiendo a Juego Snake
+[02:29:28] [CPU] t=1011: atendiendo a Paciente 17
+[02:29:28] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:28] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:28] [CPU] t=1012: atendiendo a Juego Snake
+[02:29:28] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:28] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:29] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:29] [CPU] t=1013: atendiendo a Paciente 17
+[02:29:29] [CPU] t=1014: atendiendo a Juego Snake
+[02:29:29] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:29] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:30] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:30] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:30] [CPU] t=1015: atendiendo a Paciente 17
+[02:29:30] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:30] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:30] [CPU] t=1016: atendiendo a Juego Snake
+[02:29:30] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:30] [HISTORIA] Enf. Díaz termina la actualización: Temp: 36.5°C · PA: 118/76 · FC: 65 bpm · Alta próxima
+[02:29:30] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:30] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:30] [CPU] t=1017: atendiendo a Paciente 17
+[02:29:31] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:31] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:31] [CPU] t=1018: atendiendo a Juego Snake
+[02:29:31] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:31] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:31] [CPU] t=1019: atendiendo a Paciente 17
+[02:29:31] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:31] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:31] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:32] [CPU] t=1020: atendiendo a Juego Snake
+[02:29:32] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:32] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:32] [CPU] t=1021: atendiendo a Paciente 17
+[02:29:32] [HISTORIA] Enf. Gómez llega a actualizar la historia clínica
+[02:29:32] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:32] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:32] [CPU] t=1022: atendiendo a Juego Snake
+[02:29:33] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:33] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:33] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:33] [CPU] t=1023: atendiendo a Paciente 17
+[02:29:33] [HISTORIA] Enf. Gómez obtiene acceso EXCLUSIVO y comienza a escribir
+[02:29:33] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:33] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:33] [CPU] t=1024: atendiendo a Juego Snake
+[02:29:34] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:34] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:34] [CPU] t=1025: atendiendo a Paciente 17
+[02:29:34] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:34] [CPU] t=1026: atendiendo a Juego Snake
+[02:29:34] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:34] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:34] [CPU] t=1027: atendiendo a Paciente 17
+[02:29:35] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:35] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:35] [CPU] t=1028: atendiendo a Juego Snake
+[02:29:35] [HISTORIA] Enf. Silva llega a actualizar la historia clínica
+[02:29:35] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:35] [CPU] t=1029: atendiendo a Paciente 17
+[02:29:35] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:35] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:35] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:35] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:35] [HISTORIA] Enf. Gómez llega a actualizar la historia clínica
+[02:29:36] [CPU] t=1030: atendiendo a Juego Snake
+[02:29:36] [HISTORIA] Enf. Silva debe esperar: hay lectores o un escritor activo
+[02:29:36] [CPU] t=1031: atendiendo a Paciente 17
+[02:29:36] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:36] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:36] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:36] [CPU] t=1032: atendiendo a Juego Snake
+[02:29:36] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:36] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:36] [HISTORIA] Enf. Gómez debe esperar: hay lectores o un escritor activo
+[02:29:37] [HISTORIA] Enf. Gómez termina la actualización: Temp: 36.8°C · PA: 120/80 · FC: 72 bpm · Sin novedades
+[02:29:37] [HISTORIA] Enf. Silva obtiene acceso EXCLUSIVO tras esperar 0.9s
+[02:29:37] [CPU] t=1033: atendiendo a Paciente 17
+[02:29:37] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:37] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:37] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:37] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:37] [CPU] t=1034: atendiendo a Juego Snake
+[02:29:38] [CPU] t=1035: atendiendo a Paciente 17
+[02:29:38] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:38] [CPU] t=1036: atendiendo a Juego Snake
+[02:29:38] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:38] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:38] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:38] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:38] [CPU] t=1037: atendiendo a Paciente 17
+[02:29:39] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:39] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:39] [CPU] t=1038: atendiendo a Juego Snake
+[02:29:39] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:39] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:39] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:39] [CPU] t=1039: atendiendo a Paciente 17
+[02:29:40] [CPU] t=1040: atendiendo a Juego Snake
+[02:29:40] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:40] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:40] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:40] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:40] [CPU] t=1041: atendiendo a Paciente 17
+[02:29:40] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:40] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:40] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:40] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:40] [CPU] t=1042: atendiendo a Juego Snake
+[02:29:41] [HISTORIA] Dra. Torres llega a consultar la historia clínica
+[02:29:41] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:41] [CPU] t=1043: atendiendo a Paciente 17
+[02:29:41] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:41] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:41] [HISTORIA] Enf. Silva termina la actualización: Temp: 36.5°C · PA: 118/76 · FC: 65 bpm · Alta próxima
+[02:29:41] [HISTORIA] Enf. Gómez obtiene acceso EXCLUSIVO tras esperar 4.6s
+[02:29:41] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:41] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:41] [CPU] t=1044: atendiendo a Juego Snake
+[02:29:41] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:42] [HISTORIA] Dra. Torres debe esperar: una enfermera está escribiendo
+[02:29:42] [CPU] t=1045: atendiendo a Paciente 17
+[02:29:42] [CPU] t=1046: atendiendo a Juego Snake
+[02:29:42] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:42] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:42] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:42] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:42] [CPU] t=1047: atendiendo a Paciente 17
+[02:29:43] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:43] [HISTORIA] Dra. Castro llega a consultar la historia clínica
+[02:29:43] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:43] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:43] [CPU] t=1048: atendiendo a Juego Snake
+[02:29:43] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:43] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:43] [HISTORIA] Dr. Martín llega a consultar la historia clínica
+[02:29:43] [CPU] t=1049: atendiendo a Paciente 17
+[02:29:43] [HISTORIA] Dr. Sosa llega a consultar la historia clínica
+[02:29:44] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:44] [CPU] t=1050: atendiendo a Juego Snake
+[02:29:44] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:44] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:44] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:44] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:44] [CPU] t=1051: atendiendo a Paciente 17
+[02:29:44] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:44] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:44] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:44] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:44] [CPU] t=1052: atendiendo a Juego Snake
+[02:29:45] [CPU] t=1053: atendiendo a Paciente 17
+[02:29:45] [CPU] t=1054: atendiendo a Juego Snake
+[02:29:45] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:45] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:45] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:45] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:45] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:46] [HISTORIA] Enf. Gómez termina la actualización: Temp: 37.2°C · PA: 130/85 · FC: 88 bpm · Observación
+[02:29:46] [HISTORIA] Dra. Torres comienza a leer tras esperar 3.0s (lectores activos: 1)
+[02:29:46] [HISTORIA] Dra. Castro comienza a leer tras esperar 0.8s (lectores activos: 2)
+[02:29:46] [HISTORIA] Dr. Martín comienza a leer tras esperar 0.5s (lectores activos: 3)
+[02:29:46] [HISTORIA] Dr. Sosa comienza a leer tras esperar 0.2s (lectores activos: 4)
+[02:29:46] [CPU] t=1055: atendiendo a Paciente 17
+[02:29:46] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:46] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:46] [CPU] t=1056: atendiendo a Juego Snake
+[02:29:46] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:46] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:46] [CPU] t=1057: atendiendo a Paciente 17
+[02:29:47] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:47] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:47] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:47] [CPU] t=1058: atendiendo a Juego Snake
+[02:29:47] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:47] [CPU] t=1059: atendiendo a Paciente 17
+[02:29:47] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:48] [CPU] t=1060: atendiendo a Juego Snake
+[02:29:48] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:48] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:48] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:48] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:48] [CPU] t=1061: atendiendo a Paciente 17
+[02:29:48] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:48] [CPU] t=1062: atendiendo a Juego Snake
+[02:29:48] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:48] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:49] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:49] [CPU] t=1063: atendiendo a Paciente 17
+[02:29:49] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:49] [HISTORIA] Dr. Sosa termina su consulta
+[02:29:49] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:49] [HISTORIA] Dra. Torres termina su consulta
+[02:29:49] [CPU] t=1064: atendiendo a Juego Snake
+[02:29:50] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:50] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:50] [CPU] t=1065: atendiendo a Paciente 17
+[02:29:50] [HISTORIA] Dr. Martín termina su consulta
+[02:29:50] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:50] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:50] [CPU] t=1066: atendiendo a Juego Snake
+[02:29:50] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:50] [CPU] t=1067: atendiendo a Paciente 17
+[02:29:51] [HISTORIA] Dra. Castro termina su consulta
+[02:29:51] [HISTORIA] Último lector se retira: historia clínica disponible para escritura
+[02:29:51] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:51] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:51] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:51] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:51] [CPU] t=1068: atendiendo a Juego Snake
+[02:29:51] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:51] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:51] [CPU] t=1069: atendiendo a Paciente 17
+[02:29:52] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:52] [CPU] t=1070: atendiendo a Juego Snake
+[02:29:52] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:52] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:52] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:52] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:52] [CPU] t=1071: atendiendo a Paciente 17
+[02:29:52] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:52] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:52] [CPU] t=1072: atendiendo a Juego Snake
+[02:29:53] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:53] [CPU] t=1073: atendiendo a Paciente 17
+[02:29:53] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:53] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:53] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:53] [CPU] t=1074: atendiendo a Juego Snake
+[02:29:53] [FARMACIA] Enfermero 2 retiró un medicamento
+[02:29:54] [FARMACIA] Farmacéutico 1 produjo un medicamento
+[02:29:54] [FARMACIA] Enfermero 3 retiró un medicamento
+[02:29:54] [CPU] t=1075: atendiendo a Paciente 17
+[02:29:54] [FARMACIA] Farmacéutico 2 produjo un medicamento
+[02:29:54] [FARMACIA] Enfermero 1 retiró un medicamento
+[02:29:54] [CPU] t=1076: atendiendo a Juego Snake
+[02:29:54] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:54] [CPU] t=1077: atendiendo a Paciente 17
+[02:29:55] [CPU] t=1078: atendiendo a Juego Snake
+[02:29:55] [CPU] t=1079: atendiendo a Paciente 17
+[02:29:55] [APP] 'Juego Snake' reiniciado por el usuario
+[02:29:56] [CPU] t=1080: atendiendo a Juego Snake
+[02:29:56] [CPU] t=1081: atendiendo a Paciente 17
+[02:29:56] [CPU] t=1082: atendiendo a Juego Snake
+[02:29:57] [CPU] t=1083: atendiendo a Paciente 17
+[02:29:57] [CPU] t=1084: atendiendo a Juego Snake
+[02:29:58] [CPU] t=1085: atendiendo a Paciente 17
+[02:29:58] [CPU] t=1086: atendiendo a Juego Snake
+[02:29:58] [CPU] t=1087: atendiendo a Paciente 17
+[02:29:59] [CPU] t=1088: atendiendo a Juego Snake
+[02:29:59] [CPU] t=1089: atendiendo a Paciente 17
+[02:30:00] [CPU] t=1090: atendiendo a Juego Snake
+[02:30:00] [CPU] t=1091: atendiendo a Paciente 17
+[02:30:00] [CPU] t=1092: atendiendo a Juego Snake
+[02:30:01] [CPU] t=1093: atendiendo a Paciente 17
+[02:30:01] [CPU] t=1094: atendiendo a Juego Snake
+[02:30:02] [CPU] t=1095: atendiendo a Paciente 17
+[02:30:02] [CPU] t=1096: atendiendo a Juego Snake
+[02:30:02] [CPU] t=1097: atendiendo a Paciente 17
+[02:30:03] [CPU] t=1098: atendiendo a Juego Snake
+[02:30:03] [CPU] t=1099: atendiendo a Paciente 17
+[02:30:04] [CPU] t=1100: atendiendo a Juego Snake
+[02:30:04] [CPU] t=1101: atendiendo a Paciente 17
+[02:30:05] [CPU] t=1102: atendiendo a Juego Snake
+[02:30:05] [CPU] t=1103: atendiendo a Paciente 17
+[02:30:05] [CPU] t=1104: atendiendo a Juego Snake
+[02:30:06] [CPU] t=1105: atendiendo a Paciente 17
+[02:30:06] [CPU] t=1106: atendiendo a Juego Snake
+[02:30:07] [CPU] t=1107: atendiendo a Paciente 17
+[02:30:07] [CPU] t=1108: atendiendo a Juego Snake
+[02:30:07] [CPU] t=1109: atendiendo a Paciente 17
+[02:30:08] [APP] 'Juego Snake' reiniciado por el usuario
+[02:30:08] [CPU] t=1110: atendiendo a Juego Snake
+[02:30:08] [CPU] t=1111: atendiendo a Paciente 17
+[02:30:09] [CPU] t=1112: atendiendo a Juego Snake
+[02:30:09] [CPU] t=1113: atendiendo a Paciente 17
+[02:30:09] [CPU] t=1114: atendiendo a Juego Snake
+[02:30:10] [CPU] t=1115: atendiendo a Paciente 17
+[02:30:10] [CPU] t=1116: atendiendo a Juego Snake
+[02:30:11] [CPU] t=1117: atendiendo a Paciente 17
+[02:30:11] [CPU] t=1118: atendiendo a Juego Snake
+[02:30:11] [CPU] t=1119: atendiendo a Paciente 17
+[02:30:12] [CPU] t=1120: atendiendo a Juego Snake
+[02:30:12] [CPU] t=1121: atendiendo a Paciente 17
+[02:30:13] [CPU] t=1122: atendiendo a Juego Snake
+[02:30:13] [CPU] t=1123: atendiendo a Paciente 17
+[02:30:13] [CPU] t=1124: atendiendo a Juego Snake
+[02:30:14] [CPU] t=1125: atendiendo a Paciente 17
+[02:30:14] [CPU] t=1126: atendiendo a Juego Snake
+[02:30:15] [CPU] t=1127: atendiendo a Paciente 17
+[02:30:15] [CPU] t=1128: atendiendo a Juego Snake
+[02:30:15] [CPU] t=1129: atendiendo a Paciente 17
+[02:30:16] [CPU] t=1130: atendiendo a Juego Snake
+[02:30:16] [CPU] t=1131: atendiendo a Paciente 17
+[02:30:17] [CPU] t=1132: atendiendo a Juego Snake
+[02:30:17] [CPU] t=1133: atendiendo a Paciente 17
+[02:30:17] [CPU] t=1134: atendiendo a Juego Snake
+[02:30:18] [APP] 'Juego Snake' reiniciado por el usuario
+[02:30:18] [CPU] t=1135: atendiendo a Paciente 17
+[02:30:18] [CPU] t=1136: atendiendo a Juego Snake
+[02:30:19] [CPU] t=1137: atendiendo a Paciente 17
+[02:30:19] [CPU] t=1138: atendiendo a Juego Snake
+[02:30:19] [CPU] t=1139: atendiendo a Paciente 17
+[02:30:20] [CPU] t=1140: atendiendo a Juego Snake
+[02:30:20] [CPU] t=1141: atendiendo a Paciente 17
+[02:30:21] [CPU] t=1142: atendiendo a Juego Snake
+[02:30:21] [CPU] t=1143: atendiendo a Paciente 17
+[02:30:21] [CPU] t=1144: atendiendo a Juego Snake
+[02:30:22] [CPU] t=1145: atendiendo a Paciente 17
+[02:30:22] [CPU] t=1146: atendiendo a Juego Snake
+[02:30:23] [CPU] t=1147: atendiendo a Paciente 17
+[02:30:23] [CPU] t=1148: atendiendo a Juego Snake
+[02:30:23] [CPU] t=1149: atendiendo a Paciente 17
+[02:30:24] [CPU] t=1150: atendiendo a Juego Snake
+[02:30:24] [CPU] t=1151: atendiendo a Paciente 17
+[02:30:25] [CPU] t=1152: atendiendo a Juego Snake
+[02:30:25] [CPU] t=1153: atendiendo a Paciente 17
+[02:30:25] [CPU] t=1154: atendiendo a Juego Snake
+[02:30:26] [CPU] t=1155: atendiendo a Paciente 17
+[02:30:26] [CPU] t=1156: atendiendo a Juego Snake
+[02:30:27] [CPU] t=1157: atendiendo a Paciente 17
+[02:30:27] [CPU] t=1158: atendiendo a Juego Snake
+[02:30:27] [CPU] t=1159: atendiendo a Paciente 17
+[02:30:28] [CPU] t=1160: atendiendo a Juego Snake
+[02:30:28] [CPU] t=1161: atendiendo a Paciente 17
+[02:30:29] [CPU] t=1162: atendiendo a Juego Snake
+[02:30:29] [CPU] t=1163: atendiendo a Paciente 17
+[02:30:29] [CPU] t=1164: atendiendo a Juego Snake
+[02:30:30] [CPU] t=1165: atendiendo a Paciente 17
+[02:30:30] [CPU] t=1166: atendiendo a Juego Snake
+[02:30:31] [CPU] t=1167: atendiendo a Paciente 17
+[02:30:31] [CPU] t=1168: atendiendo a Juego Snake
+[02:30:31] [CPU] t=1169: atendiendo a Paciente 17
+[02:30:32] [CPU] t=1170: atendiendo a Juego Snake
+[02:30:32] [CPU] t=1171: atendiendo a Paciente 17
+[02:30:33] [CPU] t=1172: atendiendo a Juego Snake
+[02:30:33] [CPU] t=1173: atendiendo a Paciente 17
+[02:30:33] [CPU] t=1174: atendiendo a Juego Snake
+[02:30:34] [CPU] t=1175: atendiendo a Paciente 17
+[02:30:34] [CPU] t=1176: atendiendo a Juego Snake
+[02:30:35] [CPU] t=1177: atendiendo a Paciente 17
+[02:30:35] [CPU] t=1178: atendiendo a Juego Snake
+[02:30:35] [CPU] t=1179: atendiendo a Paciente 17
+[02:30:36] [CPU] t=1180: atendiendo a Juego Snake
+[02:30:36] [CPU] t=1181: atendiendo a Paciente 17
+[02:30:37] [CPU] t=1182: atendiendo a Juego Snake
+[02:30:37] [CPU] t=1183: atendiendo a Paciente 17
+[02:30:37] [CPU] t=1184: atendiendo a Juego Snake
+[02:30:38] [CPU] t=1185: atendiendo a Paciente 17
+[02:30:38] [CPU] t=1186: atendiendo a Juego Snake
+[02:30:39] [CPU] t=1187: atendiendo a Paciente 17
+[02:30:39] [CPU] t=1188: atendiendo a Juego Snake
+[02:30:39] [CPU] t=1189: atendiendo a Paciente 17
+[02:30:40] [CPU] t=1190: atendiendo a Juego Snake
+[02:30:40] [CPU] t=1191: atendiendo a Paciente 17
+[02:30:41] [CPU] t=1192: atendiendo a Juego Snake
+[02:30:41] [CPU] t=1193: atendiendo a Paciente 17
+[02:30:41] [CPU] t=1194: atendiendo a Juego Snake
+[02:30:42] [CPU] t=1195: atendiendo a Paciente 17
+[02:30:42] [CPU] t=1196: atendiendo a Juego Snake
+[02:30:43] [CPU] t=1197: atendiendo a Paciente 17
+[02:30:43] [CPU] t=1198: atendiendo a Juego Snake
+[02:30:43] [CPU] t=1199: atendiendo a Paciente 17
+[02:30:44] [CPU] t=1200: atendiendo a Juego Snake
+[02:30:44] [CPU] t=1201: atendiendo a Paciente 17
+[02:30:45] [CPU] t=1202: atendiendo a Juego Snake
+[02:30:45] [CPU] t=1203: atendiendo a Paciente 17
+[02:30:45] [CPU] t=1204: atendiendo a Juego Snake
+[02:30:46] [CPU] t=1205: atendiendo a Paciente 17
+[02:30:46] [CPU] t=1206: atendiendo a Juego Snake
+[02:30:47] [CPU] t=1207: atendiendo a Paciente 17
+[02:30:47] [CPU] t=1208: atendiendo a Juego Snake
+[02:30:47] [CPU] t=1209: atendiendo a Paciente 17
+[02:30:48] [CPU] t=1210: atendiendo a Juego Snake
+[02:30:48] [CPU] t=1211: atendiendo a Paciente 17
+[02:30:49] [CPU] t=1212: atendiendo a Juego Snake
+[02:30:49] [CPU] t=1213: atendiendo a Paciente 17
+[02:30:49] [CPU] t=1214: atendiendo a Juego Snake
+[02:30:50] [CPU] t=1215: atendiendo a Paciente 17
+[02:30:50] [CPU] t=1216: atendiendo a Juego Snake
+[02:30:51] [CPU] t=1217: atendiendo a Paciente 17
+[02:30:51] [CPU] t=1218: atendiendo a Juego Snake
+[02:30:51] [CPU] t=1219: atendiendo a Paciente 17
+[02:30:52] [CPU] t=1220: atendiendo a Juego Snake
+[02:30:52] [CPU] t=1221: atendiendo a Paciente 17
+[02:30:53] [CPU] t=1222: atendiendo a Juego Snake
+[02:30:53] [CPU] t=1223: atendiendo a Paciente 17
+[02:30:53] [CPU] t=1224: atendiendo a Juego Snake
+[02:30:54] [CPU] t=1225: atendiendo a Paciente 17
+[02:30:54] [CPU] t=1226: atendiendo a Juego Snake
+[02:30:55] [CPU] t=1227: atendiendo a Paciente 17
+[02:30:55] [CPU] t=1228: atendiendo a Juego Snake
+[02:30:55] [CPU] t=1229: atendiendo a Paciente 17
+[02:30:56] [CPU] t=1230: atendiendo a Juego Snake
+[02:30:56] [CPU] t=1231: atendiendo a Paciente 17
+[02:30:57] [CPU] t=1232: atendiendo a Juego Snake
+[02:30:57] [CPU] t=1233: atendiendo a Paciente 17
+[02:30:57] [CPU] t=1234: atendiendo a Juego Snake
+[02:30:58] [CPU] t=1235: atendiendo a Paciente 17
+[02:30:58] [APP] 'Juego Snake' reiniciado por el usuario
+[02:30:58] [CPU] t=1236: atendiendo a Juego Snake
+[02:30:59] [CPU] t=1237: atendiendo a Paciente 17
+[02:30:59] [CPU] t=1238: atendiendo a Juego Snake
+[02:30:59] [CPU] t=1239: atendiendo a Paciente 17
+[02:31:00] [CPU] t=1240: atendiendo a Juego Snake
+[02:31:00] [CPU] t=1241: atendiendo a Paciente 17
+[02:31:01] [CPU] t=1242: atendiendo a Juego Snake
+[02:31:01] [CPU] t=1243: atendiendo a Paciente 17
+[02:31:01] [CPU] t=1244: atendiendo a Juego Snake
+[02:31:02] [CPU] t=1245: atendiendo a Paciente 17
+[02:31:02] [CPU] t=1246: atendiendo a Juego Snake
+[02:31:03] [CPU] t=1247: atendiendo a Paciente 17
+[02:31:03] [CPU] t=1248: atendiendo a Juego Snake
+[02:31:03] [CPU] t=1249: atendiendo a Paciente 17
+[02:31:04] [CPU] t=1250: atendiendo a Juego Snake
+[02:31:04] [CPU] t=1251: atendiendo a Paciente 17
+[02:31:05] [CPU] t=1252: atendiendo a Juego Snake
+[02:31:05] [CPU] t=1253: atendiendo a Paciente 17
+[02:31:05] [CPU] t=1254: atendiendo a Juego Snake
+[02:31:06] [CPU] t=1255: atendiendo a Paciente 17
+[02:31:06] [CPU] t=1256: atendiendo a Juego Snake
+[02:31:07] [CPU] t=1257: atendiendo a Paciente 17
+[02:31:07] [CPU] t=1258: atendiendo a Juego Snake
+[02:31:07] [CPU] t=1259: atendiendo a Paciente 17
+[02:31:08] [CPU] t=1260: atendiendo a Juego Snake
+[02:31:08] [CPU] t=1261: atendiendo a Paciente 17
+[02:31:09] [CPU] t=1262: atendiendo a Juego Snake
+[02:31:09] [CPU] t=1263: atendiendo a Paciente 17
+[02:31:09] [CPU] t=1264: atendiendo a Juego Snake
+[02:31:10] [CPU] t=1265: atendiendo a Paciente 17
+[02:31:10] [CPU] t=1266: atendiendo a Juego Snake
+[02:31:11] [CPU] t=1267: atendiendo a Paciente 17
+[02:31:11] [CPU] t=1268: atendiendo a Juego Snake
+[02:31:11] [CPU] t=1269: atendiendo a Paciente 17
+[02:31:12] [CPU] t=1270: atendiendo a Juego Snake
+[02:31:12] [CPU] t=1271: atendiendo a Paciente 17
+[02:31:13] [CPU] t=1272: atendiendo a Juego Snake
+[02:31:13] [CPU] t=1273: atendiendo a Paciente 17
+[02:31:13] [CPU] t=1274: atendiendo a Juego Snake
+[02:31:14] [CPU] t=1275: atendiendo a Paciente 17
+[02:31:14] [CPU] t=1276: atendiendo a Juego Snake
+[02:31:15] [CPU] t=1277: atendiendo a Paciente 17
+[02:31:15] [CPU] t=1278: atendiendo a Juego Snake
+[02:31:15] [CPU] t=1279: atendiendo a Paciente 17
+[02:31:16] [CPU] t=1280: atendiendo a Juego Snake
+[02:31:16] [CPU] t=1281: atendiendo a Paciente 17
+[02:31:17] [CPU] t=1282: atendiendo a Juego Snake
+[02:31:17] [CPU] t=1283: atendiendo a Paciente 17
+[02:31:17] [CPU] t=1284: atendiendo a Juego Snake
+[02:31:18] [CPU] t=1285: atendiendo a Paciente 17
+[02:31:18] [CPU] t=1286: atendiendo a Juego Snake
+[02:31:19] [CPU] t=1287: atendiendo a Paciente 17
+[02:31:19] [CPU] t=1288: atendiendo a Juego Snake
+[02:31:19] [CPU] t=1289: atendiendo a Paciente 17
+[02:31:20] [CPU] t=1290: atendiendo a Juego Snake
+[02:31:20] [CPU] t=1291: atendiendo a Paciente 17
+[02:31:21] [CPU] t=1292: atendiendo a Juego Snake
+[02:31:21] [CPU] t=1293: atendiendo a Paciente 17
+[02:31:21] [CPU] t=1294: atendiendo a Juego Snake
+[02:31:22] [CPU] t=1295: atendiendo a Paciente 17
+[02:31:22] [APP] 'Juego Snake' reiniciado por el usuario
+[02:31:22] [CPU] t=1296: atendiendo a Juego Snake
+[02:31:23] [CPU] t=1297: atendiendo a Paciente 17
+[02:31:23] [CPU] t=1298: atendiendo a Juego Snake
+[02:31:23] [APP] 'Juego Snake' reiniciado por el usuario
+[02:31:23] [CPU] t=1299: atendiendo a Paciente 17
+[02:31:24] [APP] 'Juego Snake' (PID 7) cerrada por el usuario
+[02:31:24] [CPU] t=1300: atendiendo a Paciente 17
+[02:31:24] [CPU] t=1301: atendiendo a Paciente 17
+[02:31:25] [CPU] t=1302: atendiendo a Paciente 17
+[02:31:25] [logd] Demonio de logging detenido.
