@@ -14,6 +14,7 @@ from ui.snake_app import SnakeApp
 from ui.ai_app import AIApp
 from ui.pharmacy_app import PharmacyApp
 from ui.metrics_app import MetricsApp
+from ui.wordle_app import WordleApp
 
 
 class Desktop:
@@ -26,6 +27,7 @@ class Desktop:
         self.root.protocol("WM_DELETE_WINDOW", self.shutdown)
 
         self._metrics_icon_path = self._ensure_metrics_icon()
+        self._wordle_icon_path = self._ensure_wordle_icon()
 
         self.bg = tk.Canvas(root, bg=BG_BOTTOM, highlightthickness=0)
         self.bg.place(x=0, y=0, relwidth=1, relheight=1)
@@ -216,8 +218,8 @@ class Desktop:
 
         # 2 filas, bien espaciadas y centradas verticalmente en el panel
         rows = [
-            ("👤", "Pacientes vivos", BLUE),
-            ("📋", "Atendidos hoy",   GREEN),
+            ("👤", "Pacientes en cuidado:", BLUE),
+            ("📋", "Dados de alta hoy:",   GREEN),
         ]
         value_ids = []
         # repartir las 2 filas en el alto disponible bajo el separador
@@ -264,10 +266,6 @@ class Desktop:
         except Exception:
             pass
 
-    # ─────────────────────────────────────────────────────────────────
-    #  Widget: Avisos de guardia (ahora: "Estimado Doctor/a recuerde que:")
-    # ─────────────────────────────────────────────────────────────────
-
     def _build_announcements(self, x, y, w, h):
         """Tarjeta de avisos, estilo memo."""
         self.bg.create_rectangle(x, y, x + w, y + h,
@@ -276,11 +274,11 @@ class Desktop:
 
         self.bg.create_text(x + 14, y + 18, anchor="nw", fill=FG,
                             font=("Segoe UI", 11, "bold"),
-                            text="Estimado Doctor/a, recuerde que:")
+                            text="Estimado/a Doctor/a, recuerde que:")
 
-        # Avisos. Primero usa el emoji de serpiente (en vez del alfiler).
+    
         notes = [
-            ("🐍", "Puede jugar al Snake si no está atendiendo ningún paciente."),
+            ("🎮", "Puede jugar al Snake o Wordle si no está atendiendo ningún paciente."),
             ("⚕️", "Solo un paciente puede usar el Quirófano (y el Cirujano) a la vez."),
             ("⚠️", "Si dos pacientes se traban por recursos cruzados, deadlock detectado."),
             ("📋", "Toda actividad queda registrada en la Bitácora del sistema."),
@@ -334,6 +332,50 @@ class Desktop:
         except Exception:
             return "assets/icons/hospital.png"
 
+    def _ensure_wordle_icon(self):
+        """Genera assets/icons/wordle.png si no existe — mini grilla estilo Wordle."""
+        path = "assets/icons/wordle.png"
+        if os.path.exists(path):
+            return path
+        try:
+            from PIL import Image, ImageDraw
+            os.makedirs(os.path.dirname(path), exist_ok=True)
+            size = 64
+            img = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+            draw = ImageDraw.Draw(img)
+            # Fondo blanco con borde gris
+            try:
+                draw.rounded_rectangle((4, 4, size - 4, size - 4),
+                                       radius=12, fill=(255, 255, 255, 255),
+                                       outline=(210, 210, 210, 255), width=2)
+            except AttributeError:
+                draw.rectangle((4, 4, size - 4, size - 4),
+                               fill=(255, 255, 255, 255))
+            # 5 tiles miniatura: verde verde amarillo vacío vacío
+            tile_size = 9
+            gap = 2
+            total_w = 5 * tile_size + 4 * gap
+            base_x = (size - total_w) // 2
+            base_y = (size - tile_size) // 2 + 2
+            tiles = [
+                ((106, 170, 100, 255), (106, 170, 100, 255)),  # verde
+                ((106, 170, 100, 255), (106, 170, 100, 255)),  # verde
+                ((201, 180, 88, 255),  (201, 180, 88, 255)),   # amarillo
+                ((255, 255, 255, 255), (180, 180, 180, 255)),  # vacío
+                ((255, 255, 255, 255), (180, 180, 180, 255)),  # vacío
+            ]
+            for i, (fill, outline) in enumerate(tiles):
+                x0 = base_x + i * (tile_size + gap)
+                draw.rectangle((x0, base_y, x0 + tile_size, base_y + tile_size),
+                               fill=fill, outline=outline)
+            # Línea decorativa arriba simulando otra fila
+            draw.rectangle((base_x, base_y - 14, base_x + total_w, base_y - 11),
+                           fill=(106, 170, 100, 255))
+            img.save(path)
+            return path
+        except Exception:
+            return "assets/icons/snake.png"
+
     # ─────────────────────────────────────────────────────────────────
     #  Dock
     # ─────────────────────────────────────────────────────────────────
@@ -352,9 +394,11 @@ class Desktop:
         self.dock.add_icon("Métricas", self._metrics_icon_path, self.open_metrics,
                            "Estadísticas reales de scheduling")
         self.dock.add_icon("Asistente", "assets/icons/ai.png", self.open_ai,
-                           "Asistente médico (corre como proceso)")
+                           "Asistente médico")
         self.dock.add_icon("Snake", "assets/icons/snake.png", self.open_snake,
-                           "Juego Snake (corre como proceso)")
+                           "Juego Snake")
+        self.dock.add_icon("Wordle", self._wordle_icon_path, self.open_wordle,
+                           "Wordle en español")
 
     def open_hospital(self):
         self._open("hospital", lambda: HospitalApp(self.root, self.state, 10, 40))
@@ -379,3 +423,6 @@ class Desktop:
 
     def open_snake(self):
         self._open("snake", lambda: SnakeApp(self.root, self.state, 420, 170))
+
+    def open_wordle(self):
+        self._open("wordle", lambda: WordleApp(self.root, self.state, 440, 120))
