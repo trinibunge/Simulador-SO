@@ -268,6 +268,5 @@ Simulador-SO/
 ## Limitaciones conocidas
 
 - El deadlock dura 10 segundos antes de auto-resolverse si nadie toca el botón. Es a propósito, para que se vea el cartel rojo en la defensa.
-- La IA requiere conexión a internet y API key. Sin eso, modo offline con respuestas básicas.
 - Las ventanas se pueden arrastrar pero no redimensionar.
 
