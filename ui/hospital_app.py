@@ -242,7 +242,7 @@ class HospitalApp(WindowBase):
 
     def _render(self):
         with self.state.lock:
-            pacientes = list(self.state.pacientes.values())
+            pacientes = [p for p in self.state.pacientes.values() if p.kind == "patient"]
             owners = dict(self.state.resource_owner)
             mode = self.state.scheduler_mode
             tick = self.state.clock_tick
@@ -250,10 +250,9 @@ class HospitalApp(WindowBase):
             ram_limit = self.state.ram_limit
             deadlock_on = self.state.deadlock_active
             deadlock_since = self.state.deadlock_since
-
-        ready = [p for p in pacientes if p.state == "READY"]
-        running = [p for p in pacientes if p.state == "RUNNING"]
-        blocked = [p for p in pacientes if p.state == "BLOCKED"]
+            ready = [p for p in pacientes if p.state == "READY"]
+            running = [p for p in pacientes if p.state == "RUNNING"]
+            blocked = [p for p in pacientes if p.state == "BLOCKED"]
 
         self.card_wait["value"].config(text=str(len(ready)))
         self.card_run["value"].config(text=str(len(running)))

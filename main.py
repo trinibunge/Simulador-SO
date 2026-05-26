@@ -41,7 +41,7 @@ def main():
     # Estos sí son hilos porque COMPARTEN MEMORIA con el HospitalState
     # (pacientes, recursos, locks).  Mantenerlos como hilos evita el overhead
     # de serializar/copiar el estado en cada operación.
-    Scheduler(state).start()
+    Scheduler(state, quantum=0.2).start()
     DeadlockDetector(state).start()
 
     def launch():

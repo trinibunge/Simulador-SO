@@ -77,12 +77,6 @@ class PharmacyApp(WindowBase):
                                 highlightthickness=0, bd=0)
         self.canvas.pack(fill="x", padx=14, pady=(4, 8))
 
-        # ── Stats ──
-        self.stats_var = tk.StringVar()
-        tk.Label(self.content, textvariable=self.stats_var, bg=PANEL,
-                 fg=MUTED, font=FONT_SM, anchor="w").pack(fill="x", padx=14,
-                                                          pady=(0, 12))
-
         self.refresh()
 
     def on_close(self):
@@ -159,7 +153,7 @@ class PharmacyApp(WindowBase):
     def _producer_supervisor(self, name_prefix: str):
         """No hace I/O — solo dispara procesos a intervalos aleatorios."""
         while self.state.pharmacy_running and self.state.running:
-            time.sleep(random.uniform(0.6, 1.4))
+            time.sleep(random.uniform(0.4, 0.8))
             if not self.state.pharmacy_running or not self.state.running:
                 break
             n = self._next_op_id()
@@ -172,7 +166,7 @@ class PharmacyApp(WindowBase):
 
     def _consumer_supervisor(self, name_prefix: str):
         while self.state.pharmacy_running and self.state.running:
-            time.sleep(random.uniform(0.7, 1.6))
+            time.sleep(random.uniform(0.6, 1.2))
             if not self.state.pharmacy_running or not self.state.running:
                 break
             n = self._next_op_id()
@@ -232,6 +226,7 @@ class PharmacyApp(WindowBase):
         c.delete("all")
         W = c.winfo_width() or 680
         cap = self.state.PHARMACY_CAPACITY
+
         size = self.state.pharmacy_queue.qsize()
 
         c.create_text(10, 12, anchor="nw",
@@ -275,12 +270,6 @@ class PharmacyApp(WindowBase):
                       fill=GREEN, font=FONT_BOLD)
         c.create_text(W - 20, 184, anchor="e", text="→ Consumidores",
                       fill=BLUE, font=FONT_BOLD)
-
-        self.stats_var.set(
-            f"Producidos: {self.state.pharmacy_stats['producidos']}    │    "
-            f"Consumidos: {self.state.pharmacy_stats['consumidos']}    │    "
-            f"En buffer: {size}/{cap}"
-        )
 
         if self.alive:
             self.frame.after(200, self.refresh)

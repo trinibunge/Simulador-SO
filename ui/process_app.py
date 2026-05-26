@@ -47,4 +47,4 @@ class ProcessApp(WindowBase):
         self.text.config(state="disabled")
 
         if self.alive:
-            self.frame.after(500, self.refresh)
+            self.frame.after(200, self.refresh)

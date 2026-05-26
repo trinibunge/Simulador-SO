@@ -324,7 +324,11 @@ class HospitalState:
                 self.ready_cv.notify_all()
                 return True
             else:
-                self.log("RECURSO", f"{paciente.name} bloqueado esperando {res_name}")
+                paciente.waiting_for = None
+                self._set_state(paciente, "READY")
+                self.ready_cv.notify_all()
+                self.log("RECURSO",
+                         f"{paciente.name} timeout esperando {res_name}: vuelve a READY")
                 return False
 
     def release_resource(self, pid: int, res_name: str):

@@ -127,7 +127,7 @@ class MetricsApp(WindowBase):
         except Exception:
             pass
         if self.alive:
-            self.frame.after(400, self.refresh)
+            self.frame.after(200, self.refresh)
 
     def _render(self):
         m = compute_metrics(self.state)
