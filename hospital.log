@@ -14410,3 +14410,46 @@
 [10:13:36] [CPU] t=81: atendiendo a Historia Clínica
 [10:13:37] [APP] 'Historia Clínica' (PID 1) cerrada por el usuario
 [10:13:40] [logd] Demonio de logging detenido.
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-26 10:27:05
+  PID daemon de logging: 8944
+============================================================
+[10:27:11] [APP] 'Asistente Médico' se registra como proceso (PID 1, prio 7)
+[10:27:11] [CPU] t=1: atendiendo a Asistente Médico
+[10:27:11] [CPU] t=2: atendiendo a Asistente Médico
+[10:27:12] [CPU] t=3: atendiendo a Asistente Médico
+[10:27:12] [CPU] t=4: atendiendo a Asistente Médico
+[10:27:12] [CPU] t=5: atendiendo a Asistente Médico
+[10:27:13] [CPU] t=6: atendiendo a Asistente Médico
+[10:27:13] [CPU] t=7: atendiendo a Asistente Médico
+[10:27:14] [CPU] t=8: atendiendo a Asistente Médico
+[10:27:14] [APP] 'Asistente Médico' recibió consulta: "holA"
+[10:27:14] [CPU] t=9: atendiendo a Asistente Médico
+[10:27:14] [CPU] t=10: atendiendo a Asistente Médico
+[10:27:15] [CPU] t=11: atendiendo a Asistente Médico
+[10:27:15] [CPU] t=12: atendiendo a Asistente Médico
+[10:27:16] [CPU] t=13: atendiendo a Asistente Médico
+[10:27:16] [CPU] t=14: atendiendo a Asistente Médico
+[10:27:17] [CPU] t=15: atendiendo a Asistente Médico
+[10:27:17] [CPU] t=16: atendiendo a Asistente Médico
+[10:27:17] [CPU] t=17: atendiendo a Asistente Médico
+[10:27:18] [CPU] t=18: atendiendo a Asistente Médico
+[10:27:18] [CPU] t=19: atendiendo a Asistente Médico
+[10:27:19] [CPU] t=20: atendiendo a Asistente Médico
+[10:27:19] [CPU] t=21: atendiendo a Asistente Médico
+[10:27:19] [CPU] t=22: atendiendo a Asistente Médico
+[10:27:20] [CPU] t=23: atendiendo a Asistente Médico
+[10:27:20] [CPU] t=24: atendiendo a Asistente Médico
+[10:27:21] [APP] 'Asistente Médico' recibió consulta: "COMO T ELLAMS"
+[10:27:21] [CPU] t=25: atendiendo a Asistente Médico
+[10:27:21] [CPU] t=26: atendiendo a Asistente Médico
+[10:27:21] [CPU] t=27: atendiendo a Asistente Médico
+[10:27:22] [CPU] t=28: atendiendo a Asistente Médico
+[10:27:22] [CPU] t=29: atendiendo a Asistente Médico
+[10:27:23] [CPU] t=30: atendiendo a Asistente Médico
+[10:27:23] [CPU] t=31: atendiendo a Asistente Médico
+[10:27:23] [CPU] t=32: atendiendo a Asistente Médico
+[10:27:24] [CPU] t=33: atendiendo a Asistente Médico
+[10:27:24] [CPU] t=34: atendiendo a Asistente Médico
+[10:27:24] [APP] 'Asistente Médico' (PID 1) cerrada por el usuario
