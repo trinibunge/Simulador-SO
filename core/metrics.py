@@ -45,13 +45,15 @@ class SchedulerMetrics:
     n_alive: int
     n_alive_patients: int
     n_alive_apps: int
-    n_completed: int           # solo pacientes (apps no cuentan)
+    n_completed: int             # total terminados (pacientes + apps)
+    n_completed_patients: int    # solo pacientes terminados (por si la UI lo quiere)
+    n_completed_apps: int        # solo apps cerradas
     avg_waiting_time: float
     avg_response_time: float
     avg_turnaround_time: float
     avg_cpu_time: float
-    cpu_utilization: float     # 0.0 a 1.0
-    throughput: float          # procesos / segundo
+    cpu_utilization: float       # 0.0 a 1.0
+    throughput: float            # procesos / segundo
     scheduler_mode: str
 
 
@@ -113,10 +115,12 @@ def compute_metrics(state) -> SchedulerMetrics:
     Toma un snapshot completo bajo state.lock.
 
     Decisiones de diseño:
-    - Las apps (kind="app") CUENTAN para CPU utilization (consumieron CPU real)
-      pero NO cuentan para avg_waiting/response/turnaround (no tienen burst,
-      esos promedios no tienen sentido para procesos infinitos).
-    - Throughput cuenta solo pacientes terminados / wall_clock.
+    - TODOS los procesos del sistema (pacientes + apps) cuentan para las
+      métricas: CPU utilization, throughput y los promedios de
+      waiting/response/turnaround. Una app cerrada consumió CPU real y
+      esperó turnos reales — es parte legítima de la carga del sistema.
+    - Si querés el desglose por tipo, n_completed_patients y
+      n_completed_apps lo traen.
     """
     now = time.time()
     wall = max(0.001, now - state.simulation_start)
@@ -133,14 +137,16 @@ def compute_metrics(state) -> SchedulerMetrics:
     n_alive_patients = sum(1 for s in snaps_vivos if s.kind == "patient")
     n_alive_apps = sum(1 for s in snaps_vivos if s.kind == "app")
 
-    # Promedios de scheduling: solo pacientes terminados (tienen valores finales)
-    patients_done = [s for s in snaps_term if s.kind == "patient"]
-    if patients_done:
-        n = len(patients_done)
-        avg_wait = sum(s.waiting_time for s in patients_done) / n
-        avg_resp = sum(s.response_time for s in patients_done) / n
-        avg_turn = sum(s.turnaround_time for s in patients_done) / n
-        avg_cpu = sum(s.cpu_time for s in patients_done) / n
+    n_completed_patients = sum(1 for s in snaps_term if s.kind == "patient")
+    n_completed_apps = sum(1 for s in snaps_term if s.kind == "app")
+
+    # Promedios sobre TODOS los procesos terminados (pacientes y apps)
+    if snaps_term:
+        n = len(snaps_term)
+        avg_wait = sum(s.waiting_time for s in snaps_term) / n
+        avg_resp = sum(s.response_time for s in snaps_term) / n
+        avg_turn = sum(s.turnaround_time for s in snaps_term) / n
+        avg_cpu = sum(s.cpu_time for s in snaps_term) / n
     else:
         avg_wait = avg_resp = avg_turn = avg_cpu = 0.0
 
@@ -149,7 +155,7 @@ def compute_metrics(state) -> SchedulerMetrics:
     total_cpu = sum(s.cpu_time for s in snaps_vivos) + sum(s.cpu_time for s in snaps_term)
     cpu_util = min(1.0, total_cpu / (wall * num_cpus))
 
-    throughput = len(patients_done) / wall
+    throughput = len(snaps_term) / wall
 
     return SchedulerMetrics(
         now=now,
@@ -157,7 +163,9 @@ def compute_metrics(state) -> SchedulerMetrics:
         n_alive=len(snaps_vivos),
         n_alive_patients=n_alive_patients,
         n_alive_apps=n_alive_apps,
-        n_completed=len(patients_done),
+        n_completed=len(snaps_term),
+        n_completed_patients=n_completed_patients,
+        n_completed_apps=n_completed_apps,
         avg_waiting_time=avg_wait,
         avg_response_time=avg_resp,
         avg_turnaround_time=avg_turn,
@@ -178,7 +186,7 @@ def list_alive(state) -> List[ProcessMetrics]:
 
 
 def list_recent_completed(state, limit: int = 8) -> List[ProcessMetrics]:
-    """Los últimos `limit` pacientes terminados, los más recientes primero."""
+    """Los últimos `limit` procesos terminados (pacientes + apps), los más recientes primero."""
     now = time.time()
     with state.lock:
         recent = list(state.completed_history)[-limit:]

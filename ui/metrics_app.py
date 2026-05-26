@@ -16,14 +16,14 @@ class MetricsApp(WindowBase):
       - 4 KPI cards: Throughput, CPU utilization, Espera promedio, Respuesta promedio
       - Subfila: total de procesos vivos / terminados / modo de scheduling
       - Tabla 1: procesos vivos (incluye apps, marcadas con 🖥️)
-      - Tabla 2: últimos 8 pacientes terminados (no incluye apps)
+      - Tabla 2: últimos 8 procesos terminados (pacientes Y apps)
     """
 
     BG = "#f8fbff"
     INK = "#102033"
 
     def __init__(self, master, state, x=120, y=80):
-        super().__init__(master, "📊 Métricas del Hospital", PURPLE, 760, 600, x, y)
+        super().__init__(master, "📊 Métricas del Sistema", PURPLE, 760, 600, x, y)
         self.state = state
         self.content.configure(bg=self.BG)
 
@@ -36,11 +36,11 @@ class MetricsApp(WindowBase):
     def _build_ui(self):
         header = tk.Frame(self.content, bg=self.BG)
         header.pack(fill="x", padx=14, pady=(12, 4))
-        tk.Label(header, text="Métricas del Hospital",
+        tk.Label(header, text="Métricas del Sistema",
                  bg=self.BG, fg=self.INK, font=FONT_BIG).pack(anchor="w")
         tk.Label(
             header,
-            text="Estadísticas reales de scheduling, calculadas desde acumuladores en cada transición",
+            text="Estadísticas reales de scheduling sobre todos los procesos (pacientes y apps)",
             bg=self.BG, fg=SOFT, font=FONT_SM
         ).pack(anchor="w", pady=(2, 0))
 
@@ -75,12 +75,12 @@ class MetricsApp(WindowBase):
             ]
         )
 
-        # Tabla de pacientes terminados
+        # Tabla de procesos terminados (incluye apps cerradas)
         self._done_section = self._table_section(
-            self.content, "Últimos pacientes terminados", GREEN,
+            self.content, "Últimos procesos terminados", GREEN,
             cols=[
-                ("PID", 6), ("Nombre", 18), ("Prio", 5),
-                ("CPU", 9), ("Espera", 9), ("Respuesta", 11), ("Turnaround", 11),
+                ("PID", 6), ("Nombre", 16), ("Tipo", 9), ("Prio", 5),
+                ("CPU", 9), ("Espera", 9), ("Respuesta", 10), ("Turnaround", 11),
             ]
         )
 
@@ -140,7 +140,9 @@ class MetricsApp(WindowBase):
         self.sub_alive.config(
             text=f"🟢 Vivos: {m.n_alive} (pacientes {m.n_alive_patients} · apps {m.n_alive_apps})"
         )
-        self.sub_done.config(text=f"✓ Terminados: {m.n_completed}")
+        self.sub_done.config(
+            text=f"✓ Terminados: {m.n_completed} (pacientes {m.n_completed_patients} · apps {m.n_completed_apps})"
+        )
         self.sub_turn.config(
             text=f"Turnaround prom.: {m.avg_turnaround_time*1000:.0f}ms"
         )
@@ -206,13 +208,15 @@ class MetricsApp(WindowBase):
             if s.pid not in self._done_rows:
                 self._done_rows[s.pid] = self._make_row(
                     body, self._done_section["cols"],
-                    self._done_row_values(s), bg=PANEL,
+                    self._done_row_values(s),
+                    bg=PANEL_2 if s.kind == "app" else PANEL,
                 )
             else:
                 self._update_row(
                     self._done_rows[s.pid],
                     self._done_section["cols"],
-                    self._done_row_values(s), bg=PANEL,
+                    self._done_row_values(s),
+                    bg=PANEL_2 if s.kind == "app" else PANEL,
                 )
 
         # snaps ya viene ordenado: más reciente primero
@@ -224,9 +228,11 @@ class MetricsApp(WindowBase):
         self._done_section["count"].config(text=f"últimos {len(snaps)}")
 
     def _done_row_values(self, s):
+        kind_label = "🖥️ app" if s.kind == "app" else "patient"
         return [
             str(s.pid),
-            s.name[:18],
+            s.name[:16],
+            kind_label,
             str(s.priority),
             f"{s.cpu_time*1000:.0f}ms",
             f"{s.waiting_time*1000:.0f}ms",

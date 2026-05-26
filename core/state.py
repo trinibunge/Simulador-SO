@@ -79,7 +79,7 @@ class HospitalState:
         self.pid_counter = 1
         self.pacientes: Dict[int, Paciente] = {}
 
-        # Histórico de procesos terminados (solo pacientes, para métricas)
+        # Histórico de procesos terminados (pacientes Y apps, para métricas del sistema)
         self.completed_history: List[Paciente] = []
         self.simulation_start = time.time()
 
@@ -95,6 +95,21 @@ class HospitalState:
         self.pharmacy_running = False
         self.pharmacy_stats = {"producidos": 0, "consumidos": 0}
 
+        # ─── Historia Clínica (Lectores-Escritores Courtois 1971) ───
+        # write_lock lo toma el escritor o el PRIMER lector.
+        # readers_lock protege el contador de lectores.
+        self.historia_write_lock = threading.Lock()
+        self.historia_readers_lock = threading.Lock()
+        self.historia_reader_count = 0
+        self.historia_record = (
+            "Temp: 36.8°C · PA: 120/80 · FC: 72 bpm · Sin novedades"
+        )
+        self.historia_history: List[str] = []
+        # PID → nombre (para que la UI sepa quién está leyendo/escribiendo)
+        self.historia_active_readers: Dict[int, str] = {}
+        self.historia_active_writer: Optional[str] = None
+        self.historia_waiting_writers: Dict[int, str] = {}
+
         self.running = True
         self.scheduler_mode = "ROUNDROBIN"
         self.chaos_mode = False
@@ -105,9 +120,9 @@ class HospitalState:
         self.ram_limit = 12
         self.clock_tick = 0
 
-    # ─────────────────────────────────────────────────────────────────────
+    # ─────────────────────────────────────────────────────────────────
     #  Transición de estado central (instrumentada)
-    # ─────────────────────────────────────────────────────────────────────
+    # ─────────────────────────────────────────────────────────────────
 
     def _set_state(self, paciente: Paciente, new_state: str, now: Optional[float] = None):
         """
@@ -136,9 +151,9 @@ class HospitalState:
         paciente.state = new_state
         paciente.last_state_change = now
 
-    # ─────────────────────────────────────────────────────────────────────
+    # ─────────────────────────────────────────────────────────────────
     #  Logging
-    # ─────────────────────────────────────────────────────────────────────
+    # ─────────────────────────────────────────────────────────────────
 
     def start_log_bridge(self):
         if self._log_bridge_thread is not None:
@@ -166,9 +181,9 @@ class HospitalState:
         except Exception:
             pass
 
-    # ─────────────────────────────────────────────────────────────────────
+    # ─────────────────────────────────────────────────────────────────
     #  Procesos / Scheduling
-    # ─────────────────────────────────────────────────────────────────────
+    # ─────────────────────────────────────────────────────────────────
 
     def admitir(self, name: str, priority: int, burst: int = 8,
                 kind: str = "patient", symbol: Optional[str] = None):
@@ -231,14 +246,17 @@ class HospitalState:
 
                     del self.pacientes[pid]
 
+                    # Archivar TODOS los procesos terminados (apps + pacientes)
+                    # para que las métricas reflejen al sistema completo, no
+                    # solo el hospital.
+                    self.completed_history.append(paciente)
+                    if len(self.completed_history) > 200:
+                        self.completed_history = self.completed_history[-200:]
+
                     if paciente.kind == "app":
                         self.log("APP",
                             f"'{paciente.name}' (PID {pid}) cerrada por el usuario")
                     else:
-                        # archivar paciente terminado para métricas
-                        self.completed_history.append(paciente)
-                        if len(self.completed_history) > 200:
-                            self.completed_history = self.completed_history[-200:]
                         self.log("ALTA",
                             f"{paciente.name} (PID {pid}) dado de alta "
                             f"· esperó {paciente.waiting_time():.1f}s")
@@ -269,9 +287,9 @@ class HospitalState:
         with self.ready_cv:
             self.ready_cv.notify_all()
 
-    # ─────────────────────────────────────────────────────────────────────
+    # ─────────────────────────────────────────────────────────────────
     #  Recursos
-    # ─────────────────────────────────────────────────────────────────────
+    # ─────────────────────────────────────────────────────────────────
 
     def request_resource(self, pid: int, res_name: str, timeout: float = 0.3) -> bool:
         if res_name not in self.resources:
@@ -330,9 +348,205 @@ class HospitalState:
             except RuntimeError:
                 pass
 
-    # ─────────────────────────────────────────────────────────────────────
+    # ─────────────────────────────────────────────────────────────────
+    #  Farmacia — Productor / Consumidor (instrumentado)
+    # ─────────────────────────────────────────────────────────────────
+    #
+    # En un SO real, cuando un proceso hace una operación de I/O o se
+    # bloquea en un semáforo, el SO lo saca de la CPU y lo pone en
+    # BLOCKED. Estas primitivas hacen exactamente eso: marcan el proceso
+    # como BLOCKED mientras espera espacio (productor) o un item
+    # (consumidor), y lo vuelven a READY al desbloquearse.
+    #
+    # El thread Python sigue siendo el portador real del trabajo, pero
+    # las TRANSICIONES DE ESTADO quedan registradas en los acumuladores
+    # del Paciente, y por lo tanto en las métricas del sistema.
+
+    def pharmacy_put(self, pid: int, item: str, timeout: float = 2.0) -> bool:
+        """Productor instrumentado: BLOCKED si el buffer está lleno."""
+        blocked = False
+        with self.lock:
+            p = self.pacientes.get(pid)
+            if p is None:
+                return False
+            if self.pharmacy_queue.full():
+                self._set_state(p, "BLOCKED")
+                blocked = True
+                self.log("FARMACIA",
+                         f"{p.name} bloqueado: buffer lleno")
+
+        try:
+            self.pharmacy_queue.put(item, timeout=timeout)
+            ok = True
+        except Exception:
+            ok = False
+
+        with self.ready_cv:
+            p = self.pacientes.get(pid)
+            if p is not None and blocked:
+                self._set_state(p, "READY")
+                self.ready_cv.notify_all()
+            if ok:
+                self.pharmacy_stats["producidos"] += 1
+        return ok
+
+    def pharmacy_get(self, pid: int, timeout: float = 2.0) -> Optional[str]:
+        """Consumidor instrumentado: BLOCKED si el buffer está vacío."""
+        blocked = False
+        with self.lock:
+            p = self.pacientes.get(pid)
+            if p is None:
+                return None
+            if self.pharmacy_queue.empty():
+                self._set_state(p, "BLOCKED")
+                blocked = True
+                self.log("FARMACIA",
+                         f"{p.name} bloqueado: buffer vacío")
+
+        item = None
+        try:
+            item = self.pharmacy_queue.get(timeout=timeout)
+        except Exception:
+            item = None
+
+        with self.ready_cv:
+            p = self.pacientes.get(pid)
+            if p is not None and blocked:
+                self._set_state(p, "READY")
+                self.ready_cv.notify_all()
+            if item is not None:
+                self.pharmacy_stats["consumidos"] += 1
+        return item
+
+    # ─────────────────────────────────────────────────────────────────
+    #  Historia Clínica — Lectores / Escritores (Courtois, instrumentado)
+    # ─────────────────────────────────────────────────────────────────
+    #
+    # Varios lectores pueden leer a la vez. Un escritor necesita acceso
+    # EXCLUSIVO (ningún lector ni otro escritor activo).
+    #
+    # Cada proceso que entra como lector o escritor:
+    #  1. Pasa a BLOCKED mientras espera el lock
+    #  2. Pasa a READY cuando obtiene el acceso
+    #  3. El thread Python representa el "trabajo de I/O" durante la
+    #     lectura/escritura (sleep en el caller)
+    #  4. Al soltar, el state lo libera del registro de activos.
+
+    def historia_start_read(self, pid: int) -> bool:
+        """El proceso quiere leer. Se bloquea hasta poder hacerlo."""
+        with self.lock:
+            p = self.pacientes.get(pid)
+            if p is None:
+                return False
+            self._set_state(p, "BLOCKED")
+            name = p.name
+            self.log("HISTORIA",
+                     f"{name} llega a consultar la historia clínica")
+
+        # Protocolo lector (Courtois): el PRIMER lector toma el write_lock,
+        # bloqueando así a cualquier escritor. Los lectores siguientes
+        # solo incrementan el contador.
+        with self.historia_readers_lock:
+            self.historia_reader_count += 1
+            if self.historia_reader_count == 1:
+                self.historia_write_lock.acquire()  # bloqueante
+            count = self.historia_reader_count
+
+        with self.ready_cv:
+            p = self.pacientes.get(pid)
+            if p is None:
+                # el proceso fue dado de alta mientras esperaba; rollback
+                self.historia_readers_lock.acquire()
+                try:
+                    self.historia_reader_count -= 1
+                    if self.historia_reader_count == 0:
+                        try:
+                            self.historia_write_lock.release()
+                        except RuntimeError:
+                            pass
+                finally:
+                    self.historia_readers_lock.release()
+                return False
+            self.historia_active_readers[pid] = p.name
+            self._set_state(p, "READY")
+            self.ready_cv.notify_all()
+            self.log("HISTORIA",
+                     f"{p.name} comienza a leer (lectores activos: {count})")
+        return True
+
+    def historia_end_read(self, pid: int):
+        """El lector termina de consultar."""
+        with self.lock:
+            name = self.historia_active_readers.pop(pid, None)
+            if name is None:
+                p = self.pacientes.get(pid)
+                name = p.name if p else f"PID {pid}"
+            self.log("HISTORIA", f"{name} termina su consulta")
+
+        with self.historia_readers_lock:
+            self.historia_reader_count -= 1
+            if self.historia_reader_count == 0:
+                try:
+                    self.historia_write_lock.release()
+                except RuntimeError:
+                    pass
+                self.log("HISTORIA",
+                         "Último lector se retira: historia clínica "
+                         "disponible para escritura")
+
+    def historia_start_write(self, pid: int) -> bool:
+        """El proceso quiere escribir. Espera acceso exclusivo."""
+        with self.lock:
+            p = self.pacientes.get(pid)
+            if p is None:
+                return False
+            self._set_state(p, "BLOCKED")
+            self.historia_waiting_writers[pid] = p.name
+            self.log("HISTORIA",
+                     f"{p.name} llega a actualizar la historia clínica")
+
+        self.historia_write_lock.acquire()  # bloqueante
+
+        with self.ready_cv:
+            p = self.pacientes.get(pid)
+            if p is None:
+                try:
+                    self.historia_write_lock.release()
+                except RuntimeError:
+                    pass
+                with self.lock:
+                    self.historia_waiting_writers.pop(pid, None)
+                return False
+            self.historia_waiting_writers.pop(pid, None)
+            self.historia_active_writer = p.name
+            self._set_state(p, "READY")
+            self.ready_cv.notify_all()
+            self.log("HISTORIA",
+                     f"{p.name} obtiene acceso EXCLUSIVO y comienza a escribir")
+        return True
+
+    def historia_end_write(self, pid: int, new_entry: str):
+        """El escritor termina. Publica el nuevo registro."""
+        with self.lock:
+            p = self.pacientes.get(pid)
+            name = p.name if p else f"PID {pid}"
+            ts = time.strftime("%H:%M:%S")
+            self.historia_record = new_entry
+            self.historia_history.append(f"[{ts}] {name}: {new_entry}")
+            if len(self.historia_history) > 7:
+                self.historia_history = self.historia_history[-7:]
+            self.historia_active_writer = None
+            self.log("HISTORIA",
+                     f"{name} termina la actualización: {new_entry}")
+
+        try:
+            self.historia_write_lock.release()
+        except RuntimeError:
+            pass
+
+    # ─────────────────────────────────────────────────────────────────
     #  Deadlock
-    # ─────────────────────────────────────────────────────────────────────
+    # ─────────────────────────────────────────────────────────────────
 
     def detect_deadlock(self) -> Optional[list]:
         with self.lock:
@@ -365,9 +579,9 @@ class HospitalState:
         self.dar_alta(victim.pid)
         self.deadlock_active = False
 
-    # ─────────────────────────────────────────────────────────────────────
+    # ─────────────────────────────────────────────────────────────────
     #  Shutdown
-    # ─────────────────────────────────────────────────────────────────────
+    # ─────────────────────────────────────────────────────────────────
 
     def shutdown(self):
         self.running = False
