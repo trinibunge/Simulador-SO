@@ -22,7 +22,7 @@ class Desktop:
         self.root = root
         self.state = state
 
-        self.root.title("Hospital MS — Merecemos Sobresaliente")
+        self.root.title("Parte 3 obligatorio de Sistemas Operativos - Equipo: Bunge y López - Hospital MS (Merecemos sobresaliente)")
         self.root.configure(bg=BG_BOTTOM)
         self.root.protocol("WM_DELETE_WINDOW", self.shutdown)
 
@@ -147,7 +147,7 @@ class Desktop:
                             text="¡Bienvenido al Hospital MS!")
         self.bg.create_text(28, 108, anchor="nw", fill=MUTED,
                             font=("Segoe UI", 11),
-                            text="Este simulador incluye las partes 3 y 4 del obligatorio de Sistemas Operativos.")
+                            text="Este simulador resuelve la parte 3 del obligatorio de Sistemas Operativos.")
 
         # Reloj/fecha — guardamos el id para actualizarlo después sin redibujar todo
         self._clock_id = self.bg.create_text(
@@ -219,7 +219,7 @@ class Desktop:
         # 2 filas, bien espaciadas y centradas verticalmente en el panel
         rows = [
             ("👤", "Pacientes en cuidado:", BLUE),
-            ("📋", "Dados de alta hoy:",   GREEN),
+            ("📋", "Dados de alta:",   GREEN),
         ]
         value_ids = []
         # repartir las 2 filas en el alto disponible bajo el separador

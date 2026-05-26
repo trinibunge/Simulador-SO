@@ -39,7 +39,7 @@ Un SO ficticio con interfaz gráfica (estilo "escritorio con apps") que demuestr
 | Lectores-Escritores       | Doctores consultan la historia clínica, enfermeras la actualizan  |
 | Apps interactivas         | Wordle y Snake corren como procesos del SO compitiendo por la CPU |
 | IPC (proceso separado)    | Demonio de logging (`hospital.log`)                               |
-| Chatbot                   | Respuestas locales por palabras clave sobre conceptos de SO       |
+| Chatbot                   | Asistente impulsado por Groq (Llama 3.1) con contexto del simulador  |
 
 ---
 
@@ -51,8 +51,28 @@ Un SO ficticio con interfaz gráfica (estilo "escritorio con apps") que demuestr
 - Dependencias:
 
 ```bash
-pip install pillow
+pip install pillow groq
 ```
+
+### Configurar la API key de Groq
+
+El Asistente Médico usa la API de Groq (Llama 3.1 8B), que es **gratuita**. Necesitás configurar tu API key antes de correr el simulador.
+
+**Opción recomendada — variable de entorno permanente (se guarda para siempre):**
+
+```powershell
+[System.Environment]::SetEnvironmentVariable("GROQ_API_KEY", "gsk_...", "User")
+```
+
+Cerrá y volvé a abrir la terminal para que tome efecto.
+
+**Alternativa — solo para la sesión actual:**
+
+```powershell
+$env:GROQ_API_KEY = "gsk_..."
+```
+
+Podés obtener tu API key gratis en [console.groq.com](https://console.groq.com/).
 
 ### Ejecutar
 
@@ -137,9 +157,11 @@ Implementado con dos locks (`_readers_lock` y `_write_lock`) y un contador `_rea
 
 Panel de métricas calculadas a partir de **acumuladores reales** (no inventadas): waiting time, response time, turnaround, CPU utilization, throughput. Cumple la invariante `waiting + cpu + blocked ≈ turnaround`.
 
-### Chatbot
+### Asistente Médico
 
-Chatbot temático con respuestas locales basadas en palabras clave. Responde preguntas frecuentes sobre el simulador y sobre conceptos de Sistemas Operativos (procesos, scheduling, deadlock, mutex, semáforos, productor-consumidor, etc.).
+Chatbot impulsado por **Groq** (Llama 3.1 8B). Tiene un system prompt con todo el contexto del simulador y mantiene el historial de la conversación, así podés hacer preguntas de seguimiento. Responde sobre el simulador y sobre cualquier concepto de Sistemas Operativos. El modelo es gratuito con límites generosos.
+
+Requiere la variable de entorno `GROQ_API_KEY` configurada (ver [Cómo correrlo](#cómo-correrlo)).
 
 ### Wordle y Snake — apps como procesos reales
 
@@ -242,7 +264,7 @@ Simulador-SO/
 │   ├── log_daemon.py         # Proceso separado de logging (IPC con mp.Queue)
 │   ├── metrics.py            # Cálculo de métricas desde acumuladores reales
 │   ├── dscript.py            # Intérprete de comandos de Recepción
-│   └── ai_brain.py           # Chatbot: respuestas locales por palabras clave
+│   └── ai_brain.py           # Asistente: integración con Groq API (Llama 3.1)
 ├── ui/
 │   ├── desktop.py            # Escritorio y dock
 │   ├── window_base.py        # Sistema de ventanas flotantes
