@@ -54,9 +54,10 @@ Un SO ficticio con interfaz gráfica (estilo "escritorio con apps") que demuestr
 pip install pillow groq
 ```
 
-### Configurar la API key de Groq
+### Configurar la API key de Groq (opcional)
 
-El Asistente Médico usa la API de Groq (Llama 3.1 8B), que es **gratuita**. Necesitás configurar tu API key antes de correr el simulador.
+El Asistente Médico usa la API de Groq (Llama 3.1 8B), que es **gratuita**. Si **configurás tu API key**, el asistente contestará usando el modelo Llama 3 en la nube.  
+Pero **si no tenés API key, la app funciona igual**: el asistente responde con respuestas predefinidas sobre el simulador y Sistemas Operativos.
 
 **Opción recomendada — variable de entorno permanente (se guarda para siempre):**
 
@@ -73,6 +74,10 @@ $env:GROQ_API_KEY = "gsk_..."
 ```
 
 Podés obtener tu API key gratis en [console.groq.com](https://console.groq.com/).
+
+*Si no configurás la API key, no pasa nada: el sistema sigue funcionando y el Asistente Médico se comporta como un bot local con respuestas básicas.*
+
+
 
 ### Ejecutar
 
