@@ -11933,3 +11933,2480 @@
 [09:16:44] [CPU] t=85: atendiendo a 💊 Enf2-cons-42
 [09:16:44] [APP] '💊 Enf2-cons-42' (PID 59) cerrada por el usuario
 [09:16:44] [logd] Demonio de logging detenido.
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-26 09:42:01
+  PID daemon de logging: 19668
+============================================================
+[09:42:13] [ADMIT] Paciente 1 admitido (PID 1, gravedad 3)
+[09:42:13] [ADMIT] Paciente 2 admitido (PID 2, gravedad 7)
+[09:42:13] [ADMIT] Paciente 3 admitido (PID 3, gravedad 6)
+[09:42:13] [ADMIT] Paciente 4 admitido (PID 4, gravedad 7)
+[09:42:13] [ADMIT] Paciente 5 admitido (PID 5, gravedad 4)
+[09:42:13] [ADMIT] Paciente 6 admitido (PID 6, gravedad 3)
+[09:42:13] [ADMIT] Paciente 7 admitido (PID 7, gravedad 5)
+[09:42:13] [ADMIT] Paciente 8 admitido (PID 8, gravedad 7)
+[09:42:13] [CPU] t=1: atendiendo a Paciente 1
+[09:42:14] [CPU] t=2: atendiendo a Paciente 2
+[09:42:14] [CPU] t=3: atendiendo a Paciente 3
+[09:42:15] [CPU] t=4: atendiendo a Paciente 4
+[09:42:15] [CPU] t=5: atendiendo a Paciente 5
+[09:42:15] [CPU] t=6: atendiendo a Paciente 6
+[09:42:16] [CPU] t=7: atendiendo a Paciente 7
+[09:42:16] [CPU] t=8: atendiendo a Paciente 8
+[09:42:16] [DEADLOCK] Iniciando demo: dos pacientes pelearán por Quirófano + Cirujano
+[09:42:16] [ADMIT] Paciente 9 admitido (PID 9, gravedad 4)
+[09:42:16] [ADMIT] Paciente 10 admitido (PID 10, gravedad 6)
+[09:42:16] [RECURSO] Paciente 9 solicita QUIROFANO
+[09:42:16] [RECURSO] Paciente 9 obtuvo QUIROFANO
+[09:42:16] [RECURSO] Paciente 10 solicita CIRUJANO
+[09:42:16] [RECURSO] Paciente 10 obtuvo CIRUJANO
+[09:42:16] [RECURSO] Paciente 10 solicita QUIROFANO
+[09:42:16] [RECURSO] Paciente 9 solicita CIRUJANO
+[09:42:17] [CPU] t=9: atendiendo a Paciente 1
+[09:42:17] [DEADLOCK] ⚠️ DEADLOCK: Paciente 9 → Paciente 10 → Paciente 9 se bloquean mutuamente
+[09:42:17] [DEADLOCK] Se derivará un paciente en 10s, o tocá 'Resolver Deadlock'
+[09:42:17] [CPU] t=10: atendiendo a Paciente 2
+[09:42:17] [CPU] t=11: atendiendo a Paciente 3
+[09:42:18] [CPU] t=12: atendiendo a Paciente 4
+[09:42:18] [CPU] t=13: atendiendo a Paciente 5
+[09:42:19] [CPU] t=14: atendiendo a Paciente 6
+[09:42:19] [CPU] t=15: atendiendo a Paciente 7
+[09:42:19] [CPU] t=16: atendiendo a Paciente 8
+[09:42:20] [CPU] t=17: atendiendo a Paciente 1
+[09:42:20] [CPU] t=18: atendiendo a Paciente 2
+[09:42:21] [CPU] t=19: atendiendo a Paciente 3
+[09:42:21] [APP] 'Asistente Médico' se registra como proceso (PID 11, prio 7)
+[09:42:21] [CPU] t=20: atendiendo a Paciente 4
+[09:42:21] [CPU] t=21: atendiendo a Paciente 5
+[09:42:22] [CPU] t=22: atendiendo a Paciente 6
+[09:42:22] [CPU] t=23: atendiendo a Paciente 7
+[09:42:23] [CPU] t=24: atendiendo a Paciente 8
+[09:42:23] [CPU] t=25: atendiendo a Paciente 1
+[09:42:23] [CPU] t=26: atendiendo a Paciente 2
+[09:42:24] [CPU] t=27: atendiendo a Paciente 3
+[09:42:24] [CPU] t=28: atendiendo a Asistente Médico
+[09:42:25] [CPU] t=29: atendiendo a Paciente 4
+[09:42:25] [CPU] t=30: atendiendo a Paciente 5
+[09:42:25] [CPU] t=31: atendiendo a Paciente 6
+[09:42:26] [CPU] t=32: atendiendo a Paciente 7
+[09:42:26] [CPU] t=33: atendiendo a Paciente 8
+[09:42:27] [CPU] t=34: atendiendo a Paciente 1
+[09:42:27] [DEADLOCK] ⏰ Timeout: derivando paciente
+[09:42:27] [DEADLOCK] Resolviendo: Paciente 10 es derivado a otro hospital
+[09:42:27] [ALTA] Paciente 10 (PID 10) dado de alta · esperó 0.0s
+[09:42:27] [RECURSO] Paciente 9 obtuvo CIRUJANO
+[09:42:27] [RECURSO] Paciente 9 libera CIRUJANO
+[09:42:27] [RECURSO] Paciente 9 libera QUIROFANO
+[09:42:27] [CPU] t=35: atendiendo a Paciente 2
+[09:42:27] [CPU] t=36: atendiendo a Paciente 3
+[09:42:28] [CPU] t=37: atendiendo a Asistente Médico
+[09:42:28] [CPU] t=38: atendiendo a Paciente 4
+[09:42:29] [CPU] t=39: atendiendo a Paciente 5
+[09:42:29] [CPU] t=40: atendiendo a Paciente 6
+[09:42:29] [CPU] t=41: atendiendo a Paciente 7
+[09:42:30] [APP] 'Asistente Médico' recibió consulta: "ALALALALALA"
+[09:42:30] [ALTA] Paciente 7 terminó su atención · esperó 14.4s
+[09:42:30] [CPU] t=42: atendiendo a Paciente 8
+[09:42:30] [ALTA] Paciente 8 terminó su atención · esperó 14.8s
+[09:42:30] [CPU] t=43: atendiendo a Paciente 1
+[09:42:31] [CPU] t=44: atendiendo a Paciente 9
+[09:42:31] [CPU] t=45: atendiendo a Paciente 2
+[09:42:31] [CPU] t=46: atendiendo a Paciente 3
+[09:42:32] [CPU] t=47: atendiendo a Asistente Médico
+[09:42:32] [CPU] t=48: atendiendo a Paciente 4
+[09:42:33] [CPU] t=49: atendiendo a Paciente 5
+[09:42:33] [CPU] t=50: atendiendo a Paciente 6
+[09:42:33] [CPU] t=51: atendiendo a Paciente 1
+[09:42:34] [CPU] t=52: atendiendo a Paciente 9
+[09:42:34] [CPU] t=53: atendiendo a Paciente 2
+[09:42:35] [CPU] t=54: atendiendo a Paciente 3
+[09:42:35] [CPU] t=55: atendiendo a Asistente Médico
+[09:42:35] [CPU] t=56: atendiendo a Paciente 4
+[09:42:36] [CPU] t=57: atendiendo a Paciente 5
+[09:42:36] [CPU] t=58: atendiendo a Paciente 6
+[09:42:37] [CPU] t=59: atendiendo a Paciente 1
+[09:42:37] [CPU] t=60: atendiendo a Paciente 9
+[09:42:37] [CPU] t=61: atendiendo a Paciente 2
+[09:42:38] [CPU] t=62: atendiendo a Paciente 3
+[09:42:38] [CPU] t=63: atendiendo a Asistente Médico
+[09:42:39] [CPU] t=64: atendiendo a Paciente 4
+[09:42:39] [CPU] t=65: atendiendo a Paciente 5
+[09:42:39] [CPU] t=66: atendiendo a Paciente 6
+[09:42:40] [CPU] t=67: atendiendo a Paciente 1
+[09:42:40] [CPU] t=68: atendiendo a Paciente 9
+[09:42:41] [CPU] t=69: atendiendo a Paciente 2
+[09:42:41] [CPU] t=70: atendiendo a Paciente 3
+[09:42:41] [CPU] t=71: atendiendo a Asistente Médico
+[09:42:42] [CPU] t=72: atendiendo a Paciente 4
+[09:42:42] [CPU] t=73: atendiendo a Paciente 5
+[09:42:43] [ALTA] Paciente 5 terminó su atención · esperó 25.7s
+[09:42:43] [CPU] t=74: atendiendo a Paciente 6
+[09:42:43] [CPU] t=75: atendiendo a Paciente 1
+[09:42:43] [CPU] t=76: atendiendo a Paciente 9
+[09:42:44] [CPU] t=77: atendiendo a Paciente 2
+[09:42:44] [CPU] t=78: atendiendo a Paciente 3
+[09:42:45] [CPU] t=79: atendiendo a Asistente Médico
+[09:42:45] [CPU] t=80: atendiendo a Paciente 4
+[09:42:45] [CPU] t=81: atendiendo a Paciente 6
+[09:42:46] [ALTA] Paciente 6 terminó su atención · esperó 28.5s
+[09:42:46] [CPU] t=82: atendiendo a Paciente 1
+[09:42:46] [ALTA] Paciente 1 terminó su atención · esperó 28.5s
+[09:42:46] [CPU] t=83: atendiendo a Paciente 9
+[09:42:47] [CPU] t=84: atendiendo a Paciente 2
+[09:42:47] [CPU] t=85: atendiendo a Paciente 3
+[09:42:47] [ALTA] Paciente 3 terminó su atención · esperó 29.7s
+[09:42:47] [CPU] t=86: atendiendo a Asistente Médico
+[09:42:48] [CPU] t=87: atendiendo a Paciente 4
+[09:42:48] [ALTA] Paciente 4 terminó su atención · esperó 30.5s
+[09:42:48] [CPU] t=88: atendiendo a Paciente 9
+[09:42:49] [CPU] t=89: atendiendo a Paciente 2
+[09:42:49] [ALTA] Paciente 2 terminó su atención · esperó 30.9s
+[09:42:49] [CPU] t=90: atendiendo a Asistente Médico
+[09:42:49] [APP] 'Asistente Médico' (PID 11) cerrada por el usuario
+[09:42:49] [CPU] t=91: atendiendo a Paciente 9
+[09:42:50] [CPU] t=92: atendiendo a Paciente 9
+[09:42:50] [CPU] t=93: atendiendo a Paciente 9
+[09:42:51] [CPU] t=94: atendiendo a Paciente 9
+[09:42:51] [CPU] t=95: atendiendo a Paciente 9
+[09:42:51] [CPU] t=96: atendiendo a Paciente 9
+[09:42:52] [APP] 'Farmacia' se registra como proceso (PID 12, prio 7)
+[09:42:52] [CPU] t=97: atendiendo a Paciente 9
+[09:42:52] [CPU] t=98: atendiendo a Farmacia
+[09:42:53] [CPU] t=99: atendiendo a Paciente 9
+[09:42:53] [CPU] t=100: atendiendo a Farmacia
+[09:42:53] [CPU] t=101: atendiendo a Paciente 9
+[09:42:54] [FARMACIA] Turno iniciado: 2 farmacéuticos + 3 enfermeros
+[09:42:54] [CPU] t=102: atendiendo a Farmacia
+[09:42:54] [CPU] t=103: atendiendo a Paciente 9
+[09:42:55] [APP] '💊 Enf1-cons-1' se registra como proceso (PID 13, prio 6)
+[09:42:55] [CPU] t=104: atendiendo a Farmacia
+[09:42:55] [FARMACIA] 💊 Enf1-cons-1 bloqueado: buffer vacío
+[09:42:55] [APP] '💊 Enf3-cons-2' se registra como proceso (PID 14, prio 6)
+[09:42:55] [FARMACIA] 💊 Enf3-cons-2 bloqueado: buffer vacío
+[09:42:55] [APP] '💊 Enf2-cons-3' se registra como proceso (PID 15, prio 6)
+[09:42:55] [CPU] t=105: atendiendo a Paciente 9
+[09:42:55] [FARMACIA] 💊 Enf2-cons-3 bloqueado: buffer vacío
+[09:42:55] [APP] '💊 Farm1-prod-4' se registra como proceso (PID 16, prio 6)
+[09:42:55] [APP] '💊 manual-prod-5' se registra como proceso (PID 17, prio 6)
+[09:42:55] [APP] '💊 Farm2-prod-6' se registra como proceso (PID 18, prio 6)
+[09:42:55] [APP] '💊 Farm1-prod-4' (PID 16) cerrada por el usuario
+[09:42:55] [APP] '💊 Enf3-cons-2' (PID 14) cerrada por el usuario
+[09:42:55] [APP] '💊 Enf1-cons-1' (PID 13) cerrada por el usuario
+[09:42:55] [APP] '💊 Farm2-prod-6' (PID 18) cerrada por el usuario
+[09:42:55] [APP] '💊 Enf1-cons-7' se registra como proceso (PID 19, prio 6)
+[09:42:55] [APP] '💊 Enf2-cons-3' (PID 15) cerrada por el usuario
+[09:42:55] [CPU] t=106: atendiendo a Farmacia
+[09:42:55] [APP] '💊 manual-prod-5' (PID 17) cerrada por el usuario
+[09:42:56] [FARMACIA] 💊 Enf1-cons-7 bloqueado: buffer vacío
+[09:42:56] [APP] '💊 manual-prod-8' se registra como proceso (PID 20, prio 6)
+[09:42:56] [APP] '💊 Enf1-cons-7' (PID 19) cerrada por el usuario
+[09:42:56] [CPU] t=107: atendiendo a Paciente 9
+[09:42:56] [APP] '💊 Enf2-cons-9' se registra como proceso (PID 21, prio 6)
+[09:42:56] [APP] '💊 manual-prod-8' (PID 20) cerrada por el usuario
+[09:42:56] [APP] '💊 manual-prod-10' se registra como proceso (PID 22, prio 6)
+[09:42:56] [FARMACIA] 💊 Enf2-cons-9 bloqueado: buffer vacío
+[09:42:56] [APP] '💊 Enf2-cons-9' (PID 21) cerrada por el usuario
+[09:42:56] [APP] '💊 manual-prod-10' (PID 22) cerrada por el usuario
+[09:42:56] [APP] '💊 Farm2-prod-11' se registra como proceso (PID 23, prio 6)
+[09:42:56] [APP] '💊 manual-prod-12' se registra como proceso (PID 24, prio 6)
+[09:42:56] [CPU] t=108: atendiendo a Farmacia
+[09:42:56] [APP] '💊 Enf3-cons-13' se registra como proceso (PID 25, prio 6)
+[09:42:56] [APP] '💊 Farm2-prod-11' (PID 23) cerrada por el usuario
+[09:42:56] [APP] '💊 Farm1-prod-14' se registra como proceso (PID 26, prio 6)
+[09:42:56] [APP] '💊 manual-prod-12' (PID 24) cerrada por el usuario
+[09:42:57] [APP] '💊 Enf1-cons-15' se registra como proceso (PID 27, prio 6)
+[09:42:57] [APP] '💊 Enf3-cons-13' (PID 25) cerrada por el usuario
+[09:42:57] [APP] '💊 Farm1-prod-14' (PID 26) cerrada por el usuario
+[09:42:57] [CPU] t=109: atendiendo a Paciente 9
+[09:42:57] [APP] '💊 Enf1-cons-15' (PID 27) cerrada por el usuario
+[09:42:57] [CPU] t=110: atendiendo a Farmacia
+[09:42:57] [APP] '💊 Farm1-prod-16' se registra como proceso (PID 28, prio 6)
+[09:42:57] [APP] '💊 Enf2-cons-17' se registra como proceso (PID 29, prio 6)
+[09:42:57] [APP] '💊 Farm2-prod-18' se registra como proceso (PID 30, prio 6)
+[09:42:57] [CPU] t=111: atendiendo a Paciente 9
+[09:42:58] [APP] '💊 Enf3-cons-19' se registra como proceso (PID 31, prio 6)
+[09:42:58] [APP] '💊 Farm2-prod-18' (PID 30) cerrada por el usuario
+[09:42:58] [APP] '💊 Farm1-prod-16' (PID 28) cerrada por el usuario
+[09:42:58] [APP] '💊 Enf2-cons-17' (PID 29) cerrada por el usuario
+[09:42:58] [APP] '💊 Enf3-cons-19' (PID 31) cerrada por el usuario
+[09:42:58] [CPU] t=112: atendiendo a Farmacia
+[09:42:58] [APP] '💊 Enf1-cons-20' se registra como proceso (PID 32, prio 6)
+[09:42:58] [APP] '💊 Farm1-prod-21' se registra como proceso (PID 33, prio 6)
+[09:42:58] [APP] '💊 Farm1-prod-21' (PID 33) cerrada por el usuario
+[09:42:58] [APP] '💊 Enf1-cons-20' (PID 32) cerrada por el usuario
+[09:42:58] [CPU] t=113: atendiendo a Paciente 9
+[09:42:58] [APP] '💊 Enf2-cons-22' se registra como proceso (PID 34, prio 6)
+[09:42:59] [APP] '💊 Enf2-cons-22' (PID 34) cerrada por el usuario
+[09:42:59] [CPU] t=114: atendiendo a Farmacia
+[09:42:59] [APP] '💊 Farm2-prod-23' se registra como proceso (PID 35, prio 6)
+[09:42:59] [APP] '💊 Enf3-cons-24' se registra como proceso (PID 36, prio 6)
+[09:42:59] [APP] '💊 Farm2-prod-23' (PID 35) cerrada por el usuario
+[09:42:59] [APP] '💊 Farm1-prod-25' se registra como proceso (PID 37, prio 6)
+[09:42:59] [CPU] t=115: atendiendo a Paciente 9
+[09:42:59] [APP] '💊 Enf3-cons-24' (PID 36) cerrada por el usuario
+[09:42:59] [APP] '💊 Farm1-prod-25' (PID 37) cerrada por el usuario
+[09:42:59] [APP] '💊 Enf1-cons-26' se registra como proceso (PID 38, prio 6)
+[09:42:59] [CPU] t=116: atendiendo a Farmacia
+[09:43:00] [APP] '💊 Enf1-cons-26' (PID 38) cerrada por el usuario
+[09:43:00] [APP] '💊 Enf3-cons-27' se registra como proceso (PID 39, prio 6)
+[09:43:00] [APP] '💊 Farm1-prod-28' se registra como proceso (PID 40, prio 6)
+[09:43:00] [APP] '💊 manual-prod-29' se registra como proceso (PID 41, prio 6)
+[09:43:00] [FARMACIA] 💊 Enf3-cons-27 bloqueado: buffer vacío
+[09:43:00] [APP] '💊 Enf3-cons-27' (PID 39) cerrada por el usuario
+[09:43:00] [APP] '💊 manual-prod-29' (PID 41) cerrada por el usuario
+[09:43:00] [APP] '💊 Enf2-cons-30' se registra como proceso (PID 42, prio 6)
+[09:43:00] [CPU] t=117: atendiendo a Paciente 9
+[09:43:00] [APP] '💊 Farm1-prod-28' (PID 40) cerrada por el usuario
+[09:43:00] [APP] '💊 Farm2-prod-31' se registra como proceso (PID 43, prio 6)
+[09:43:00] [APP] '💊 manual-prod-32' se registra como proceso (PID 44, prio 6)
+[09:43:00] [APP] '💊 Enf2-cons-30' (PID 42) cerrada por el usuario
+[09:43:00] [APP] '💊 Enf1-cons-33' se registra como proceso (PID 45, prio 6)
+[09:43:00] [APP] '💊 Farm2-prod-31' (PID 43) cerrada por el usuario
+[09:43:00] [APP] '💊 manual-prod-32' (PID 44) cerrada por el usuario
+[09:43:00] [CPU] t=118: atendiendo a Farmacia
+[09:43:00] [APP] '💊 manual-prod-34' se registra como proceso (PID 46, prio 6)
+[09:43:00] [APP] '💊 Enf1-cons-33' (PID 45) cerrada por el usuario
+[09:43:01] [APP] '💊 Farm2-prod-35' se registra como proceso (PID 47, prio 6)
+[09:43:01] [APP] '💊 manual-prod-34' (PID 46) cerrada por el usuario
+[09:43:01] [APP] '💊 manual-prod-36' se registra como proceso (PID 48, prio 6)
+[09:43:01] [CPU] t=119: atendiendo a Paciente 9
+[09:43:01] [APP] '💊 Farm1-prod-37' se registra como proceso (PID 49, prio 6)
+[09:43:01] [APP] '💊 Farm2-prod-35' (PID 47) cerrada por el usuario
+[09:43:01] [APP] '💊 manual-prod-38' se registra como proceso (PID 50, prio 6)
+[09:43:01] [APP] '💊 manual-prod-36' (PID 48) cerrada por el usuario
+[09:43:01] [APP] '💊 Farm1-prod-37' (PID 49) cerrada por el usuario
+[09:43:01] [APP] '💊 manual-prod-38' (PID 50) cerrada por el usuario
+[09:43:01] [CPU] t=120: atendiendo a Farmacia
+[09:43:01] [APP] '💊 Enf1-cons-39' se registra como proceso (PID 51, prio 6)
+[09:43:01] [APP] '💊 Enf3-cons-40' se registra como proceso (PID 52, prio 6)
+[09:43:01] [APP] '💊 manual-prod-41' se registra como proceso (PID 53, prio 6)
+[09:43:01] [APP] '💊 Enf1-cons-39' (PID 51) cerrada por el usuario
+[09:43:01] [APP] '💊 Enf3-cons-40' (PID 52) cerrada por el usuario
+[09:43:01] [APP] '💊 Farm1-prod-42' se registra como proceso (PID 54, prio 6)
+[09:43:01] [APP] '💊 Enf2-cons-43' se registra como proceso (PID 55, prio 6)
+[09:43:02] [CPU] t=121: atendiendo a Paciente 9
+[09:43:02] [APP] '💊 manual-prod-41' (PID 53) cerrada por el usuario
+[09:43:02] [APP] '💊 Farm1-prod-42' (PID 54) cerrada por el usuario
+[09:43:02] [APP] '💊 manual-prod-44' se registra como proceso (PID 56, prio 6)
+[09:43:02] [APP] '💊 Enf2-cons-43' (PID 55) cerrada por el usuario
+[09:43:02] [APP] '💊 manual-prod-44' (PID 56) cerrada por el usuario
+[09:43:02] [CPU] t=122: atendiendo a Farmacia
+[09:43:02] [APP] '💊 Farm2-prod-45' se registra como proceso (PID 57, prio 6)
+[09:43:02] [APP] '💊 Farm2-prod-45' (PID 57) cerrada por el usuario
+[09:43:02] [CPU] t=123: atendiendo a Paciente 9
+[09:43:03] [APP] '💊 Farm1-prod-46' se registra como proceso (PID 58, prio 6)
+[09:43:03] [APP] '💊 Enf3-cons-47' se registra como proceso (PID 59, prio 6)
+[09:43:03] [APP] '💊 Enf1-cons-48' se registra como proceso (PID 60, prio 6)
+[09:43:03] [APP] '💊 Farm2-prod-49' se registra como proceso (PID 61, prio 6)
+[09:43:03] [CPU] t=124: atendiendo a Farmacia
+[09:43:03] [APP] '💊 Farm1-prod-46' (PID 58) cerrada por el usuario
+[09:43:03] [APP] '💊 Enf3-cons-47' (PID 59) cerrada por el usuario
+[09:43:03] [APP] '💊 Enf2-cons-50' se registra como proceso (PID 62, prio 6)
+[09:43:03] [APP] '💊 Enf1-cons-48' (PID 60) cerrada por el usuario
+[09:43:03] [APP] '💊 Farm2-prod-49' (PID 61) cerrada por el usuario
+[09:43:03] [CPU] t=125: atendiendo a Paciente 9
+[09:43:03] [APP] '💊 Enf2-cons-50' (PID 62) cerrada por el usuario
+[09:43:04] [CPU] t=126: atendiendo a Farmacia
+[09:43:04] [APP] '💊 Enf1-cons-51' se registra como proceso (PID 63, prio 6)
+[09:43:04] [APP] '💊 Farm1-prod-52' se registra como proceso (PID 64, prio 6)
+[09:43:04] [CPU] t=127: atendiendo a Paciente 9
+[09:43:04] [APP] '💊 Farm1-prod-52' (PID 64) cerrada por el usuario
+[09:43:04] [APP] '💊 Farm2-prod-53' se registra como proceso (PID 65, prio 6)
+[09:43:04] [APP] '💊 Enf2-cons-54' se registra como proceso (PID 66, prio 6)
+[09:43:04] [APP] '💊 Farm2-prod-53' (PID 65) cerrada por el usuario
+[09:43:04] [APP] '💊 Enf1-cons-51' (PID 63) cerrada por el usuario
+[09:43:04] [APP] '💊 Enf3-cons-55' se registra como proceso (PID 67, prio 6)
+[09:43:04] [APP] '💊 Enf2-cons-54' (PID 66) cerrada por el usuario
+[09:43:04] [CPU] t=128: atendiendo a Farmacia
+[09:43:04] [APP] '💊 Enf3-cons-55' (PID 67) cerrada por el usuario
+[09:43:04] [APP] 'Farmacia' (PID 12) cerrada por el usuario
+[09:43:05] [CPU] t=129: atendiendo a Paciente 9
+[09:43:05] [CPU] t=130: atendiendo a Paciente 9
+[09:43:06] [CPU] t=131: atendiendo a Paciente 9
+[09:43:06] [CPU] t=132: atendiendo a Paciente 9
+[09:43:06] [CPU] t=133: atendiendo a Paciente 9
+[09:43:07] [CPU] t=134: atendiendo a Paciente 9
+[09:43:07] [CPU] t=135: atendiendo a Paciente 9
+[09:43:08] [CPU] t=136: atendiendo a Paciente 9
+[09:43:08] [CPU] t=137: atendiendo a Paciente 9
+[09:43:08] [CPU] t=138: atendiendo a Paciente 9
+[09:43:09] [CPU] t=139: atendiendo a Paciente 9
+[09:43:09] [CPU] t=140: atendiendo a Paciente 9
+[09:43:09] [APP] 'Historia Clínica' se registra como proceso (PID 68, prio 7)
+[09:43:10] [CPU] t=141: atendiendo a Paciente 9
+[09:43:10] [APP] '📝 Enf. Díaz' se registra como proceso (PID 69, prio 5)
+[09:43:10] [CPU] t=142: atendiendo a Historia Clínica
+[09:43:10] [CPU] t=143: atendiendo a Paciente 9
+[09:43:11] [CPU] t=144: atendiendo a 📝 Enf. Díaz
+[09:43:11] [HISTORIA] 📝 Enf. Díaz llega a actualizar la historia clínica
+[09:43:11] [HISTORIA] 📝 Enf. Díaz obtiene acceso EXCLUSIVO y comienza a escribir
+[09:43:11] [CPU] t=145: atendiendo a Historia Clínica
+[09:43:12] [CPU] t=146: atendiendo a Paciente 9
+[09:43:12] [CPU] t=147: atendiendo a 📝 Enf. Díaz
+[09:43:12] [CPU] t=148: atendiendo a Historia Clínica
+[09:43:13] [CPU] t=149: atendiendo a Paciente 9
+[09:43:13] [CPU] t=150: atendiendo a 📝 Enf. Díaz
+[09:43:14] [CPU] t=151: atendiendo a Historia Clínica
+[09:43:14] [CPU] t=152: atendiendo a Paciente 9
+[09:43:14] [CPU] t=153: atendiendo a 📝 Enf. Díaz
+[09:43:15] [CPU] t=154: atendiendo a Historia Clínica
+[09:43:15] [CPU] t=155: atendiendo a Paciente 9
+[09:43:15] [HISTORIA] 📝 Enf. Díaz termina la actualización: Temp: 37.2°C · PA: 130/85 · FC: 88 bpm · Observación
+[09:43:15] [APP] '📝 Enf. Díaz' (PID 69) cerrada por el usuario
+[09:43:16] [CPU] t=156: atendiendo a Historia Clínica
+[09:43:16] [CPU] t=157: atendiendo a Paciente 9
+[09:43:16] [CPU] t=158: atendiendo a Historia Clínica
+[09:43:17] [APP] '📖 Dr. Martín' se registra como proceso (PID 70, prio 6)
+[09:43:17] [CPU] t=159: atendiendo a Paciente 9
+[09:43:17] [CPU] t=160: atendiendo a Historia Clínica
+[09:43:18] [CPU] t=161: atendiendo a 📖 Dr. Martín
+[09:43:18] [HISTORIA] 📖 Dr. Martín llega a consultar la historia clínica
+[09:43:18] [HISTORIA] 📖 Dr. Martín comienza a leer (lectores activos: 1)
+[09:43:18] [CPU] t=162: atendiendo a Paciente 9
+[09:43:18] [CPU] t=163: atendiendo a Historia Clínica
+[09:43:19] [CPU] t=164: atendiendo a 📖 Dr. Martín
+[09:43:19] [APP] '📝 Enf. Perez' se registra como proceso (PID 71, prio 5)
+[09:43:19] [CPU] t=165: atendiendo a Paciente 9
+[09:43:20] [CPU] t=166: atendiendo a Historia Clínica
+[09:43:20] [CPU] t=167: atendiendo a 📖 Dr. Martín
+[09:43:20] [APP] '📝 Enf. Gómez' se registra como proceso (PID 72, prio 5)
+[09:43:20] [HISTORIA] 📝 Enf. Perez llega a actualizar la historia clínica
+[09:43:20] [APP] '📝 Enf. Díaz' se registra como proceso (PID 73, prio 5)
+[09:43:20] [CPU] t=168: atendiendo a Paciente 9
+[09:43:20] [APP] '📝 Enf. Cruz' se registra como proceso (PID 74, prio 5)
+[09:43:21] [APP] '📝 Enf. Cruz' se registra como proceso (PID 75, prio 5)
+[09:43:21] [CPU] t=169: atendiendo a Historia Clínica
+[09:43:21] [APP] '📝 Enf. Mora' se registra como proceso (PID 76, prio 5)
+[09:43:21] [HISTORIA] 📝 Enf. Gómez llega a actualizar la historia clínica
+[09:43:21] [CPU] t=170: atendiendo a 📖 Dr. Martín
+[09:43:21] [HISTORIA] 📝 Enf. Díaz llega a actualizar la historia clínica
+[09:43:21] [HISTORIA] 📝 Enf. Cruz llega a actualizar la historia clínica
+[09:43:21] [HISTORIA] 📖 Dr. Martín termina su consulta
+[09:43:21] [HISTORIA] Último lector se retira: historia clínica disponible para escritura
+[09:43:21] [APP] '📖 Dr. Martín' (PID 70) cerrada por el usuario
+[09:43:21] [HISTORIA] 📝 Enf. Perez obtiene acceso EXCLUSIVO y comienza a escribir
+[09:43:22] [CPU] t=171: atendiendo a Paciente 9
+[09:43:22] [HISTORIA] 📝 Enf. Cruz llega a actualizar la historia clínica
+[09:43:22] [HISTORIA] 📝 Enf. Mora llega a actualizar la historia clínica
+[09:43:22] [APP] '📖 Dr. García' se registra como proceso (PID 77, prio 6)
+[09:43:22] [CPU] t=172: atendiendo a Historia Clínica
+[09:43:22] [CPU] t=173: atendiendo a 📝 Enf. Perez
+[09:43:23] [APP] '📖 Dra. Torres' se registra como proceso (PID 78, prio 6)
+[09:43:23] [CPU] t=174: atendiendo a Paciente 9
+[09:43:23] [APP] '📖 Dr. Martín' se registra como proceso (PID 79, prio 6)
+[09:43:23] [HISTORIA] 📖 Dr. García llega a consultar la historia clínica
+[09:43:23] [CPU] t=175: atendiendo a Historia Clínica
+[09:43:24] [HISTORIA] 📖 Dra. Torres llega a consultar la historia clínica
+[09:43:24] [CPU] t=176: atendiendo a 📝 Enf. Perez
+[09:43:24] [HISTORIA] 📖 Dr. Martín llega a consultar la historia clínica
+[09:43:24] [CPU] t=177: atendiendo a Paciente 9
+[09:43:24] [CPU] t=178: atendiendo a Historia Clínica
+[09:43:25] [CPU] t=179: atendiendo a 📝 Enf. Perez
+[09:43:25] [APP] 'Historia Clínica' (PID 68) cerrada por el usuario
+[09:43:25] [CPU] t=180: atendiendo a Paciente 9
+[09:43:26] [CPU] t=181: atendiendo a 📝 Enf. Perez
+[09:43:26] [CPU] t=182: atendiendo a Paciente 9
+[09:43:26] [HISTORIA] 📝 Enf. Perez termina la actualización: Temp: 37.2°C · PA: 130/85 · FC: 88 bpm · Observación
+[09:43:26] [APP] '📝 Enf. Perez' (PID 71) cerrada por el usuario
+[09:43:26] [HISTORIA] 📝 Enf. Gómez obtiene acceso EXCLUSIVO y comienza a escribir
+[09:43:26] [CPU] t=183: atendiendo a Paciente 9
+[09:43:27] [CPU] t=184: atendiendo a 📝 Enf. Gómez
+[09:43:27] [CPU] t=185: atendiendo a Paciente 9
+[09:43:28] [CPU] t=186: atendiendo a 📝 Enf. Gómez
+[09:43:28] [CPU] t=187: atendiendo a Paciente 9
+[09:43:28] [CPU] t=188: atendiendo a 📝 Enf. Gómez
+[09:43:29] [CPU] t=189: atendiendo a Paciente 9
+[09:43:29] [CPU] t=190: atendiendo a 📝 Enf. Gómez
+[09:43:30] [CPU] t=191: atendiendo a Paciente 9
+[09:43:30] [CPU] t=192: atendiendo a 📝 Enf. Gómez
+[09:43:30] [CPU] t=193: atendiendo a Paciente 9
+[09:43:31] [CPU] t=194: atendiendo a 📝 Enf. Gómez
+[09:43:31] [CPU] t=195: atendiendo a Paciente 9
+[09:43:31] [HISTORIA] 📝 Enf. Gómez termina la actualización: Temp: 36.9°C · PA: 122/78 · FC: 70 bpm · Estable
+[09:43:31] [APP] '📝 Enf. Gómez' (PID 72) cerrada por el usuario
+[09:43:31] [HISTORIA] 📝 Enf. Díaz obtiene acceso EXCLUSIVO y comienza a escribir
+[09:43:32] [CPU] t=196: atendiendo a Paciente 9
+[09:43:32] [CPU] t=197: atendiendo a 📝 Enf. Díaz
+[09:43:32] [CPU] t=198: atendiendo a Paciente 9
+[09:43:33] [CPU] t=199: atendiendo a 📝 Enf. Díaz
+[09:43:33] [CPU] t=200: atendiendo a Paciente 9
+[09:43:34] [CPU] t=201: atendiendo a 📝 Enf. Díaz
+[09:43:34] [CPU] t=202: atendiendo a Paciente 9
+[09:43:34] [CPU] t=203: atendiendo a 📝 Enf. Díaz
+[09:43:35] [CPU] t=204: atendiendo a Paciente 9
+[09:43:35] [CPU] t=205: atendiendo a 📝 Enf. Díaz
+[09:43:35] [HISTORIA] 📝 Enf. Díaz termina la actualización: Temp: 36.8°C · PA: 120/80 · FC: 72 bpm · Sin novedades
+[09:43:35] [APP] '📝 Enf. Díaz' (PID 73) cerrada por el usuario
+[09:43:35] [HISTORIA] 📝 Enf. Cruz obtiene acceso EXCLUSIVO y comienza a escribir
+[09:43:36] [CPU] t=206: atendiendo a Paciente 9
+[09:43:36] [CPU] t=207: atendiendo a 📝 Enf. Cruz
+[09:43:36] [CPU] t=208: atendiendo a Paciente 9
+[09:43:37] [CPU] t=209: atendiendo a 📝 Enf. Cruz
+[09:43:37] [CPU] t=210: atendiendo a Paciente 9
+[09:43:38] [CPU] t=211: atendiendo a 📝 Enf. Cruz
+[09:43:38] [CPU] t=212: atendiendo a Paciente 9
+[09:43:38] [CPU] t=213: atendiendo a 📝 Enf. Cruz
+[09:43:39] [CPU] t=214: atendiendo a Paciente 9
+[09:43:39] [CPU] t=215: atendiendo a 📝 Enf. Cruz
+[09:43:40] [CPU] t=216: atendiendo a Paciente 9
+[09:43:40] [CPU] t=217: atendiendo a 📝 Enf. Cruz
+[09:43:40] [HISTORIA] 📝 Enf. Cruz termina la actualización: Temp: 36.8°C · PA: 120/80 · FC: 72 bpm · Sin novedades
+[09:43:40] [APP] '📝 Enf. Cruz' (PID 74) cerrada por el usuario
+[09:43:40] [HISTORIA] 📝 Enf. Cruz obtiene acceso EXCLUSIVO y comienza a escribir
+[09:43:40] [CPU] t=218: atendiendo a Paciente 9
+[09:43:41] [CPU] t=219: atendiendo a 📝 Enf. Cruz
+[09:43:41] [CPU] t=220: atendiendo a Paciente 9
+[09:43:42] [CPU] t=221: atendiendo a 📝 Enf. Cruz
+[09:43:42] [CPU] t=222: atendiendo a Paciente 9
+[09:43:42] [CPU] t=223: atendiendo a 📝 Enf. Cruz
+[09:43:43] [CPU] t=224: atendiendo a Paciente 9
+[09:43:43] [CPU] t=225: atendiendo a 📝 Enf. Cruz
+[09:43:44] [CPU] t=226: atendiendo a Paciente 9
+[09:43:44] [CPU] t=227: atendiendo a 📝 Enf. Cruz
+[09:43:44] [CPU] t=228: atendiendo a Paciente 9
+[09:43:45] [HISTORIA] 📝 Enf. Cruz termina la actualización: Temp: 38.1°C · PA: 145/92 · FC: 95 bpm · Medicación ajustada
+[09:43:45] [APP] '📝 Enf. Cruz' (PID 75) cerrada por el usuario
+[09:43:45] [HISTORIA] 📝 Enf. Mora obtiene acceso EXCLUSIVO y comienza a escribir
+[09:43:45] [CPU] t=229: atendiendo a Paciente 9
+[09:43:45] [CPU] t=230: atendiendo a 📝 Enf. Mora
+[09:43:46] [CPU] t=231: atendiendo a Paciente 9
+[09:43:46] [CPU] t=232: atendiendo a 📝 Enf. Mora
+[09:43:47] [CPU] t=233: atendiendo a Paciente 9
+[09:43:47] [CPU] t=234: atendiendo a 📝 Enf. Mora
+[09:43:47] [CPU] t=235: atendiendo a Paciente 9
+[09:43:48] [CPU] t=236: atendiendo a 📝 Enf. Mora
+[09:43:48] [CPU] t=237: atendiendo a Paciente 9
+[09:43:49] [CPU] t=238: atendiendo a 📝 Enf. Mora
+[09:43:49] [CPU] t=239: atendiendo a Paciente 9
+[09:43:49] [CPU] t=240: atendiendo a 📝 Enf. Mora
+[09:43:50] [CPU] t=241: atendiendo a Paciente 9
+[09:43:50] [HISTORIA] 📝 Enf. Mora termina la actualización: Temp: 38.1°C · PA: 145/92 · FC: 95 bpm · Medicación ajustada
+[09:43:50] [APP] '📝 Enf. Mora' (PID 76) cerrada por el usuario
+[09:43:50] [HISTORIA] 📖 Dr. García comienza a leer (lectores activos: 1)
+[09:43:50] [HISTORIA] 📖 Dra. Torres comienza a leer (lectores activos: 2)
+[09:43:50] [HISTORIA] 📖 Dr. Martín comienza a leer (lectores activos: 3)
+[09:43:50] [CPU] t=242: atendiendo a Paciente 9
+[09:43:51] [CPU] t=243: atendiendo a 📖 Dr. García
+[09:43:51] [CPU] t=244: atendiendo a 📖 Dra. Torres
+[09:43:51] [CPU] t=245: atendiendo a 📖 Dr. Martín
+[09:43:52] [CPU] t=246: atendiendo a Paciente 9
+[09:43:52] [CPU] t=247: atendiendo a 📖 Dr. García
+[09:43:53] [CPU] t=248: atendiendo a 📖 Dra. Torres
+[09:43:53] [CPU] t=249: atendiendo a 📖 Dr. Martín
+[09:43:53] [HISTORIA] 📖 Dr. Martín termina su consulta
+[09:43:53] [APP] '📖 Dr. Martín' (PID 79) cerrada por el usuario
+[09:43:53] [HISTORIA] 📖 Dr. García termina su consulta
+[09:43:53] [APP] '📖 Dr. García' (PID 77) cerrada por el usuario
+[09:43:53] [CPU] t=250: atendiendo a Paciente 9
+[09:43:54] [HISTORIA] 📖 Dra. Torres termina su consulta
+[09:43:54] [HISTORIA] Último lector se retira: historia clínica disponible para escritura
+[09:43:54] [APP] '📖 Dra. Torres' (PID 78) cerrada por el usuario
+[09:43:54] [CPU] t=251: atendiendo a Paciente 9
+[09:43:54] [CPU] t=252: atendiendo a Paciente 9
+[09:43:55] [CPU] t=253: atendiendo a Paciente 9
+[09:43:55] [CPU] t=254: atendiendo a Paciente 9
+[09:43:55] [CPU] t=255: atendiendo a Paciente 9
+[09:43:56] [CPU] t=256: atendiendo a Paciente 9
+[09:43:56] [CPU] t=257: atendiendo a Paciente 9
+[09:43:57] [CPU] t=258: atendiendo a Paciente 9
+[09:43:57] [CPU] t=259: atendiendo a Paciente 9
+[09:43:57] [CPU] t=260: atendiendo a Paciente 9
+[09:43:58] [CPU] t=261: atendiendo a Paciente 9
+[09:43:58] [CPU] t=262: atendiendo a Paciente 9
+[09:43:59] [CPU] t=263: atendiendo a Paciente 9
+[09:43:59] [CPU] t=264: atendiendo a Paciente 9
+[09:43:59] [CPU] t=265: atendiendo a Paciente 9
+[09:44:00] [CPU] t=266: atendiendo a Paciente 9
+[09:44:00] [CPU] t=267: atendiendo a Paciente 9
+[09:44:01] [CPU] t=268: atendiendo a Paciente 9
+[09:44:01] [CPU] t=269: atendiendo a Paciente 9
+[09:44:01] [CPU] t=270: atendiendo a Paciente 9
+[09:44:02] [CPU] t=271: atendiendo a Paciente 9
+[09:44:02] [CPU] t=272: atendiendo a Paciente 9
+[09:44:03] [CPU] t=273: atendiendo a Paciente 9
+[09:44:03] [CPU] t=274: atendiendo a Paciente 9
+[09:44:03] [CPU] t=275: atendiendo a Paciente 9
+[09:44:04] [CPU] t=276: atendiendo a Paciente 9
+[09:44:04] [CPU] t=277: atendiendo a Paciente 9
+[09:44:05] [CPU] t=278: atendiendo a Paciente 9
+[09:44:05] [CPU] t=279: atendiendo a Paciente 9
+[09:44:05] [CPU] t=280: atendiendo a Paciente 9
+[09:44:06] [CPU] t=281: atendiendo a Paciente 9
+[09:44:06] [CPU] t=282: atendiendo a Paciente 9
+[09:44:07] [CPU] t=283: atendiendo a Paciente 9
+[09:44:07] [CPU] t=284: atendiendo a Paciente 9
+[09:44:07] [CPU] t=285: atendiendo a Paciente 9
+[09:44:08] [CPU] t=286: atendiendo a Paciente 9
+[09:44:08] [CPU] t=287: atendiendo a Paciente 9
+[09:44:09] [CPU] t=288: atendiendo a Paciente 9
+[09:44:09] [CPU] t=289: atendiendo a Paciente 9
+[09:44:10] [CPU] t=290: atendiendo a Paciente 9
+[09:44:10] [CPU] t=291: atendiendo a Paciente 9
+[09:44:10] [CPU] t=292: atendiendo a Paciente 9
+[09:44:11] [CPU] t=293: atendiendo a Paciente 9
+[09:44:11] [CPU] t=294: atendiendo a Paciente 9
+[09:44:12] [CPU] t=295: atendiendo a Paciente 9
+[09:44:12] [CPU] t=296: atendiendo a Paciente 9
+[09:44:12] [CPU] t=297: atendiendo a Paciente 9
+[09:44:13] [CPU] t=298: atendiendo a Paciente 9
+[09:44:13] [CPU] t=299: atendiendo a Paciente 9
+[09:44:14] [CPU] t=300: atendiendo a Paciente 9
+[09:44:14] [CPU] t=301: atendiendo a Paciente 9
+[09:44:14] [CPU] t=302: atendiendo a Paciente 9
+[09:44:15] [CPU] t=303: atendiendo a Paciente 9
+[09:44:15] [CPU] t=304: atendiendo a Paciente 9
+[09:44:16] [CPU] t=305: atendiendo a Paciente 9
+[09:44:16] [CPU] t=306: atendiendo a Paciente 9
+[09:44:16] [CPU] t=307: atendiendo a Paciente 9
+[09:44:17] [CPU] t=308: atendiendo a Paciente 9
+[09:44:17] [CPU] t=309: atendiendo a Paciente 9
+[09:44:18] [CPU] t=310: atendiendo a Paciente 9
+[09:44:18] [CPU] t=311: atendiendo a Paciente 9
+[09:44:18] [CPU] t=312: atendiendo a Paciente 9
+[09:44:19] [CPU] t=313: atendiendo a Paciente 9
+[09:44:19] [CPU] t=314: atendiendo a Paciente 9
+[09:44:20] [CPU] t=315: atendiendo a Paciente 9
+[09:44:20] [CPU] t=316: atendiendo a Paciente 9
+[09:44:20] [CPU] t=317: atendiendo a Paciente 9
+[09:44:21] [CPU] t=318: atendiendo a Paciente 9
+[09:44:21] [CPU] t=319: atendiendo a Paciente 9
+[09:44:22] [CPU] t=320: atendiendo a Paciente 9
+[09:44:22] [CPU] t=321: atendiendo a Paciente 9
+[09:44:22] [CPU] t=322: atendiendo a Paciente 9
+[09:44:23] [CPU] t=323: atendiendo a Paciente 9
+[09:44:23] [CPU] t=324: atendiendo a Paciente 9
+[09:44:24] [CPU] t=325: atendiendo a Paciente 9
+[09:44:24] [CPU] t=326: atendiendo a Paciente 9
+[09:44:24] [CPU] t=327: atendiendo a Paciente 9
+[09:44:25] [CPU] t=328: atendiendo a Paciente 9
+[09:44:25] [CPU] t=329: atendiendo a Paciente 9
+[09:44:26] [CPU] t=330: atendiendo a Paciente 9
+[09:44:26] [CPU] t=331: atendiendo a Paciente 9
+[09:44:26] [CPU] t=332: atendiendo a Paciente 9
+[09:44:27] [CPU] t=333: atendiendo a Paciente 9
+[09:44:27] [CPU] t=334: atendiendo a Paciente 9
+[09:44:28] [CPU] t=335: atendiendo a Paciente 9
+[09:44:28] [CPU] t=336: atendiendo a Paciente 9
+[09:44:28] [CPU] t=337: atendiendo a Paciente 9
+[09:44:29] [CPU] t=338: atendiendo a Paciente 9
+[09:44:29] [CPU] t=339: atendiendo a Paciente 9
+[09:44:30] [CPU] t=340: atendiendo a Paciente 9
+[09:44:30] [CPU] t=341: atendiendo a Paciente 9
+[09:44:30] [CPU] t=342: atendiendo a Paciente 9
+[09:44:31] [CPU] t=343: atendiendo a Paciente 9
+[09:44:31] [CPU] t=344: atendiendo a Paciente 9
+[09:44:32] [CPU] t=345: atendiendo a Paciente 9
+[09:44:32] [CPU] t=346: atendiendo a Paciente 9
+[09:44:32] [CPU] t=347: atendiendo a Paciente 9
+[09:44:33] [CPU] t=348: atendiendo a Paciente 9
+[09:44:33] [CPU] t=349: atendiendo a Paciente 9
+[09:44:34] [CPU] t=350: atendiendo a Paciente 9
+[09:44:34] [CPU] t=351: atendiendo a Paciente 9
+[09:44:34] [CPU] t=352: atendiendo a Paciente 9
+[09:44:35] [CPU] t=353: atendiendo a Paciente 9
+[09:44:35] [CPU] t=354: atendiendo a Paciente 9
+[09:44:36] [CPU] t=355: atendiendo a Paciente 9
+[09:44:36] [CPU] t=356: atendiendo a Paciente 9
+[09:44:36] [CPU] t=357: atendiendo a Paciente 9
+[09:44:37] [CPU] t=358: atendiendo a Paciente 9
+[09:44:37] [CPU] t=359: atendiendo a Paciente 9
+[09:44:38] [CPU] t=360: atendiendo a Paciente 9
+[09:44:38] [CPU] t=361: atendiendo a Paciente 9
+[09:44:39] [CPU] t=362: atendiendo a Paciente 9
+[09:44:39] [CPU] t=363: atendiendo a Paciente 9
+[09:44:39] [CPU] t=364: atendiendo a Paciente 9
+[09:44:40] [CPU] t=365: atendiendo a Paciente 9
+[09:44:40] [CPU] t=366: atendiendo a Paciente 9
+[09:44:41] [CPU] t=367: atendiendo a Paciente 9
+[09:44:41] [CPU] t=368: atendiendo a Paciente 9
+[09:44:41] [CPU] t=369: atendiendo a Paciente 9
+[09:44:42] [CPU] t=370: atendiendo a Paciente 9
+[09:44:42] [CPU] t=371: atendiendo a Paciente 9
+[09:44:43] [CPU] t=372: atendiendo a Paciente 9
+[09:44:43] [CPU] t=373: atendiendo a Paciente 9
+[09:44:43] [CPU] t=374: atendiendo a Paciente 9
+[09:44:44] [CPU] t=375: atendiendo a Paciente 9
+[09:44:44] [CPU] t=376: atendiendo a Paciente 9
+[09:44:45] [CPU] t=377: atendiendo a Paciente 9
+[09:44:45] [CPU] t=378: atendiendo a Paciente 9
+[09:44:45] [CPU] t=379: atendiendo a Paciente 9
+[09:44:46] [CPU] t=380: atendiendo a Paciente 9
+[09:44:46] [CPU] t=381: atendiendo a Paciente 9
+[09:44:47] [CPU] t=382: atendiendo a Paciente 9
+[09:44:47] [CPU] t=383: atendiendo a Paciente 9
+[09:44:47] [CPU] t=384: atendiendo a Paciente 9
+[09:44:48] [CPU] t=385: atendiendo a Paciente 9
+[09:44:48] [CPU] t=386: atendiendo a Paciente 9
+[09:44:49] [CPU] t=387: atendiendo a Paciente 9
+[09:44:49] [CPU] t=388: atendiendo a Paciente 9
+[09:44:49] [CPU] t=389: atendiendo a Paciente 9
+[09:44:50] [CPU] t=390: atendiendo a Paciente 9
+[09:44:50] [CPU] t=391: atendiendo a Paciente 9
+[09:44:51] [CPU] t=392: atendiendo a Paciente 9
+[09:44:51] [CPU] t=393: atendiendo a Paciente 9
+[09:44:51] [CPU] t=394: atendiendo a Paciente 9
+[09:44:52] [CPU] t=395: atendiendo a Paciente 9
+[09:44:52] [CPU] t=396: atendiendo a Paciente 9
+[09:44:53] [CPU] t=397: atendiendo a Paciente 9
+[09:44:53] [CPU] t=398: atendiendo a Paciente 9
+[09:44:53] [CPU] t=399: atendiendo a Paciente 9
+[09:44:54] [CPU] t=400: atendiendo a Paciente 9
+[09:44:54] [CPU] t=401: atendiendo a Paciente 9
+[09:44:55] [CPU] t=402: atendiendo a Paciente 9
+[09:44:55] [CPU] t=403: atendiendo a Paciente 9
+[09:44:55] [CPU] t=404: atendiendo a Paciente 9
+[09:44:56] [CPU] t=405: atendiendo a Paciente 9
+[09:44:56] [CPU] t=406: atendiendo a Paciente 9
+[09:44:57] [CPU] t=407: atendiendo a Paciente 9
+[09:44:57] [CPU] t=408: atendiendo a Paciente 9
+[09:44:57] [CPU] t=409: atendiendo a Paciente 9
+[09:44:58] [CPU] t=410: atendiendo a Paciente 9
+[09:44:58] [CPU] t=411: atendiendo a Paciente 9
+[09:44:59] [CPU] t=412: atendiendo a Paciente 9
+[09:44:59] [CPU] t=413: atendiendo a Paciente 9
+[09:44:59] [CPU] t=414: atendiendo a Paciente 9
+[09:45:00] [CPU] t=415: atendiendo a Paciente 9
+[09:45:00] [CPU] t=416: atendiendo a Paciente 9
+[09:45:01] [CPU] t=417: atendiendo a Paciente 9
+[09:45:01] [CPU] t=418: atendiendo a Paciente 9
+[09:45:01] [CPU] t=419: atendiendo a Paciente 9
+[09:45:02] [CPU] t=420: atendiendo a Paciente 9
+[09:45:02] [CPU] t=421: atendiendo a Paciente 9
+[09:45:03] [CPU] t=422: atendiendo a Paciente 9
+[09:45:03] [CPU] t=423: atendiendo a Paciente 9
+[09:45:03] [CPU] t=424: atendiendo a Paciente 9
+[09:45:04] [CPU] t=425: atendiendo a Paciente 9
+[09:45:04] [CPU] t=426: atendiendo a Paciente 9
+[09:45:05] [CPU] t=427: atendiendo a Paciente 9
+[09:45:05] [CPU] t=428: atendiendo a Paciente 9
+[09:45:05] [CPU] t=429: atendiendo a Paciente 9
+[09:45:06] [CPU] t=430: atendiendo a Paciente 9
+[09:45:06] [CPU] t=431: atendiendo a Paciente 9
+[09:45:07] [CPU] t=432: atendiendo a Paciente 9
+[09:45:07] [CPU] t=433: atendiendo a Paciente 9
+[09:45:07] [CPU] t=434: atendiendo a Paciente 9
+[09:45:08] [CPU] t=435: atendiendo a Paciente 9
+[09:45:08] [CPU] t=436: atendiendo a Paciente 9
+[09:45:09] [CPU] t=437: atendiendo a Paciente 9
+[09:45:09] [CPU] t=438: atendiendo a Paciente 9
+[09:45:09] [CPU] t=439: atendiendo a Paciente 9
+[09:45:10] [CPU] t=440: atendiendo a Paciente 9
+[09:45:10] [CPU] t=441: atendiendo a Paciente 9
+[09:45:11] [CPU] t=442: atendiendo a Paciente 9
+[09:45:11] [CPU] t=443: atendiendo a Paciente 9
+[09:45:11] [CPU] t=444: atendiendo a Paciente 9
+[09:45:12] [CPU] t=445: atendiendo a Paciente 9
+[09:45:12] [CPU] t=446: atendiendo a Paciente 9
+[09:45:13] [CPU] t=447: atendiendo a Paciente 9
+[09:45:13] [CPU] t=448: atendiendo a Paciente 9
+[09:45:13] [CPU] t=449: atendiendo a Paciente 9
+[09:45:14] [CPU] t=450: atendiendo a Paciente 9
+[09:45:14] [CPU] t=451: atendiendo a Paciente 9
+[09:45:15] [CPU] t=452: atendiendo a Paciente 9
+[09:45:15] [CPU] t=453: atendiendo a Paciente 9
+[09:45:15] [CPU] t=454: atendiendo a Paciente 9
+[09:45:16] [CPU] t=455: atendiendo a Paciente 9
+[09:45:16] [CPU] t=456: atendiendo a Paciente 9
+[09:45:17] [CPU] t=457: atendiendo a Paciente 9
+[09:45:17] [CPU] t=458: atendiendo a Paciente 9
+[09:45:18] [CPU] t=459: atendiendo a Paciente 9
+[09:45:18] [CPU] t=460: atendiendo a Paciente 9
+[09:45:18] [CPU] t=461: atendiendo a Paciente 9
+[09:45:19] [CPU] t=462: atendiendo a Paciente 9
+[09:45:19] [CPU] t=463: atendiendo a Paciente 9
+[09:45:20] [CPU] t=464: atendiendo a Paciente 9
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-26 09:45:39
+  PID daemon de logging: 2412
+============================================================
+[09:46:42] [logd] Demonio de logging detenido.
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-26 09:47:58
+  PID daemon de logging: 25496
+============================================================
+[09:48:20] [APP] 'Asistente Médico' se registra como proceso (PID 1, prio 7)
+[09:48:20] [CPU] t=1: atendiendo a Asistente Médico
+[09:48:21] [CPU] t=2: atendiendo a Asistente Médico
+[09:48:21] [CPU] t=3: atendiendo a Asistente Médico
+[09:48:21] [CPU] t=4: atendiendo a Asistente Médico
+[09:48:22] [CPU] t=5: atendiendo a Asistente Médico
+[09:48:22] [CPU] t=6: atendiendo a Asistente Médico
+[09:48:23] [CPU] t=7: atendiendo a Asistente Médico
+[09:48:23] [CPU] t=8: atendiendo a Asistente Médico
+[09:48:23] [CPU] t=9: atendiendo a Asistente Médico
+[09:48:24] [CPU] t=10: atendiendo a Asistente Médico
+[09:48:24] [CPU] t=11: atendiendo a Asistente Médico
+[09:48:25] [CPU] t=12: atendiendo a Asistente Médico
+[09:48:25] [CPU] t=13: atendiendo a Asistente Médico
+[09:48:26] [CPU] t=14: atendiendo a Asistente Médico
+[09:48:26] [CPU] t=15: atendiendo a Asistente Médico
+[09:48:26] [CPU] t=16: atendiendo a Asistente Médico
+[09:48:27] [CPU] t=17: atendiendo a Asistente Médico
+[09:48:27] [CPU] t=18: atendiendo a Asistente Médico
+[09:48:28] [CPU] t=19: atendiendo a Asistente Médico
+[09:48:28] [CPU] t=20: atendiendo a Asistente Médico
+[09:48:28] [CPU] t=21: atendiendo a Asistente Médico
+[09:48:29] [CPU] t=22: atendiendo a Asistente Médico
+[09:48:29] [CPU] t=23: atendiendo a Asistente Médico
+[09:48:30] [CPU] t=24: atendiendo a Asistente Médico
+[09:48:30] [CPU] t=25: atendiendo a Asistente Médico
+[09:48:30] [CPU] t=26: atendiendo a Asistente Médico
+[09:48:31] [CPU] t=27: atendiendo a Asistente Médico
+[09:48:31] [CPU] t=28: atendiendo a Asistente Médico
+[09:48:32] [CPU] t=29: atendiendo a Asistente Médico
+[09:48:32] [CPU] t=30: atendiendo a Asistente Médico
+[09:48:32] [CPU] t=31: atendiendo a Asistente Médico
+[09:48:33] [CPU] t=32: atendiendo a Asistente Médico
+[09:48:33] [CPU] t=33: atendiendo a Asistente Médico
+[09:48:34] [CPU] t=34: atendiendo a Asistente Médico
+[09:48:34] [CPU] t=35: atendiendo a Asistente Médico
+[09:48:34] [CPU] t=36: atendiendo a Asistente Médico
+[09:48:35] [CPU] t=37: atendiendo a Asistente Médico
+[09:48:35] [CPU] t=38: atendiendo a Asistente Médico
+[09:48:36] [CPU] t=39: atendiendo a Asistente Médico
+[09:48:36] [CPU] t=40: atendiendo a Asistente Médico
+[09:48:36] [CPU] t=41: atendiendo a Asistente Médico
+[09:48:37] [CPU] t=42: atendiendo a Asistente Médico
+[09:48:37] [CPU] t=43: atendiendo a Asistente Médico
+[09:48:38] [CPU] t=44: atendiendo a Asistente Médico
+[09:48:38] [CPU] t=45: atendiendo a Asistente Médico
+[09:48:38] [CPU] t=46: atendiendo a Asistente Médico
+[09:48:39] [CPU] t=47: atendiendo a Asistente Médico
+[09:48:39] [CPU] t=48: atendiendo a Asistente Médico
+[09:48:40] [CPU] t=49: atendiendo a Asistente Médico
+[09:48:40] [CPU] t=50: atendiendo a Asistente Médico
+[09:48:40] [CPU] t=51: atendiendo a Asistente Médico
+[09:48:41] [CPU] t=52: atendiendo a Asistente Médico
+[09:48:41] [CPU] t=53: atendiendo a Asistente Médico
+[09:48:42] [CPU] t=54: atendiendo a Asistente Médico
+[09:48:42] [CPU] t=55: atendiendo a Asistente Médico
+[09:48:42] [CPU] t=56: atendiendo a Asistente Médico
+[09:48:43] [CPU] t=57: atendiendo a Asistente Médico
+[09:48:43] [CPU] t=58: atendiendo a Asistente Médico
+[09:48:44] [CPU] t=59: atendiendo a Asistente Médico
+[09:48:44] [CPU] t=60: atendiendo a Asistente Médico
+[09:48:44] [CPU] t=61: atendiendo a Asistente Médico
+[09:48:45] [CPU] t=62: atendiendo a Asistente Médico
+[09:48:45] [CPU] t=63: atendiendo a Asistente Médico
+[09:48:46] [CPU] t=64: atendiendo a Asistente Médico
+[09:48:46] [CPU] t=65: atendiendo a Asistente Médico
+[09:48:46] [CPU] t=66: atendiendo a Asistente Médico
+[09:48:47] [CPU] t=67: atendiendo a Asistente Médico
+[09:48:47] [CPU] t=68: atendiendo a Asistente Médico
+[09:48:48] [CPU] t=69: atendiendo a Asistente Médico
+[09:48:48] [CPU] t=70: atendiendo a Asistente Médico
+[09:48:48] [CPU] t=71: atendiendo a Asistente Médico
+[09:48:49] [CPU] t=72: atendiendo a Asistente Médico
+[09:48:49] [CPU] t=73: atendiendo a Asistente Médico
+[09:48:50] [CPU] t=74: atendiendo a Asistente Médico
+[09:48:50] [CPU] t=75: atendiendo a Asistente Médico
+[09:48:50] [CPU] t=76: atendiendo a Asistente Médico
+[09:48:51] [CPU] t=77: atendiendo a Asistente Médico
+[09:48:51] [CPU] t=78: atendiendo a Asistente Médico
+[09:48:52] [CPU] t=79: atendiendo a Asistente Médico
+[09:48:52] [CPU] t=80: atendiendo a Asistente Médico
+[09:48:52] [CPU] t=81: atendiendo a Asistente Médico
+[09:48:53] [CPU] t=82: atendiendo a Asistente Médico
+[09:48:53] [CPU] t=83: atendiendo a Asistente Médico
+[09:48:54] [CPU] t=84: atendiendo a Asistente Médico
+[09:48:54] [CPU] t=85: atendiendo a Asistente Médico
+[09:48:54] [CPU] t=86: atendiendo a Asistente Médico
+[09:48:55] [CPU] t=87: atendiendo a Asistente Médico
+[09:48:55] [CPU] t=88: atendiendo a Asistente Médico
+[09:48:56] [CPU] t=89: atendiendo a Asistente Médico
+[09:48:56] [CPU] t=90: atendiendo a Asistente Médico
+[09:48:56] [CPU] t=91: atendiendo a Asistente Médico
+[09:48:57] [CPU] t=92: atendiendo a Asistente Médico
+[09:48:57] [CPU] t=93: atendiendo a Asistente Médico
+[09:48:58] [CPU] t=94: atendiendo a Asistente Médico
+[09:48:58] [CPU] t=95: atendiendo a Asistente Médico
+[09:48:58] [CPU] t=96: atendiendo a Asistente Médico
+[09:48:59] [CPU] t=97: atendiendo a Asistente Médico
+[09:48:59] [CPU] t=98: atendiendo a Asistente Médico
+[09:49:00] [CPU] t=99: atendiendo a Asistente Médico
+[09:49:00] [CPU] t=100: atendiendo a Asistente Médico
+[09:49:00] [CPU] t=101: atendiendo a Asistente Médico
+[09:49:01] [CPU] t=102: atendiendo a Asistente Médico
+[09:49:01] [CPU] t=103: atendiendo a Asistente Médico
+[09:49:02] [CPU] t=104: atendiendo a Asistente Médico
+[09:49:02] [APP] 'Asistente Médico' (PID 1) cerrada por el usuario
+[09:51:52] [logd] Demonio de logging detenido.
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-26 09:53:14
+  PID daemon de logging: 13580
+============================================================
+[09:53:23] [APP] 'Asistente Médico' se registra como proceso (PID 1, prio 7)
+[09:53:23] [CPU] t=1: atendiendo a Asistente Médico
+[09:53:24] [CPU] t=2: atendiendo a Asistente Médico
+[09:53:24] [CPU] t=3: atendiendo a Asistente Médico
+[09:53:25] [CPU] t=4: atendiendo a Asistente Médico
+[09:53:25] [CPU] t=5: atendiendo a Asistente Médico
+[09:53:25] [CPU] t=6: atendiendo a Asistente Médico
+[09:53:26] [CPU] t=7: atendiendo a Asistente Médico
+[09:53:26] [CPU] t=8: atendiendo a Asistente Médico
+[09:53:26] [APP] 'Asistente Médico' recibió consulta: "hola"
+[09:53:27] [CPU] t=9: atendiendo a Asistente Médico
+[09:53:27] [CPU] t=10: atendiendo a Asistente Médico
+[09:53:27] [CPU] t=11: atendiendo a Asistente Médico
+[09:53:28] [CPU] t=12: atendiendo a Asistente Médico
+[09:53:28] [CPU] t=13: atendiendo a Asistente Médico
+[09:53:29] [CPU] t=14: atendiendo a Asistente Médico
+[09:53:29] [CPU] t=15: atendiendo a Asistente Médico
+[09:53:29] [CPU] t=16: atendiendo a Asistente Médico
+[09:53:30] [CPU] t=17: atendiendo a Asistente Médico
+[09:53:30] [CPU] t=18: atendiendo a Asistente Médico
+[09:53:31] [CPU] t=19: atendiendo a Asistente Médico
+[09:53:31] [CPU] t=20: atendiendo a Asistente Médico
+[09:53:31] [CPU] t=21: atendiendo a Asistente Médico
+[09:53:32] [CPU] t=22: atendiendo a Asistente Médico
+[09:53:32] [CPU] t=23: atendiendo a Asistente Médico
+[09:53:33] [CPU] t=24: atendiendo a Asistente Médico
+[09:53:33] [CPU] t=25: atendiendo a Asistente Médico
+[09:53:33] [CPU] t=26: atendiendo a Asistente Médico
+[09:53:34] [CPU] t=27: atendiendo a Asistente Médico
+[09:53:34] [CPU] t=28: atendiendo a Asistente Médico
+[09:53:35] [CPU] t=29: atendiendo a Asistente Médico
+[09:53:35] [CPU] t=30: atendiendo a Asistente Médico
+[09:53:36] [CPU] t=31: atendiendo a Asistente Médico
+[09:53:36] [CPU] t=32: atendiendo a Asistente Médico
+[09:53:36] [CPU] t=33: atendiendo a Asistente Médico
+[09:53:37] [CPU] t=34: atendiendo a Asistente Médico
+[09:53:37] [CPU] t=35: atendiendo a Asistente Médico
+[09:53:38] [CPU] t=36: atendiendo a Asistente Médico
+[09:53:38] [CPU] t=37: atendiendo a Asistente Médico
+[09:53:38] [CPU] t=38: atendiendo a Asistente Médico
+[09:53:39] [CPU] t=39: atendiendo a Asistente Médico
+[09:53:39] [CPU] t=40: atendiendo a Asistente Médico
+[09:53:40] [CPU] t=41: atendiendo a Asistente Médico
+[09:53:40] [CPU] t=42: atendiendo a Asistente Médico
+[09:53:40] [CPU] t=43: atendiendo a Asistente Médico
+[09:53:41] [CPU] t=44: atendiendo a Asistente Médico
+[09:53:41] [CPU] t=45: atendiendo a Asistente Médico
+[09:53:42] [CPU] t=46: atendiendo a Asistente Médico
+[09:53:42] [CPU] t=47: atendiendo a Asistente Médico
+[09:53:42] [CPU] t=48: atendiendo a Asistente Médico
+[09:53:43] [CPU] t=49: atendiendo a Asistente Médico
+[09:53:43] [CPU] t=50: atendiendo a Asistente Médico
+[09:53:44] [CPU] t=51: atendiendo a Asistente Médico
+[09:53:44] [CPU] t=52: atendiendo a Asistente Médico
+[09:53:44] [CPU] t=53: atendiendo a Asistente Médico
+[09:53:45] [CPU] t=54: atendiendo a Asistente Médico
+[09:53:45] [CPU] t=55: atendiendo a Asistente Médico
+[09:53:46] [CPU] t=56: atendiendo a Asistente Médico
+[09:53:46] [CPU] t=57: atendiendo a Asistente Médico
+[09:53:47] [CPU] t=58: atendiendo a Asistente Médico
+[09:53:47] [CPU] t=59: atendiendo a Asistente Médico
+[09:53:47] [CPU] t=60: atendiendo a Asistente Médico
+[09:53:48] [CPU] t=61: atendiendo a Asistente Médico
+[09:53:48] [CPU] t=62: atendiendo a Asistente Médico
+[09:53:49] [CPU] t=63: atendiendo a Asistente Médico
+[09:53:49] [CPU] t=64: atendiendo a Asistente Médico
+[09:53:49] [CPU] t=65: atendiendo a Asistente Médico
+[09:53:50] [CPU] t=66: atendiendo a Asistente Médico
+[09:53:50] [CPU] t=67: atendiendo a Asistente Médico
+[09:53:51] [CPU] t=68: atendiendo a Asistente Médico
+[09:53:51] [CPU] t=69: atendiendo a Asistente Médico
+[09:53:51] [CPU] t=70: atendiendo a Asistente Médico
+[09:53:52] [CPU] t=71: atendiendo a Asistente Médico
+[09:53:52] [CPU] t=72: atendiendo a Asistente Médico
+[09:53:53] [CPU] t=73: atendiendo a Asistente Médico
+[09:53:53] [CPU] t=74: atendiendo a Asistente Médico
+[09:53:53] [CPU] t=75: atendiendo a Asistente Médico
+[09:53:54] [CPU] t=76: atendiendo a Asistente Médico
+[09:53:54] [CPU] t=77: atendiendo a Asistente Médico
+[09:53:55] [CPU] t=78: atendiendo a Asistente Médico
+[09:53:55] [CPU] t=79: atendiendo a Asistente Médico
+[09:53:55] [CPU] t=80: atendiendo a Asistente Médico
+[09:53:56] [CPU] t=81: atendiendo a Asistente Médico
+[09:53:56] [CPU] t=82: atendiendo a Asistente Médico
+[09:53:57] [CPU] t=83: atendiendo a Asistente Médico
+[09:53:57] [CPU] t=84: atendiendo a Asistente Médico
+[09:53:57] [CPU] t=85: atendiendo a Asistente Médico
+[09:53:58] [CPU] t=86: atendiendo a Asistente Médico
+[09:53:58] [CPU] t=87: atendiendo a Asistente Médico
+[09:53:59] [CPU] t=88: atendiendo a Asistente Médico
+[09:53:59] [CPU] t=89: atendiendo a Asistente Médico
+[09:53:59] [CPU] t=90: atendiendo a Asistente Médico
+[09:54:00] [CPU] t=91: atendiendo a Asistente Médico
+[09:54:00] [CPU] t=92: atendiendo a Asistente Médico
+[09:54:01] [CPU] t=93: atendiendo a Asistente Médico
+[09:54:01] [CPU] t=94: atendiendo a Asistente Médico
+[09:54:01] [CPU] t=95: atendiendo a Asistente Médico
+[09:54:02] [CPU] t=96: atendiendo a Asistente Médico
+[09:54:02] [CPU] t=97: atendiendo a Asistente Médico
+[09:54:03] [CPU] t=98: atendiendo a Asistente Médico
+[09:54:03] [CPU] t=99: atendiendo a Asistente Médico
+[09:54:03] [CPU] t=100: atendiendo a Asistente Médico
+[09:54:04] [CPU] t=101: atendiendo a Asistente Médico
+[09:54:04] [CPU] t=102: atendiendo a Asistente Médico
+[09:54:05] [CPU] t=103: atendiendo a Asistente Médico
+[09:54:05] [CPU] t=104: atendiendo a Asistente Médico
+[09:54:05] [CPU] t=105: atendiendo a Asistente Médico
+[09:54:06] [CPU] t=106: atendiendo a Asistente Médico
+[09:54:06] [CPU] t=107: atendiendo a Asistente Médico
+[09:54:07] [CPU] t=108: atendiendo a Asistente Médico
+[09:54:07] [CPU] t=109: atendiendo a Asistente Médico
+[09:54:07] [CPU] t=110: atendiendo a Asistente Médico
+[09:54:08] [CPU] t=111: atendiendo a Asistente Médico
+[09:54:08] [CPU] t=112: atendiendo a Asistente Médico
+[09:54:09] [CPU] t=113: atendiendo a Asistente Médico
+[09:54:09] [CPU] t=114: atendiendo a Asistente Médico
+[09:54:09] [CPU] t=115: atendiendo a Asistente Médico
+[09:54:10] [CPU] t=116: atendiendo a Asistente Médico
+[09:54:10] [CPU] t=117: atendiendo a Asistente Médico
+[09:54:11] [CPU] t=118: atendiendo a Asistente Médico
+[09:54:11] [CPU] t=119: atendiendo a Asistente Médico
+[09:54:11] [CPU] t=120: atendiendo a Asistente Médico
+[09:54:12] [CPU] t=121: atendiendo a Asistente Médico
+[09:54:12] [CPU] t=122: atendiendo a Asistente Médico
+[09:54:13] [CPU] t=123: atendiendo a Asistente Médico
+[09:54:13] [CPU] t=124: atendiendo a Asistente Médico
+[09:54:13] [CPU] t=125: atendiendo a Asistente Médico
+[09:54:14] [CPU] t=126: atendiendo a Asistente Médico
+[09:54:14] [CPU] t=127: atendiendo a Asistente Médico
+[09:54:15] [CPU] t=128: atendiendo a Asistente Médico
+[09:54:15] [CPU] t=129: atendiendo a Asistente Médico
+[09:54:15] [CPU] t=130: atendiendo a Asistente Médico
+[09:54:16] [CPU] t=131: atendiendo a Asistente Médico
+[09:54:16] [CPU] t=132: atendiendo a Asistente Médico
+[09:54:17] [CPU] t=133: atendiendo a Asistente Médico
+[09:54:17] [CPU] t=134: atendiendo a Asistente Médico
+[09:54:17] [CPU] t=135: atendiendo a Asistente Médico
+[09:54:18] [logd] Demonio de logging detenido.
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-26 09:55:51
+  PID daemon de logging: 20164
+============================================================
+[09:55:58] [APP] 'Asistente Médico' se registra como proceso (PID 1, prio 7)
+[09:55:58] [CPU] t=1: atendiendo a Asistente Médico
+[09:55:59] [CPU] t=2: atendiendo a Asistente Médico
+[09:55:59] [CPU] t=3: atendiendo a Asistente Médico
+[09:56:00] [CPU] t=4: atendiendo a Asistente Médico
+[09:56:00] [CPU] t=5: atendiendo a Asistente Médico
+[09:56:00] [APP] 'Asistente Médico' recibió consulta: "hola"
+[09:56:00] [CPU] t=6: atendiendo a Asistente Médico
+[09:56:01] [CPU] t=7: atendiendo a Asistente Médico
+[09:56:01] [CPU] t=8: atendiendo a Asistente Médico
+[09:56:02] [CPU] t=9: atendiendo a Asistente Médico
+[09:56:02] [CPU] t=10: atendiendo a Asistente Médico
+[09:56:02] [CPU] t=11: atendiendo a Asistente Médico
+[09:56:03] [CPU] t=12: atendiendo a Asistente Médico
+[09:56:03] [CPU] t=13: atendiendo a Asistente Médico
+[09:56:04] [CPU] t=14: atendiendo a Asistente Médico
+[09:56:04] [CPU] t=15: atendiendo a Asistente Médico
+[09:56:04] [CPU] t=16: atendiendo a Asistente Médico
+[09:56:05] [CPU] t=17: atendiendo a Asistente Médico
+[09:56:05] [CPU] t=18: atendiendo a Asistente Médico
+[09:56:06] [CPU] t=19: atendiendo a Asistente Médico
+[09:56:06] [CPU] t=20: atendiendo a Asistente Médico
+[09:56:06] [CPU] t=21: atendiendo a Asistente Médico
+[09:56:07] [CPU] t=22: atendiendo a Asistente Médico
+[09:56:07] [CPU] t=23: atendiendo a Asistente Médico
+[09:56:08] [CPU] t=24: atendiendo a Asistente Médico
+[09:56:08] [CPU] t=25: atendiendo a Asistente Médico
+[09:56:08] [CPU] t=26: atendiendo a Asistente Médico
+[09:56:09] [CPU] t=27: atendiendo a Asistente Médico
+[09:56:09] [CPU] t=28: atendiendo a Asistente Médico
+[09:56:10] [CPU] t=29: atendiendo a Asistente Médico
+[09:56:10] [CPU] t=30: atendiendo a Asistente Médico
+[09:56:10] [CPU] t=31: atendiendo a Asistente Médico
+[09:56:11] [CPU] t=32: atendiendo a Asistente Médico
+[09:56:11] [CPU] t=33: atendiendo a Asistente Médico
+[09:56:12] [CPU] t=34: atendiendo a Asistente Médico
+[09:56:12] [CPU] t=35: atendiendo a Asistente Médico
+[09:56:12] [CPU] t=36: atendiendo a Asistente Médico
+[09:56:13] [CPU] t=37: atendiendo a Asistente Médico
+[09:56:13] [CPU] t=38: atendiendo a Asistente Médico
+[09:56:14] [CPU] t=39: atendiendo a Asistente Médico
+[09:56:14] [CPU] t=40: atendiendo a Asistente Médico
+[09:56:14] [CPU] t=41: atendiendo a Asistente Médico
+[09:56:15] [CPU] t=42: atendiendo a Asistente Médico
+[09:56:15] [CPU] t=43: atendiendo a Asistente Médico
+[09:56:16] [CPU] t=44: atendiendo a Asistente Médico
+[09:56:16] [CPU] t=45: atendiendo a Asistente Médico
+[09:56:16] [CPU] t=46: atendiendo a Asistente Médico
+[09:56:17] [CPU] t=47: atendiendo a Asistente Médico
+[09:56:17] [CPU] t=48: atendiendo a Asistente Médico
+[09:56:18] [CPU] t=49: atendiendo a Asistente Médico
+[09:56:18] [CPU] t=50: atendiendo a Asistente Médico
+[09:56:18] [CPU] t=51: atendiendo a Asistente Médico
+[09:56:19] [CPU] t=52: atendiendo a Asistente Médico
+[09:56:19] [CPU] t=53: atendiendo a Asistente Médico
+[09:56:20] [CPU] t=54: atendiendo a Asistente Médico
+[09:56:20] [CPU] t=55: atendiendo a Asistente Médico
+[09:56:20] [CPU] t=56: atendiendo a Asistente Médico
+[09:56:21] [CPU] t=57: atendiendo a Asistente Médico
+[09:56:21] [CPU] t=58: atendiendo a Asistente Médico
+[09:56:22] [CPU] t=59: atendiendo a Asistente Médico
+[09:56:22] [CPU] t=60: atendiendo a Asistente Médico
+[09:56:22] [CPU] t=61: atendiendo a Asistente Médico
+[09:56:23] [CPU] t=62: atendiendo a Asistente Médico
+[09:56:23] [CPU] t=63: atendiendo a Asistente Médico
+[09:56:24] [CPU] t=64: atendiendo a Asistente Médico
+[09:56:24] [CPU] t=65: atendiendo a Asistente Médico
+[09:56:24] [CPU] t=66: atendiendo a Asistente Médico
+[09:56:25] [CPU] t=67: atendiendo a Asistente Médico
+[09:56:25] [CPU] t=68: atendiendo a Asistente Médico
+[09:56:26] [CPU] t=69: atendiendo a Asistente Médico
+[09:56:26] [CPU] t=70: atendiendo a Asistente Médico
+[09:56:26] [CPU] t=71: atendiendo a Asistente Médico
+[09:56:27] [CPU] t=72: atendiendo a Asistente Médico
+[09:56:27] [CPU] t=73: atendiendo a Asistente Médico
+[09:56:28] [CPU] t=74: atendiendo a Asistente Médico
+[09:56:28] [CPU] t=75: atendiendo a Asistente Médico
+[09:56:28] [CPU] t=76: atendiendo a Asistente Médico
+[09:56:29] [CPU] t=77: atendiendo a Asistente Médico
+[09:56:29] [CPU] t=78: atendiendo a Asistente Médico
+[09:56:30] [CPU] t=79: atendiendo a Asistente Médico
+[09:56:30] [CPU] t=80: atendiendo a Asistente Médico
+[09:56:30] [CPU] t=81: atendiendo a Asistente Médico
+[09:56:31] [CPU] t=82: atendiendo a Asistente Médico
+[09:56:31] [CPU] t=83: atendiendo a Asistente Médico
+[09:56:32] [CPU] t=84: atendiendo a Asistente Médico
+[09:56:32] [CPU] t=85: atendiendo a Asistente Médico
+[09:56:32] [CPU] t=86: atendiendo a Asistente Médico
+[09:56:33] [CPU] t=87: atendiendo a Asistente Médico
+[09:56:33] [CPU] t=88: atendiendo a Asistente Médico
+[09:56:34] [CPU] t=89: atendiendo a Asistente Médico
+[09:56:34] [CPU] t=90: atendiendo a Asistente Médico
+[09:56:34] [CPU] t=91: atendiendo a Asistente Médico
+[09:56:35] [CPU] t=92: atendiendo a Asistente Médico
+[09:56:35] [CPU] t=93: atendiendo a Asistente Médico
+[09:56:36] [CPU] t=94: atendiendo a Asistente Médico
+[09:56:36] [CPU] t=95: atendiendo a Asistente Médico
+[09:56:36] [CPU] t=96: atendiendo a Asistente Médico
+[09:56:37] [CPU] t=97: atendiendo a Asistente Médico
+[09:56:37] [CPU] t=98: atendiendo a Asistente Médico
+[09:56:38] [CPU] t=99: atendiendo a Asistente Médico
+[09:56:38] [CPU] t=100: atendiendo a Asistente Médico
+[09:56:38] [CPU] t=101: atendiendo a Asistente Médico
+[09:56:39] [CPU] t=102: atendiendo a Asistente Médico
+[09:56:39] [CPU] t=103: atendiendo a Asistente Médico
+[09:56:40] [CPU] t=104: atendiendo a Asistente Médico
+[09:56:40] [CPU] t=105: atendiendo a Asistente Médico
+[09:56:40] [CPU] t=106: atendiendo a Asistente Médico
+[09:56:41] [CPU] t=107: atendiendo a Asistente Médico
+[09:56:41] [CPU] t=108: atendiendo a Asistente Médico
+[09:56:42] [CPU] t=109: atendiendo a Asistente Médico
+[09:56:42] [CPU] t=110: atendiendo a Asistente Médico
+[09:56:42] [CPU] t=111: atendiendo a Asistente Médico
+[09:56:43] [CPU] t=112: atendiendo a Asistente Médico
+[09:56:43] [CPU] t=113: atendiendo a Asistente Médico
+[09:56:44] [CPU] t=114: atendiendo a Asistente Médico
+[09:56:44] [CPU] t=115: atendiendo a Asistente Médico
+[09:56:44] [CPU] t=116: atendiendo a Asistente Médico
+[09:56:45] [CPU] t=117: atendiendo a Asistente Médico
+[09:56:45] [CPU] t=118: atendiendo a Asistente Médico
+[09:56:46] [CPU] t=119: atendiendo a Asistente Médico
+[09:56:46] [CPU] t=120: atendiendo a Asistente Médico
+[09:56:46] [CPU] t=121: atendiendo a Asistente Médico
+[09:56:47] [CPU] t=122: atendiendo a Asistente Médico
+[09:56:47] [CPU] t=123: atendiendo a Asistente Médico
+[09:56:48] [CPU] t=124: atendiendo a Asistente Médico
+[09:56:48] [CPU] t=125: atendiendo a Asistente Médico
+[09:56:49] [CPU] t=126: atendiendo a Asistente Médico
+[09:56:49] [CPU] t=127: atendiendo a Asistente Médico
+[09:56:49] [CPU] t=128: atendiendo a Asistente Médico
+[09:56:50] [CPU] t=129: atendiendo a Asistente Médico
+[09:56:50] [CPU] t=130: atendiendo a Asistente Médico
+[09:56:51] [CPU] t=131: atendiendo a Asistente Médico
+[09:56:51] [CPU] t=132: atendiendo a Asistente Médico
+[09:56:51] [CPU] t=133: atendiendo a Asistente Médico
+[09:56:52] [CPU] t=134: atendiendo a Asistente Médico
+[09:56:52] [CPU] t=135: atendiendo a Asistente Médico
+[09:56:53] [CPU] t=136: atendiendo a Asistente Médico
+[09:56:53] [CPU] t=137: atendiendo a Asistente Médico
+[09:56:53] [CPU] t=138: atendiendo a Asistente Médico
+[09:56:54] [CPU] t=139: atendiendo a Asistente Médico
+[09:56:54] [CPU] t=140: atendiendo a Asistente Médico
+[09:56:55] [CPU] t=141: atendiendo a Asistente Médico
+[09:56:55] [CPU] t=142: atendiendo a Asistente Médico
+[09:56:55] [CPU] t=143: atendiendo a Asistente Médico
+[09:56:56] [CPU] t=144: atendiendo a Asistente Médico
+[09:56:56] [CPU] t=145: atendiendo a Asistente Médico
+[09:56:57] [CPU] t=146: atendiendo a Asistente Médico
+[09:56:57] [CPU] t=147: atendiendo a Asistente Médico
+[09:56:57] [CPU] t=148: atendiendo a Asistente Médico
+[09:56:58] [CPU] t=149: atendiendo a Asistente Médico
+[09:56:58] [CPU] t=150: atendiendo a Asistente Médico
+[09:56:59] [CPU] t=151: atendiendo a Asistente Médico
+[09:56:59] [CPU] t=152: atendiendo a Asistente Médico
+[09:56:59] [CPU] t=153: atendiendo a Asistente Médico
+[09:57:00] [CPU] t=154: atendiendo a Asistente Médico
+[09:57:00] [CPU] t=155: atendiendo a Asistente Médico
+[09:57:01] [CPU] t=156: atendiendo a Asistente Médico
+[09:57:01] [CPU] t=157: atendiendo a Asistente Médico
+[09:57:01] [CPU] t=158: atendiendo a Asistente Médico
+[09:57:02] [CPU] t=159: atendiendo a Asistente Médico
+[09:57:02] [CPU] t=160: atendiendo a Asistente Médico
+[09:57:03] [CPU] t=161: atendiendo a Asistente Médico
+[09:57:03] [CPU] t=162: atendiendo a Asistente Médico
+[09:57:03] [CPU] t=163: atendiendo a Asistente Médico
+[09:57:04] [CPU] t=164: atendiendo a Asistente Médico
+[09:57:04] [CPU] t=165: atendiendo a Asistente Médico
+[09:57:05] [CPU] t=166: atendiendo a Asistente Médico
+[09:57:05] [CPU] t=167: atendiendo a Asistente Médico
+[09:57:05] [CPU] t=168: atendiendo a Asistente Médico
+[09:57:06] [CPU] t=169: atendiendo a Asistente Médico
+[09:57:06] [CPU] t=170: atendiendo a Asistente Médico
+[09:57:07] [CPU] t=171: atendiendo a Asistente Médico
+[09:57:07] [CPU] t=172: atendiendo a Asistente Médico
+[09:57:07] [CPU] t=173: atendiendo a Asistente Médico
+[09:57:08] [CPU] t=174: atendiendo a Asistente Médico
+[09:57:08] [CPU] t=175: atendiendo a Asistente Médico
+[09:57:09] [CPU] t=176: atendiendo a Asistente Médico
+[09:57:09] [CPU] t=177: atendiendo a Asistente Médico
+[09:57:09] [CPU] t=178: atendiendo a Asistente Médico
+[09:57:10] [CPU] t=179: atendiendo a Asistente Médico
+[09:57:10] [CPU] t=180: atendiendo a Asistente Médico
+[09:57:11] [CPU] t=181: atendiendo a Asistente Médico
+[09:57:11] [CPU] t=182: atendiendo a Asistente Médico
+[09:57:11] [CPU] t=183: atendiendo a Asistente Médico
+[09:57:12] [CPU] t=184: atendiendo a Asistente Médico
+[09:57:12] [CPU] t=185: atendiendo a Asistente Médico
+[09:57:13] [CPU] t=186: atendiendo a Asistente Médico
+[09:57:13] [CPU] t=187: atendiendo a Asistente Médico
+[09:57:13] [CPU] t=188: atendiendo a Asistente Médico
+[09:57:14] [CPU] t=189: atendiendo a Asistente Médico
+[09:57:14] [CPU] t=190: atendiendo a Asistente Médico
+[09:57:15] [CPU] t=191: atendiendo a Asistente Médico
+[09:57:15] [CPU] t=192: atendiendo a Asistente Médico
+[09:57:15] [CPU] t=193: atendiendo a Asistente Médico
+[09:57:16] [CPU] t=194: atendiendo a Asistente Médico
+[09:57:16] [CPU] t=195: atendiendo a Asistente Médico
+[09:57:17] [CPU] t=196: atendiendo a Asistente Médico
+[09:57:17] [CPU] t=197: atendiendo a Asistente Médico
+[09:57:17] [CPU] t=198: atendiendo a Asistente Médico
+[09:57:18] [CPU] t=199: atendiendo a Asistente Médico
+[09:57:18] [CPU] t=200: atendiendo a Asistente Médico
+[09:57:19] [CPU] t=201: atendiendo a Asistente Médico
+[09:57:19] [CPU] t=202: atendiendo a Asistente Médico
+[09:57:19] [CPU] t=203: atendiendo a Asistente Médico
+[09:57:20] [CPU] t=204: atendiendo a Asistente Médico
+[09:57:20] [CPU] t=205: atendiendo a Asistente Médico
+[09:57:21] [CPU] t=206: atendiendo a Asistente Médico
+[09:57:21] [CPU] t=207: atendiendo a Asistente Médico
+[09:57:21] [CPU] t=208: atendiendo a Asistente Médico
+[09:57:22] [CPU] t=209: atendiendo a Asistente Médico
+[09:57:22] [CPU] t=210: atendiendo a Asistente Médico
+[09:57:23] [CPU] t=211: atendiendo a Asistente Médico
+[09:57:23] [CPU] t=212: atendiendo a Asistente Médico
+[09:57:23] [CPU] t=213: atendiendo a Asistente Médico
+[09:57:24] [CPU] t=214: atendiendo a Asistente Médico
+[09:57:24] [CPU] t=215: atendiendo a Asistente Médico
+[09:57:25] [CPU] t=216: atendiendo a Asistente Médico
+[09:57:25] [CPU] t=217: atendiendo a Asistente Médico
+[09:57:25] [CPU] t=218: atendiendo a Asistente Médico
+[09:57:26] [CPU] t=219: atendiendo a Asistente Médico
+[09:57:26] [CPU] t=220: atendiendo a Asistente Médico
+[09:57:27] [CPU] t=221: atendiendo a Asistente Médico
+[09:57:27] [CPU] t=222: atendiendo a Asistente Médico
+[09:57:27] [CPU] t=223: atendiendo a Asistente Médico
+[09:57:28] [CPU] t=224: atendiendo a Asistente Médico
+[09:57:28] [CPU] t=225: atendiendo a Asistente Médico
+[09:57:29] [CPU] t=226: atendiendo a Asistente Médico
+[09:57:29] [CPU] t=227: atendiendo a Asistente Médico
+[09:57:29] [CPU] t=228: atendiendo a Asistente Médico
+[09:57:30] [CPU] t=229: atendiendo a Asistente Médico
+[09:57:30] [CPU] t=230: atendiendo a Asistente Médico
+[09:57:31] [CPU] t=231: atendiendo a Asistente Médico
+[09:57:31] [CPU] t=232: atendiendo a Asistente Médico
+[09:57:31] [CPU] t=233: atendiendo a Asistente Médico
+[09:57:32] [CPU] t=234: atendiendo a Asistente Médico
+[09:57:32] [CPU] t=235: atendiendo a Asistente Médico
+[09:57:33] [CPU] t=236: atendiendo a Asistente Médico
+[09:57:33] [CPU] t=237: atendiendo a Asistente Médico
+[09:57:33] [CPU] t=238: atendiendo a Asistente Médico
+[09:57:34] [CPU] t=239: atendiendo a Asistente Médico
+[09:57:34] [CPU] t=240: atendiendo a Asistente Médico
+[09:57:35] [CPU] t=241: atendiendo a Asistente Médico
+[09:57:35] [CPU] t=242: atendiendo a Asistente Médico
+[09:57:35] [CPU] t=243: atendiendo a Asistente Médico
+[09:57:36] [CPU] t=244: atendiendo a Asistente Médico
+[09:57:36] [CPU] t=245: atendiendo a Asistente Médico
+[09:57:37] [CPU] t=246: atendiendo a Asistente Médico
+[09:57:37] [CPU] t=247: atendiendo a Asistente Médico
+[09:57:37] [CPU] t=248: atendiendo a Asistente Médico
+[09:57:38] [CPU] t=249: atendiendo a Asistente Médico
+[09:57:38] [CPU] t=250: atendiendo a Asistente Médico
+[09:57:39] [CPU] t=251: atendiendo a Asistente Médico
+[09:57:39] [CPU] t=252: atendiendo a Asistente Médico
+[09:57:39] [CPU] t=253: atendiendo a Asistente Médico
+[09:57:40] [CPU] t=254: atendiendo a Asistente Médico
+[09:57:40] [CPU] t=255: atendiendo a Asistente Médico
+[09:57:41] [CPU] t=256: atendiendo a Asistente Médico
+[09:57:41] [CPU] t=257: atendiendo a Asistente Médico
+[09:57:41] [CPU] t=258: atendiendo a Asistente Médico
+[09:57:42] [CPU] t=259: atendiendo a Asistente Médico
+[09:57:42] [CPU] t=260: atendiendo a Asistente Médico
+[09:57:43] [CPU] t=261: atendiendo a Asistente Médico
+[09:57:43] [CPU] t=262: atendiendo a Asistente Médico
+[09:57:43] [CPU] t=263: atendiendo a Asistente Médico
+[09:57:44] [CPU] t=264: atendiendo a Asistente Médico
+[09:57:44] [CPU] t=265: atendiendo a Asistente Médico
+[09:57:45] [CPU] t=266: atendiendo a Asistente Médico
+[09:57:45] [CPU] t=267: atendiendo a Asistente Médico
+[09:57:46] [CPU] t=268: atendiendo a Asistente Médico
+[09:57:46] [CPU] t=269: atendiendo a Asistente Médico
+[09:57:46] [CPU] t=270: atendiendo a Asistente Médico
+[09:57:47] [CPU] t=271: atendiendo a Asistente Médico
+[09:57:47] [CPU] t=272: atendiendo a Asistente Médico
+[09:57:48] [CPU] t=273: atendiendo a Asistente Médico
+[09:57:48] [CPU] t=274: atendiendo a Asistente Médico
+[09:57:48] [CPU] t=275: atendiendo a Asistente Médico
+[09:57:49] [CPU] t=276: atendiendo a Asistente Médico
+[09:57:49] [CPU] t=277: atendiendo a Asistente Médico
+[09:57:50] [CPU] t=278: atendiendo a Asistente Médico
+[09:57:50] [CPU] t=279: atendiendo a Asistente Médico
+[09:57:50] [CPU] t=280: atendiendo a Asistente Médico
+[09:57:51] [CPU] t=281: atendiendo a Asistente Médico
+[09:57:51] [CPU] t=282: atendiendo a Asistente Médico
+[09:57:52] [CPU] t=283: atendiendo a Asistente Médico
+[09:57:52] [CPU] t=284: atendiendo a Asistente Médico
+[09:57:52] [CPU] t=285: atendiendo a Asistente Médico
+[09:57:53] [CPU] t=286: atendiendo a Asistente Médico
+[09:57:53] [CPU] t=287: atendiendo a Asistente Médico
+[09:57:54] [CPU] t=288: atendiendo a Asistente Médico
+[09:57:54] [CPU] t=289: atendiendo a Asistente Médico
+[09:57:54] [CPU] t=290: atendiendo a Asistente Médico
+[09:57:55] [CPU] t=291: atendiendo a Asistente Médico
+[09:57:55] [CPU] t=292: atendiendo a Asistente Médico
+[09:57:56] [CPU] t=293: atendiendo a Asistente Médico
+[09:57:56] [CPU] t=294: atendiendo a Asistente Médico
+[09:57:56] [CPU] t=295: atendiendo a Asistente Médico
+[09:57:57] [CPU] t=296: atendiendo a Asistente Médico
+[09:57:57] [CPU] t=297: atendiendo a Asistente Médico
+[09:57:58] [CPU] t=298: atendiendo a Asistente Médico
+[09:57:58] [CPU] t=299: atendiendo a Asistente Médico
+[09:57:58] [CPU] t=300: atendiendo a Asistente Médico
+[09:57:59] [CPU] t=301: atendiendo a Asistente Médico
+[09:57:59] [CPU] t=302: atendiendo a Asistente Médico
+[09:58:00] [CPU] t=303: atendiendo a Asistente Médico
+[09:58:00] [CPU] t=304: atendiendo a Asistente Médico
+[09:58:00] [CPU] t=305: atendiendo a Asistente Médico
+[09:58:01] [CPU] t=306: atendiendo a Asistente Médico
+[09:58:01] [CPU] t=307: atendiendo a Asistente Médico
+[09:58:02] [CPU] t=308: atendiendo a Asistente Médico
+[09:58:02] [CPU] t=309: atendiendo a Asistente Médico
+[09:58:02] [CPU] t=310: atendiendo a Asistente Médico
+[09:58:03] [CPU] t=311: atendiendo a Asistente Médico
+[09:58:03] [CPU] t=312: atendiendo a Asistente Médico
+[09:58:04] [CPU] t=313: atendiendo a Asistente Médico
+[09:58:04] [CPU] t=314: atendiendo a Asistente Médico
+[09:58:04] [CPU] t=315: atendiendo a Asistente Médico
+[09:58:05] [CPU] t=316: atendiendo a Asistente Médico
+[09:58:05] [CPU] t=317: atendiendo a Asistente Médico
+[09:58:06] [CPU] t=318: atendiendo a Asistente Médico
+[09:58:06] [CPU] t=319: atendiendo a Asistente Médico
+[09:58:06] [CPU] t=320: atendiendo a Asistente Médico
+[09:58:07] [CPU] t=321: atendiendo a Asistente Médico
+[09:58:07] [CPU] t=322: atendiendo a Asistente Médico
+[09:58:08] [CPU] t=323: atendiendo a Asistente Médico
+[09:58:08] [CPU] t=324: atendiendo a Asistente Médico
+[09:58:08] [CPU] t=325: atendiendo a Asistente Médico
+[09:58:09] [CPU] t=326: atendiendo a Asistente Médico
+[09:58:09] [CPU] t=327: atendiendo a Asistente Médico
+[09:58:10] [CPU] t=328: atendiendo a Asistente Médico
+[09:58:10] [CPU] t=329: atendiendo a Asistente Médico
+[09:58:10] [CPU] t=330: atendiendo a Asistente Médico
+[09:58:11] [CPU] t=331: atendiendo a Asistente Médico
+[09:58:11] [CPU] t=332: atendiendo a Asistente Médico
+[09:58:12] [CPU] t=333: atendiendo a Asistente Médico
+[09:58:12] [CPU] t=334: atendiendo a Asistente Médico
+[09:58:12] [CPU] t=335: atendiendo a Asistente Médico
+[09:58:13] [CPU] t=336: atendiendo a Asistente Médico
+[09:58:13] [CPU] t=337: atendiendo a Asistente Médico
+[09:58:14] [CPU] t=338: atendiendo a Asistente Médico
+[09:58:14] [CPU] t=339: atendiendo a Asistente Médico
+[09:58:14] [CPU] t=340: atendiendo a Asistente Médico
+[09:58:15] [CPU] t=341: atendiendo a Asistente Médico
+[09:58:15] [CPU] t=342: atendiendo a Asistente Médico
+[09:58:16] [CPU] t=343: atendiendo a Asistente Médico
+[09:58:16] [CPU] t=344: atendiendo a Asistente Médico
+[09:58:16] [CPU] t=345: atendiendo a Asistente Médico
+[09:58:17] [CPU] t=346: atendiendo a Asistente Médico
+[09:58:17] [CPU] t=347: atendiendo a Asistente Médico
+[09:58:18] [CPU] t=348: atendiendo a Asistente Médico
+[09:58:18] [CPU] t=349: atendiendo a Asistente Médico
+[09:58:18] [CPU] t=350: atendiendo a Asistente Médico
+[09:58:19] [CPU] t=351: atendiendo a Asistente Médico
+[09:58:19] [CPU] t=352: atendiendo a Asistente Médico
+[09:58:20] [CPU] t=353: atendiendo a Asistente Médico
+[09:58:20] [CPU] t=354: atendiendo a Asistente Médico
+[09:58:20] [CPU] t=355: atendiendo a Asistente Médico
+[09:58:21] [CPU] t=356: atendiendo a Asistente Médico
+[09:58:21] [CPU] t=357: atendiendo a Asistente Médico
+[09:58:22] [CPU] t=358: atendiendo a Asistente Médico
+[09:58:22] [CPU] t=359: atendiendo a Asistente Médico
+[09:58:22] [CPU] t=360: atendiendo a Asistente Médico
+[09:58:23] [CPU] t=361: atendiendo a Asistente Médico
+[09:58:23] [CPU] t=362: atendiendo a Asistente Médico
+[09:58:24] [CPU] t=363: atendiendo a Asistente Médico
+[09:58:24] [CPU] t=364: atendiendo a Asistente Médico
+[09:58:24] [CPU] t=365: atendiendo a Asistente Médico
+[09:58:25] [CPU] t=366: atendiendo a Asistente Médico
+[09:58:25] [CPU] t=367: atendiendo a Asistente Médico
+[09:58:26] [CPU] t=368: atendiendo a Asistente Médico
+[09:58:26] [CPU] t=369: atendiendo a Asistente Médico
+[09:58:26] [CPU] t=370: atendiendo a Asistente Médico
+[09:58:27] [CPU] t=371: atendiendo a Asistente Médico
+[09:58:27] [CPU] t=372: atendiendo a Asistente Médico
+[09:58:28] [CPU] t=373: atendiendo a Asistente Médico
+[09:58:28] [CPU] t=374: atendiendo a Asistente Médico
+[09:58:28] [CPU] t=375: atendiendo a Asistente Médico
+[09:58:29] [CPU] t=376: atendiendo a Asistente Médico
+[09:58:29] [CPU] t=377: atendiendo a Asistente Médico
+[09:58:30] [CPU] t=378: atendiendo a Asistente Médico
+[09:58:30] [CPU] t=379: atendiendo a Asistente Médico
+[09:58:30] [CPU] t=380: atendiendo a Asistente Médico
+[09:58:31] [CPU] t=381: atendiendo a Asistente Médico
+[09:58:31] [CPU] t=382: atendiendo a Asistente Médico
+[09:58:32] [CPU] t=383: atendiendo a Asistente Médico
+[09:58:32] [CPU] t=384: atendiendo a Asistente Médico
+[09:58:32] [CPU] t=385: atendiendo a Asistente Médico
+[09:58:33] [CPU] t=386: atendiendo a Asistente Médico
+[09:58:33] [CPU] t=387: atendiendo a Asistente Médico
+[09:58:34] [CPU] t=388: atendiendo a Asistente Médico
+[09:58:34] [CPU] t=389: atendiendo a Asistente Médico
+[09:58:35] [CPU] t=390: atendiendo a Asistente Médico
+[09:58:35] [CPU] t=391: atendiendo a Asistente Médico
+[09:58:35] [CPU] t=392: atendiendo a Asistente Médico
+[09:58:36] [CPU] t=393: atendiendo a Asistente Médico
+[09:58:36] [CPU] t=394: atendiendo a Asistente Médico
+[09:58:37] [CPU] t=395: atendiendo a Asistente Médico
+[09:58:37] [CPU] t=396: atendiendo a Asistente Médico
+[09:58:37] [CPU] t=397: atendiendo a Asistente Médico
+[09:58:38] [CPU] t=398: atendiendo a Asistente Médico
+[09:58:38] [CPU] t=399: atendiendo a Asistente Médico
+[09:58:39] [CPU] t=400: atendiendo a Asistente Médico
+[09:58:39] [CPU] t=401: atendiendo a Asistente Médico
+[09:58:39] [CPU] t=402: atendiendo a Asistente Médico
+[09:58:40] [CPU] t=403: atendiendo a Asistente Médico
+[09:58:40] [CPU] t=404: atendiendo a Asistente Médico
+[09:58:41] [CPU] t=405: atendiendo a Asistente Médico
+[09:58:41] [CPU] t=406: atendiendo a Asistente Médico
+[09:58:41] [CPU] t=407: atendiendo a Asistente Médico
+[09:58:42] [CPU] t=408: atendiendo a Asistente Médico
+[09:58:42] [CPU] t=409: atendiendo a Asistente Médico
+[09:58:43] [CPU] t=410: atendiendo a Asistente Médico
+[09:58:43] [CPU] t=411: atendiendo a Asistente Médico
+[09:58:43] [CPU] t=412: atendiendo a Asistente Médico
+[09:58:44] [CPU] t=413: atendiendo a Asistente Médico
+[09:58:44] [CPU] t=414: atendiendo a Asistente Médico
+[09:58:45] [CPU] t=415: atendiendo a Asistente Médico
+[09:58:45] [CPU] t=416: atendiendo a Asistente Médico
+[09:58:45] [CPU] t=417: atendiendo a Asistente Médico
+[09:58:46] [CPU] t=418: atendiendo a Asistente Médico
+[09:58:46] [CPU] t=419: atendiendo a Asistente Médico
+[09:58:47] [CPU] t=420: atendiendo a Asistente Médico
+[09:58:47] [CPU] t=421: atendiendo a Asistente Médico
+[09:58:47] [CPU] t=422: atendiendo a Asistente Médico
+[09:58:48] [CPU] t=423: atendiendo a Asistente Médico
+[09:58:48] [CPU] t=424: atendiendo a Asistente Médico
+[09:58:49] [CPU] t=425: atendiendo a Asistente Médico
+[09:58:49] [CPU] t=426: atendiendo a Asistente Médico
+[09:58:49] [CPU] t=427: atendiendo a Asistente Médico
+[09:58:50] [CPU] t=428: atendiendo a Asistente Médico
+[09:58:50] [CPU] t=429: atendiendo a Asistente Médico
+[09:58:51] [CPU] t=430: atendiendo a Asistente Médico
+[09:58:51] [CPU] t=431: atendiendo a Asistente Médico
+[09:58:51] [CPU] t=432: atendiendo a Asistente Médico
+[09:58:52] [CPU] t=433: atendiendo a Asistente Médico
+[09:58:52] [CPU] t=434: atendiendo a Asistente Médico
+[09:58:53] [CPU] t=435: atendiendo a Asistente Médico
+[09:58:53] [CPU] t=436: atendiendo a Asistente Médico
+[09:58:53] [CPU] t=437: atendiendo a Asistente Médico
+[09:58:54] [CPU] t=438: atendiendo a Asistente Médico
+[09:58:54] [CPU] t=439: atendiendo a Asistente Médico
+[09:58:55] [CPU] t=440: atendiendo a Asistente Médico
+[09:58:55] [CPU] t=441: atendiendo a Asistente Médico
+[09:58:55] [CPU] t=442: atendiendo a Asistente Médico
+[09:58:56] [CPU] t=443: atendiendo a Asistente Médico
+[09:58:56] [CPU] t=444: atendiendo a Asistente Médico
+[09:58:57] [CPU] t=445: atendiendo a Asistente Médico
+[09:58:57] [CPU] t=446: atendiendo a Asistente Médico
+[09:58:57] [CPU] t=447: atendiendo a Asistente Médico
+[09:58:58] [CPU] t=448: atendiendo a Asistente Médico
+[09:58:58] [CPU] t=449: atendiendo a Asistente Médico
+[09:58:59] [CPU] t=450: atendiendo a Asistente Médico
+[09:58:59] [CPU] t=451: atendiendo a Asistente Médico
+[09:58:59] [CPU] t=452: atendiendo a Asistente Médico
+[09:59:00] [CPU] t=453: atendiendo a Asistente Médico
+[09:59:00] [CPU] t=454: atendiendo a Asistente Médico
+[09:59:01] [CPU] t=455: atendiendo a Asistente Médico
+[09:59:01] [CPU] t=456: atendiendo a Asistente Médico
+[09:59:01] [CPU] t=457: atendiendo a Asistente Médico
+[09:59:02] [CPU] t=458: atendiendo a Asistente Médico
+[09:59:02] [CPU] t=459: atendiendo a Asistente Médico
+[09:59:03] [CPU] t=460: atendiendo a Asistente Médico
+[09:59:03] [CPU] t=461: atendiendo a Asistente Médico
+[09:59:03] [CPU] t=462: atendiendo a Asistente Médico
+[09:59:04] [CPU] t=463: atendiendo a Asistente Médico
+[09:59:04] [CPU] t=464: atendiendo a Asistente Médico
+[09:59:05] [CPU] t=465: atendiendo a Asistente Médico
+[09:59:05] [CPU] t=466: atendiendo a Asistente Médico
+[09:59:05] [CPU] t=467: atendiendo a Asistente Médico
+[09:59:06] [CPU] t=468: atendiendo a Asistente Médico
+[09:59:06] [CPU] t=469: atendiendo a Asistente Médico
+[09:59:07] [CPU] t=470: atendiendo a Asistente Médico
+[09:59:07] [CPU] t=471: atendiendo a Asistente Médico
+[09:59:08] [CPU] t=472: atendiendo a Asistente Médico
+[09:59:08] [CPU] t=473: atendiendo a Asistente Médico
+[09:59:08] [CPU] t=474: atendiendo a Asistente Médico
+[09:59:09] [CPU] t=475: atendiendo a Asistente Médico
+[09:59:09] [CPU] t=476: atendiendo a Asistente Médico
+[09:59:10] [CPU] t=477: atendiendo a Asistente Médico
+[09:59:10] [CPU] t=478: atendiendo a Asistente Médico
+[09:59:10] [CPU] t=479: atendiendo a Asistente Médico
+[09:59:11] [CPU] t=480: atendiendo a Asistente Médico
+[09:59:11] [CPU] t=481: atendiendo a Asistente Médico
+[09:59:12] [CPU] t=482: atendiendo a Asistente Médico
+[09:59:12] [CPU] t=483: atendiendo a Asistente Médico
+[09:59:12] [CPU] t=484: atendiendo a Asistente Médico
+[09:59:13] [CPU] t=485: atendiendo a Asistente Médico
+[09:59:13] [CPU] t=486: atendiendo a Asistente Médico
+[09:59:14] [CPU] t=487: atendiendo a Asistente Médico
+[09:59:14] [CPU] t=488: atendiendo a Asistente Médico
+[09:59:14] [CPU] t=489: atendiendo a Asistente Médico
+[09:59:15] [CPU] t=490: atendiendo a Asistente Médico
+[09:59:15] [CPU] t=491: atendiendo a Asistente Médico
+[09:59:16] [CPU] t=492: atendiendo a Asistente Médico
+[09:59:16] [CPU] t=493: atendiendo a Asistente Médico
+[09:59:16] [CPU] t=494: atendiendo a Asistente Médico
+[09:59:17] [CPU] t=495: atendiendo a Asistente Médico
+[09:59:17] [CPU] t=496: atendiendo a Asistente Médico
+[09:59:18] [CPU] t=497: atendiendo a Asistente Médico
+[09:59:18] [CPU] t=498: atendiendo a Asistente Médico
+[09:59:18] [CPU] t=499: atendiendo a Asistente Médico
+[09:59:19] [CPU] t=500: atendiendo a Asistente Médico
+[09:59:19] [CPU] t=501: atendiendo a Asistente Médico
+[09:59:20] [CPU] t=502: atendiendo a Asistente Médico
+[09:59:20] [CPU] t=503: atendiendo a Asistente Médico
+[09:59:20] [CPU] t=504: atendiendo a Asistente Médico
+[09:59:21] [CPU] t=505: atendiendo a Asistente Médico
+[09:59:21] [CPU] t=506: atendiendo a Asistente Médico
+[09:59:22] [CPU] t=507: atendiendo a Asistente Médico
+[09:59:22] [CPU] t=508: atendiendo a Asistente Médico
+[09:59:22] [CPU] t=509: atendiendo a Asistente Médico
+[09:59:23] [CPU] t=510: atendiendo a Asistente Médico
+[09:59:23] [CPU] t=511: atendiendo a Asistente Médico
+[09:59:24] [CPU] t=512: atendiendo a Asistente Médico
+[09:59:24] [CPU] t=513: atendiendo a Asistente Médico
+[09:59:24] [CPU] t=514: atendiendo a Asistente Médico
+[09:59:25] [CPU] t=515: atendiendo a Asistente Médico
+[09:59:25] [CPU] t=516: atendiendo a Asistente Médico
+[09:59:26] [CPU] t=517: atendiendo a Asistente Médico
+[09:59:26] [CPU] t=518: atendiendo a Asistente Médico
+[09:59:26] [CPU] t=519: atendiendo a Asistente Médico
+[09:59:27] [CPU] t=520: atendiendo a Asistente Médico
+[09:59:27] [CPU] t=521: atendiendo a Asistente Médico
+[09:59:28] [CPU] t=522: atendiendo a Asistente Médico
+[09:59:28] [CPU] t=523: atendiendo a Asistente Médico
+[09:59:28] [CPU] t=524: atendiendo a Asistente Médico
+[09:59:29] [CPU] t=525: atendiendo a Asistente Médico
+[09:59:29] [CPU] t=526: atendiendo a Asistente Médico
+[09:59:30] [CPU] t=527: atendiendo a Asistente Médico
+[09:59:30] [CPU] t=528: atendiendo a Asistente Médico
+[09:59:30] [CPU] t=529: atendiendo a Asistente Médico
+[09:59:31] [CPU] t=530: atendiendo a Asistente Médico
+[09:59:31] [CPU] t=531: atendiendo a Asistente Médico
+[09:59:32] [CPU] t=532: atendiendo a Asistente Médico
+[09:59:32] [CPU] t=533: atendiendo a Asistente Médico
+[09:59:32] [CPU] t=534: atendiendo a Asistente Médico
+[09:59:33] [CPU] t=535: atendiendo a Asistente Médico
+[09:59:33] [CPU] t=536: atendiendo a Asistente Médico
+[09:59:34] [CPU] t=537: atendiendo a Asistente Médico
+[09:59:34] [CPU] t=538: atendiendo a Asistente Médico
+[09:59:34] [CPU] t=539: atendiendo a Asistente Médico
+[09:59:35] [CPU] t=540: atendiendo a Asistente Médico
+[09:59:35] [CPU] t=541: atendiendo a Asistente Médico
+[09:59:36] [CPU] t=542: atendiendo a Asistente Médico
+[09:59:36] [CPU] t=543: atendiendo a Asistente Médico
+[09:59:36] [CPU] t=544: atendiendo a Asistente Médico
+[09:59:37] [CPU] t=545: atendiendo a Asistente Médico
+[09:59:37] [CPU] t=546: atendiendo a Asistente Médico
+[09:59:38] [CPU] t=547: atendiendo a Asistente Médico
+[09:59:38] [CPU] t=548: atendiendo a Asistente Médico
+[09:59:38] [CPU] t=549: atendiendo a Asistente Médico
+[09:59:39] [CPU] t=550: atendiendo a Asistente Médico
+[09:59:39] [CPU] t=551: atendiendo a Asistente Médico
+[09:59:40] [CPU] t=552: atendiendo a Asistente Médico
+[09:59:40] [CPU] t=553: atendiendo a Asistente Médico
+[09:59:40] [CPU] t=554: atendiendo a Asistente Médico
+[09:59:41] [CPU] t=555: atendiendo a Asistente Médico
+[09:59:41] [CPU] t=556: atendiendo a Asistente Médico
+[09:59:42] [CPU] t=557: atendiendo a Asistente Médico
+[09:59:42] [CPU] t=558: atendiendo a Asistente Médico
+[09:59:42] [CPU] t=559: atendiendo a Asistente Médico
+[09:59:43] [CPU] t=560: atendiendo a Asistente Médico
+[09:59:43] [CPU] t=561: atendiendo a Asistente Médico
+[09:59:44] [CPU] t=562: atendiendo a Asistente Médico
+[09:59:44] [CPU] t=563: atendiendo a Asistente Médico
+[09:59:44] [CPU] t=564: atendiendo a Asistente Médico
+[09:59:45] [CPU] t=565: atendiendo a Asistente Médico
+[09:59:45] [CPU] t=566: atendiendo a Asistente Médico
+[09:59:46] [CPU] t=567: atendiendo a Asistente Médico
+[09:59:46] [CPU] t=568: atendiendo a Asistente Médico
+[09:59:46] [CPU] t=569: atendiendo a Asistente Médico
+[09:59:47] [CPU] t=570: atendiendo a Asistente Médico
+[09:59:47] [CPU] t=571: atendiendo a Asistente Médico
+[09:59:48] [CPU] t=572: atendiendo a Asistente Médico
+[09:59:48] [CPU] t=573: atendiendo a Asistente Médico
+[09:59:49] [CPU] t=574: atendiendo a Asistente Médico
+[09:59:49] [CPU] t=575: atendiendo a Asistente Médico
+[09:59:49] [CPU] t=576: atendiendo a Asistente Médico
+[09:59:50] [CPU] t=577: atendiendo a Asistente Médico
+[09:59:50] [CPU] t=578: atendiendo a Asistente Médico
+[09:59:51] [CPU] t=579: atendiendo a Asistente Médico
+[09:59:51] [CPU] t=580: atendiendo a Asistente Médico
+[09:59:51] [CPU] t=581: atendiendo a Asistente Médico
+[09:59:52] [CPU] t=582: atendiendo a Asistente Médico
+[09:59:52] [CPU] t=583: atendiendo a Asistente Médico
+[09:59:53] [CPU] t=584: atendiendo a Asistente Médico
+[09:59:53] [CPU] t=585: atendiendo a Asistente Médico
+[09:59:53] [CPU] t=586: atendiendo a Asistente Médico
+[09:59:54] [CPU] t=587: atendiendo a Asistente Médico
+[09:59:54] [CPU] t=588: atendiendo a Asistente Médico
+[09:59:55] [CPU] t=589: atendiendo a Asistente Médico
+[09:59:55] [CPU] t=590: atendiendo a Asistente Médico
+[09:59:55] [CPU] t=591: atendiendo a Asistente Médico
+[09:59:56] [CPU] t=592: atendiendo a Asistente Médico
+[09:59:56] [CPU] t=593: atendiendo a Asistente Médico
+[09:59:57] [CPU] t=594: atendiendo a Asistente Médico
+[09:59:57] [CPU] t=595: atendiendo a Asistente Médico
+[09:59:57] [CPU] t=596: atendiendo a Asistente Médico
+[09:59:58] [CPU] t=597: atendiendo a Asistente Médico
+[09:59:58] [CPU] t=598: atendiendo a Asistente Médico
+[09:59:59] [CPU] t=599: atendiendo a Asistente Médico
+[09:59:59] [CPU] t=600: atendiendo a Asistente Médico
+[09:59:59] [CPU] t=601: atendiendo a Asistente Médico
+[10:00:00] [CPU] t=602: atendiendo a Asistente Médico
+[10:00:00] [CPU] t=603: atendiendo a Asistente Médico
+[10:00:01] [CPU] t=604: atendiendo a Asistente Médico
+[10:00:01] [CPU] t=605: atendiendo a Asistente Médico
+[10:00:01] [CPU] t=606: atendiendo a Asistente Médico
+[10:00:02] [CPU] t=607: atendiendo a Asistente Médico
+[10:00:02] [CPU] t=608: atendiendo a Asistente Médico
+[10:00:03] [CPU] t=609: atendiendo a Asistente Médico
+[10:00:03] [CPU] t=610: atendiendo a Asistente Médico
+[10:00:03] [CPU] t=611: atendiendo a Asistente Médico
+[10:00:04] [CPU] t=612: atendiendo a Asistente Médico
+[10:00:04] [CPU] t=613: atendiendo a Asistente Médico
+[10:00:05] [CPU] t=614: atendiendo a Asistente Médico
+[10:00:05] [CPU] t=615: atendiendo a Asistente Médico
+[10:00:05] [CPU] t=616: atendiendo a Asistente Médico
+[10:00:06] [CPU] t=617: atendiendo a Asistente Médico
+[10:00:06] [CPU] t=618: atendiendo a Asistente Médico
+[10:00:07] [CPU] t=619: atendiendo a Asistente Médico
+[10:00:07] [CPU] t=620: atendiendo a Asistente Médico
+[10:00:07] [CPU] t=621: atendiendo a Asistente Médico
+[10:00:08] [CPU] t=622: atendiendo a Asistente Médico
+[10:00:08] [CPU] t=623: atendiendo a Asistente Médico
+[10:00:09] [CPU] t=624: atendiendo a Asistente Médico
+[10:00:09] [CPU] t=625: atendiendo a Asistente Médico
+[10:00:09] [CPU] t=626: atendiendo a Asistente Médico
+[10:00:10] [CPU] t=627: atendiendo a Asistente Médico
+[10:00:10] [CPU] t=628: atendiendo a Asistente Médico
+[10:00:11] [CPU] t=629: atendiendo a Asistente Médico
+[10:00:11] [CPU] t=630: atendiendo a Asistente Médico
+[10:00:11] [CPU] t=631: atendiendo a Asistente Médico
+[10:00:12] [CPU] t=632: atendiendo a Asistente Médico
+[10:00:12] [CPU] t=633: atendiendo a Asistente Médico
+[10:00:13] [CPU] t=634: atendiendo a Asistente Médico
+[10:00:13] [CPU] t=635: atendiendo a Asistente Médico
+[10:00:13] [CPU] t=636: atendiendo a Asistente Médico
+[10:00:14] [CPU] t=637: atendiendo a Asistente Médico
+[10:00:14] [CPU] t=638: atendiendo a Asistente Médico
+[10:00:15] [CPU] t=639: atendiendo a Asistente Médico
+[10:00:15] [CPU] t=640: atendiendo a Asistente Médico
+[10:00:15] [CPU] t=641: atendiendo a Asistente Médico
+[10:00:16] [CPU] t=642: atendiendo a Asistente Médico
+[10:00:16] [CPU] t=643: atendiendo a Asistente Médico
+[10:00:17] [CPU] t=644: atendiendo a Asistente Médico
+[10:00:17] [CPU] t=645: atendiendo a Asistente Médico
+[10:00:17] [CPU] t=646: atendiendo a Asistente Médico
+[10:00:18] [CPU] t=647: atendiendo a Asistente Médico
+[10:00:18] [CPU] t=648: atendiendo a Asistente Médico
+[10:00:19] [CPU] t=649: atendiendo a Asistente Médico
+[10:00:19] [CPU] t=650: atendiendo a Asistente Médico
+[10:00:19] [CPU] t=651: atendiendo a Asistente Médico
+[10:00:20] [CPU] t=652: atendiendo a Asistente Médico
+[10:00:20] [CPU] t=653: atendiendo a Asistente Médico
+[10:00:21] [CPU] t=654: atendiendo a Asistente Médico
+[10:00:21] [CPU] t=655: atendiendo a Asistente Médico
+[10:00:21] [CPU] t=656: atendiendo a Asistente Médico
+[10:00:22] [CPU] t=657: atendiendo a Asistente Médico
+[10:00:22] [CPU] t=658: atendiendo a Asistente Médico
+[10:00:23] [CPU] t=659: atendiendo a Asistente Médico
+[10:00:23] [CPU] t=660: atendiendo a Asistente Médico
+[10:00:23] [CPU] t=661: atendiendo a Asistente Médico
+[10:00:24] [CPU] t=662: atendiendo a Asistente Médico
+[10:00:24] [CPU] t=663: atendiendo a Asistente Médico
+[10:00:25] [CPU] t=664: atendiendo a Asistente Médico
+[10:00:25] [CPU] t=665: atendiendo a Asistente Médico
+[10:00:25] [CPU] t=666: atendiendo a Asistente Médico
+[10:00:26] [CPU] t=667: atendiendo a Asistente Médico
+[10:00:26] [CPU] t=668: atendiendo a Asistente Médico
+[10:00:27] [CPU] t=669: atendiendo a Asistente Médico
+[10:00:27] [CPU] t=670: atendiendo a Asistente Médico
+[10:00:28] [CPU] t=671: atendiendo a Asistente Médico
+[10:00:28] [CPU] t=672: atendiendo a Asistente Médico
+[10:00:28] [CPU] t=673: atendiendo a Asistente Médico
+[10:00:29] [CPU] t=674: atendiendo a Asistente Médico
+[10:00:29] [CPU] t=675: atendiendo a Asistente Médico
+[10:00:30] [CPU] t=676: atendiendo a Asistente Médico
+[10:00:30] [CPU] t=677: atendiendo a Asistente Médico
+[10:00:30] [CPU] t=678: atendiendo a Asistente Médico
+[10:00:31] [CPU] t=679: atendiendo a Asistente Médico
+[10:00:31] [CPU] t=680: atendiendo a Asistente Médico
+[10:00:32] [CPU] t=681: atendiendo a Asistente Médico
+[10:00:32] [CPU] t=682: atendiendo a Asistente Médico
+[10:00:32] [CPU] t=683: atendiendo a Asistente Médico
+[10:00:32] [logd] Demonio de logging detenido.
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-26 10:02:16
+  PID daemon de logging: 8220
+============================================================
+[10:02:24] [APP] 'Asistente Médico' se registra como proceso (PID 1, prio 7)
+[10:02:24] [CPU] t=1: atendiendo a Asistente Médico
+[10:02:24] [CPU] t=2: atendiendo a Asistente Médico
+[10:02:24] [CPU] t=3: atendiendo a Asistente Médico
+[10:02:25] [CPU] t=4: atendiendo a Asistente Médico
+[10:02:25] [CPU] t=5: atendiendo a Asistente Médico
+[10:02:25] [APP] 'Asistente Médico' recibió consulta: "hola"
+[10:02:26] [CPU] t=6: atendiendo a Asistente Médico
+[10:02:26] [CPU] t=7: atendiendo a Asistente Médico
+[10:02:26] [CPU] t=8: atendiendo a Asistente Médico
+[10:02:27] [CPU] t=9: atendiendo a Asistente Médico
+[10:02:27] [CPU] t=10: atendiendo a Asistente Médico
+[10:02:28] [CPU] t=11: atendiendo a Asistente Médico
+[10:02:28] [CPU] t=12: atendiendo a Asistente Médico
+[10:02:28] [CPU] t=13: atendiendo a Asistente Médico
+[10:02:29] [CPU] t=14: atendiendo a Asistente Médico
+[10:02:29] [CPU] t=15: atendiendo a Asistente Médico
+[10:02:30] [CPU] t=16: atendiendo a Asistente Médico
+[10:02:30] [logd] Demonio de logging detenido.
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-26 10:03:20
+  PID daemon de logging: 13672
+============================================================
+[10:03:29] [APP] 'Asistente Médico' se registra como proceso (PID 1, prio 7)
+[10:03:29] [CPU] t=1: atendiendo a Asistente Médico
+[10:03:29] [CPU] t=2: atendiendo a Asistente Médico
+[10:03:30] [CPU] t=3: atendiendo a Asistente Médico
+[10:03:30] [APP] 'Asistente Médico' recibió consulta: "hola"
+[10:03:30] [CPU] t=4: atendiendo a Asistente Médico
+[10:03:31] [CPU] t=5: atendiendo a Asistente Médico
+[10:03:31] [CPU] t=6: atendiendo a Asistente Médico
+[10:03:31] [CPU] t=7: atendiendo a Asistente Médico
+[10:03:32] [CPU] t=8: atendiendo a Asistente Médico
+[10:03:32] [CPU] t=9: atendiendo a Asistente Médico
+[10:03:33] [CPU] t=10: atendiendo a Asistente Médico
+[10:03:33] [CPU] t=11: atendiendo a Asistente Médico
+[10:03:33] [CPU] t=12: atendiendo a Asistente Médico
+[10:03:34] [CPU] t=13: atendiendo a Asistente Médico
+[10:03:34] [CPU] t=14: atendiendo a Asistente Médico
+[10:03:35] [CPU] t=15: atendiendo a Asistente Médico
+[10:03:35] [CPU] t=16: atendiendo a Asistente Médico
+[10:03:35] [CPU] t=17: atendiendo a Asistente Médico
+[10:03:36] [CPU] t=18: atendiendo a Asistente Médico
+[10:03:36] [CPU] t=19: atendiendo a Asistente Médico
+[10:03:36] [logd] Demonio de logging detenido.
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-26 10:03:46
+  PID daemon de logging: 15192
+============================================================
+[10:03:54] [APP] 'Asistente Médico' se registra como proceso (PID 1, prio 7)
+[10:03:54] [CPU] t=1: atendiendo a Asistente Médico
+[10:03:54] [CPU] t=2: atendiendo a Asistente Médico
+[10:03:55] [CPU] t=3: atendiendo a Asistente Médico
+[10:03:55] [CPU] t=4: atendiendo a Asistente Médico
+[10:03:56] [CPU] t=5: atendiendo a Asistente Médico
+[10:03:56] [APP] 'Asistente Médico' recibió consulta: "hola"
+[10:03:56] [CPU] t=6: atendiendo a Asistente Médico
+[10:03:56] [CPU] t=7: atendiendo a Asistente Médico
+[10:03:57] [CPU] t=8: atendiendo a Asistente Médico
+[10:03:57] [CPU] t=9: atendiendo a Asistente Médico
+[10:03:58] [CPU] t=10: atendiendo a Asistente Médico
+[10:03:58] [CPU] t=11: atendiendo a Asistente Médico
+[10:03:58] [CPU] t=12: atendiendo a Asistente Médico
+[10:03:59] [CPU] t=13: atendiendo a Asistente Médico
+[10:03:59] [CPU] t=14: atendiendo a Asistente Médico
+[10:04:00] [CPU] t=15: atendiendo a Asistente Médico
+[10:04:00] [CPU] t=16: atendiendo a Asistente Médico
+[10:04:00] [CPU] t=17: atendiendo a Asistente Médico
+[10:04:01] [logd] Demonio de logging detenido.
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-26 10:05:40
+  PID daemon de logging: 7744
+============================================================
+[10:05:51] [APP] 'Asistente Médico' se registra como proceso (PID 1, prio 7)
+[10:05:51] [CPU] t=1: atendiendo a Asistente Médico
+[10:05:51] [CPU] t=2: atendiendo a Asistente Médico
+[10:05:51] [CPU] t=3: atendiendo a Asistente Médico
+[10:05:52] [CPU] t=4: atendiendo a Asistente Médico
+[10:05:52] [APP] 'Asistente Médico' recibió consulta: "hola"
+[10:05:52] [CPU] t=5: atendiendo a Asistente Médico
+[10:05:53] [CPU] t=6: atendiendo a Asistente Médico
+[10:05:53] [CPU] t=7: atendiendo a Asistente Médico
+[10:05:53] [CPU] t=8: atendiendo a Asistente Médico
+[10:05:54] [CPU] t=9: atendiendo a Asistente Médico
+[10:05:54] [CPU] t=10: atendiendo a Asistente Médico
+[10:05:55] [CPU] t=11: atendiendo a Asistente Médico
+[10:05:55] [CPU] t=12: atendiendo a Asistente Médico
+[10:05:55] [CPU] t=13: atendiendo a Asistente Médico
+[10:05:56] [CPU] t=14: atendiendo a Asistente Médico
+[10:05:56] [CPU] t=15: atendiendo a Asistente Médico
+[10:05:57] [CPU] t=16: atendiendo a Asistente Médico
+[10:05:57] [CPU] t=17: atendiendo a Asistente Médico
+[10:05:57] [CPU] t=18: atendiendo a Asistente Médico
+[10:05:58] [CPU] t=19: atendiendo a Asistente Médico
+[10:05:58] [CPU] t=20: atendiendo a Asistente Médico
+[10:05:59] [CPU] t=21: atendiendo a Asistente Médico
+[10:05:59] [CPU] t=22: atendiendo a Asistente Médico
+[10:05:59] [CPU] t=23: atendiendo a Asistente Médico
+[10:06:00] [CPU] t=24: atendiendo a Asistente Médico
+[10:06:00] [CPU] t=25: atendiendo a Asistente Médico
+[10:06:01] [CPU] t=26: atendiendo a Asistente Médico
+[10:06:01] [CPU] t=27: atendiendo a Asistente Médico
+[10:06:01] [CPU] t=28: atendiendo a Asistente Médico
+[10:06:02] [CPU] t=29: atendiendo a Asistente Médico
+[10:06:02] [CPU] t=30: atendiendo a Asistente Médico
+[10:06:03] [CPU] t=31: atendiendo a Asistente Médico
+[10:06:03] [CPU] t=32: atendiendo a Asistente Médico
+[10:06:03] [CPU] t=33: atendiendo a Asistente Médico
+[10:06:04] [CPU] t=34: atendiendo a Asistente Médico
+[10:06:04] [CPU] t=35: atendiendo a Asistente Médico
+[10:06:05] [CPU] t=36: atendiendo a Asistente Médico
+[10:06:05] [CPU] t=37: atendiendo a Asistente Médico
+[10:06:05] [CPU] t=38: atendiendo a Asistente Médico
+[10:06:06] [CPU] t=39: atendiendo a Asistente Médico
+[10:06:06] [CPU] t=40: atendiendo a Asistente Médico
+[10:06:07] [CPU] t=41: atendiendo a Asistente Médico
+[10:06:07] [CPU] t=42: atendiendo a Asistente Médico
+[10:06:07] [CPU] t=43: atendiendo a Asistente Médico
+[10:06:08] [CPU] t=44: atendiendo a Asistente Médico
+[10:06:08] [CPU] t=45: atendiendo a Asistente Médico
+[10:06:09] [CPU] t=46: atendiendo a Asistente Médico
+[10:06:09] [CPU] t=47: atendiendo a Asistente Médico
+[10:06:09] [CPU] t=48: atendiendo a Asistente Médico
+[10:06:10] [CPU] t=49: atendiendo a Asistente Médico
+[10:06:10] [CPU] t=50: atendiendo a Asistente Médico
+[10:06:11] [CPU] t=51: atendiendo a Asistente Médico
+[10:06:11] [CPU] t=52: atendiendo a Asistente Médico
+[10:06:11] [CPU] t=53: atendiendo a Asistente Médico
+[10:06:12] [CPU] t=54: atendiendo a Asistente Médico
+[10:06:12] [CPU] t=55: atendiendo a Asistente Médico
+[10:06:13] [CPU] t=56: atendiendo a Asistente Médico
+[10:06:13] [CPU] t=57: atendiendo a Asistente Médico
+[10:06:13] [CPU] t=58: atendiendo a Asistente Médico
+[10:06:14] [CPU] t=59: atendiendo a Asistente Médico
+[10:06:14] [CPU] t=60: atendiendo a Asistente Médico
+[10:06:15] [CPU] t=61: atendiendo a Asistente Médico
+[10:06:15] [CPU] t=62: atendiendo a Asistente Médico
+[10:06:15] [CPU] t=63: atendiendo a Asistente Médico
+[10:06:16] [CPU] t=64: atendiendo a Asistente Médico
+[10:06:16] [CPU] t=65: atendiendo a Asistente Médico
+[10:06:17] [CPU] t=66: atendiendo a Asistente Médico
+[10:06:17] [CPU] t=67: atendiendo a Asistente Médico
+[10:06:17] [CPU] t=68: atendiendo a Asistente Médico
+[10:06:18] [CPU] t=69: atendiendo a Asistente Médico
+[10:06:18] [CPU] t=70: atendiendo a Asistente Médico
+[10:06:19] [CPU] t=71: atendiendo a Asistente Médico
+[10:06:19] [CPU] t=72: atendiendo a Asistente Médico
+[10:06:19] [CPU] t=73: atendiendo a Asistente Médico
+[10:06:20] [CPU] t=74: atendiendo a Asistente Médico
+[10:06:20] [CPU] t=75: atendiendo a Asistente Médico
+[10:06:21] [CPU] t=76: atendiendo a Asistente Médico
+[10:06:21] [CPU] t=77: atendiendo a Asistente Médico
+[10:06:22] [CPU] t=78: atendiendo a Asistente Médico
+[10:06:22] [CPU] t=79: atendiendo a Asistente Médico
+[10:06:22] [CPU] t=80: atendiendo a Asistente Médico
+[10:06:23] [CPU] t=81: atendiendo a Asistente Médico
+[10:06:23] [CPU] t=82: atendiendo a Asistente Médico
+[10:06:24] [CPU] t=83: atendiendo a Asistente Médico
+[10:06:24] [CPU] t=84: atendiendo a Asistente Médico
+[10:06:24] [CPU] t=85: atendiendo a Asistente Médico
+[10:06:25] [CPU] t=86: atendiendo a Asistente Médico
+[10:06:25] [CPU] t=87: atendiendo a Asistente Médico
+[10:06:26] [CPU] t=88: atendiendo a Asistente Médico
+[10:06:26] [CPU] t=89: atendiendo a Asistente Médico
+[10:06:26] [CPU] t=90: atendiendo a Asistente Médico
+[10:06:27] [CPU] t=91: atendiendo a Asistente Médico
+[10:06:27] [CPU] t=92: atendiendo a Asistente Médico
+[10:06:28] [CPU] t=93: atendiendo a Asistente Médico
+[10:06:28] [CPU] t=94: atendiendo a Asistente Médico
+[10:06:28] [CPU] t=95: atendiendo a Asistente Médico
+[10:06:29] [CPU] t=96: atendiendo a Asistente Médico
+[10:06:29] [CPU] t=97: atendiendo a Asistente Médico
+[10:06:30] [CPU] t=98: atendiendo a Asistente Médico
+[10:06:30] [CPU] t=99: atendiendo a Asistente Médico
+[10:06:30] [CPU] t=100: atendiendo a Asistente Médico
+[10:06:31] [CPU] t=101: atendiendo a Asistente Médico
+[10:06:31] [CPU] t=102: atendiendo a Asistente Médico
+[10:06:32] [CPU] t=103: atendiendo a Asistente Médico
+[10:06:32] [CPU] t=104: atendiendo a Asistente Médico
+[10:06:32] [CPU] t=105: atendiendo a Asistente Médico
+[10:06:33] [CPU] t=106: atendiendo a Asistente Médico
+[10:06:33] [CPU] t=107: atendiendo a Asistente Médico
+[10:06:34] [CPU] t=108: atendiendo a Asistente Médico
+[10:06:34] [CPU] t=109: atendiendo a Asistente Médico
+[10:06:34] [CPU] t=110: atendiendo a Asistente Médico
+[10:06:35] [CPU] t=111: atendiendo a Asistente Médico
+[10:06:35] [CPU] t=112: atendiendo a Asistente Médico
+[10:06:36] [CPU] t=113: atendiendo a Asistente Médico
+[10:06:36] [CPU] t=114: atendiendo a Asistente Médico
+[10:06:36] [CPU] t=115: atendiendo a Asistente Médico
+[10:06:37] [CPU] t=116: atendiendo a Asistente Médico
+[10:06:37] [CPU] t=117: atendiendo a Asistente Médico
+[10:06:38] [CPU] t=118: atendiendo a Asistente Médico
+[10:06:38] [CPU] t=119: atendiendo a Asistente Médico
+[10:06:38] [CPU] t=120: atendiendo a Asistente Médico
+[10:06:39] [CPU] t=121: atendiendo a Asistente Médico
+[10:06:39] [CPU] t=122: atendiendo a Asistente Médico
+[10:06:40] [CPU] t=123: atendiendo a Asistente Médico
+[10:06:40] [CPU] t=124: atendiendo a Asistente Médico
+[10:06:40] [CPU] t=125: atendiendo a Asistente Médico
+[10:06:41] [CPU] t=126: atendiendo a Asistente Médico
+[10:06:41] [CPU] t=127: atendiendo a Asistente Médico
+[10:06:42] [CPU] t=128: atendiendo a Asistente Médico
+[10:06:42] [CPU] t=129: atendiendo a Asistente Médico
+[10:06:42] [CPU] t=130: atendiendo a Asistente Médico
+[10:06:43] [CPU] t=131: atendiendo a Asistente Médico
+[10:06:43] [CPU] t=132: atendiendo a Asistente Médico
+[10:06:44] [CPU] t=133: atendiendo a Asistente Médico
+[10:06:44] [CPU] t=134: atendiendo a Asistente Médico
+[10:06:44] [CPU] t=135: atendiendo a Asistente Médico
+[10:06:45] [CPU] t=136: atendiendo a Asistente Médico
+[10:06:45] [CPU] t=137: atendiendo a Asistente Médico
+[10:06:46] [CPU] t=138: atendiendo a Asistente Médico
+[10:06:46] [CPU] t=139: atendiendo a Asistente Médico
+[10:06:46] [CPU] t=140: atendiendo a Asistente Médico
+[10:06:47] [CPU] t=141: atendiendo a Asistente Médico
+[10:06:47] [CPU] t=142: atendiendo a Asistente Médico
+[10:06:48] [CPU] t=143: atendiendo a Asistente Médico
+[10:06:48] [CPU] t=144: atendiendo a Asistente Médico
+[10:06:48] [CPU] t=145: atendiendo a Asistente Médico
+[10:06:49] [CPU] t=146: atendiendo a Asistente Médico
+[10:06:49] [CPU] t=147: atendiendo a Asistente Médico
+[10:06:50] [CPU] t=148: atendiendo a Asistente Médico
+[10:06:50] [CPU] t=149: atendiendo a Asistente Médico
+[10:06:50] [CPU] t=150: atendiendo a Asistente Médico
+[10:06:51] [CPU] t=151: atendiendo a Asistente Médico
+[10:06:51] [CPU] t=152: atendiendo a Asistente Médico
+[10:06:52] [CPU] t=153: atendiendo a Asistente Médico
+[10:06:52] [CPU] t=154: atendiendo a Asistente Médico
+[10:06:52] [CPU] t=155: atendiendo a Asistente Médico
+[10:06:53] [CPU] t=156: atendiendo a Asistente Médico
+[10:06:53] [CPU] t=157: atendiendo a Asistente Médico
+[10:06:54] [CPU] t=158: atendiendo a Asistente Médico
+[10:06:54] [CPU] t=159: atendiendo a Asistente Médico
+[10:06:54] [CPU] t=160: atendiendo a Asistente Médico
+[10:06:55] [CPU] t=161: atendiendo a Asistente Médico
+[10:06:55] [CPU] t=162: atendiendo a Asistente Médico
+[10:06:56] [CPU] t=163: atendiendo a Asistente Médico
+[10:06:56] [CPU] t=164: atendiendo a Asistente Médico
+[10:06:56] [CPU] t=165: atendiendo a Asistente Médico
+[10:06:57] [CPU] t=166: atendiendo a Asistente Médico
+[10:06:57] [CPU] t=167: atendiendo a Asistente Médico
+[10:06:58] [CPU] t=168: atendiendo a Asistente Médico
+[10:06:58] [CPU] t=169: atendiendo a Asistente Médico
+[10:06:59] [CPU] t=170: atendiendo a Asistente Médico
+[10:06:59] [CPU] t=171: atendiendo a Asistente Médico
+[10:06:59] [CPU] t=172: atendiendo a Asistente Médico
+[10:07:00] [CPU] t=173: atendiendo a Asistente Médico
+[10:07:00] [CPU] t=174: atendiendo a Asistente Médico
+[10:07:01] [CPU] t=175: atendiendo a Asistente Médico
+[10:07:01] [CPU] t=176: atendiendo a Asistente Médico
+[10:07:01] [CPU] t=177: atendiendo a Asistente Médico
+[10:07:02] [CPU] t=178: atendiendo a Asistente Médico
+[10:07:02] [CPU] t=179: atendiendo a Asistente Médico
+[10:07:03] [CPU] t=180: atendiendo a Asistente Médico
+[10:07:03] [CPU] t=181: atendiendo a Asistente Médico
+[10:07:03] [CPU] t=182: atendiendo a Asistente Médico
+[10:07:04] [CPU] t=183: atendiendo a Asistente Médico
+[10:07:04] [CPU] t=184: atendiendo a Asistente Médico
+[10:07:05] [CPU] t=185: atendiendo a Asistente Médico
+[10:07:05] [CPU] t=186: atendiendo a Asistente Médico
+[10:07:05] [CPU] t=187: atendiendo a Asistente Médico
+[10:07:06] [CPU] t=188: atendiendo a Asistente Médico
+[10:07:06] [CPU] t=189: atendiendo a Asistente Médico
+[10:07:07] [CPU] t=190: atendiendo a Asistente Médico
+[10:07:07] [CPU] t=191: atendiendo a Asistente Médico
+[10:07:07] [CPU] t=192: atendiendo a Asistente Médico
+[10:07:08] [CPU] t=193: atendiendo a Asistente Médico
+[10:07:08] [CPU] t=194: atendiendo a Asistente Médico
+[10:07:09] [CPU] t=195: atendiendo a Asistente Médico
+[10:07:09] [CPU] t=196: atendiendo a Asistente Médico
+[10:07:09] [CPU] t=197: atendiendo a Asistente Médico
+[10:07:10] [CPU] t=198: atendiendo a Asistente Médico
+[10:07:10] [CPU] t=199: atendiendo a Asistente Médico
+[10:07:11] [CPU] t=200: atendiendo a Asistente Médico
+[10:07:11] [CPU] t=201: atendiendo a Asistente Médico
+[10:07:11] [CPU] t=202: atendiendo a Asistente Médico
+[10:07:12] [CPU] t=203: atendiendo a Asistente Médico
+[10:07:12] [CPU] t=204: atendiendo a Asistente Médico
+[10:07:13] [CPU] t=205: atendiendo a Asistente Médico
+[10:07:13] [CPU] t=206: atendiendo a Asistente Médico
+[10:07:13] [CPU] t=207: atendiendo a Asistente Médico
+[10:07:14] [CPU] t=208: atendiendo a Asistente Médico
+[10:07:14] [CPU] t=209: atendiendo a Asistente Médico
+[10:07:15] [CPU] t=210: atendiendo a Asistente Médico
+[10:07:15] [logd] Demonio de logging detenido.
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-26 10:08:14
+  PID daemon de logging: 15004
+============================================================
+[10:08:22] [APP] 'Asistente Médico' se registra como proceso (PID 1, prio 7)
+[10:08:22] [CPU] t=1: atendiendo a Asistente Médico
+[10:08:23] [CPU] t=2: atendiendo a Asistente Médico
+[10:08:23] [CPU] t=3: atendiendo a Asistente Médico
+[10:08:23] [CPU] t=4: atendiendo a Asistente Médico
+[10:08:24] [CPU] t=5: atendiendo a Asistente Médico
+[10:08:24] [CPU] t=6: atendiendo a Asistente Médico
+[10:08:25] [CPU] t=7: atendiendo a Asistente Médico
+[10:08:25] [APP] 'Asistente Médico' recibió consulta: "hola"
+[10:08:25] [CPU] t=8: atendiendo a Asistente Médico
+[10:08:25] [CPU] t=9: atendiendo a Asistente Médico
+[10:08:26] [CPU] t=10: atendiendo a Asistente Médico
+[10:08:26] [CPU] t=11: atendiendo a Asistente Médico
+[10:08:27] [CPU] t=12: atendiendo a Asistente Médico
+[10:08:27] [CPU] t=13: atendiendo a Asistente Médico
+[10:08:27] [CPU] t=14: atendiendo a Asistente Médico
+[10:08:28] [CPU] t=15: atendiendo a Asistente Médico
+[10:08:28] [CPU] t=16: atendiendo a Asistente Médico
+[10:08:29] [CPU] t=17: atendiendo a Asistente Médico
+[10:08:29] [CPU] t=18: atendiendo a Asistente Médico
+[10:08:29] [CPU] t=19: atendiendo a Asistente Médico
+[10:08:30] [CPU] t=20: atendiendo a Asistente Médico
+[10:08:30] [CPU] t=21: atendiendo a Asistente Médico
+[10:08:31] [CPU] t=22: atendiendo a Asistente Médico
+[10:08:31] [CPU] t=23: atendiendo a Asistente Médico
+[10:08:31] [CPU] t=24: atendiendo a Asistente Médico
+[10:08:32] [CPU] t=25: atendiendo a Asistente Médico
+[10:08:32] [CPU] t=26: atendiendo a Asistente Médico
+[10:08:33] [CPU] t=27: atendiendo a Asistente Médico
+[10:08:33] [CPU] t=28: atendiendo a Asistente Médico
+[10:08:33] [CPU] t=29: atendiendo a Asistente Médico
+[10:08:34] [CPU] t=30: atendiendo a Asistente Médico
+[10:08:34] [CPU] t=31: atendiendo a Asistente Médico
+[10:08:35] [CPU] t=32: atendiendo a Asistente Médico
+[10:08:35] [CPU] t=33: atendiendo a Asistente Médico
+[10:08:35] [CPU] t=34: atendiendo a Asistente Médico
+[10:08:36] [CPU] t=35: atendiendo a Asistente Médico
+[10:08:36] [CPU] t=36: atendiendo a Asistente Médico
+[10:08:37] [CPU] t=37: atendiendo a Asistente Médico
+[10:08:37] [CPU] t=38: atendiendo a Asistente Médico
+[10:08:37] [CPU] t=39: atendiendo a Asistente Médico
+[10:08:38] [CPU] t=40: atendiendo a Asistente Médico
+[10:08:38] [CPU] t=41: atendiendo a Asistente Médico
+[10:08:39] [CPU] t=42: atendiendo a Asistente Médico
+[10:08:39] [CPU] t=43: atendiendo a Asistente Médico
+[10:08:39] [CPU] t=44: atendiendo a Asistente Médico
+[10:08:40] [CPU] t=45: atendiendo a Asistente Médico
+[10:08:40] [CPU] t=46: atendiendo a Asistente Médico
+[10:08:41] [CPU] t=47: atendiendo a Asistente Médico
+[10:08:41] [CPU] t=48: atendiendo a Asistente Médico
+[10:08:41] [CPU] t=49: atendiendo a Asistente Médico
+[10:08:42] [CPU] t=50: atendiendo a Asistente Médico
+[10:08:42] [CPU] t=51: atendiendo a Asistente Médico
+[10:08:43] [CPU] t=52: atendiendo a Asistente Médico
+[10:08:43] [CPU] t=53: atendiendo a Asistente Médico
+[10:08:44] [CPU] t=54: atendiendo a Asistente Médico
+[10:08:44] [CPU] t=55: atendiendo a Asistente Médico
+[10:08:44] [CPU] t=56: atendiendo a Asistente Médico
+[10:08:45] [CPU] t=57: atendiendo a Asistente Médico
+[10:08:45] [CPU] t=58: atendiendo a Asistente Médico
+[10:08:46] [CPU] t=59: atendiendo a Asistente Médico
+[10:08:46] [CPU] t=60: atendiendo a Asistente Médico
+[10:08:46] [CPU] t=61: atendiendo a Asistente Médico
+[10:08:47] [CPU] t=62: atendiendo a Asistente Médico
+[10:08:47] [CPU] t=63: atendiendo a Asistente Médico
+[10:08:48] [CPU] t=64: atendiendo a Asistente Médico
+[10:08:48] [CPU] t=65: atendiendo a Asistente Médico
+[10:08:48] [CPU] t=66: atendiendo a Asistente Médico
+[10:08:49] [CPU] t=67: atendiendo a Asistente Médico
+[10:08:49] [CPU] t=68: atendiendo a Asistente Médico
+[10:08:50] [CPU] t=69: atendiendo a Asistente Médico
+[10:08:50] [CPU] t=70: atendiendo a Asistente Médico
+[10:08:50] [CPU] t=71: atendiendo a Asistente Médico
+[10:08:51] [CPU] t=72: atendiendo a Asistente Médico
+[10:08:51] [CPU] t=73: atendiendo a Asistente Médico
+[10:08:52] [CPU] t=74: atendiendo a Asistente Médico
+[10:08:52] [CPU] t=75: atendiendo a Asistente Médico
+[10:08:52] [CPU] t=76: atendiendo a Asistente Médico
+[10:08:53] [CPU] t=77: atendiendo a Asistente Médico
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-26 10:09:28
+  PID daemon de logging: 26664
+============================================================
+[10:09:35] [APP] 'Asistente Médico' se registra como proceso (PID 1, prio 7)
+[10:09:35] [CPU] t=1: atendiendo a Asistente Médico
+[10:09:36] [CPU] t=2: atendiendo a Asistente Médico
+[10:09:36] [CPU] t=3: atendiendo a Asistente Médico
+[10:09:36] [CPU] t=4: atendiendo a Asistente Médico
+[10:09:37] [CPU] t=5: atendiendo a Asistente Médico
+[10:09:37] [CPU] t=6: atendiendo a Asistente Médico
+[10:09:38] [CPU] t=7: atendiendo a Asistente Médico
+[10:09:38] [APP] 'Asistente Médico' recibió consulta: "hola"
+[10:09:38] [CPU] t=8: atendiendo a Asistente Médico
+[10:09:38] [CPU] t=9: atendiendo a Asistente Médico
+[10:09:39] [CPU] t=10: atendiendo a Asistente Médico
+[10:09:39] [CPU] t=11: atendiendo a Asistente Médico
+[10:09:40] [CPU] t=12: atendiendo a Asistente Médico
+[10:09:40] [CPU] t=13: atendiendo a Asistente Médico
+[10:09:40] [CPU] t=14: atendiendo a Asistente Médico
+[10:09:41] [CPU] t=15: atendiendo a Asistente Médico
+[10:09:41] [CPU] t=16: atendiendo a Asistente Médico
+[10:09:42] [CPU] t=17: atendiendo a Asistente Médico
+[10:09:42] [CPU] t=18: atendiendo a Asistente Médico
+[10:09:42] [CPU] t=19: atendiendo a Asistente Médico
+[10:09:43] [CPU] t=20: atendiendo a Asistente Médico
+[10:09:43] [CPU] t=21: atendiendo a Asistente Médico
+[10:09:44] [CPU] t=22: atendiendo a Asistente Médico
+[10:09:44] [CPU] t=23: atendiendo a Asistente Médico
+[10:09:44] [CPU] t=24: atendiendo a Asistente Médico
+[10:09:45] [CPU] t=25: atendiendo a Asistente Médico
+[10:09:45] [CPU] t=26: atendiendo a Asistente Médico
+[10:09:46] [CPU] t=27: atendiendo a Asistente Médico
+[10:09:46] [CPU] t=28: atendiendo a Asistente Médico
+[10:09:46] [CPU] t=29: atendiendo a Asistente Médico
+[10:09:47] [CPU] t=30: atendiendo a Asistente Médico
+[10:09:47] [CPU] t=31: atendiendo a Asistente Médico
+[10:09:48] [CPU] t=32: atendiendo a Asistente Médico
+[10:09:48] [CPU] t=33: atendiendo a Asistente Médico
+[10:09:48] [CPU] t=34: atendiendo a Asistente Médico
+[10:09:49] [CPU] t=35: atendiendo a Asistente Médico
+[10:09:49] [CPU] t=36: atendiendo a Asistente Médico
+[10:09:50] [CPU] t=37: atendiendo a Asistente Médico
+[10:09:50] [CPU] t=38: atendiendo a Asistente Médico
+[10:09:50] [CPU] t=39: atendiendo a Asistente Médico
+[10:09:51] [CPU] t=40: atendiendo a Asistente Médico
+[10:09:51] [CPU] t=41: atendiendo a Asistente Médico
+[10:09:52] [CPU] t=42: atendiendo a Asistente Médico
+[10:09:52] [CPU] t=43: atendiendo a Asistente Médico
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-26 10:10:17
+  PID daemon de logging: 24700
+============================================================
+[10:10:25] [APP] 'Asistente Médico' se registra como proceso (PID 1, prio 7)
+[10:10:25] [CPU] t=1: atendiendo a Asistente Médico
+[10:10:26] [CPU] t=2: atendiendo a Asistente Médico
+[10:10:26] [CPU] t=3: atendiendo a Asistente Médico
+[10:10:27] [CPU] t=4: atendiendo a Asistente Médico
+[10:10:27] [APP] 'Asistente Médico' recibió consulta: "hola"
+[10:10:27] [CPU] t=5: atendiendo a Asistente Médico
+[10:10:27] [CPU] t=6: atendiendo a Asistente Médico
+[10:10:28] [CPU] t=7: atendiendo a Asistente Médico
+[10:10:28] [CPU] t=8: atendiendo a Asistente Médico
+[10:10:29] [CPU] t=9: atendiendo a Asistente Médico
+[10:10:29] [CPU] t=10: atendiendo a Asistente Médico
+[10:10:29] [CPU] t=11: atendiendo a Asistente Médico
+[10:10:30] [CPU] t=12: atendiendo a Asistente Médico
+[10:10:30] [CPU] t=13: atendiendo a Asistente Médico
+[10:10:31] [CPU] t=14: atendiendo a Asistente Médico
+[10:10:31] [CPU] t=15: atendiendo a Asistente Médico
+[10:10:31] [CPU] t=16: atendiendo a Asistente Médico
+[10:10:32] [CPU] t=17: atendiendo a Asistente Médico
+[10:10:32] [CPU] t=18: atendiendo a Asistente Médico
+[10:10:33] [CPU] t=19: atendiendo a Asistente Médico
+[10:10:33] [CPU] t=20: atendiendo a Asistente Médico
+[10:10:33] [CPU] t=21: atendiendo a Asistente Médico
+[10:10:34] [CPU] t=22: atendiendo a Asistente Médico
+[10:10:34] [CPU] t=23: atendiendo a Asistente Médico
+[10:10:35] [CPU] t=24: atendiendo a Asistente Médico
+[10:10:35] [CPU] t=25: atendiendo a Asistente Médico
+[10:10:35] [CPU] t=26: atendiendo a Asistente Médico
+[10:10:36] [CPU] t=27: atendiendo a Asistente Médico
+[10:10:36] [CPU] t=28: atendiendo a Asistente Médico
+[10:10:37] [CPU] t=29: atendiendo a Asistente Médico
+[10:10:37] [CPU] t=30: atendiendo a Asistente Médico
+[10:10:37] [CPU] t=31: atendiendo a Asistente Médico
+[10:10:38] [CPU] t=32: atendiendo a Asistente Médico
+[10:10:38] [CPU] t=33: atendiendo a Asistente Médico
+[10:10:39] [CPU] t=34: atendiendo a Asistente Médico
+[10:10:39] [CPU] t=35: atendiendo a Asistente Médico
+[10:10:39] [CPU] t=36: atendiendo a Asistente Médico
+[10:10:40] [CPU] t=37: atendiendo a Asistente Médico
+[10:10:40] [CPU] t=38: atendiendo a Asistente Médico
+[10:10:41] [CPU] t=39: atendiendo a Asistente Médico
+[10:10:41] [CPU] t=40: atendiendo a Asistente Médico
+[10:10:41] [CPU] t=41: atendiendo a Asistente Médico
+[10:10:42] [CPU] t=42: atendiendo a Asistente Médico
+[10:10:42] [CPU] t=43: atendiendo a Asistente Médico
+[10:10:43] [CPU] t=44: atendiendo a Asistente Médico
+[10:10:43] [CPU] t=45: atendiendo a Asistente Médico
+[10:10:43] [CPU] t=46: atendiendo a Asistente Médico
+[10:10:44] [CPU] t=47: atendiendo a Asistente Médico
+[10:10:44] [APP] 'Asistente Médico' recibió consulta: "que hace este simulador?"
+[10:10:44] [CPU] t=48: atendiendo a Asistente Médico
+[10:10:45] [CPU] t=49: atendiendo a Asistente Médico
+[10:10:45] [CPU] t=50: atendiendo a Asistente Médico
+[10:10:45] [CPU] t=51: atendiendo a Asistente Médico
+[10:10:46] [CPU] t=52: atendiendo a Asistente Médico
+[10:10:46] [CPU] t=53: atendiendo a Asistente Médico
+[10:10:47] [CPU] t=54: atendiendo a Asistente Médico
+[10:10:47] [CPU] t=55: atendiendo a Asistente Médico
+[10:10:47] [CPU] t=56: atendiendo a Asistente Médico
+[10:10:48] [CPU] t=57: atendiendo a Asistente Médico
+[10:10:48] [CPU] t=58: atendiendo a Asistente Médico
+[10:10:49] [CPU] t=59: atendiendo a Asistente Médico
+[10:10:49] [CPU] t=60: atendiendo a Asistente Médico
+[10:10:49] [CPU] t=61: atendiendo a Asistente Médico
+[10:10:50] [CPU] t=62: atendiendo a Asistente Médico
+[10:10:50] [CPU] t=63: atendiendo a Asistente Médico
+[10:10:51] [CPU] t=64: atendiendo a Asistente Médico
+[10:10:51] [CPU] t=65: atendiendo a Asistente Médico
+[10:10:51] [CPU] t=66: atendiendo a Asistente Médico
+[10:10:52] [CPU] t=67: atendiendo a Asistente Médico
+[10:10:52] [CPU] t=68: atendiendo a Asistente Médico
+[10:10:53] [CPU] t=69: atendiendo a Asistente Médico
+[10:10:53] [CPU] t=70: atendiendo a Asistente Médico
+[10:10:53] [CPU] t=71: atendiendo a Asistente Médico
+[10:10:54] [CPU] t=72: atendiendo a Asistente Médico
+[10:10:54] [CPU] t=73: atendiendo a Asistente Médico
+[10:10:55] [CPU] t=74: atendiendo a Asistente Médico
+[10:10:55] [CPU] t=75: atendiendo a Asistente Médico
+[10:10:55] [CPU] t=76: atendiendo a Asistente Médico
+[10:10:56] [CPU] t=77: atendiendo a Asistente Médico
+[10:10:56] [CPU] t=78: atendiendo a Asistente Médico
+[10:10:57] [CPU] t=79: atendiendo a Asistente Médico
+[10:10:57] [CPU] t=80: atendiendo a Asistente Médico
+[10:10:57] [CPU] t=81: atendiendo a Asistente Médico
+[10:10:58] [CPU] t=82: atendiendo a Asistente Médico
+[10:10:58] [CPU] t=83: atendiendo a Asistente Médico
+[10:10:59] [CPU] t=84: atendiendo a Asistente Médico
+[10:10:59] [CPU] t=85: atendiendo a Asistente Médico
+[10:11:00] [CPU] t=86: atendiendo a Asistente Médico
+[10:11:00] [CPU] t=87: atendiendo a Asistente Médico
+[10:11:00] [CPU] t=88: atendiendo a Asistente Médico
+[10:11:01] [CPU] t=89: atendiendo a Asistente Médico
+[10:11:01] [CPU] t=90: atendiendo a Asistente Médico
+[10:11:02] [CPU] t=91: atendiendo a Asistente Médico
+[10:11:02] [CPU] t=92: atendiendo a Asistente Médico
+[10:11:02] [CPU] t=93: atendiendo a Asistente Médico
+[10:11:03] [CPU] t=94: atendiendo a Asistente Médico
+[10:11:03] [CPU] t=95: atendiendo a Asistente Médico
+[10:11:04] [CPU] t=96: atendiendo a Asistente Médico
+[10:11:04] [CPU] t=97: atendiendo a Asistente Médico
+[10:11:04] [CPU] t=98: atendiendo a Asistente Médico
+[10:11:05] [CPU] t=99: atendiendo a Asistente Médico
+[10:11:05] [CPU] t=100: atendiendo a Asistente Médico
+[10:11:06] [CPU] t=101: atendiendo a Asistente Médico
+[10:11:06] [CPU] t=102: atendiendo a Asistente Médico
+[10:11:06] [CPU] t=103: atendiendo a Asistente Médico
+[10:11:07] [CPU] t=104: atendiendo a Asistente Médico
+[10:11:07] [CPU] t=105: atendiendo a Asistente Médico
+[10:11:08] [CPU] t=106: atendiendo a Asistente Médico
+[10:11:08] [CPU] t=107: atendiendo a Asistente Médico
+[10:11:08] [CPU] t=108: atendiendo a Asistente Médico
+[10:11:09] [CPU] t=109: atendiendo a Asistente Médico
+[10:11:09] [CPU] t=110: atendiendo a Asistente Médico
+[10:11:10] [CPU] t=111: atendiendo a Asistente Médico
+[10:11:10] [CPU] t=112: atendiendo a Asistente Médico
+[10:11:10] [CPU] t=113: atendiendo a Asistente Médico
+[10:11:11] [CPU] t=114: atendiendo a Asistente Médico
+[10:11:11] [CPU] t=115: atendiendo a Asistente Médico
+[10:11:12] [CPU] t=116: atendiendo a Asistente Médico
+[10:11:12] [CPU] t=117: atendiendo a Asistente Médico
+[10:11:12] [CPU] t=118: atendiendo a Asistente Médico
+[10:11:13] [CPU] t=119: atendiendo a Asistente Médico
+[10:11:13] [CPU] t=120: atendiendo a Asistente Médico
+[10:11:14] [CPU] t=121: atendiendo a Asistente Médico
+[10:11:14] [CPU] t=122: atendiendo a Asistente Médico
+[10:11:14] [CPU] t=123: atendiendo a Asistente Médico
+[10:11:15] [CPU] t=124: atendiendo a Asistente Médico
+[10:11:15] [CPU] t=125: atendiendo a Asistente Médico
+[10:11:16] [CPU] t=126: atendiendo a Asistente Médico
+[10:11:16] [CPU] t=127: atendiendo a Asistente Médico
+[10:11:16] [CPU] t=128: atendiendo a Asistente Médico
+[10:11:17] [CPU] t=129: atendiendo a Asistente Médico
+[10:11:17] [CPU] t=130: atendiendo a Asistente Médico
+[10:11:18] [CPU] t=131: atendiendo a Asistente Médico
+[10:11:18] [CPU] t=132: atendiendo a Asistente Médico
+[10:11:18] [CPU] t=133: atendiendo a Asistente Médico
+[10:11:19] [CPU] t=134: atendiendo a Asistente Médico
+[10:11:19] [CPU] t=135: atendiendo a Asistente Médico
+[10:11:20] [CPU] t=136: atendiendo a Asistente Médico
+[10:11:20] [CPU] t=137: atendiendo a Asistente Médico
+[10:11:20] [CPU] t=138: atendiendo a Asistente Médico
+[10:11:21] [APP] 'Asistente Médico' recibió consulta: "que andas manito te amo"
+[10:11:21] [CPU] t=139: atendiendo a Asistente Médico
+[10:11:21] [CPU] t=140: atendiendo a Asistente Médico
+[10:11:22] [CPU] t=141: atendiendo a Asistente Médico
+[10:11:22] [CPU] t=142: atendiendo a Asistente Médico
+[10:11:22] [CPU] t=143: atendiendo a Asistente Médico
+[10:11:23] [CPU] t=144: atendiendo a Asistente Médico
+[10:11:23] [CPU] t=145: atendiendo a Asistente Médico
+[10:11:24] [CPU] t=146: atendiendo a Asistente Médico
+[10:11:24] [CPU] t=147: atendiendo a Asistente Médico
+[10:11:24] [CPU] t=148: atendiendo a Asistente Médico
+[10:11:25] [CPU] t=149: atendiendo a Asistente Médico
+[10:11:25] [CPU] t=150: atendiendo a Asistente Médico
+[10:11:26] [CPU] t=151: atendiendo a Asistente Médico
+[10:11:26] [CPU] t=152: atendiendo a Asistente Médico
+[10:11:26] [CPU] t=153: atendiendo a Asistente Médico
+[10:11:27] [CPU] t=154: atendiendo a Asistente Médico
+[10:11:27] [CPU] t=155: atendiendo a Asistente Médico
+[10:11:28] [CPU] t=156: atendiendo a Asistente Médico
+[10:11:28] [CPU] t=157: atendiendo a Asistente Médico
+[10:11:28] [CPU] t=158: atendiendo a Asistente Médico
+[10:11:29] [CPU] t=159: atendiendo a Asistente Médico
+[10:11:29] [CPU] t=160: atendiendo a Asistente Médico
+[10:11:30] [CPU] t=161: atendiendo a Asistente Médico
+[10:11:30] [CPU] t=162: atendiendo a Asistente Médico
+[10:11:30] [CPU] t=163: atendiendo a Asistente Médico
+[10:11:31] [CPU] t=164: atendiendo a Asistente Médico
+[10:11:31] [CPU] t=165: atendiendo a Asistente Médico
+[10:11:32] [CPU] t=166: atendiendo a Asistente Médico
+[10:11:32] [APP] 'Asistente Médico' (PID 1) cerrada por el usuario
+[10:11:59] [TRIAGE] Atención: por gravedad
+[10:12:03] [ADMIT] Paciente 2 admitido (PID 2, gravedad 4)
+[10:12:03] [CPU] t=167: atendiendo a Paciente 2
+[10:12:03] [CPU] t=168: atendiendo a Paciente 2
+[10:12:04] [CPU] t=169: atendiendo a Paciente 2
+[10:12:04] [CPU] t=170: atendiendo a Paciente 2
+[10:12:04] [CPU] t=171: atendiendo a Paciente 2
+[10:12:05] [CPU] t=172: atendiendo a Paciente 2
+[10:12:05] [CPU] t=173: atendiendo a Paciente 2
+[10:12:06] [CPU] t=174: atendiendo a Paciente 2
+[10:12:06] [CPU] t=175: atendiendo a Paciente 2
+[10:12:06] [CPU] t=176: atendiendo a Paciente 2
+[10:12:07] [CPU] t=177: atendiendo a Paciente 2
+[10:12:07] [CPU] t=178: atendiendo a Paciente 2
+[10:12:08] [ALTA] Paciente 2 terminó su atención · esperó 0.0s
+[10:12:18] [APP] 'Asistente Médico' se registra como proceso (PID 3, prio 7)
+[10:12:18] [CPU] t=179: atendiendo a Asistente Médico
+[10:12:19] [CPU] t=180: atendiendo a Asistente Médico
+[10:12:19] [CPU] t=181: atendiendo a Asistente Médico
+[10:12:19] [CPU] t=182: atendiendo a Asistente Médico
+[10:12:20] [CPU] t=183: atendiendo a Asistente Médico
+[10:12:20] [CPU] t=184: atendiendo a Asistente Médico
+[10:12:21] [CPU] t=185: atendiendo a Asistente Médico
+[10:12:21] [CPU] t=186: atendiendo a Asistente Médico
+[10:12:21] [APP] 'Asistente Médico' recibió consulta: "hola"
+[10:12:21] [CPU] t=187: atendiendo a Asistente Médico
+[10:12:22] [CPU] t=188: atendiendo a Asistente Médico
+[10:12:22] [CPU] t=189: atendiendo a Asistente Médico
+[10:12:23] [CPU] t=190: atendiendo a Asistente Médico
+[10:12:23] [CPU] t=191: atendiendo a Asistente Médico
+[10:12:23] [CPU] t=192: atendiendo a Asistente Médico
+[10:12:24] [CPU] t=193: atendiendo a Asistente Médico
+[10:12:24] [CPU] t=194: atendiendo a Asistente Médico
+[10:12:25] [CPU] t=195: atendiendo a Asistente Médico
+[10:12:25] [CPU] t=196: atendiendo a Asistente Médico
+[10:12:25] [CPU] t=197: atendiendo a Asistente Médico
+[10:12:26] [CPU] t=198: atendiendo a Asistente Médico
+[10:12:26] [CPU] t=199: atendiendo a Asistente Médico
+[10:12:27] [CPU] t=200: atendiendo a Asistente Médico
+[10:12:27] [CPU] t=201: atendiendo a Asistente Médico
+[10:12:27] [CPU] t=202: atendiendo a Asistente Médico
+[10:12:28] [APP] 'Asistente Médico' (PID 3) cerrada por el usuario
+[10:12:43] [logd] Demonio de logging detenido.
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-26 10:12:52
+  PID daemon de logging: 17608
+============================================================
+[10:13:04] [APP] 'Historia Clínica' se registra como proceso (PID 1, prio 7)
+[10:13:04] [CPU] t=1: atendiendo a Historia Clínica
+[10:13:05] [CPU] t=2: atendiendo a Historia Clínica
+[10:13:05] [APP] '📝 Enf. Silva' se registra como proceso (PID 2, prio 5)
+[10:13:05] [CPU] t=3: atendiendo a Historia Clínica
+[10:13:06] [CPU] t=4: atendiendo a 📝 Enf. Silva
+[10:13:06] [HISTORIA] 📝 Enf. Silva llega a actualizar la historia clínica
+[10:13:06] [HISTORIA] 📝 Enf. Silva obtiene acceso EXCLUSIVO y comienza a escribir
+[10:13:06] [CPU] t=5: atendiendo a Historia Clínica
+[10:13:06] [APP] '📝 Enf. Mora' se registra como proceso (PID 3, prio 5)
+[10:13:06] [CPU] t=6: atendiendo a 📝 Enf. Silva
+[10:13:07] [CPU] t=7: atendiendo a Historia Clínica
+[10:13:07] [CPU] t=8: atendiendo a 📝 Enf. Mora
+[10:13:07] [HISTORIA] 📝 Enf. Mora llega a actualizar la historia clínica
+[10:13:08] [CPU] t=9: atendiendo a 📝 Enf. Silva
+[10:13:08] [APP] '📖 Dra. Reyes' se registra como proceso (PID 4, prio 6)
+[10:13:08] [CPU] t=10: atendiendo a Historia Clínica
+[10:13:08] [APP] '📖 Dra. López' se registra como proceso (PID 5, prio 6)
+[10:13:08] [APP] '📖 Dr. García' se registra como proceso (PID 6, prio 6)
+[10:13:08] [APP] '📖 Dr. García' se registra como proceso (PID 7, prio 6)
+[10:13:08] [CPU] t=11: atendiendo a 📝 Enf. Silva
+[10:13:09] [APP] '📖 Dra. Castro' se registra como proceso (PID 8, prio 6)
+[10:13:09] [APP] '📖 Dr. García' se registra como proceso (PID 9, prio 6)
+[10:13:09] [CPU] t=12: atendiendo a 📖 Dra. Reyes
+[10:13:09] [HISTORIA] 📖 Dra. Reyes llega a consultar la historia clínica
+[10:13:09] [APP] '📖 Dr. Martín' se registra como proceso (PID 10, prio 6)
+[10:13:09] [HISTORIA] 📖 Dra. López llega a consultar la historia clínica
+[10:13:09] [CPU] t=13: atendiendo a Historia Clínica
+[10:13:09] [HISTORIA] 📖 Dr. García llega a consultar la historia clínica
+[10:13:09] [HISTORIA] 📖 Dr. García llega a consultar la historia clínica
+[10:13:10] [APP] '📖 Dr. Sosa' se registra como proceso (PID 11, prio 6)
+[10:13:10] [HISTORIA] 📖 Dra. Castro llega a consultar la historia clínica
+[10:13:10] [CPU] t=14: atendiendo a 📝 Enf. Silva
+[10:13:10] [APP] '📖 Dra. Reyes' se registra como proceso (PID 12, prio 6)
+[10:13:10] [HISTORIA] 📖 Dr. García llega a consultar la historia clínica
+[10:13:10] [APP] '📖 Dr. García' se registra como proceso (PID 13, prio 6)
+[10:13:10] [HISTORIA] 📖 Dr. Martín llega a consultar la historia clínica
+[10:13:10] [CPU] t=15: atendiendo a Historia Clínica
+[10:13:10] [HISTORIA] 📝 Enf. Silva termina la actualización: Temp: 36.5°C · PA: 118/76 · FC: 65 bpm · Alta próxima
+[10:13:10] [APP] '📝 Enf. Silva' (PID 2) cerrada por el usuario
+[10:13:10] [HISTORIA] 📝 Enf. Mora obtiene acceso EXCLUSIVO y comienza a escribir
+[10:13:10] [CPU] t=16: atendiendo a 📖 Dr. Sosa
+[10:13:11] [HISTORIA] 📖 Dr. Sosa llega a consultar la historia clínica
+[10:13:11] [HISTORIA] 📖 Dra. Reyes llega a consultar la historia clínica
+[10:13:11] [CPU] t=17: atendiendo a 📖 Dr. García
+[10:13:11] [HISTORIA] 📖 Dr. García llega a consultar la historia clínica
+[10:13:11] [CPU] t=18: atendiendo a Historia Clínica
+[10:13:12] [CPU] t=19: atendiendo a 📝 Enf. Mora
+[10:13:12] [CPU] t=20: atendiendo a Historia Clínica
+[10:13:12] [CPU] t=21: atendiendo a 📝 Enf. Mora
+[10:13:13] [CPU] t=22: atendiendo a Historia Clínica
+[10:13:13] [CPU] t=23: atendiendo a 📝 Enf. Mora
+[10:13:14] [CPU] t=24: atendiendo a Historia Clínica
+[10:13:14] [CPU] t=25: atendiendo a 📝 Enf. Mora
+[10:13:14] [APP] '📝 Enf. Díaz' se registra como proceso (PID 14, prio 5)
+[10:13:14] [CPU] t=26: atendiendo a Historia Clínica
+[10:13:14] [HISTORIA] 📝 Enf. Mora termina la actualización: Temp: 36.9°C · PA: 122/78 · FC: 70 bpm · Estable
+[10:13:14] [APP] '📝 Enf. Mora' (PID 3) cerrada por el usuario
+[10:13:14] [HISTORIA] 📖 Dra. Reyes comienza a leer (lectores activos: 1)
+[10:13:14] [HISTORIA] 📖 Dra. López comienza a leer (lectores activos: 2)
+[10:13:14] [HISTORIA] 📖 Dr. García comienza a leer (lectores activos: 3)
+[10:13:14] [HISTORIA] 📖 Dr. García comienza a leer (lectores activos: 4)
+[10:13:14] [HISTORIA] 📖 Dra. Castro comienza a leer (lectores activos: 5)
+[10:13:14] [HISTORIA] 📖 Dr. García comienza a leer (lectores activos: 6)
+[10:13:14] [HISTORIA] 📖 Dr. Martín comienza a leer (lectores activos: 7)
+[10:13:14] [HISTORIA] 📖 Dr. Sosa comienza a leer (lectores activos: 8)
+[10:13:14] [HISTORIA] 📖 Dra. Reyes comienza a leer (lectores activos: 9)
+[10:13:14] [HISTORIA] 📖 Dr. García comienza a leer (lectores activos: 10)
+[10:13:15] [CPU] t=27: atendiendo a 📝 Enf. Díaz
+[10:13:15] [HISTORIA] 📝 Enf. Díaz llega a actualizar la historia clínica
+[10:13:15] [CPU] t=28: atendiendo a Historia Clínica
+[10:13:16] [CPU] t=29: atendiendo a 📖 Dra. Reyes
+[10:13:16] [APP] '📖 Dra. Castro' se registra como proceso (PID 15, prio 6)
+[10:13:16] [CPU] t=30: atendiendo a 📖 Dra. López
+[10:13:16] [CPU] t=31: atendiendo a 📖 Dr. García
+[10:13:17] [APP] '📖 Dra. Torres' se registra como proceso (PID 16, prio 6)
+[10:13:17] [CPU] t=32: atendiendo a 📖 Dr. García
+[10:13:17] [APP] '📖 Dr. Ruiz' se registra como proceso (PID 17, prio 6)
+[10:13:17] [HISTORIA] 📖 Dra. Castro llega a consultar la historia clínica
+[10:13:17] [HISTORIA] 📖 Dra. Castro comienza a leer (lectores activos: 11)
+[10:13:17] [CPU] t=33: atendiendo a 📖 Dra. Castro
+[10:13:18] [HISTORIA] 📖 Dra. López termina su consulta
+[10:13:18] [APP] '📖 Dra. López' (PID 5) cerrada por el usuario
+[10:13:18] [CPU] t=34: atendiendo a 📖 Dr. García
+[10:13:18] [HISTORIA] 📖 Dra. Castro termina su consulta
+[10:13:18] [APP] '📖 Dra. Castro' (PID 8) cerrada por el usuario
+[10:13:18] [HISTORIA] 📖 Dr. Martín termina su consulta
+[10:13:18] [APP] '📖 Dr. Martín' (PID 10) cerrada por el usuario
+[10:13:18] [HISTORIA] 📖 Dra. Torres llega a consultar la historia clínica
+[10:13:18] [HISTORIA] 📖 Dra. Torres comienza a leer (lectores activos: 9)
+[10:13:18] [HISTORIA] 📖 Dr. García termina su consulta
+[10:13:18] [APP] '📖 Dr. García' (PID 9) cerrada por el usuario
+[10:13:18] [HISTORIA] 📖 Dr. Ruiz llega a consultar la historia clínica
+[10:13:18] [HISTORIA] 📖 Dr. Ruiz comienza a leer (lectores activos: 9)
+[10:13:18] [CPU] t=35: atendiendo a 📖 Dr. Sosa
+[10:13:18] [HISTORIA] 📖 Dr. García termina su consulta
+[10:13:18] [APP] '📖 Dr. García' (PID 13) cerrada por el usuario
+[10:13:18] [HISTORIA] 📖 Dr. García termina su consulta
+[10:13:18] [APP] '📖 Dr. García' (PID 6) cerrada por el usuario
+[10:13:18] [CPU] t=36: atendiendo a 📖 Dra. Reyes
+[10:13:19] [HISTORIA] 📖 Dr. García termina su consulta
+[10:13:19] [APP] '📖 Dr. García' (PID 7) cerrada por el usuario
+[10:13:19] [HISTORIA] 📖 Dr. Sosa termina su consulta
+[10:13:19] [APP] '📖 Dr. Sosa' (PID 11) cerrada por el usuario
+[10:13:19] [HISTORIA] 📖 Dra. Reyes termina su consulta
+[10:13:19] [APP] '📖 Dra. Reyes' (PID 12) cerrada por el usuario
+[10:13:19] [CPU] t=37: atendiendo a Historia Clínica
+[10:13:19] [CPU] t=38: atendiendo a 📖 Dra. Reyes
+[10:13:19] [HISTORIA] 📖 Dra. Reyes termina su consulta
+[10:13:19] [APP] '📖 Dra. Reyes' (PID 4) cerrada por el usuario
+[10:13:20] [CPU] t=39: atendiendo a 📖 Dra. Castro
+[10:13:20] [APP] '📖 Dr. Martín' se registra como proceso (PID 18, prio 6)
+[10:13:20] [APP] '📖 Dra. Reyes' se registra como proceso (PID 19, prio 6)
+[10:13:20] [CPU] t=40: atendiendo a 📖 Dra. Torres
+[10:13:20] [APP] '📖 Dra. Torres' se registra como proceso (PID 20, prio 6)
+[10:13:20] [APP] '📖 Dra. Reyes' se registra como proceso (PID 21, prio 6)
+[10:13:20] [CPU] t=41: atendiendo a 📖 Dr. Ruiz
+[10:13:20] [APP] '📖 Dra. Torres' se registra como proceso (PID 22, prio 6)
+[10:13:21] [HISTORIA] 📖 Dr. Martín llega a consultar la historia clínica
+[10:13:21] [HISTORIA] 📖 Dr. Martín comienza a leer (lectores activos: 4)
+[10:13:21] [CPU] t=42: atendiendo a Historia Clínica
+[10:13:21] [HISTORIA] 📖 Dra. Reyes llega a consultar la historia clínica
+[10:13:21] [HISTORIA] 📖 Dra. Reyes comienza a leer (lectores activos: 5)
+[10:13:21] [HISTORIA] 📖 Dr. Ruiz termina su consulta
+[10:13:21] [APP] '📖 Dr. Ruiz' (PID 17) cerrada por el usuario
+[10:13:21] [HISTORIA] 📖 Dra. Torres llega a consultar la historia clínica
+[10:13:21] [HISTORIA] 📖 Dra. Torres comienza a leer (lectores activos: 5)
+[10:13:21] [HISTORIA] 📖 Dra. Castro termina su consulta
+[10:13:21] [APP] '📖 Dra. Castro' (PID 15) cerrada por el usuario
+[10:13:21] [CPU] t=43: atendiendo a 📖 Dr. Martín
+[10:13:21] [HISTORIA] 📖 Dra. Reyes llega a consultar la historia clínica
+[10:13:21] [HISTORIA] 📖 Dra. Reyes comienza a leer (lectores activos: 5)
+[10:13:21] [HISTORIA] 📖 Dra. Torres llega a consultar la historia clínica
+[10:13:22] [HISTORIA] 📖 Dra. Torres comienza a leer (lectores activos: 6)
+[10:13:22] [CPU] t=44: atendiendo a 📖 Dra. Reyes
+[10:13:22] [HISTORIA] 📖 Dra. Torres termina su consulta
+[10:13:22] [APP] '📖 Dra. Torres' (PID 16) cerrada por el usuario
+[10:13:22] [CPU] t=45: atendiendo a 📖 Dra. Torres
+[10:13:22] [CPU] t=46: atendiendo a 📖 Dra. Reyes
+[10:13:23] [CPU] t=47: atendiendo a 📖 Dra. Torres
+[10:13:23] [CPU] t=48: atendiendo a Historia Clínica
+[10:13:24] [CPU] t=49: atendiendo a 📖 Dr. Martín
+[10:13:24] [CPU] t=50: atendiendo a 📖 Dra. Reyes
+[10:13:24] [CPU] t=51: atendiendo a 📖 Dra. Torres
+[10:13:25] [HISTORIA] 📖 Dra. Torres termina su consulta
+[10:13:25] [APP] '📖 Dra. Torres' (PID 20) cerrada por el usuario
+[10:13:25] [CPU] t=52: atendiendo a 📖 Dra. Reyes
+[10:13:25] [HISTORIA] 📖 Dra. Reyes termina su consulta
+[10:13:25] [APP] '📖 Dra. Reyes' (PID 21) cerrada por el usuario
+[10:13:25] [HISTORIA] 📖 Dra. Reyes termina su consulta
+[10:13:25] [APP] '📖 Dra. Reyes' (PID 19) cerrada por el usuario
+[10:13:25] [CPU] t=53: atendiendo a 📖 Dra. Torres
+[10:13:26] [HISTORIA] 📖 Dr. Martín termina su consulta
+[10:13:26] [APP] '📖 Dr. Martín' (PID 18) cerrada por el usuario
+[10:13:26] [CPU] t=54: atendiendo a Historia Clínica
+[10:13:26] [HISTORIA] 📖 Dra. Torres termina su consulta
+[10:13:26] [HISTORIA] Último lector se retira: historia clínica disponible para escritura
+[10:13:26] [APP] '📖 Dra. Torres' (PID 22) cerrada por el usuario
+[10:13:26] [HISTORIA] 📝 Enf. Díaz obtiene acceso EXCLUSIVO y comienza a escribir
+[10:13:26] [CPU] t=55: atendiendo a Historia Clínica
+[10:13:26] [CPU] t=56: atendiendo a 📝 Enf. Díaz
+[10:13:27] [CPU] t=57: atendiendo a Historia Clínica
+[10:13:27] [CPU] t=58: atendiendo a 📝 Enf. Díaz
+[10:13:28] [CPU] t=59: atendiendo a Historia Clínica
+[10:13:28] [CPU] t=60: atendiendo a 📝 Enf. Díaz
+[10:13:28] [CPU] t=61: atendiendo a Historia Clínica
+[10:13:29] [CPU] t=62: atendiendo a 📝 Enf. Díaz
+[10:13:29] [CPU] t=63: atendiendo a Historia Clínica
+[10:13:30] [HISTORIA] 📝 Enf. Díaz termina la actualización: Temp: 37.5°C · PA: 135/88 · FC: 80 bpm · En observación
+[10:13:30] [APP] '📝 Enf. Díaz' (PID 14) cerrada por el usuario
+[10:13:30] [CPU] t=64: atendiendo a Historia Clínica
+[10:13:30] [CPU] t=65: atendiendo a Historia Clínica
+[10:13:30] [CPU] t=66: atendiendo a Historia Clínica
+[10:13:31] [CPU] t=67: atendiendo a Historia Clínica
+[10:13:31] [CPU] t=68: atendiendo a Historia Clínica
+[10:13:32] [CPU] t=69: atendiendo a Historia Clínica
+[10:13:32] [CPU] t=70: atendiendo a Historia Clínica
+[10:13:32] [CPU] t=71: atendiendo a Historia Clínica
+[10:13:33] [CPU] t=72: atendiendo a Historia Clínica
+[10:13:33] [CPU] t=73: atendiendo a Historia Clínica
+[10:13:34] [CPU] t=74: atendiendo a Historia Clínica
+[10:13:34] [CPU] t=75: atendiendo a Historia Clínica
+[10:13:34] [CPU] t=76: atendiendo a Historia Clínica
+[10:13:35] [CPU] t=77: atendiendo a Historia Clínica
+[10:13:35] [CPU] t=78: atendiendo a Historia Clínica
+[10:13:36] [CPU] t=79: atendiendo a Historia Clínica
+[10:13:36] [CPU] t=80: atendiendo a Historia Clínica
+[10:13:36] [CPU] t=81: atendiendo a Historia Clínica
+[10:13:37] [APP] 'Historia Clínica' (PID 1) cerrada por el usuario
+[10:13:40] [logd] Demonio de logging detenido.
