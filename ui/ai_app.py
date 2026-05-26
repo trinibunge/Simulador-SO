@@ -18,7 +18,7 @@ class AIApp(WindowBase):
     APP_BURST = 999_999_999
 
     def __init__(self, master, state, x=480, y=120):
-        super().__init__(master, "Asistente Médico", TEAL, 650, 520, x, y)
+        super().__init__(master, "Asistente Médico", TEAL, 650, 540, x, y)
         self.state = state
         self.ai = HospitalAI(state)
         self.thinking = False
@@ -34,8 +34,9 @@ class AIApp(WindowBase):
                 kind="app",
             )
 
+        # ── Header (arriba) ──
         top = tk.Frame(self.content, bg=PANEL)
-        top.pack(fill="x", padx=14, pady=(14, 8))
+        top.pack(side="top", fill="x", padx=14, pady=(14, 8))
 
         tk.Label(top, text="Asistente Médico", bg=PANEL, fg=FG, font=FONT_BIG).pack(anchor="w")
         tk.Label(
@@ -46,23 +47,9 @@ class AIApp(WindowBase):
             font=FONT_ITALIC
         ).pack(anchor="w")
 
-        self.chat = tk.Text(
-            self.content,
-            bg="#f8fafc",
-            fg=FG,
-            font=FONT_MD,
-            relief="flat",
-            highlightthickness=1,
-            highlightbackground=BORDER,
-            wrap="word",
-            padx=10,
-            pady=10
-        )
-        self.chat.pack(fill="both", expand=True, padx=14, pady=(8, 10))
-        self.chat.config(state="disabled")
-
+        # ── Input + botón (PRIMERO al fondo, así el chat no lo empuja fuera) ──
         bottom = tk.Frame(self.content, bg=PANEL)
-        bottom.pack(fill="x", padx=14, pady=(0, 14))
+        bottom.pack(side="bottom", fill="x", padx=14, pady=(8, 14))
 
         self.entry = tk.Entry(
             bottom,
@@ -89,6 +76,23 @@ class AIApp(WindowBase):
             cursor="hand2"
         )
         self.btn.pack(side="left")
+
+        # ── Chat (ocupa el espacio restante) ──
+        self.chat = tk.Text(
+            self.content,
+            bg="#f8fafc",
+            fg=FG,
+            font=FONT_MD,
+            relief="flat",
+            highlightthickness=1,
+            highlightbackground=BORDER,
+            wrap="word",
+            padx=10,
+            pady=10,
+            height=10,
+        )
+        self.chat.pack(side="top", fill="both", expand=True, padx=14, pady=(0, 8))
+        self.chat.config(state="disabled")
 
         self._write("Asistente: Hola. Preguntame sobre el simulador o sobre Sistemas Operativos.\n\n")
         self.master.after(100, self.focus_input)

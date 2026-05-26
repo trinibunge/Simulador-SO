@@ -23,209 +23,88 @@ ENTRIES = [
     "Temp: 37.5°C · PA: 135/88 · FC: 80 bpm · En observación",
 ]
 
-LOG_TAG = "HISTORIA"
-
-
-class _RWState:
-    """
-    Problema clásico de Lectores-Escritores.
-
-    Varios lectores pueden acceder a la vez; un escritor necesita
-    acceso EXCLUSIVO (ningún lector ni otro escritor activo).
-
-    Cada evento relevante se reporta a la bitácora del sistema vía
-    hospital_state.log(LOG_TAG, ...), para que la Bitácora muestre la
-    "narrativa" completa de qué ocurre con la historia clínica.
-    """
-
-    def __init__(self, hospital_state=None):
-        self.hospital_state = hospital_state
-
-        # Lock interno: protege solo las estructuras de presentación
-        # (active_readers, active_writer, waiting_writers, history).
-        self.lock = threading.Lock()
-
-        # Locks del protocolo Readers-Writers (Courtois 1971):
-        # _write_lock: lo toma el escritor o el PRIMER lector.
-        # _readers_lock: protege el contador de lectores.
-        self._readers_lock = threading.Lock()
-        self._write_lock = threading.Lock()
-        self._reader_count = 0
-
-        self.record = ENTRIES[0]
-        self.history: list[str] = []
-        self.active_readers: dict[int, dict] = {}
-        self.active_writer: str | None = None
-        self.waiting_writers: dict[int, str] = {}
-        self._next_id = 1
-        self.running = True
-
-    def _log(self, msg: str):
-        """Envía un evento a la bitácora del Hospital, si hay state conectado."""
-        if self.hospital_state is not None:
-            try:
-                self.hospital_state.log(LOG_TAG, msg)
-            except Exception:
-                # nunca fallar por culpa del logging
-                pass
-
-    # ─────────────────────────────────────────────────────────────────
-    #  Lector
-    # ─────────────────────────────────────────────────────────────────
-    def add_reader(self, name: str):
-        pid = self._next_id
-        self._next_id += 1
-
-        def run():
-            with self.lock:
-                self.active_readers[pid] = {"name": name, "state": "esperando"}
-            self._log(f"{name} llega a consultar la historia clínica")
-
-            # pequeña pausa para que la UI muestre "Esperando turno..."
-            time.sleep(1.0)
-
-            # Protocolo lector: el primero en llegar bloquea al escritor.
-            # IMPORTANTE: el acquire del write_lock va DENTRO del _readers_lock
-            # para que los lectores siguientes queden en cola si el primero
-            # todavía está esperando a un escritor.
-            t0 = time.time()
-            with self._readers_lock:
-                self._reader_count += 1
-                if self._reader_count == 1:
-                    if not self._write_lock.acquire(blocking=False):
-                        self._log(f"{name} debe esperar: una enfermera está escribiendo")
-                        self._write_lock.acquire()  # ahora sí, bloquea
-            waited = time.time() - t0
-
-            with self.lock:
-                if pid in self.active_readers:
-                    self.active_readers[pid]["state"] = "leyendo"
-
-            n = self._reader_count
-            if waited > 1.05:  # >1s significa que esperó (descontando el sleep inicial)
-                self._log(f"{name} comienza a leer tras esperar "
-                          f"{waited - 1.0:.1f}s (lectores activos: {n})")
-            else:
-                self._log(f"{name} comienza a leer (lectores activos: {n})")
-
-            # tiempo de consulta
-            time.sleep(random.uniform(3.0, 5.0))
-
-            with self.lock:
-                self.active_readers.pop(pid, None)
-            self._log(f"{name} termina su consulta")
-
-            # Protocolo lector: el último en irse libera al escritor.
-            with self._readers_lock:
-                self._reader_count -= 1
-                if self._reader_count == 0:
-                    self._write_lock.release()
-                    self._log("Último lector se retira: historia clínica "
-                              "disponible para escritura")
-
-        threading.Thread(target=run, daemon=True).start()
-
-    # ─────────────────────────────────────────────────────────────────
-    #  Escritor
-    # ─────────────────────────────────────────────────────────────────
-    def add_writer(self, name: str):
-        pid = self._next_id
-        self._next_id += 1
-
-        def run():
-            with self.lock:
-                self.waiting_writers[pid] = name
-            self._log(f"{name} llega a actualizar la historia clínica")
-
-            # pequeña pausa para que la UI muestre "En cola..."
-            time.sleep(1.0)
-
-            # Esperar a que no haya lectores ni otro escritor
-            t0 = time.time()
-            if not self._write_lock.acquire(blocking=False):
-                self._log(f"{name} debe esperar: hay lectores o un escritor activo")
-                self._write_lock.acquire()  # bloqueante
-            waited = time.time() - t0
-
-            with self.lock:
-                self.waiting_writers.pop(pid, None)
-                self.active_writer = name
-
-            if waited > 0.05:
-                self._log(f"{name} obtiene acceso EXCLUSIVO tras esperar {waited:.1f}s")
-            else:
-                self._log(f"{name} obtiene acceso EXCLUSIVO y comienza a escribir")
-
-            # tiempo de escritura
-            time.sleep(random.uniform(3.5, 5.5))
-            new_entry = random.choice(ENTRIES)
-
-            with self.lock:
-                self.record = new_entry
-                ts = time.strftime("%H:%M:%S")
-                self.history.append(f"[{ts}] {name}: {new_entry}")
-                self.history = self.history[-7:]
-                self.active_writer = None
-
-            self._log(f"{name} termina la actualización: {new_entry}")
-            self._write_lock.release()
-
-        threading.Thread(target=run, daemon=True).start()
-
-
-# ═════════════════════════════════════════════════════════════════════
-#  UI
-# ═════════════════════════════════════════════════════════════════════
 
 class ReadersApp(WindowBase):
+    """
+    Historia Clínica — Lectores y Escritores con procesos reales.
+
+    Cada lector y cada escritor que llega es un proceso del sistema:
+    se registra (admitir), pasa a BLOCKED mientras espera el lock,
+    pasa a READY cuando lo obtiene, hace su trabajo (sleep que
+    representa la lectura/escritura) y se da de alta. Toda la
+    sincronización (Courtois) está en core/state.py — esta ventana
+    es solo la cara visible.
+    """
+
+    APP_NAME = "Historia Clínica"
+    APP_PRIORITY = 7
+
     BG = "#f8fbff"
     INK = "#102033"
 
     def __init__(self, master, state, x=80, y=60):
-        super().__init__(master, "Historia Clínica — Lectores y Escritores",
-                         GREEN, 880, 580, x, y)
+        super().__init__(
+            master, "Historia Clínica — Lectores y Escritores",
+            GREEN, 880, 580, x, y,
+        )
         self.state = state
-        self.rw = _RWState(state)
         self.content.configure(bg=self.BG)
 
-        # Caches de cards para evitar flicker (no destruir/recrear cada frame)
-        self._reader_cards: dict[int, dict] = {}            # pid -> refs
-        self._writer_waiting_cards: dict[int, dict] = {}    # pid -> refs
-        self._active_writer_card: dict | None = None        # un solo card
+        # Registrar la VENTANA como proceso padre
+        self._app_paciente = None
+        if state is not None:
+            self._app_paciente = state.admitir(
+                self.APP_NAME,
+                priority=self.APP_PRIORITY,
+                burst=999_999_999,
+                kind="app",
+            )
+
+        # Caches de cards para evitar flicker
+        self._reader_cards: dict[int, dict] = {}
+        self._writer_waiting_cards: dict[int, dict] = {}
+        self._active_writer_card: dict | None = None
         self._readers_empty_lbl: tk.Label | None = None
         self._writers_empty_lbl: tk.Label | None = None
 
         self._build_ui()
         self.refresh()
-        # Arranca con una enfermera escribiendo para que los lectores tengan que esperar
+        # Arranca con una enfermera escribiendo para mostrar la espera
         self.frame.after(400, self._spawn_writer)
 
+    def on_close(self):
+        if self._app_paciente is not None:
+            try:
+                self.state.dar_alta(self._app_paciente.pid)
+            except Exception:
+                pass
+
     # ─────────────────────────────────────────────────────────────────
-    #  Construcción de la UI
+    #  UI
     # ─────────────────────────────────────────────────────────────────
     def _build_ui(self):
-        # encabezado
         header = tk.Frame(self.content, bg=self.BG)
         header.pack(fill="x", padx=16, pady=(14, 4))
         tk.Label(header, text="Historia Clínica",
                  bg=self.BG, fg=self.INK, font=FONT_BIG).pack(anchor="w")
         tk.Label(
             header,
-            text="Varios médicos pueden leer a la vez · solo una enfermera puede escribir",
+            text="Cada lector y escritor es un proceso real del sistema · "
+                 "varios médicos pueden leer a la vez · solo una enfermera "
+                 "puede escribir",
             bg=self.BG, fg=SOFT, font=FONT_SM,
         ).pack(anchor="w", pady=(2, 0))
 
-        # botonera
         btns = tk.Frame(self.content, bg=self.BG)
         btns.pack(fill="x", padx=16, pady=(8, 10))
         self._btn(btns, "👨‍⚕️  Médico llega a leer", GREEN, self._spawn_reader)
-        self._btn(btns, "👩‍⚕️  Enfermera llega a escribir", ORANGE, self._spawn_writer)
+        self._btn(btns, "👩‍⚕️  Enfermera llega a escribir", ORANGE,
+                  self._spawn_writer)
 
-        # cuerpo: 3 columnas
         body = tk.Frame(self.content, bg=self.BG)
         body.pack(fill="both", expand=True, padx=16, pady=(0, 16))
 
-        # ── columna izquierda: lectores ──
+        # ── izquierda: lectores ──
         left = tk.Frame(body, bg=self.BG, width=210)
         left.pack_propagate(False)
         left.pack(side="left", fill="y", padx=(0, 12))
@@ -233,17 +112,16 @@ class ReadersApp(WindowBase):
         self._readers_panel = tk.Frame(left, bg=self.BG)
         self._readers_panel.pack(fill="both", expand=True, pady=(8, 0))
 
-        # ── columna derecha: escritoras ──
-        # IMPORTANTE: packed ANTES que el center con expand=True, sino el center
-        # se come todo el espacio y la derecha queda fuera de la ventana.
+        # ── derecha: escritoras ──
         right = tk.Frame(body, bg=self.BG, width=210)
         right.pack_propagate(False)
         right.pack(side="right", fill="y", padx=(12, 0))
-        self._column_header(right, "Escribiendo / en cola", "una a la vez", ORANGE)
+        self._column_header(right, "Escribiendo / en cola",
+                            "una a la vez", ORANGE)
         self._writers_panel = tk.Frame(right, bg=self.BG)
         self._writers_panel.pack(fill="both", expand=True, pady=(8, 0))
 
-        # ── columna central: registro ──
+        # ── centro: registro ──
         center = tk.Frame(body, bg=PANEL,
                           highlightthickness=1, highlightbackground=BORDER)
         center.pack(side="left", fill="both", expand=True)
@@ -255,7 +133,8 @@ class ReadersApp(WindowBase):
         inner.pack(fill="both", expand=True, padx=16, pady=14)
 
         tk.Label(inner, text="REGISTRO COMPARTIDO",
-                 bg=PANEL, fg=SOFT, font=("Segoe UI", 9, "bold")).pack(anchor="w")
+                 bg=PANEL, fg=SOFT, font=("Segoe UI", 9, "bold")
+                 ).pack(anchor="w")
 
         self._status_lbl = tk.Label(
             inner, text="LIBRE",
@@ -278,13 +157,13 @@ class ReadersApp(WindowBase):
                  bg=PANEL, fg=SOFT, font=FONT_SM).pack(anchor="w")
         self._history_box = tk.Text(
             inner, bg=PANEL_2, fg=MUTED, font=("Consolas", 9),
-            relief="flat", highlightthickness=1, highlightbackground=BORDER_SOFT,
+            relief="flat", highlightthickness=1,
+            highlightbackground=BORDER_SOFT,
             state="disabled", height=8,
         )
         self._history_box.pack(fill="both", expand=True, pady=(4, 0))
 
     def _column_header(self, parent, title, subtitle, accent):
-        """Encabezado de columna con barra de color a la izquierda."""
         h = tk.Frame(parent, bg=self.BG)
         h.pack(fill="x")
         bar = tk.Frame(h, bg=accent, width=3)
@@ -306,16 +185,61 @@ class ReadersApp(WindowBase):
         ).pack(side="left", padx=(0, 8))
 
     # ─────────────────────────────────────────────────────────────────
-    #  Acciones
+    #  Acciones — cada llegada lanza un PROCESO
     # ─────────────────────────────────────────────────────────────────
     def _spawn_reader(self):
-        self.rw.add_reader(random.choice(DOCTOR_NAMES))
+        name = random.choice(DOCTOR_NAMES)
+        threading.Thread(target=self._reader_process,
+                         args=(name,), daemon=True).start()
 
     def _spawn_writer(self):
-        self.rw.add_writer(random.choice(NURSE_NAMES))
+        name = random.choice(NURSE_NAMES)
+        threading.Thread(target=self._writer_process,
+                         args=(name,), daemon=True).start()
+
+    def _reader_process(self, name: str):
+        """Un lector = un proceso completo: nace, espera lock, lee, muere."""
+        p = self.state.admitir(f"📖 {name}", priority=6, burst=4, kind="app")
+        if p is None:
+            return
+        pid = p.pid
+
+        # Pequeña pausa de "llegada" antes de pedir el lock
+        time.sleep(1.0)
+
+        # Pide acceso de lectura (puede bloquearse si hay escritor)
+        if self.state.historia_start_read(pid):
+            # Tiempo de consulta
+            time.sleep(random.uniform(3.0, 5.0))
+            self.state.historia_end_read(pid)
+
+        try:
+            self.state.dar_alta(pid)
+        except Exception:
+            pass
+
+    def _writer_process(self, name: str):
+        """Un escritor = un proceso completo: nace, espera exclusivo, escribe, muere."""
+        p = self.state.admitir(f"📝 {name}", priority=5, burst=5, kind="app")
+        if p is None:
+            return
+        pid = p.pid
+
+        time.sleep(1.0)
+
+        if self.state.historia_start_write(pid):
+            # Tiempo de escritura
+            time.sleep(random.uniform(3.5, 5.5))
+            new_entry = random.choice(ENTRIES)
+            self.state.historia_end_write(pid, new_entry)
+
+        try:
+            self.state.dar_alta(pid)
+        except Exception:
+            pass
 
     # ─────────────────────────────────────────────────────────────────
-    #  Loop de refresh
+    #  Refresh loop
     # ─────────────────────────────────────────────────────────────────
     def refresh(self):
         if not self.alive:
@@ -328,23 +252,21 @@ class ReadersApp(WindowBase):
             self.frame.after(180, self.refresh)
 
     def _render(self):
-        with self.rw.lock:
-            readers = dict(self.rw.active_readers)
-            writer = self.rw.active_writer
-            waiters = dict(self.rw.waiting_writers)
-            record = self.rw.record
-            history = list(self.rw.history)
-
-        reading = [(pid, info) for pid, info in readers.items()
-                   if info["state"] == "leyendo"]
+        # Snapshot bajo el lock central del state
+        with self.state.lock:
+            active_readers = dict(self.state.historia_active_readers)
+            active_writer = self.state.historia_active_writer
+            waiting_writers = dict(self.state.historia_waiting_writers)
+            record = self.state.historia_record
+            history = list(self.state.historia_history)
 
         # ── Estado central ──
-        if writer:
-            self._status_lbl.config(text=f"ESCRIBIENDO · {writer}",
+        if active_writer:
+            self._status_lbl.config(text=f"ESCRIBIENDO · {active_writer}",
                                     bg="#fef2f2", fg=RED)
             self._center_bar.config(bg=RED)
-        elif reading:
-            n = len(reading)
+        elif active_readers:
+            n = len(active_readers)
             self._status_lbl.config(
                 text=f"LEYENDO · {n} {'médico' if n == 1 else 'médicos'}",
                 bg="#f0fdf4", fg=GREEN,
@@ -356,7 +278,6 @@ class ReadersApp(WindowBase):
 
         self._record_lbl.config(text=record or "(sin registro)")
 
-        # historial
         self._history_box.config(state="normal")
         self._history_box.delete("1.0", tk.END)
         for line in history:
@@ -364,19 +285,40 @@ class ReadersApp(WindowBase):
         self._history_box.see(tk.END)
         self._history_box.config(state="disabled")
 
-        # ── Panel lectores ──
-        self._sync_reader_cards(readers)
+        # ── paneles izq/der ──
+        # Para los lectores también mostramos los que están esperando
+        # (waiting): los identificamos como procesos en BLOCKED cuyo
+        # nombre arranca con "📖" y que no están en active_readers.
+        all_readers = self._collect_pending_readers(active_readers)
+        self._sync_reader_cards(all_readers)
+        self._sync_writer_cards(active_writer, waiting_writers)
 
-        # ── Panel escritoras ──
-        self._sync_writer_cards(writer, waiters)
+    def _collect_pending_readers(self, active_readers: dict) -> dict:
+        """
+        Devuelve un dict pid→{name, state} con los lectores ACTIVOS y los
+        que están ESPERANDO (procesos cuyo nombre arranca con "📖" y que
+        están en BLOCKED, no incluidos ya en active_readers).
+        """
+        result = {pid: {"name": name, "state": "leyendo"}
+                  for pid, name in active_readers.items()}
+
+        with self.state.lock:
+            for pid, p in self.state.pacientes.items():
+                if (p.kind == "app"
+                        and p.name.startswith("📖 ")
+                        and p.state == "BLOCKED"
+                        and pid not in result):
+                    # Quitar el emoji para mostrar nombre limpio
+                    display_name = p.name[2:].strip()
+                    result[pid] = {"name": display_name, "state": "esperando"}
+        return result
 
     # ─────────────────────────────────────────────────────────────────
-    #  Sincronización de cards (cache, sin destruir/recrear)
+    #  Cards (sin flicker)
     # ─────────────────────────────────────────────────────────────────
     def _sync_reader_cards(self, readers: dict):
         current_pids = set(readers.keys())
 
-        # 1) eliminar cards de readers que ya no están
         for pid in list(self._reader_cards.keys()):
             if pid not in current_pids:
                 try:
@@ -385,7 +327,6 @@ class ReadersApp(WindowBase):
                     pass
                 del self._reader_cards[pid]
 
-        # 2) crear / actualizar
         for pid, info in readers.items():
             name = info["name"]
             is_reading = info["state"] == "leyendo"
@@ -400,26 +341,26 @@ class ReadersApp(WindowBase):
 
             if pid not in self._reader_cards:
                 self._reader_cards[pid] = self._build_card(
-                    self._readers_panel, name, subtitle, bg, sub_color, border, accent
+                    self._readers_panel, name, subtitle, bg, sub_color,
+                    border, accent,
                 )
             else:
                 self._update_card(self._reader_cards[pid], name, subtitle,
                                   bg, sub_color, border, accent)
 
-        # 3) reordenar: leyendo primero, esperando después
         order = sorted(self._reader_cards.keys(),
-                       key=lambda p: (0 if readers[p]["state"] == "leyendo" else 1, p))
+                       key=lambda p: (0 if readers[p]["state"] == "leyendo"
+                                      else 1, p))
         for pid in order:
             self._reader_cards[pid]["frame"].pack_forget()
         for pid in order:
             self._reader_cards[pid]["frame"].pack(fill="x", pady=3)
 
-        # 4) empty state
         self._toggle_empty_label("readers", len(readers) == 0,
                                   "Nadie consultando")
 
     def _sync_writer_cards(self, active_writer: str | None, waiters: dict):
-        # ── escritora activa (puede haber una sola) ──
+        # activa
         if active_writer is None:
             if self._active_writer_card is not None:
                 try:
@@ -428,17 +369,18 @@ class ReadersApp(WindowBase):
                     pass
                 self._active_writer_card = None
         else:
+            display = active_writer.replace("📝 ", "")
             if self._active_writer_card is None:
                 self._active_writer_card = self._build_card(
-                    self._writers_panel, active_writer, "Escribiendo...",
-                    "#fef2f2", RED, "#fca5a5", RED
+                    self._writers_panel, display, "Escribiendo...",
+                    "#fef2f2", RED, "#fca5a5", RED,
                 )
             else:
-                self._update_card(self._active_writer_card, active_writer,
+                self._update_card(self._active_writer_card, display,
                                   "Escribiendo...", "#fef2f2", RED,
                                   "#fca5a5", RED)
 
-        # ── escritoras en espera ──
+        # en espera
         current_pids = set(waiters.keys())
         for pid in list(self._writer_waiting_cards.keys()):
             if pid not in current_pids:
@@ -449,17 +391,17 @@ class ReadersApp(WindowBase):
                 del self._writer_waiting_cards[pid]
 
         for pid, name in waiters.items():
+            display = name.replace("📝 ", "")
             if pid not in self._writer_waiting_cards:
                 self._writer_waiting_cards[pid] = self._build_card(
-                    self._writers_panel, name, "Esperando su turno...",
-                    "#fff7ed", ORANGE, "#fed7aa", ORANGE
+                    self._writers_panel, display, "Esperando su turno...",
+                    "#fff7ed", ORANGE, "#fed7aa", ORANGE,
                 )
             else:
-                self._update_card(self._writer_waiting_cards[pid], name,
+                self._update_card(self._writer_waiting_cards[pid], display,
                                   "Esperando su turno...", "#fff7ed", ORANGE,
                                   "#fed7aa", ORANGE)
 
-        # reempacado: activa arriba, luego espera por pid
         if self._active_writer_card is not None:
             self._active_writer_card["frame"].pack_forget()
             self._active_writer_card["frame"].pack(fill="x", pady=3)
@@ -467,7 +409,6 @@ class ReadersApp(WindowBase):
             self._writer_waiting_cards[pid]["frame"].pack_forget()
             self._writer_waiting_cards[pid]["frame"].pack(fill="x", pady=3)
 
-        # empty state
         empty = active_writer is None and not waiters
         self._toggle_empty_label("writers", empty, "Nadie en cola")
 
@@ -489,20 +430,15 @@ class ReadersApp(WindowBase):
                     pass
                 setattr(self, attr, None)
 
-    # ─────────────────────────────────────────────────────────────────
-    #  Card helpers
-    # ─────────────────────────────────────────────────────────────────
     def _build_card(self, parent, name, subtitle, bg, sub_color, border, accent):
-        """Card con barra de color a la izquierda + nombre + subtítulo."""
         frame = tk.Frame(parent, bg=bg,
                          highlightthickness=1, highlightbackground=border)
-        # barra de color a la izquierda
         bar = tk.Frame(frame, bg=accent, width=3)
         bar.pack(side="left", fill="y")
-        # cuerpo
         body = tk.Frame(frame, bg=bg)
         body.pack(side="left", fill="both", expand=True, padx=10, pady=7)
-        name_lbl = tk.Label(body, text=name, bg=bg, fg=self.INK, font=FONT_BOLD)
+        name_lbl = tk.Label(body, text=name, bg=bg, fg=self.INK,
+                            font=FONT_BOLD)
         name_lbl.pack(anchor="w")
         sub_lbl = tk.Label(body, text=subtitle, bg=bg, fg=sub_color,
                            font=FONT_SM)
@@ -513,7 +449,6 @@ class ReadersApp(WindowBase):
         }
 
     def _update_card(self, refs, name, subtitle, bg, sub_color, border, accent):
-        """Actualiza una card existente in-place (sin destruir, sin flicker)."""
         try:
             refs["frame"].config(bg=bg, highlightbackground=border)
             refs["bar"].config(bg=accent)
