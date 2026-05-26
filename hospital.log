@@ -14453,3 +14453,792 @@
 [10:27:24] [CPU] t=33: atendiendo a Asistente Médico
 [10:27:24] [CPU] t=34: atendiendo a Asistente Médico
 [10:27:24] [APP] 'Asistente Médico' (PID 1) cerrada por el usuario
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-26 10:30:50
+  PID daemon de logging: 23884
+============================================================
+[10:30:57] [APP] 'Asistente Médico' se registra como proceso (PID 1, prio 7)
+[10:30:57] [CPU] t=1: atendiendo a Asistente Médico
+[10:30:57] [CPU] t=2: atendiendo a Asistente Médico
+[10:30:58] [CPU] t=3: atendiendo a Asistente Médico
+[10:30:58] [CPU] t=4: atendiendo a Asistente Médico
+[10:30:59] [CPU] t=5: atendiendo a Asistente Médico
+[10:30:59] [APP] 'Asistente Médico' recibió consulta: "hola"
+[10:30:59] [CPU] t=6: atendiendo a Asistente Médico
+[10:30:59] [CPU] t=7: atendiendo a Asistente Médico
+[10:31:00] [CPU] t=8: atendiendo a Asistente Médico
+[10:31:00] [CPU] t=9: atendiendo a Asistente Médico
+[10:31:01] [CPU] t=10: atendiendo a Asistente Médico
+[10:31:01] [CPU] t=11: atendiendo a Asistente Médico
+[10:31:01] [CPU] t=12: atendiendo a Asistente Médico
+[10:31:02] [CPU] t=13: atendiendo a Asistente Médico
+[10:31:02] [CPU] t=14: atendiendo a Asistente Médico
+[10:31:03] [CPU] t=15: atendiendo a Asistente Médico
+[10:31:03] [CPU] t=16: atendiendo a Asistente Médico
+[10:31:03] [CPU] t=17: atendiendo a Asistente Médico
+[10:31:04] [CPU] t=18: atendiendo a Asistente Médico
+[10:31:04] [CPU] t=19: atendiendo a Asistente Médico
+[10:31:05] [CPU] t=20: atendiendo a Asistente Médico
+[10:31:05] [CPU] t=21: atendiendo a Asistente Médico
+[10:31:05] [CPU] t=22: atendiendo a Asistente Médico
+[10:31:06] [CPU] t=23: atendiendo a Asistente Médico
+[10:31:06] [CPU] t=24: atendiendo a Asistente Médico
+[10:31:07] [CPU] t=25: atendiendo a Asistente Médico
+[10:31:07] [CPU] t=26: atendiendo a Asistente Médico
+[10:31:07] [CPU] t=27: atendiendo a Asistente Médico
+[10:31:08] [CPU] t=28: atendiendo a Asistente Médico
+[10:31:08] [CPU] t=29: atendiendo a Asistente Médico
+[10:31:09] [CPU] t=30: atendiendo a Asistente Médico
+[10:31:09] [CPU] t=31: atendiendo a Asistente Médico
+[10:31:09] [CPU] t=32: atendiendo a Asistente Médico
+[10:31:10] [CPU] t=33: atendiendo a Asistente Médico
+[10:31:10] [CPU] t=34: atendiendo a Asistente Médico
+[10:31:11] [CPU] t=35: atendiendo a Asistente Médico
+[10:31:11] [CPU] t=36: atendiendo a Asistente Médico
+[10:31:11] [CPU] t=37: atendiendo a Asistente Médico
+[10:31:12] [CPU] t=38: atendiendo a Asistente Médico
+[10:31:12] [CPU] t=39: atendiendo a Asistente Médico
+[10:31:13] [CPU] t=40: atendiendo a Asistente Médico
+[10:31:13] [CPU] t=41: atendiendo a Asistente Médico
+[10:31:13] [CPU] t=42: atendiendo a Asistente Médico
+[10:31:14] [CPU] t=43: atendiendo a Asistente Médico
+[10:31:14] [CPU] t=44: atendiendo a Asistente Médico
+[10:31:15] [CPU] t=45: atendiendo a Asistente Médico
+[10:31:15] [CPU] t=46: atendiendo a Asistente Médico
+[10:31:15] [CPU] t=47: atendiendo a Asistente Médico
+[10:31:16] [CPU] t=48: atendiendo a Asistente Médico
+[10:31:16] [CPU] t=49: atendiendo a Asistente Médico
+[10:31:17] [CPU] t=50: atendiendo a Asistente Médico
+[10:31:17] [CPU] t=51: atendiendo a Asistente Médico
+[10:31:17] [CPU] t=52: atendiendo a Asistente Médico
+[10:31:18] [CPU] t=53: atendiendo a Asistente Médico
+[10:31:18] [CPU] t=54: atendiendo a Asistente Médico
+[10:31:19] [CPU] t=55: atendiendo a Asistente Médico
+[10:31:19] [CPU] t=56: atendiendo a Asistente Médico
+[10:31:19] [CPU] t=57: atendiendo a Asistente Médico
+[10:31:20] [CPU] t=58: atendiendo a Asistente Médico
+[10:31:20] [CPU] t=59: atendiendo a Asistente Médico
+[10:31:21] [CPU] t=60: atendiendo a Asistente Médico
+[10:31:21] [CPU] t=61: atendiendo a Asistente Médico
+[10:31:21] [CPU] t=62: atendiendo a Asistente Médico
+[10:31:22] [CPU] t=63: atendiendo a Asistente Médico
+[10:31:22] [CPU] t=64: atendiendo a Asistente Médico
+[10:31:23] [CPU] t=65: atendiendo a Asistente Médico
+[10:31:23] [CPU] t=66: atendiendo a Asistente Médico
+[10:31:23] [APP] 'Asistente Médico' (PID 1) cerrada por el usuario
+[10:31:36] [logd] Demonio de logging detenido.
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-26 10:32:37
+  PID daemon de logging: 13728
+============================================================
+[10:32:48] [APP] 'Juego Wordle' se registra como proceso (PID 1, prio 8)
+[10:32:48] [CPU] t=1: atendiendo a Juego Wordle
+[10:32:48] [CPU] t=2: atendiendo a Juego Wordle
+[10:32:49] [CPU] t=3: atendiendo a Juego Wordle
+[10:32:49] [CPU] t=4: atendiendo a Juego Wordle
+[10:32:49] [CPU] t=5: atendiendo a Juego Wordle
+[10:32:50] [CPU] t=6: atendiendo a Juego Wordle
+[10:32:50] [CPU] t=7: atendiendo a Juego Wordle
+[10:32:51] [CPU] t=8: atendiendo a Juego Wordle
+[10:32:51] [CPU] t=9: atendiendo a Juego Wordle
+[10:32:51] [CPU] t=10: atendiendo a Juego Wordle
+[10:32:52] [CPU] t=11: atendiendo a Juego Wordle
+[10:32:52] [CPU] t=12: atendiendo a Juego Wordle
+[10:32:53] [CPU] t=13: atendiendo a Juego Wordle
+[10:32:53] [CPU] t=14: atendiendo a Juego Wordle
+[10:32:53] [CPU] t=15: atendiendo a Juego Wordle
+[10:32:54] [CPU] t=16: atendiendo a Juego Wordle
+[10:32:54] [CPU] t=17: atendiendo a Juego Wordle
+[10:32:55] [CPU] t=18: atendiendo a Juego Wordle
+[10:32:55] [CPU] t=19: atendiendo a Juego Wordle
+[10:32:55] [CPU] t=20: atendiendo a Juego Wordle
+[10:32:56] [CPU] t=21: atendiendo a Juego Wordle
+[10:32:56] [CPU] t=22: atendiendo a Juego Wordle
+[10:32:57] [CPU] t=23: atendiendo a Juego Wordle
+[10:32:57] [CPU] t=24: atendiendo a Juego Wordle
+[10:32:57] [CPU] t=25: atendiendo a Juego Wordle
+[10:32:58] [CPU] t=26: atendiendo a Juego Wordle
+[10:32:58] [CPU] t=27: atendiendo a Juego Wordle
+[10:32:59] [CPU] t=28: atendiendo a Juego Wordle
+[10:32:59] [CPU] t=29: atendiendo a Juego Wordle
+[10:32:59] [CPU] t=30: atendiendo a Juego Wordle
+[10:33:00] [CPU] t=31: atendiendo a Juego Wordle
+[10:33:00] [CPU] t=32: atendiendo a Juego Wordle
+[10:33:00] [APP] 'Juego Wordle' intento 1/6: COSAS → ⬜⬜⬜⬜⬜
+[10:33:01] [CPU] t=33: atendiendo a Juego Wordle
+[10:33:01] [CPU] t=34: atendiendo a Juego Wordle
+[10:33:01] [CPU] t=35: atendiendo a Juego Wordle
+[10:33:02] [CPU] t=36: atendiendo a Juego Wordle
+[10:33:02] [CPU] t=37: atendiendo a Juego Wordle
+[10:33:03] [CPU] t=38: atendiendo a Juego Wordle
+[10:33:03] [CPU] t=39: atendiendo a Juego Wordle
+[10:33:03] [CPU] t=40: atendiendo a Juego Wordle
+[10:33:04] [CPU] t=41: atendiendo a Juego Wordle
+[10:33:04] [CPU] t=42: atendiendo a Juego Wordle
+[10:33:05] [CPU] t=43: atendiendo a Juego Wordle
+[10:33:05] [CPU] t=44: atendiendo a Juego Wordle
+[10:33:05] [CPU] t=45: atendiendo a Juego Wordle
+[10:33:06] [CPU] t=46: atendiendo a Juego Wordle
+[10:33:06] [CPU] t=47: atendiendo a Juego Wordle
+[10:33:07] [CPU] t=48: atendiendo a Juego Wordle
+[10:33:07] [CPU] t=49: atendiendo a Juego Wordle
+[10:33:07] [CPU] t=50: atendiendo a Juego Wordle
+[10:33:08] [CPU] t=51: atendiendo a Juego Wordle
+[10:33:08] [CPU] t=52: atendiendo a Juego Wordle
+[10:33:09] [CPU] t=53: atendiendo a Juego Wordle
+[10:33:09] [CPU] t=54: atendiendo a Juego Wordle
+[10:33:09] [CPU] t=55: atendiendo a Juego Wordle
+[10:33:10] [CPU] t=56: atendiendo a Juego Wordle
+[10:33:10] [CPU] t=57: atendiendo a Juego Wordle
+[10:33:11] [CPU] t=58: atendiendo a Juego Wordle
+[10:33:11] [APP] 'Juego Wordle' intento 2/6: MENTI → ⬜🟩⬜⬜🟨
+[10:33:11] [CPU] t=59: atendiendo a Juego Wordle
+[10:33:11] [CPU] t=60: atendiendo a Juego Wordle
+[10:33:12] [CPU] t=61: atendiendo a Juego Wordle
+[10:33:12] [CPU] t=62: atendiendo a Juego Wordle
+[10:33:13] [CPU] t=63: atendiendo a Juego Wordle
+[10:33:13] [CPU] t=64: atendiendo a Juego Wordle
+[10:33:13] [CPU] t=65: atendiendo a Juego Wordle
+[10:33:14] [CPU] t=66: atendiendo a Juego Wordle
+[10:33:14] [CPU] t=67: atendiendo a Juego Wordle
+[10:33:15] [CPU] t=68: atendiendo a Juego Wordle
+[10:33:15] [CPU] t=69: atendiendo a Juego Wordle
+[10:33:15] [CPU] t=70: atendiendo a Juego Wordle
+[10:33:16] [CPU] t=71: atendiendo a Juego Wordle
+[10:33:16] [CPU] t=72: atendiendo a Juego Wordle
+[10:33:17] [CPU] t=73: atendiendo a Juego Wordle
+[10:33:17] [CPU] t=74: atendiendo a Juego Wordle
+[10:33:17] [CPU] t=75: atendiendo a Juego Wordle
+[10:33:18] [CPU] t=76: atendiendo a Juego Wordle
+[10:33:18] [CPU] t=77: atendiendo a Juego Wordle
+[10:33:19] [CPU] t=78: atendiendo a Juego Wordle
+[10:33:19] [CPU] t=79: atendiendo a Juego Wordle
+[10:33:19] [CPU] t=80: atendiendo a Juego Wordle
+[10:33:20] [CPU] t=81: atendiendo a Juego Wordle
+[10:33:20] [CPU] t=82: atendiendo a Juego Wordle
+[10:33:21] [CPU] t=83: atendiendo a Juego Wordle
+[10:33:21] [CPU] t=84: atendiendo a Juego Wordle
+[10:33:21] [CPU] t=85: atendiendo a Juego Wordle
+[10:33:22] [CPU] t=86: atendiendo a Juego Wordle
+[10:33:22] [CPU] t=87: atendiendo a Juego Wordle
+[10:33:23] [CPU] t=88: atendiendo a Juego Wordle
+[10:33:23] [CPU] t=89: atendiendo a Juego Wordle
+[10:33:23] [APP] 'Juego Wordle' intento 3/6: FENIX → ⬜🟩⬜🟩⬜
+[10:33:23] [CPU] t=90: atendiendo a Juego Wordle
+[10:33:24] [CPU] t=91: atendiendo a Juego Wordle
+[10:33:24] [CPU] t=92: atendiendo a Juego Wordle
+[10:33:25] [CPU] t=93: atendiendo a Juego Wordle
+[10:33:25] [CPU] t=94: atendiendo a Juego Wordle
+[10:33:25] [CPU] t=95: atendiendo a Juego Wordle
+[10:33:26] [CPU] t=96: atendiendo a Juego Wordle
+[10:33:26] [CPU] t=97: atendiendo a Juego Wordle
+[10:33:27] [CPU] t=98: atendiendo a Juego Wordle
+[10:33:27] [CPU] t=99: atendiendo a Juego Wordle
+[10:33:27] [CPU] t=100: atendiendo a Juego Wordle
+[10:33:28] [CPU] t=101: atendiendo a Juego Wordle
+[10:33:28] [CPU] t=102: atendiendo a Juego Wordle
+[10:33:29] [CPU] t=103: atendiendo a Juego Wordle
+[10:33:29] [CPU] t=104: atendiendo a Juego Wordle
+[10:33:29] [CPU] t=105: atendiendo a Juego Wordle
+[10:33:30] [CPU] t=106: atendiendo a Juego Wordle
+[10:33:30] [CPU] t=107: atendiendo a Juego Wordle
+[10:33:31] [CPU] t=108: atendiendo a Juego Wordle
+[10:33:31] [CPU] t=109: atendiendo a Juego Wordle
+[10:33:31] [CPU] t=110: atendiendo a Juego Wordle
+[10:33:32] [CPU] t=111: atendiendo a Juego Wordle
+[10:33:32] [CPU] t=112: atendiendo a Juego Wordle
+[10:33:32] [APP] 'Juego Wordle' intento 4/6: PEDIR → ⬜🟩🟩🟩🟨
+[10:33:33] [CPU] t=113: atendiendo a Juego Wordle
+[10:33:33] [CPU] t=114: atendiendo a Juego Wordle
+[10:33:33] [CPU] t=115: atendiendo a Juego Wordle
+[10:33:34] [CPU] t=116: atendiendo a Juego Wordle
+[10:33:34] [CPU] t=117: atendiendo a Juego Wordle
+[10:33:35] [CPU] t=118: atendiendo a Juego Wordle
+[10:33:35] [CPU] t=119: atendiendo a Juego Wordle
+[10:33:35] [CPU] t=120: atendiendo a Juego Wordle
+[10:33:36] [CPU] t=121: atendiendo a Juego Wordle
+[10:33:36] [CPU] t=122: atendiendo a Juego Wordle
+[10:33:37] [CPU] t=123: atendiendo a Juego Wordle
+[10:33:37] [CPU] t=124: atendiendo a Juego Wordle
+[10:33:37] [CPU] t=125: atendiendo a Juego Wordle
+[10:33:38] [CPU] t=126: atendiendo a Juego Wordle
+[10:33:38] [CPU] t=127: atendiendo a Juego Wordle
+[10:33:39] [CPU] t=128: atendiendo a Juego Wordle
+[10:33:39] [CPU] t=129: atendiendo a Juego Wordle
+[10:33:40] [CPU] t=130: atendiendo a Juego Wordle
+[10:33:40] [CPU] t=131: atendiendo a Juego Wordle
+[10:33:40] [CPU] t=132: atendiendo a Juego Wordle
+[10:33:41] [CPU] t=133: atendiendo a Juego Wordle
+[10:33:41] [CPU] t=134: atendiendo a Juego Wordle
+[10:33:42] [CPU] t=135: atendiendo a Juego Wordle
+[10:33:42] [CPU] t=136: atendiendo a Juego Wordle
+[10:33:42] [CPU] t=137: atendiendo a Juego Wordle
+[10:33:43] [CPU] t=138: atendiendo a Juego Wordle
+[10:33:43] [CPU] t=139: atendiendo a Juego Wordle
+[10:33:44] [CPU] t=140: atendiendo a Juego Wordle
+[10:33:44] [CPU] t=141: atendiendo a Juego Wordle
+[10:33:44] [CPU] t=142: atendiendo a Juego Wordle
+[10:33:45] [CPU] t=143: atendiendo a Juego Wordle
+[10:33:45] [CPU] t=144: atendiendo a Juego Wordle
+[10:33:46] [CPU] t=145: atendiendo a Juego Wordle
+[10:33:46] [CPU] t=146: atendiendo a Juego Wordle
+[10:33:46] [CPU] t=147: atendiendo a Juego Wordle
+[10:33:47] [CPU] t=148: atendiendo a Juego Wordle
+[10:33:47] [CPU] t=149: atendiendo a Juego Wordle
+[10:33:48] [CPU] t=150: atendiendo a Juego Wordle
+[10:33:48] [CPU] t=151: atendiendo a Juego Wordle
+[10:33:48] [CPU] t=152: atendiendo a Juego Wordle
+[10:33:49] [CPU] t=153: atendiendo a Juego Wordle
+[10:33:49] [CPU] t=154: atendiendo a Juego Wordle
+[10:33:50] [CPU] t=155: atendiendo a Juego Wordle
+[10:33:50] [CPU] t=156: atendiendo a Juego Wordle
+[10:33:50] [CPU] t=157: atendiendo a Juego Wordle
+[10:33:51] [CPU] t=158: atendiendo a Juego Wordle
+[10:33:51] [CPU] t=159: atendiendo a Juego Wordle
+[10:33:52] [CPU] t=160: atendiendo a Juego Wordle
+[10:33:52] [CPU] t=161: atendiendo a Juego Wordle
+[10:33:52] [CPU] t=162: atendiendo a Juego Wordle
+[10:33:53] [CPU] t=163: atendiendo a Juego Wordle
+[10:33:53] [CPU] t=164: atendiendo a Juego Wordle
+[10:33:54] [CPU] t=165: atendiendo a Juego Wordle
+[10:33:54] [CPU] t=166: atendiendo a Juego Wordle
+[10:33:54] [CPU] t=167: atendiendo a Juego Wordle
+[10:33:55] [CPU] t=168: atendiendo a Juego Wordle
+[10:33:55] [CPU] t=169: atendiendo a Juego Wordle
+[10:33:56] [CPU] t=170: atendiendo a Juego Wordle
+[10:33:56] [CPU] t=171: atendiendo a Juego Wordle
+[10:33:56] [CPU] t=172: atendiendo a Juego Wordle
+[10:33:57] [CPU] t=173: atendiendo a Juego Wordle
+[10:33:57] [CPU] t=174: atendiendo a Juego Wordle
+[10:33:58] [CPU] t=175: atendiendo a Juego Wordle
+[10:33:58] [CPU] t=176: atendiendo a Juego Wordle
+[10:33:58] [CPU] t=177: atendiendo a Juego Wordle
+[10:33:59] [CPU] t=178: atendiendo a Juego Wordle
+[10:33:59] [CPU] t=179: atendiendo a Juego Wordle
+[10:34:00] [CPU] t=180: atendiendo a Juego Wordle
+[10:34:00] [CPU] t=181: atendiendo a Juego Wordle
+[10:34:00] [CPU] t=182: atendiendo a Juego Wordle
+[10:34:01] [CPU] t=183: atendiendo a Juego Wordle
+[10:34:01] [CPU] t=184: atendiendo a Juego Wordle
+[10:34:02] [CPU] t=185: atendiendo a Juego Wordle
+[10:34:02] [CPU] t=186: atendiendo a Juego Wordle
+[10:34:02] [CPU] t=187: atendiendo a Juego Wordle
+[10:34:03] [CPU] t=188: atendiendo a Juego Wordle
+[10:34:03] [CPU] t=189: atendiendo a Juego Wordle
+[10:34:04] [CPU] t=190: atendiendo a Juego Wordle
+[10:34:04] [CPU] t=191: atendiendo a Juego Wordle
+[10:34:04] [CPU] t=192: atendiendo a Juego Wordle
+[10:34:05] [CPU] t=193: atendiendo a Juego Wordle
+[10:34:05] [CPU] t=194: atendiendo a Juego Wordle
+[10:34:06] [CPU] t=195: atendiendo a Juego Wordle
+[10:34:06] [CPU] t=196: atendiendo a Juego Wordle
+[10:34:06] [CPU] t=197: atendiendo a Juego Wordle
+[10:34:07] [CPU] t=198: atendiendo a Juego Wordle
+[10:34:07] [CPU] t=199: atendiendo a Juego Wordle
+[10:34:08] [CPU] t=200: atendiendo a Juego Wordle
+[10:34:08] [CPU] t=201: atendiendo a Juego Wordle
+[10:34:08] [CPU] t=202: atendiendo a Juego Wordle
+[10:34:09] [CPU] t=203: atendiendo a Juego Wordle
+[10:34:09] [CPU] t=204: atendiendo a Juego Wordle
+[10:34:10] [CPU] t=205: atendiendo a Juego Wordle
+[10:34:10] [CPU] t=206: atendiendo a Juego Wordle
+[10:34:10] [CPU] t=207: atendiendo a Juego Wordle
+[10:34:11] [CPU] t=208: atendiendo a Juego Wordle
+[10:34:11] [CPU] t=209: atendiendo a Juego Wordle
+[10:34:12] [CPU] t=210: atendiendo a Juego Wordle
+[10:34:12] [CPU] t=211: atendiendo a Juego Wordle
+[10:34:12] [CPU] t=212: atendiendo a Juego Wordle
+[10:34:13] [CPU] t=213: atendiendo a Juego Wordle
+[10:34:13] [CPU] t=214: atendiendo a Juego Wordle
+[10:34:14] [CPU] t=215: atendiendo a Juego Wordle
+[10:34:14] [CPU] t=216: atendiendo a Juego Wordle
+[10:34:14] [APP] 'Juego Wordle' intento 5/6: REDIL → 🟩🟩🟩🟩🟩
+[10:34:14] [APP] 'Juego Wordle' victoria :)) en 5/6 · palabra: REDIL
+[10:34:14] [CPU] t=217: atendiendo a Juego Wordle
+[10:34:15] [CPU] t=218: atendiendo a Juego Wordle
+[10:34:15] [CPU] t=219: atendiendo a Juego Wordle
+[10:34:16] [CPU] t=220: atendiendo a Juego Wordle
+[10:34:16] [CPU] t=221: atendiendo a Juego Wordle
+[10:34:16] [CPU] t=222: atendiendo a Juego Wordle
+[10:34:17] [CPU] t=223: atendiendo a Juego Wordle
+[10:34:17] [CPU] t=224: atendiendo a Juego Wordle
+[10:34:18] [CPU] t=225: atendiendo a Juego Wordle
+[10:34:18] [CPU] t=226: atendiendo a Juego Wordle
+[10:34:18] [CPU] t=227: atendiendo a Juego Wordle
+[10:34:19] [CPU] t=228: atendiendo a Juego Wordle
+[10:34:19] [CPU] t=229: atendiendo a Juego Wordle
+[10:34:20] [CPU] t=230: atendiendo a Juego Wordle
+[10:34:20] [CPU] t=231: atendiendo a Juego Wordle
+[10:34:20] [CPU] t=232: atendiendo a Juego Wordle
+[10:34:21] [CPU] t=233: atendiendo a Juego Wordle
+[10:34:21] [CPU] t=234: atendiendo a Juego Wordle
+[10:34:22] [CPU] t=235: atendiendo a Juego Wordle
+[10:34:22] [CPU] t=236: atendiendo a Juego Wordle
+[10:34:22] [CPU] t=237: atendiendo a Juego Wordle
+[10:34:23] [CPU] t=238: atendiendo a Juego Wordle
+[10:34:23] [CPU] t=239: atendiendo a Juego Wordle
+[10:34:24] [CPU] t=240: atendiendo a Juego Wordle
+[10:34:24] [CPU] t=241: atendiendo a Juego Wordle
+[10:34:24] [CPU] t=242: atendiendo a Juego Wordle
+[10:34:25] [CPU] t=243: atendiendo a Juego Wordle
+[10:34:25] [CPU] t=244: atendiendo a Juego Wordle
+[10:34:26] [CPU] t=245: atendiendo a Juego Wordle
+[10:34:26] [CPU] t=246: atendiendo a Juego Wordle
+[10:34:26] [CPU] t=247: atendiendo a Juego Wordle
+[10:34:27] [CPU] t=248: atendiendo a Juego Wordle
+[10:34:27] [CPU] t=249: atendiendo a Juego Wordle
+[10:34:28] [CPU] t=250: atendiendo a Juego Wordle
+[10:34:28] [CPU] t=251: atendiendo a Juego Wordle
+[10:34:28] [CPU] t=252: atendiendo a Juego Wordle
+[10:34:29] [CPU] t=253: atendiendo a Juego Wordle
+[10:34:29] [CPU] t=254: atendiendo a Juego Wordle
+[10:34:30] [CPU] t=255: atendiendo a Juego Wordle
+[10:34:30] [CPU] t=256: atendiendo a Juego Wordle
+[10:34:30] [CPU] t=257: atendiendo a Juego Wordle
+[10:34:31] [CPU] t=258: atendiendo a Juego Wordle
+[10:34:31] [CPU] t=259: atendiendo a Juego Wordle
+[10:34:32] [CPU] t=260: atendiendo a Juego Wordle
+[10:34:32] [CPU] t=261: atendiendo a Juego Wordle
+[10:34:32] [CPU] t=262: atendiendo a Juego Wordle
+[10:34:33] [CPU] t=263: atendiendo a Juego Wordle
+[10:34:33] [CPU] t=264: atendiendo a Juego Wordle
+[10:34:34] [CPU] t=265: atendiendo a Juego Wordle
+[10:34:34] [CPU] t=266: atendiendo a Juego Wordle
+[10:34:34] [CPU] t=267: atendiendo a Juego Wordle
+[10:34:35] [CPU] t=268: atendiendo a Juego Wordle
+[10:34:35] [CPU] t=269: atendiendo a Juego Wordle
+[10:34:36] [CPU] t=270: atendiendo a Juego Wordle
+[10:34:36] [CPU] t=271: atendiendo a Juego Wordle
+[10:34:36] [CPU] t=272: atendiendo a Juego Wordle
+[10:34:37] [CPU] t=273: atendiendo a Juego Wordle
+[10:34:37] [CPU] t=274: atendiendo a Juego Wordle
+[10:34:38] [CPU] t=275: atendiendo a Juego Wordle
+[10:34:38] [CPU] t=276: atendiendo a Juego Wordle
+[10:34:38] [CPU] t=277: atendiendo a Juego Wordle
+[10:34:39] [CPU] t=278: atendiendo a Juego Wordle
+[10:34:39] [CPU] t=279: atendiendo a Juego Wordle
+[10:34:40] [CPU] t=280: atendiendo a Juego Wordle
+[10:34:40] [APP] 'Juego Wordle' (PID 1) cerrada por el usuario
+[10:34:43] [logd] Demonio de logging detenido.
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-26 10:34:57
+  PID daemon de logging: 22924
+============================================================
+[10:35:04] [APP] 'Juego Wordle' se registra como proceso (PID 1, prio 8)
+[10:35:04] [CPU] t=1: atendiendo a Juego Wordle
+[10:35:05] [CPU] t=2: atendiendo a Juego Wordle
+[10:35:05] [CPU] t=3: atendiendo a Juego Wordle
+[10:35:06] [CPU] t=4: atendiendo a Juego Wordle
+[10:35:06] [CPU] t=5: atendiendo a Juego Wordle
+[10:35:06] [APP] 'Juego Wordle' intento 1/6: COMER → ⬜⬜⬜⬜⬜
+[10:35:06] [CPU] t=6: atendiendo a Juego Wordle
+[10:35:07] [CPU] t=7: atendiendo a Juego Wordle
+[10:35:07] [CPU] t=8: atendiendo a Juego Wordle
+[10:35:08] [CPU] t=9: atendiendo a Juego Wordle
+[10:35:08] [CPU] t=10: atendiendo a Juego Wordle
+[10:35:08] [CPU] t=11: atendiendo a Juego Wordle
+[10:35:09] [APP] 'Juego Wordle' intento 2/6: PIZZA → ⬜⬜⬜⬜🟨
+[10:35:09] [CPU] t=12: atendiendo a Juego Wordle
+[10:35:09] [CPU] t=13: atendiendo a Juego Wordle
+[10:35:10] [CPU] t=14: atendiendo a Juego Wordle
+[10:35:10] [CPU] t=15: atendiendo a Juego Wordle
+[10:35:10] [CPU] t=16: atendiendo a Juego Wordle
+[10:35:11] [CPU] t=17: atendiendo a Juego Wordle
+[10:35:11] [CPU] t=18: atendiendo a Juego Wordle
+[10:35:12] [CPU] t=19: atendiendo a Juego Wordle
+[10:35:12] [APP] 'Juego Wordle' intento 3/6: AMIGO → 🟨⬜⬜⬜⬜
+[10:35:12] [CPU] t=20: atendiendo a Juego Wordle
+[10:35:13] [CPU] t=21: atendiendo a Juego Wordle
+[10:35:13] [CPU] t=22: atendiendo a Juego Wordle
+[10:35:13] [CPU] t=23: atendiendo a Juego Wordle
+[10:35:14] [CPU] t=24: atendiendo a Juego Wordle
+[10:35:14] [CPU] t=25: atendiendo a Juego Wordle
+[10:35:14] [APP] 'Juego Wordle' intento 4/6: DANTE → ⬜🟩⬜🟨⬜
+[10:35:15] [CPU] t=26: atendiendo a Juego Wordle
+[10:35:15] [CPU] t=27: atendiendo a Juego Wordle
+[10:35:15] [CPU] t=28: atendiendo a Juego Wordle
+[10:35:16] [CPU] t=29: atendiendo a Juego Wordle
+[10:35:16] [CPU] t=30: atendiendo a Juego Wordle
+[10:35:17] [CPU] t=31: atendiendo a Juego Wordle
+[10:35:17] [CPU] t=32: atendiendo a Juego Wordle
+[10:35:17] [CPU] t=33: atendiendo a Juego Wordle
+[10:35:18] [CPU] t=34: atendiendo a Juego Wordle
+[10:35:18] [CPU] t=35: atendiendo a Juego Wordle
+[10:35:19] [CPU] t=36: atendiendo a Juego Wordle
+[10:35:19] [CPU] t=37: atendiendo a Juego Wordle
+[10:35:19] [APP] 'Juego Wordle' intento 5/6: DEDAL → ⬜⬜⬜🟩🟩
+[10:35:19] [CPU] t=38: atendiendo a Juego Wordle
+[10:35:20] [CPU] t=39: atendiendo a Juego Wordle
+[10:35:20] [CPU] t=40: atendiendo a Juego Wordle
+[10:35:21] [CPU] t=41: atendiendo a Juego Wordle
+[10:35:21] [CPU] t=42: atendiendo a Juego Wordle
+[10:35:21] [APP] 'Juego Wordle' intento 6/6: PENAL → ⬜⬜⬜🟩🟩
+[10:35:21] [APP] 'Juego Wordle' Derrota :(( la palabra era: FATAL
+[10:35:21] [CPU] t=43: atendiendo a Juego Wordle
+[10:35:22] [CPU] t=44: atendiendo a Juego Wordle
+[10:35:22] [CPU] t=45: atendiendo a Juego Wordle
+[10:35:23] [CPU] t=46: atendiendo a Juego Wordle
+[10:35:23] [CPU] t=47: atendiendo a Juego Wordle
+[10:35:23] [CPU] t=48: atendiendo a Juego Wordle
+[10:35:24] [CPU] t=49: atendiendo a Juego Wordle
+[10:35:24] [CPU] t=50: atendiendo a Juego Wordle
+[10:35:25] [CPU] t=51: atendiendo a Juego Wordle
+[10:35:25] [APP] 'Juego Wordle' (PID 1) cerrada por el usuario
+[10:35:35] [APP] 'Farmacia' se registra como proceso (PID 2, prio 7)
+[10:35:35] [CPU] t=52: atendiendo a Farmacia
+[10:35:36] [CPU] t=53: atendiendo a Farmacia
+[10:35:36] [CPU] t=54: atendiendo a Farmacia
+[10:35:36] [CPU] t=55: atendiendo a Farmacia
+[10:35:37] [FARMACIA] Turno iniciado: 2 farmacéuticos + 3 enfermeros
+[10:35:37] [CPU] t=56: atendiendo a Farmacia
+[10:35:37] [CPU] t=57: atendiendo a Farmacia
+[10:35:38] [CPU] t=58: atendiendo a Farmacia
+[10:35:38] [APP] '💊 Enf1-cons-1' se registra como proceso (PID 3, prio 6)
+[10:35:38] [APP] '💊 Farm1-prod-2' se registra como proceso (PID 4, prio 6)
+[10:35:38] [FARMACIA] 💊 Enf1-cons-1 bloqueado: buffer vacío
+[10:35:38] [APP] '💊 Farm2-prod-3' se registra como proceso (PID 5, prio 6)
+[10:35:38] [APP] '💊 Enf1-cons-1' (PID 3) cerrada por el usuario
+[10:35:38] [APP] '💊 Farm1-prod-2' (PID 4) cerrada por el usuario
+[10:35:38] [CPU] t=59: atendiendo a Farmacia
+[10:35:38] [APP] '💊 Enf2-cons-4' se registra como proceso (PID 6, prio 6)
+[10:35:38] [APP] '💊 Farm2-prod-3' (PID 5) cerrada por el usuario
+[10:35:38] [APP] '💊 Enf3-cons-5' se registra como proceso (PID 7, prio 6)
+[10:35:38] [APP] '💊 Enf2-cons-4' (PID 6) cerrada por el usuario
+[10:35:38] [CPU] t=60: atendiendo a Farmacia
+[10:35:38] [FARMACIA] 💊 Enf3-cons-5 bloqueado: buffer vacío
+[10:35:39] [APP] '💊 Enf1-cons-6' se registra como proceso (PID 8, prio 6)
+[10:35:39] [APP] '💊 Farm1-prod-7' se registra como proceso (PID 9, prio 6)
+[10:35:39] [CPU] t=61: atendiendo a Farmacia
+[10:35:39] [APP] '💊 Farm2-prod-8' se registra como proceso (PID 10, prio 6)
+[10:35:39] [FARMACIA] 💊 Enf1-cons-6 bloqueado: buffer vacío
+[10:35:39] [APP] '💊 Enf3-cons-9' se registra como proceso (PID 11, prio 6)
+[10:35:39] [APP] '💊 Enf3-cons-5' (PID 7) cerrada por el usuario
+[10:35:39] [APP] '💊 Farm1-prod-7' (PID 9) cerrada por el usuario
+[10:35:39] [FARMACIA] 💊 Enf3-cons-9 bloqueado: buffer vacío
+[10:35:39] [APP] '💊 Enf1-cons-6' (PID 8) cerrada por el usuario
+[10:35:39] [APP] '💊 Farm2-prod-8' (PID 10) cerrada por el usuario
+[10:35:39] [CPU] t=62: atendiendo a Farmacia
+[10:35:39] [APP] '💊 Enf2-cons-10' se registra como proceso (PID 12, prio 6)
+[10:35:40] [CPU] t=63: atendiendo a Farmacia
+[10:35:40] [FARMACIA] 💊 Enf2-cons-10 bloqueado: buffer vacío
+[10:35:40] [CPU] t=64: atendiendo a Farmacia
+[10:35:40] [APP] '💊 Enf1-cons-11' se registra como proceso (PID 13, prio 6)
+[10:35:40] [APP] '💊 Farm1-prod-12' se registra como proceso (PID 14, prio 6)
+[10:35:40] [FARMACIA] 💊 Enf1-cons-11 bloqueado: buffer vacío
+[10:35:40] [APP] '💊 Farm2-prod-13' se registra como proceso (PID 15, prio 6)
+[10:35:40] [APP] '💊 Farm1-prod-12' (PID 14) cerrada por el usuario
+[10:35:40] [APP] '💊 Enf3-cons-9' (PID 11) cerrada por el usuario
+[10:35:40] [APP] '💊 Enf2-cons-10' (PID 12) cerrada por el usuario
+[10:35:40] [APP] '💊 Enf3-cons-14' se registra como proceso (PID 16, prio 6)
+[10:35:40] [APP] '💊 Farm2-prod-13' (PID 15) cerrada por el usuario
+[10:35:40] [CPU] t=65: atendiendo a Farmacia
+[10:35:40] [FARMACIA] 💊 Enf3-cons-14 bloqueado: buffer vacío
+[10:35:41] [CPU] t=66: atendiendo a Farmacia
+[10:35:41] [APP] '💊 Enf1-cons-15' se registra como proceso (PID 17, prio 6)
+[10:35:41] [FARMACIA] 💊 Enf1-cons-15 bloqueado: buffer vacío
+[10:35:41] [APP] '💊 Enf2-cons-16' se registra como proceso (PID 18, prio 6)
+[10:35:41] [FARMACIA] 💊 Enf2-cons-16 bloqueado: buffer vacío
+[10:35:41] [CPU] t=67: atendiendo a Farmacia
+[10:35:41] [APP] '💊 Farm1-prod-17' se registra como proceso (PID 19, prio 6)
+[10:35:41] [APP] '💊 Enf1-cons-11' (PID 13) cerrada por el usuario
+[10:35:41] [APP] '💊 Farm1-prod-17' (PID 19) cerrada por el usuario
+[10:35:41] [APP] '💊 Enf3-cons-18' se registra como proceso (PID 20, prio 6)
+[10:35:41] [APP] '💊 Farm2-prod-19' se registra como proceso (PID 21, prio 6)
+[10:35:42] [FARMACIA] 💊 Enf3-cons-18 bloqueado: buffer vacío
+[10:35:42] [CPU] t=68: atendiendo a Farmacia
+[10:35:42] [APP] '💊 Farm2-prod-19' (PID 21) cerrada por el usuario
+[10:35:42] [APP] '💊 Enf3-cons-14' (PID 16) cerrada por el usuario
+[10:35:42] [CPU] t=69: atendiendo a Farmacia
+[10:35:42] [APP] '💊 Enf1-cons-20' se registra como proceso (PID 22, prio 6)
+[10:35:42] [APP] '💊 Enf3-cons-21' se registra como proceso (PID 23, prio 6)
+[10:35:42] [FARMACIA] 💊 Enf1-cons-20 bloqueado: buffer vacío
+[10:35:42] [APP] '💊 Farm1-prod-22' se registra como proceso (PID 24, prio 6)
+[10:35:42] [FARMACIA] 💊 Enf3-cons-21 bloqueado: buffer vacío
+[10:35:42] [APP] '💊 Enf2-cons-23' se registra como proceso (PID 25, prio 6)
+[10:35:42] [CPU] t=70: atendiendo a Farmacia
+[10:35:42] [APP] '💊 Farm2-prod-24' se registra como proceso (PID 26, prio 6)
+[10:35:42] [APP] '💊 Farm1-prod-22' (PID 24) cerrada por el usuario
+[10:35:42] [APP] '💊 Enf1-cons-15' (PID 17) cerrada por el usuario
+[10:35:43] [APP] '💊 Enf2-cons-16' (PID 18) cerrada por el usuario
+[10:35:43] [FARMACIA] 💊 Enf2-cons-23 bloqueado: buffer vacío
+[10:35:43] [APP] '💊 Farm2-prod-24' (PID 26) cerrada por el usuario
+[10:35:43] [CPU] t=71: atendiendo a Farmacia
+[10:35:43] [APP] '💊 Farm1-prod-25' se registra como proceso (PID 27, prio 6)
+[10:35:43] [APP] '💊 Enf3-cons-18' (PID 20) cerrada por el usuario
+[10:35:43] [APP] '💊 Farm1-prod-25' (PID 27) cerrada por el usuario
+[10:35:43] [CPU] t=72: atendiendo a Farmacia
+[10:35:43] [APP] '💊 Enf1-cons-26' se registra como proceso (PID 28, prio 6)
+[10:35:43] [APP] '💊 Enf3-cons-27' se registra como proceso (PID 29, prio 6)
+[10:35:43] [FARMACIA] 💊 Enf1-cons-26 bloqueado: buffer vacío
+[10:35:44] [FARMACIA] 💊 Enf3-cons-27 bloqueado: buffer vacío
+[10:35:44] [APP] '💊 Farm2-prod-28' se registra como proceso (PID 30, prio 6)
+[10:35:44] [CPU] t=73: atendiendo a Farmacia
+[10:35:44] [APP] '💊 Farm2-prod-28' (PID 30) cerrada por el usuario
+[10:35:44] [APP] '💊 Enf1-cons-20' (PID 22) cerrada por el usuario
+[10:35:44] [APP] '💊 Enf2-cons-29' se registra como proceso (PID 31, prio 6)
+[10:35:44] [APP] '💊 Farm1-prod-30' se registra como proceso (PID 32, prio 6)
+[10:35:44] [CPU] t=74: atendiendo a Farmacia
+[10:35:44] [FARMACIA] 💊 Enf2-cons-29 bloqueado: buffer vacío
+[10:35:44] [APP] '💊 Enf3-cons-21' (PID 23) cerrada por el usuario
+[10:35:44] [APP] '💊 Farm1-prod-30' (PID 32) cerrada por el usuario
+[10:35:44] [CPU] t=75: atendiendo a Farmacia
+[10:35:44] [APP] '💊 Enf3-cons-31' se registra como proceso (PID 33, prio 6)
+[10:35:45] [APP] '💊 Enf1-cons-32' se registra como proceso (PID 34, prio 6)
+[10:35:45] [APP] '💊 Enf2-cons-33' se registra como proceso (PID 35, prio 6)
+[10:35:45] [APP] '💊 Enf2-cons-23' (PID 25) cerrada por el usuario
+[10:35:45] [APP] '💊 Farm2-prod-34' se registra como proceso (PID 36, prio 6)
+[10:35:45] [FARMACIA] 💊 Enf2-cons-33 bloqueado: buffer vacío
+[10:35:45] [APP] '💊 Farm1-prod-35' se registra como proceso (PID 37, prio 6)
+[10:35:45] [FARMACIA] 💊 Enf1-cons-32 bloqueado: buffer vacío
+[10:35:45] [FARMACIA] 💊 Enf3-cons-31 bloqueado: buffer vacío
+[10:35:45] [CPU] t=76: atendiendo a Farmacia
+[10:35:45] [APP] '💊 Farm1-prod-35' (PID 37) cerrada por el usuario
+[10:35:45] [APP] '💊 Farm2-prod-34' (PID 36) cerrada por el usuario
+[10:35:45] [APP] '💊 Enf1-cons-26' (PID 28) cerrada por el usuario
+[10:35:45] [APP] '💊 Enf3-cons-27' (PID 29) cerrada por el usuario
+[10:35:45] [CPU] t=77: atendiendo a Farmacia
+[10:35:45] [APP] '💊 Farm1-prod-36' se registra como proceso (PID 38, prio 6)
+[10:35:45] [APP] 'Farmacia' (PID 2) cerrada por el usuario
+[10:35:45] [APP] '💊 Enf2-cons-29' (PID 31) cerrada por el usuario
+[10:35:45] [APP] '💊 Farm1-prod-36' (PID 38) cerrada por el usuario
+[10:35:47] [logd] Demonio de logging detenido.
+
+============================================================
+  HOSPITAL MS — Sesión iniciada 2026-05-26 10:37:00
+  PID daemon de logging: 18156
+============================================================
+[10:37:10] [APP] 'Juego Wordle' se registra como proceso (PID 1, prio 8)
+[10:37:10] [CPU] t=1: atendiendo a Juego Wordle
+[10:37:11] [CPU] t=2: atendiendo a Juego Wordle
+[10:37:11] [CPU] t=3: atendiendo a Juego Wordle
+[10:37:11] [CPU] t=4: atendiendo a Juego Wordle
+[10:37:12] [CPU] t=5: atendiendo a Juego Wordle
+[10:37:12] [CPU] t=6: atendiendo a Juego Wordle
+[10:37:13] [CPU] t=7: atendiendo a Juego Wordle
+[10:37:13] [CPU] t=8: atendiendo a Juego Wordle
+[10:37:13] [CPU] t=9: atendiendo a Juego Wordle
+[10:37:13] [APP] 'Juego Wordle' intento 1/6: DEDAL → ⬜🟨⬜⬜⬜
+[10:37:14] [CPU] t=10: atendiendo a Juego Wordle
+[10:37:14] [CPU] t=11: atendiendo a Juego Wordle
+[10:37:15] [CPU] t=12: atendiendo a Juego Wordle
+[10:37:15] [APP] 'Juego Wordle' intento 2/6: PIZZA → ⬜⬜⬜⬜⬜
+[10:37:15] [CPU] t=13: atendiendo a Juego Wordle
+[10:37:15] [CPU] t=14: atendiendo a Juego Wordle
+[10:37:16] [CPU] t=15: atendiendo a Juego Wordle
+[10:37:16] [CPU] t=16: atendiendo a Juego Wordle
+[10:37:17] [CPU] t=17: atendiendo a Juego Wordle
+[10:37:17] [CPU] t=18: atendiendo a Juego Wordle
+[10:37:17] [CPU] t=19: atendiendo a Juego Wordle
+[10:37:18] [CPU] t=20: atendiendo a Juego Wordle
+[10:37:18] [APP] 'Juego Wordle' intento 3/6: AMIGA → ⬜⬜⬜⬜⬜
+[10:37:18] [CPU] t=21: atendiendo a Juego Wordle
+[10:37:19] [CPU] t=22: atendiendo a Juego Wordle
+[10:37:19] [CPU] t=23: atendiendo a Juego Wordle
+[10:37:19] [APP] 'Juego Wordle' intento 4/6: AMIGO → ⬜⬜⬜⬜⬜
+[10:37:19] [CPU] t=24: atendiendo a Juego Wordle
+[10:37:20] [CPU] t=25: atendiendo a Juego Wordle
+[10:37:20] [CPU] t=26: atendiendo a Juego Wordle
+[10:37:21] [CPU] t=27: atendiendo a Juego Wordle
+[10:37:21] [APP] 'Juego Wordle' intento 5/6: PERRO → ⬜🟨⬜⬜⬜
+[10:37:21] [CPU] t=28: atendiendo a Juego Wordle
+[10:37:21] [CPU] t=29: atendiendo a Juego Wordle
+[10:37:22] [CPU] t=30: atendiendo a Juego Wordle
+[10:37:22] [APP] 'Juego Wordle' intento 6/6: PERRA → ⬜🟨⬜⬜⬜
+[10:37:22] [APP] 'Juego Wordle' Derrota :(( la palabra era: HUYEN
+[10:37:22] [CPU] t=31: atendiendo a Juego Wordle
+[10:37:23] [CPU] t=32: atendiendo a Juego Wordle
+[10:37:23] [CPU] t=33: atendiendo a Juego Wordle
+[10:37:23] [CPU] t=34: atendiendo a Juego Wordle
+[10:37:24] [CPU] t=35: atendiendo a Juego Wordle
+[10:37:24] [CPU] t=36: atendiendo a Juego Wordle
+[10:37:25] [CPU] t=37: atendiendo a Juego Wordle
+[10:37:25] [APP] 'Juego Wordle' (PID 1) cerrada por el usuario
+[10:37:29] [ADMIT] Paciente 2 admitido (PID 2, gravedad 7)
+[10:37:29] [ADMIT] Paciente 3 admitido (PID 3, gravedad 5)
+[10:37:29] [ADMIT] Paciente 4 admitido (PID 4, gravedad 3)
+[10:37:29] [ADMIT] Paciente 5 admitido (PID 5, gravedad 4)
+[10:37:29] [ADMIT] Paciente 6 admitido (PID 6, gravedad 5)
+[10:37:29] [ADMIT] Paciente 7 admitido (PID 7, gravedad 5)
+[10:37:29] [ADMIT] Paciente 8 admitido (PID 8, gravedad 7)
+[10:37:29] [ADMIT] Paciente 9 admitido (PID 9, gravedad 3)
+[10:37:29] [CPU] t=38: atendiendo a Paciente 2
+[10:37:29] [CPU] t=39: atendiendo a Paciente 3
+[10:37:30] [CPU] t=40: atendiendo a Paciente 4
+[10:37:30] [CPU] t=41: atendiendo a Paciente 5
+[10:37:30] [CPU] t=42: atendiendo a Paciente 6
+[10:37:31] [CPU] t=43: atendiendo a Paciente 7
+[10:37:31] [CPU] t=44: atendiendo a Paciente 8
+[10:37:32] [CPU] t=45: atendiendo a Paciente 9
+[10:37:32] [CPU] t=46: atendiendo a Paciente 2
+[10:37:32] [CPU] t=47: atendiendo a Paciente 3
+[10:37:33] [CPU] t=48: atendiendo a Paciente 4
+[10:37:33] [CPU] t=49: atendiendo a Paciente 5
+[10:37:34] [CPU] t=50: atendiendo a Paciente 6
+[10:37:34] [CPU] t=51: atendiendo a Paciente 7
+[10:37:34] [CPU] t=52: atendiendo a Paciente 8
+[10:37:35] [CPU] t=53: atendiendo a Paciente 9
+[10:37:35] [CPU] t=54: atendiendo a Paciente 2
+[10:37:36] [CPU] t=55: atendiendo a Paciente 3
+[10:37:36] [CPU] t=56: atendiendo a Paciente 4
+[10:37:36] [CPU] t=57: atendiendo a Paciente 5
+[10:37:37] [CPU] t=58: atendiendo a Paciente 6
+[10:37:37] [CPU] t=59: atendiendo a Paciente 7
+[10:37:38] [CPU] t=60: atendiendo a Paciente 8
+[10:37:38] [CPU] t=61: atendiendo a Paciente 9
+[10:37:38] [CPU] t=62: atendiendo a Paciente 2
+[10:37:39] [CPU] t=63: atendiendo a Paciente 3
+[10:37:39] [CPU] t=64: atendiendo a Paciente 4
+[10:37:40] [CPU] t=65: atendiendo a Paciente 5
+[10:37:40] [CPU] t=66: atendiendo a Paciente 6
+[10:37:40] [CPU] t=67: atendiendo a Paciente 7
+[10:37:41] [CPU] t=68: atendiendo a Paciente 8
+[10:37:41] [CPU] t=69: atendiendo a Paciente 9
+[10:37:42] [CPU] t=70: atendiendo a Paciente 2
+[10:37:42] [CPU] t=71: atendiendo a Paciente 3
+[10:37:42] [CPU] t=72: atendiendo a Paciente 4
+[10:37:43] [ALTA] Paciente 4 terminó su atención · esperó 12.0s
+[10:37:43] [CPU] t=73: atendiendo a Paciente 5
+[10:37:43] [CPU] t=74: atendiendo a Paciente 6
+[10:37:44] [CPU] t=75: atendiendo a Paciente 7
+[10:37:44] [CPU] t=76: atendiendo a Paciente 8
+[10:37:44] [CPU] t=77: atendiendo a Paciente 9
+[10:37:45] [CPU] t=78: atendiendo a Paciente 2
+[10:37:45] [CPU] t=79: atendiendo a Paciente 3
+[10:37:46] [ALTA] Paciente 3 terminó su atención · esperó 14.4s
+[10:37:46] [CPU] t=80: atendiendo a Paciente 5
+[10:37:46] [CPU] t=81: atendiendo a Paciente 6
+[10:37:46] [CPU] t=82: atendiendo a Paciente 7
+[10:37:47] [CPU] t=83: atendiendo a Paciente 8
+[10:37:47] [CPU] t=84: atendiendo a Paciente 9
+[10:37:48] [CPU] t=85: atendiendo a Paciente 2
+[10:37:48] [CPU] t=86: atendiendo a Paciente 5
+[10:37:48] [ALTA] Paciente 5 terminó su atención · esperó 16.8s
+[10:37:48] [CPU] t=87: atendiendo a Paciente 6
+[10:37:49] [ALTA] Paciente 6 terminó su atención · esperó 17.2s
+[10:37:49] [CPU] t=88: atendiendo a Paciente 7
+[10:37:49] [CPU] t=89: atendiendo a Paciente 8
+[10:37:50] [CPU] t=90: atendiendo a Paciente 9
+[10:37:50] [CPU] t=91: atendiendo a Paciente 2
+[10:37:50] [CPU] t=92: atendiendo a Paciente 7
+[10:37:51] [ALTA] Paciente 7 terminó su atención · esperó 18.8s
+[10:37:51] [CPU] t=93: atendiendo a Paciente 8
+[10:37:51] [CPU] t=94: atendiendo a Paciente 9
+[10:37:51] [APP] 'Juego Snake' se registra como proceso (PID 10, prio 8)
+[10:37:52] [CPU] t=95: atendiendo a Paciente 2
+[10:37:52] [ALTA] Paciente 2 terminó su atención · esperó 19.6s
+[10:37:52] [CPU] t=96: atendiendo a Paciente 8
+[10:37:52] [CPU] t=97: atendiendo a Paciente 9
+[10:37:53] [CPU] t=98: atendiendo a Juego Snake
+[10:37:53] [CPU] t=99: atendiendo a Paciente 8
+[10:37:54] [CPU] t=100: atendiendo a Paciente 9
+[10:37:54] [ALTA] Paciente 9 terminó su atención · esperó 21.2s
+[10:37:54] [CPU] t=101: atendiendo a Juego Snake
+[10:37:54] [CPU] t=102: atendiendo a Paciente 8
+[10:37:55] [CPU] t=103: atendiendo a Juego Snake
+[10:37:55] [CPU] t=104: atendiendo a Paciente 8
+[10:37:56] [APP] 'Juego Snake' reiniciado por el usuario
+[10:37:56] [ALTA] Paciente 8 terminó su atención · esperó 22.0s
+[10:37:56] [CPU] t=105: atendiendo a Juego Snake
+[10:37:56] [CPU] t=106: atendiendo a Juego Snake
+[10:37:56] [CPU] t=107: atendiendo a Juego Snake
+[10:37:57] [APP] 'Juego Snake' reiniciado por el usuario
+[10:37:57] [CPU] t=108: atendiendo a Juego Snake
+[10:37:57] [CPU] t=109: atendiendo a Juego Snake
+[10:37:58] [CPU] t=110: atendiendo a Juego Snake
+[10:37:58] [APP] 'Juego Snake' reiniciado por el usuario
+[10:37:58] [CPU] t=111: atendiendo a Juego Snake
+[10:37:58] [CPU] t=112: atendiendo a Juego Snake
+[10:37:59] [CPU] t=113: atendiendo a Juego Snake
+[10:37:59] [CPU] t=114: atendiendo a Juego Snake
+[10:37:59] [APP] 'Juego Snake' reiniciado por el usuario
+[10:38:00] [CPU] t=115: atendiendo a Juego Snake
+[10:38:00] [CPU] t=116: atendiendo a Juego Snake
+[10:38:00] [APP] 'Juego Snake' (PID 10) cerrada por el usuario
+[10:38:04] [APP] 'Asistente Médico' se registra como proceso (PID 11, prio 7)
+[10:38:04] [CPU] t=117: atendiendo a Asistente Médico
+[10:38:05] [CPU] t=118: atendiendo a Asistente Médico
+[10:38:05] [CPU] t=119: atendiendo a Asistente Médico
+[10:38:05] [CPU] t=120: atendiendo a Asistente Médico
+[10:38:06] [CPU] t=121: atendiendo a Asistente Médico
+[10:38:06] [CPU] t=122: atendiendo a Asistente Médico
+[10:38:07] [CPU] t=123: atendiendo a Asistente Médico
+[10:38:07] [CPU] t=124: atendiendo a Asistente Médico
+[10:38:07] [CPU] t=125: atendiendo a Asistente Médico
+[10:38:08] [CPU] t=126: atendiendo a Asistente Médico
+[10:38:08] [CPU] t=127: atendiendo a Asistente Médico
+[10:38:09] [CPU] t=128: atendiendo a Asistente Médico
+[10:38:09] [CPU] t=129: atendiendo a Asistente Médico
+[10:38:09] [CPU] t=130: atendiendo a Asistente Médico
+[10:38:10] [CPU] t=131: atendiendo a Asistente Médico
+[10:38:10] [CPU] t=132: atendiendo a Asistente Médico
+[10:38:11] [CPU] t=133: atendiendo a Asistente Médico
+[10:38:11] [CPU] t=134: atendiendo a Asistente Médico
+[10:38:11] [CPU] t=135: atendiendo a Asistente Médico
+[10:38:12] [CPU] t=136: atendiendo a Asistente Médico
+[10:38:12] [CPU] t=137: atendiendo a Asistente Médico
+[10:38:13] [CPU] t=138: atendiendo a Asistente Médico
+[10:38:13] [CPU] t=139: atendiendo a Asistente Médico
+[10:38:13] [CPU] t=140: atendiendo a Asistente Médico
+[10:38:14] [CPU] t=141: atendiendo a Asistente Médico
+[10:38:14] [CPU] t=142: atendiendo a Asistente Médico
+[10:38:15] [CPU] t=143: atendiendo a Asistente Médico
+[10:38:15] [CPU] t=144: atendiendo a Asistente Médico
+[10:38:15] [CPU] t=145: atendiendo a Asistente Médico
+[10:38:16] [CPU] t=146: atendiendo a Asistente Médico
+[10:38:16] [CPU] t=147: atendiendo a Asistente Médico
+[10:38:17] [CPU] t=148: atendiendo a Asistente Médico
+[10:38:17] [CPU] t=149: atendiendo a Asistente Médico
+[10:38:17] [CPU] t=150: atendiendo a Asistente Médico
+[10:38:18] [CPU] t=151: atendiendo a Asistente Médico
+[10:38:18] [CPU] t=152: atendiendo a Asistente Médico
+[10:38:19] [CPU] t=153: atendiendo a Asistente Médico
+[10:38:19] [CPU] t=154: atendiendo a Asistente Médico
+[10:38:19] [APP] 'Asistente Médico' recibió consulta: "hola"
+[10:38:20] [CPU] t=155: atendiendo a Asistente Médico
+[10:38:20] [CPU] t=156: atendiendo a Asistente Médico
+[10:38:20] [CPU] t=157: atendiendo a Asistente Médico
+[10:38:21] [CPU] t=158: atendiendo a Asistente Médico
+[10:38:21] [CPU] t=159: atendiendo a Asistente Médico
+[10:38:22] [CPU] t=160: atendiendo a Asistente Médico
+[10:38:22] [CPU] t=161: atendiendo a Asistente Médico
+[10:38:22] [CPU] t=162: atendiendo a Asistente Médico
+[10:38:23] [CPU] t=163: atendiendo a Asistente Médico
+[10:38:23] [CPU] t=164: atendiendo a Asistente Médico
+[10:38:24] [CPU] t=165: atendiendo a Asistente Médico
+[10:38:24] [CPU] t=166: atendiendo a Asistente Médico
+[10:38:24] [CPU] t=167: atendiendo a Asistente Médico
+[10:38:25] [CPU] t=168: atendiendo a Asistente Médico
+[10:38:25] [CPU] t=169: atendiendo a Asistente Médico
+[10:38:26] [CPU] t=170: atendiendo a Asistente Médico
+[10:38:26] [CPU] t=171: atendiendo a Asistente Médico
+[10:38:26] [CPU] t=172: atendiendo a Asistente Médico
+[10:38:27] [CPU] t=173: atendiendo a Asistente Médico
+[10:38:27] [CPU] t=174: atendiendo a Asistente Médico
+[10:38:28] [CPU] t=175: atendiendo a Asistente Médico
+[10:38:28] [CPU] t=176: atendiendo a Asistente Médico
+[10:38:28] [APP] 'Asistente Médico' (PID 11) cerrada por el usuario
+[10:38:32] [APP] 'Historia Clínica' se registra como proceso (PID 12, prio 7)
+[10:38:32] [CPU] t=177: atendiendo a Historia Clínica
+[10:38:32] [CPU] t=178: atendiendo a Historia Clínica
+[10:38:33] [APP] '📝 Enf. Silva' se registra como proceso (PID 13, prio 5)
+[10:38:33] [CPU] t=179: atendiendo a Historia Clínica
+[10:38:33] [CPU] t=180: atendiendo a 📝 Enf. Silva
+[10:38:34] [HISTORIA] 📝 Enf. Silva llega a actualizar la historia clínica
+[10:38:34] [HISTORIA] 📝 Enf. Silva obtiene acceso EXCLUSIVO y comienza a escribir
+[10:38:34] [CPU] t=181: atendiendo a Historia Clínica
+[10:38:34] [CPU] t=182: atendiendo a 📝 Enf. Silva
+[10:38:34] [CPU] t=183: atendiendo a Historia Clínica
+[10:38:35] [CPU] t=184: atendiendo a 📝 Enf. Silva
+[10:38:35] [CPU] t=185: atendiendo a Historia Clínica
+[10:38:36] [CPU] t=186: atendiendo a 📝 Enf. Silva
+[10:38:36] [CPU] t=187: atendiendo a Historia Clínica
+[10:38:36] [CPU] t=188: atendiendo a 📝 Enf. Silva
+[10:38:37] [CPU] t=189: atendiendo a Historia Clínica
+[10:38:37] [CPU] t=190: atendiendo a 📝 Enf. Silva
+[10:38:37] [APP] 'Historia Clínica' (PID 12) cerrada por el usuario
+[10:38:38] [HISTORIA] 📝 Enf. Silva termina la actualización: Temp: 38.1°C · PA: 145/92 · FC: 95 bpm · Medicación ajustada
+[10:38:38] [APP] '📝 Enf. Silva' (PID 13) cerrada por el usuario
+[10:38:55] [logd] Demonio de logging detenido.

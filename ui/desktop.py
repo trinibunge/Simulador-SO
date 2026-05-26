@@ -254,7 +254,8 @@ class Desktop:
         try:
             with self.state.lock:
                 pacientes_all = list(self.state.pacientes.values())
-                n_done = len(self.state.completed_history)
+                n_done = sum(1 for p in self.state.completed_history
+                             if getattr(p, "kind", "patient") == "patient")
             n_patient = sum(1 for p in pacientes_all
                             if getattr(p, "kind", "patient") == "patient")
         except Exception:
